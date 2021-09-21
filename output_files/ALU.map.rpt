@@ -1,5 +1,5 @@
 Analysis & Synthesis report for ALU
-Mon Sep 20 21:11:01 2021
+Tue Sep 21 17:40:00 2021
 Quartus Prime Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
 
 
@@ -46,13 +46,13 @@ agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Mon Sep 20 21:11:01 2021       ;
+; Analysis & Synthesis Status        ; Successful - Tue Sep 21 17:40:00 2021       ;
 ; Quartus Prime Version              ; 16.0.0 Build 211 04/27/2016 SJ Lite Edition ;
 ; Revision Name                      ; ALU                                         ;
 ; Top-level Entity Name              ; ALU                                         ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 307                                         ;
-;     Total combinational functions  ; 307                                         ;
+; Total logic elements               ; 442                                         ;
+;     Total combinational functions  ; 442                                         ;
 ;     Dedicated logic registers      ; 0                                           ;
 ; Total registers                    ; 0                                           ;
 ; Total pins                         ; 109                                         ;
@@ -166,23 +166,23 @@ agreement for further details.
 +----------------------------+-------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                      ;
-+----------------------------------+-----------------+------------------------+-----------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                        ; Library ;
-+----------------------------------+-----------------+------------------------+-----------------------------------------------------+---------+
-; ALU.v                            ; yes             ; User Verilog HDL File  ; C:/Users/lizhu/Desktop/ECE 550/Proj1/ALU.v          ;         ;
-; CSA.v                            ; yes             ; User Verilog HDL File  ; C:/Users/lizhu/Desktop/ECE 550/Proj1/CSA.v          ;         ;
-; negateb.v                        ; yes             ; User Verilog HDL File  ; C:/Users/lizhu/Desktop/ECE 550/Proj1/negateb.v      ;         ;
-; RCA.v                            ; yes             ; User Verilog HDL File  ; C:/Users/lizhu/Desktop/ECE 550/Proj1/RCA.v          ;         ;
-; fourBitAdder.v                   ; yes             ; User Verilog HDL File  ; C:/Users/lizhu/Desktop/ECE 550/Proj1/fourBitAdder.v ;         ;
-; oneBit.v                         ; yes             ; User Verilog HDL File  ; C:/Users/lizhu/Desktop/ECE 550/Proj1/oneBit.v       ;         ;
-; RCA_special.v                    ; yes             ; User Verilog HDL File  ; C:/Users/lizhu/Desktop/ECE 550/Proj1/RCA_special.v  ;         ;
-; bit_And.v                        ; yes             ; User Verilog HDL File  ; C:/Users/lizhu/Desktop/ECE 550/Proj1/bit_And.v      ;         ;
-; bit_Or.v                         ; yes             ; User Verilog HDL File  ; C:/Users/lizhu/Desktop/ECE 550/Proj1/bit_Or.v       ;         ;
-; left_shift.v                     ; yes             ; User Verilog HDL File  ; C:/Users/lizhu/Desktop/ECE 550/Proj1/left_shift.v   ;         ;
-; right_shift.v                    ; yes             ; User Verilog HDL File  ; C:/Users/lizhu/Desktop/ECE 550/Proj1/right_shift.v  ;         ;
-+----------------------------------+-----------------+------------------------+-----------------------------------------------------+---------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                             ;
++----------------------------------+-----------------+------------------------+--------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                                               ; Library ;
++----------------------------------+-----------------+------------------------+--------------------------------------------------------------------------------------------+---------+
+; ALU.v                            ; yes             ; User Verilog HDL File  ; C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project2/ECE-550/ALU.v          ;         ;
+; CSA.v                            ; yes             ; User Verilog HDL File  ; C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project2/ECE-550/CSA.v          ;         ;
+; negateb.v                        ; yes             ; User Verilog HDL File  ; C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project2/ECE-550/negateb.v      ;         ;
+; RCA.v                            ; yes             ; User Verilog HDL File  ; C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project2/ECE-550/RCA.v          ;         ;
+; fourBitAdder.v                   ; yes             ; User Verilog HDL File  ; C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project2/ECE-550/fourBitAdder.v ;         ;
+; oneBit.v                         ; yes             ; User Verilog HDL File  ; C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project2/ECE-550/oneBit.v       ;         ;
+; RCA_special.v                    ; yes             ; User Verilog HDL File  ; C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project2/ECE-550/RCA_special.v  ;         ;
+; bit_And.v                        ; yes             ; User Verilog HDL File  ; C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project2/ECE-550/bit_And.v      ;         ;
+; bit_Or.v                         ; yes             ; User Verilog HDL File  ; C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project2/ECE-550/bit_Or.v       ;         ;
+; left_shift.v                     ; yes             ; User Verilog HDL File  ; C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project2/ECE-550/left_shift.v   ;         ;
+; right_shift.v                    ; yes             ; User Verilog HDL File  ; C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project2/ECE-550/right_shift.v  ;         ;
++----------------------------------+-----------------+------------------------+--------------------------------------------------------------------------------------------+---------+
 
 
 +-----------------------------------------------------------------------+
@@ -190,16 +190,16 @@ agreement for further details.
 +---------------------------------------------+-------------------------+
 ; Resource                                    ; Usage                   ;
 +---------------------------------------------+-------------------------+
-; Estimated Total logic elements              ; 307                     ;
+; Estimated Total logic elements              ; 442                     ;
 ;                                             ;                         ;
-; Total combinational functions               ; 307                     ;
+; Total combinational functions               ; 442                     ;
 ; Logic element usage by number of LUT inputs ;                         ;
-;     -- 4 input functions                    ; 207                     ;
-;     -- 3 input functions                    ; 91                      ;
-;     -- <=2 input functions                  ; 9                       ;
+;     -- 4 input functions                    ; 260                     ;
+;     -- 3 input functions                    ; 169                     ;
+;     -- <=2 input functions                  ; 13                      ;
 ;                                             ;                         ;
 ; Logic elements by mode                      ;                         ;
-;     -- normal mode                          ; 307                     ;
+;     -- normal mode                          ; 442                     ;
 ;     -- arithmetic mode                      ; 0                       ;
 ;                                             ;                         ;
 ; Total registers                             ; 0                       ;
@@ -211,9 +211,9 @@ agreement for further details.
 ; Embedded Multiplier 9-bit elements          ; 0                       ;
 ;                                             ;                         ;
 ; Maximum fan-out node                        ; ctrl_ALUopcode[0]~input ;
-; Maximum fan-out                             ; 97                      ;
-; Total fan-out                               ; 1261                    ;
-; Average fan-out                             ; 2.40                    ;
+; Maximum fan-out                             ; 119                     ;
+; Total fan-out                               ; 1715                    ;
+; Average fan-out                             ; 2.60                    ;
 +---------------------------------------------+-------------------------+
 
 
@@ -222,14 +222,14 @@ agreement for further details.
 +-----------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------+--------------+--------------+
 ; Compilation Hierarchy Node        ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                   ; Entity Name  ; Library Name ;
 +-----------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------+--------------+--------------+
-; |ALU                              ; 307 (147)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 109  ; 0            ; |ALU                                                                  ; ALU          ; work         ;
-;    |CSA:csa0|                     ; 62 (1)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|CSA:csa0                                                         ; CSA          ; work         ;
-;       |RCA:rca0|                  ; 32 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|CSA:csa0|RCA:rca0                                                ; RCA          ; work         ;
-;          |fourBitAdder:fourBit_0| ; 8 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|CSA:csa0|RCA:rca0|fourBitAdder:fourBit_0                         ; fourBitAdder ; work         ;
-;             |oneBit:oneBit_0|     ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|CSA:csa0|RCA:rca0|fourBitAdder:fourBit_0|oneBit:oneBit_0         ; oneBit       ; work         ;
-;             |oneBit:oneBit_1|     ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|CSA:csa0|RCA:rca0|fourBitAdder:fourBit_0|oneBit:oneBit_1         ; oneBit       ; work         ;
-;             |oneBit:oneBit_2|     ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|CSA:csa0|RCA:rca0|fourBitAdder:fourBit_0|oneBit:oneBit_2         ; oneBit       ; work         ;
-;             |oneBit:oneBit_3|     ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|CSA:csa0|RCA:rca0|fourBitAdder:fourBit_0|oneBit:oneBit_3         ; oneBit       ; work         ;
+; |ALU                              ; 442 (201)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 109  ; 0            ; |ALU                                                                  ; ALU          ; work         ;
+;    |CSA:csa0|                     ; 58 (1)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|CSA:csa0                                                         ; CSA          ; work         ;
+;       |RCA:rca0|                  ; 28 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|CSA:csa0|RCA:rca0                                                ; RCA          ; work         ;
+;          |fourBitAdder:fourBit_0| ; 4 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|CSA:csa0|RCA:rca0|fourBitAdder:fourBit_0                         ; fourBitAdder ; work         ;
+;             |oneBit:oneBit_0|     ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|CSA:csa0|RCA:rca0|fourBitAdder:fourBit_0|oneBit:oneBit_0         ; oneBit       ; work         ;
+;             |oneBit:oneBit_1|     ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|CSA:csa0|RCA:rca0|fourBitAdder:fourBit_0|oneBit:oneBit_1         ; oneBit       ; work         ;
+;             |oneBit:oneBit_2|     ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|CSA:csa0|RCA:rca0|fourBitAdder:fourBit_0|oneBit:oneBit_2         ; oneBit       ; work         ;
+;             |oneBit:oneBit_3|     ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|CSA:csa0|RCA:rca0|fourBitAdder:fourBit_0|oneBit:oneBit_3         ; oneBit       ; work         ;
 ;          |fourBitAdder:fourBit_1| ; 8 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|CSA:csa0|RCA:rca0|fourBitAdder:fourBit_1                         ; fourBitAdder ; work         ;
 ;             |oneBit:oneBit_0|     ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|CSA:csa0|RCA:rca0|fourBitAdder:fourBit_1|oneBit:oneBit_0         ; oneBit       ; work         ;
 ;             |oneBit:oneBit_1|     ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|CSA:csa0|RCA:rca0|fourBitAdder:fourBit_1|oneBit:oneBit_1         ; oneBit       ; work         ;
@@ -282,8 +282,9 @@ agreement for further details.
 ;          |oneBit:oneBit_0|        ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|CSA:csa0|RCA_special:rca2|oneBit:oneBit_0                        ; oneBit       ; work         ;
 ;          |oneBit:oneBit_1|        ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|CSA:csa0|RCA_special:rca2|oneBit:oneBit_1                        ; oneBit       ; work         ;
 ;          |oneBit:oneBit_2|        ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|CSA:csa0|RCA_special:rca2|oneBit:oneBit_2                        ; oneBit       ; work         ;
-;    |bit_Or:or0|                   ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|bit_Or:or0                                                       ; bit_Or       ; work         ;
-;    |left_shift:shift0|            ; 97 (97)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|left_shift:shift0                                                ; left_shift   ; work         ;
+;    |bit_Or:or0|                   ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|bit_Or:or0                                                       ; bit_Or       ; work         ;
+;    |left_shift:shift0|            ; 95 (95)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|left_shift:shift0                                                ; left_shift   ; work         ;
+;    |right_shift:shift1|           ; 85 (85)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|right_shift:shift1                                               ; right_shift  ; work         ;
 +-----------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------+--------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -308,10 +309,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
-; 6:1                ; 16 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; No         ; |ALU|data_result           ;
+; 8:1                ; 8 bits    ; 40 LEs        ; 32 LEs               ; 8 LEs                  ; No         ; |ALU|data_result           ;
 ; 8:1                ; 7 bits    ; 35 LEs        ; 28 LEs               ; 7 LEs                  ; No         ; |ALU|data_result           ;
+; 10:1               ; 4 bits    ; 24 LEs        ; 20 LEs               ; 4 LEs                  ; No         ; |ALU|data_result           ;
 ; 9:1                ; 4 bits    ; 24 LEs        ; 24 LEs               ; 0 LEs                  ; No         ; |ALU|data_result           ;
 ; 10:1               ; 2 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; No         ; |ALU|data_result           ;
+; 12:1               ; 2 bits    ; 16 LEs        ; 14 LEs               ; 2 LEs                  ; No         ; |ALU|data_result           ;
 ; 11:1               ; 2 bits    ; 14 LEs        ; 12 LEs               ; 2 LEs                  ; No         ; |ALU|data_result           ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
 
@@ -343,15 +346,15 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
 ; boundary_port         ; 109                         ;
-; cycloneiii_lcell_comb ; 308                         ;
-;     normal            ; 308                         ;
+; cycloneiii_lcell_comb ; 443                         ;
+;     normal            ; 443                         ;
 ;         0 data inputs ; 1                           ;
-;         2 data inputs ; 9                           ;
-;         3 data inputs ; 91                          ;
-;         4 data inputs ; 207                         ;
+;         2 data inputs ; 13                          ;
+;         3 data inputs ; 169                         ;
+;         4 data inputs ; 260                         ;
 ;                       ;                             ;
 ; Max LUT depth         ; 22.00                       ;
-; Average LUT depth     ; 12.00                       ;
+; Average LUT depth     ; 10.81                       ;
 +-----------------------+-----------------------------+
 
 
@@ -370,67 +373,72 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
-    Info: Processing started: Mon Sep 20 21:10:52 2021
+    Info: Processing started: Tue Sep 21 17:39:49 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ALU -c ALU
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file sra_32bit.v
+    Info (12023): Found entity 1: SRA_32bit File: C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project2/ECE-550/SRA_32bit.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file alu.v
-    Info (12023): Found entity 1: ALU File: C:/Users/lizhu/Desktop/ECE 550/Proj1/ALU.v Line: 1
+    Info (12023): Found entity 1: ALU File: C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project2/ECE-550/ALU.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file alu_tb.v
-    Info (12023): Found entity 1: ALU_tb File: C:/Users/lizhu/Desktop/ECE 550/Proj1/ALU_tb.v Line: 3
+    Info (12023): Found entity 1: ALU_tb File: C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project2/ECE-550/ALU_tb.v Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file csa.v
-    Info (12023): Found entity 1: CSA File: C:/Users/lizhu/Desktop/ECE 550/Proj1/CSA.v Line: 1
+    Info (12023): Found entity 1: CSA File: C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project2/ECE-550/CSA.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file negateb.v
-    Info (12023): Found entity 1: negateb File: C:/Users/lizhu/Desktop/ECE 550/Proj1/negateb.v Line: 1
+    Info (12023): Found entity 1: negateb File: C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project2/ECE-550/negateb.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file rca.v
-    Info (12023): Found entity 1: RCA File: C:/Users/lizhu/Desktop/ECE 550/Proj1/RCA.v Line: 1
+    Info (12023): Found entity 1: RCA File: C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project2/ECE-550/RCA.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file fourbitadder.v
-    Info (12023): Found entity 1: fourBitAdder File: C:/Users/lizhu/Desktop/ECE 550/Proj1/fourBitAdder.v Line: 1
+    Info (12023): Found entity 1: fourBitAdder File: C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project2/ECE-550/fourBitAdder.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file onebit.v
-    Info (12023): Found entity 1: oneBit File: C:/Users/lizhu/Desktop/ECE 550/Proj1/oneBit.v Line: 1
+    Info (12023): Found entity 1: oneBit File: C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project2/ECE-550/oneBit.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file rca_special.v
-    Info (12023): Found entity 1: RCA_special File: C:/Users/lizhu/Desktop/ECE 550/Proj1/RCA_special.v Line: 1
+    Info (12023): Found entity 1: RCA_special File: C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project2/ECE-550/RCA_special.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file bit_and.v
-    Info (12023): Found entity 1: bit_And File: C:/Users/lizhu/Desktop/ECE 550/Proj1/bit_And.v Line: 1
+    Info (12023): Found entity 1: bit_And File: C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project2/ECE-550/bit_And.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file bit_or.v
-    Info (12023): Found entity 1: bit_Or File: C:/Users/lizhu/Desktop/ECE 550/Proj1/bit_Or.v Line: 1
+    Info (12023): Found entity 1: bit_Or File: C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project2/ECE-550/bit_Or.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file left_shift.v
-    Info (12023): Found entity 1: left_shift File: C:/Users/lizhu/Desktop/ECE 550/Proj1/left_shift.v Line: 1
+    Info (12023): Found entity 1: left_shift File: C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project2/ECE-550/left_shift.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file right_shift.v
-    Info (12023): Found entity 1: right_shift File: C:/Users/lizhu/Desktop/ECE 550/Proj1/right_shift.v Line: 1
+    Info (12023): Found entity 1: right_shift File: C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project2/ECE-550/right_shift.v Line: 1
 Info (12127): Elaborating entity "ALU" for the top level hierarchy
-Warning (10034): Output port "isNotEqual" at ALU.v(7) has no driver File: C:/Users/lizhu/Desktop/ECE 550/Proj1/ALU.v Line: 7
-Warning (10034): Output port "isLessThan" at ALU.v(7) has no driver File: C:/Users/lizhu/Desktop/ECE 550/Proj1/ALU.v Line: 7
-Info (12128): Elaborating entity "negateb" for hierarchy "negateb:negateb0" File: C:/Users/lizhu/Desktop/ECE 550/Proj1/ALU.v Line: 13
-Info (12128): Elaborating entity "CSA" for hierarchy "CSA:csa0" File: C:/Users/lizhu/Desktop/ECE 550/Proj1/ALU.v Line: 19
-Info (12128): Elaborating entity "RCA" for hierarchy "CSA:csa0|RCA:rca0" File: C:/Users/lizhu/Desktop/ECE 550/Proj1/CSA.v Line: 9
-Info (12128): Elaborating entity "fourBitAdder" for hierarchy "CSA:csa0|RCA:rca0|fourBitAdder:fourBit_0" File: C:/Users/lizhu/Desktop/ECE 550/Proj1/RCA.v Line: 9
-Info (12128): Elaborating entity "oneBit" for hierarchy "CSA:csa0|RCA:rca0|fourBitAdder:fourBit_0|oneBit:oneBit_0" File: C:/Users/lizhu/Desktop/ECE 550/Proj1/fourBitAdder.v Line: 9
-Info (12128): Elaborating entity "RCA_special" for hierarchy "CSA:csa0|RCA_special:rca2" File: C:/Users/lizhu/Desktop/ECE 550/Proj1/CSA.v Line: 11
-Info (12128): Elaborating entity "bit_And" for hierarchy "bit_And:and0" File: C:/Users/lizhu/Desktop/ECE 550/Proj1/ALU.v Line: 22
-Info (12128): Elaborating entity "bit_Or" for hierarchy "bit_Or:or0" File: C:/Users/lizhu/Desktop/ECE 550/Proj1/ALU.v Line: 25
-Info (12128): Elaborating entity "left_shift" for hierarchy "left_shift:shift0" File: C:/Users/lizhu/Desktop/ECE 550/Proj1/ALU.v Line: 28
-Info (12128): Elaborating entity "right_shift" for hierarchy "right_shift:shift1" File: C:/Users/lizhu/Desktop/ECE 550/Proj1/ALU.v Line: 29
-Warning (10034): Output port "out" at right_shift.v(5) has no driver File: C:/Users/lizhu/Desktop/ECE 550/Proj1/right_shift.v Line: 5
-Warning (12158): Entity "right_shift" contains only dangling pins File: C:/Users/lizhu/Desktop/ECE 550/Proj1/ALU.v Line: 29
+Warning (10034): Output port "isNotEqual" at ALU.v(7) has no driver File: C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project2/ECE-550/ALU.v Line: 7
+Warning (10034): Output port "isLessThan" at ALU.v(7) has no driver File: C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project2/ECE-550/ALU.v Line: 7
+Info (12128): Elaborating entity "negateb" for hierarchy "negateb:negateb0" File: C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project2/ECE-550/ALU.v Line: 13
+Info (12128): Elaborating entity "CSA" for hierarchy "CSA:csa0" File: C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project2/ECE-550/ALU.v Line: 19
+Info (12128): Elaborating entity "RCA" for hierarchy "CSA:csa0|RCA:rca0" File: C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project2/ECE-550/CSA.v Line: 9
+Info (12128): Elaborating entity "fourBitAdder" for hierarchy "CSA:csa0|RCA:rca0|fourBitAdder:fourBit_0" File: C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project2/ECE-550/RCA.v Line: 9
+Info (12128): Elaborating entity "oneBit" for hierarchy "CSA:csa0|RCA:rca0|fourBitAdder:fourBit_0|oneBit:oneBit_0" File: C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project2/ECE-550/fourBitAdder.v Line: 9
+Info (12128): Elaborating entity "RCA_special" for hierarchy "CSA:csa0|RCA_special:rca2" File: C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project2/ECE-550/CSA.v Line: 11
+Info (12128): Elaborating entity "bit_And" for hierarchy "bit_And:and0" File: C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project2/ECE-550/ALU.v Line: 22
+Info (12128): Elaborating entity "bit_Or" for hierarchy "bit_Or:or0" File: C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project2/ECE-550/ALU.v Line: 25
+Info (12128): Elaborating entity "left_shift" for hierarchy "left_shift:shift0" File: C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project2/ECE-550/ALU.v Line: 28
+Info (12128): Elaborating entity "right_shift" for hierarchy "right_shift:shift1" File: C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project2/ECE-550/ALU.v Line: 29
+Warning (10030): Net "muxS0[31]" at right_shift.v(6) has no driver or initial value, using a default initial value '0' File: C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project2/ECE-550/right_shift.v Line: 6
+Warning (10030): Net "muxS1[31..30]" at right_shift.v(6) has no driver or initial value, using a default initial value '0' File: C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project2/ECE-550/right_shift.v Line: 6
+Warning (10030): Net "muxS2[31..28]" at right_shift.v(6) has no driver or initial value, using a default initial value '0' File: C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project2/ECE-550/right_shift.v Line: 6
+Warning (10030): Net "muxS3[31..24]" at right_shift.v(6) has no driver or initial value, using a default initial value '0' File: C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project2/ECE-550/right_shift.v Line: 6
+Warning (10030): Net "muxS4[31..16]" at right_shift.v(6) has no driver or initial value, using a default initial value '0' File: C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project2/ECE-550/right_shift.v Line: 6
 Warning (12241): 2 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "isNotEqual" is stuck at GND File: C:/Users/lizhu/Desktop/ECE 550/Proj1/ALU.v Line: 7
-    Warning (13410): Pin "isLessThan" is stuck at GND File: C:/Users/lizhu/Desktop/ECE 550/Proj1/ALU.v Line: 7
+    Warning (13410): Pin "isNotEqual" is stuck at GND File: C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project2/ECE-550/ALU.v Line: 7
+    Warning (13410): Pin "isLessThan" is stuck at GND File: C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project2/ECE-550/ALU.v Line: 7
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
 Warning (21074): Design contains 2 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "ctrl_ALUopcode[3]" File: C:/Users/lizhu/Desktop/ECE 550/Proj1/ALU.v Line: 4
-    Warning (15610): No output dependent on input pin "ctrl_ALUopcode[4]" File: C:/Users/lizhu/Desktop/ECE 550/Proj1/ALU.v Line: 4
-Info (21057): Implemented 416 device resources after synthesis - the final resource count might be different
+    Warning (15610): No output dependent on input pin "ctrl_ALUopcode[3]" File: C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project2/ECE-550/ALU.v Line: 4
+    Warning (15610): No output dependent on input pin "ctrl_ALUopcode[4]" File: C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project2/ECE-550/ALU.v Line: 4
+Info (21057): Implemented 551 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 74 input pins
     Info (21059): Implemented 35 output pins
-    Info (21061): Implemented 307 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 12 warnings
-    Info: Peak virtual memory: 4987 megabytes
-    Info: Processing ended: Mon Sep 20 21:11:01 2021
-    Info: Elapsed time: 00:00:09
-    Info: Total CPU time (on all processors): 00:00:18
+    Info (21061): Implemented 442 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 15 warnings
+    Info: Peak virtual memory: 5011 megabytes
+    Info: Processing ended: Tue Sep 21 17:40:00 2021
+    Info: Elapsed time: 00:00:11
+    Info: Total CPU time (on all processors): 00:00:19
 
 
