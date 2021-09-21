@@ -1,0 +1,70 @@
+module left_shift(in, shiftamout, out);
+	input[31:0] ina, inb;
+	input[5:0] shiftamount;
+	
+	output[31:0] out;
+	
+	wire[31:0] layer1, layer2, layer3, layer4, layer5;
+	
+	
+	//first layer
+	assign layer1[0] = shiftamout[0] ? 0 : in[0];
+	assign layer1[1] = shiftamout[0] ? in[0] : in[1];
+	assign layer1[2] = shiftamout[0] ? in[1] : in[2];
+	assign layer1[3] = shiftamout[0] ? in[2] : in[3];
+	assign layer1[4] = shiftamout[0] ? in[3] : in[4];
+	
+	
+	
+	
+	//second layer
+	assign layer2[0] = shiftamout[1] ? 0 : layer1[0];
+	assign layer2[1] = shiftamout[1] ? 0 : layer1[1];
+	assign layer2[2] = shiftamout[1] ? layer1[0] : layer1[2];
+	assign layer2[3] = shiftamout[1] ? layer1[1] : layer1[3];
+	assign layer2[4] = shiftamout[1] ? layer1[2] : layer1[4];
+	
+	//thrid layer
+	assign layer3[0] = shiftamout[2] ? 0 : layer2[0];
+	assign layer3[1] = shiftamout[2] ? 0 : layer2[1];
+	assign layer3[2] = shiftamout[2] ? 0 : layer2[2];
+	assign layer3[3] = shiftamout[2] ? layer2[0] : layer2[3];
+	assign layer3[4] = shiftamout[2] ? layer2[1] : layer2[4];
+	
+	//fourth layer
+	assign layer4[0] = shiftamout[3] ? 0 : layer3[0];
+	assign layer4[1] = shiftamout[3] ? 0 : layer3[1];
+	assign layer4[2] = shiftamout[3] ? 0 : layer3[2];
+	assign layer4[2] = shiftamout[3] ? 0 : layer3[3];
+	assign layer4[4] = shiftamout[3] ? layer3[0] : layer3[4];
+	assign layer4[5] = shiftamout[3] ? layer3[1] : layer3[5];
+	
+	//fifth layer
+	assign layer5[0] = shiftamout[4] ? 0 : layer3[0];
+	assign layer5[1] = shiftamout[4] ? 0 : layer3[1];
+	assign layer5[2] = shiftamout[4] ? 0 : layer3[2];
+	assign layer5[2] = shiftamout[4] ? 0 : layer3[3];
+	assign layer5[2] = shiftamout[4] ? 0 : layer3[4];
+	assign layer5[5] = shiftamout[4] ? layer3[0] : layer3[5];
+	assign layer5[6] = shiftamout[4] ? layer3[1] : layer3[6];
+endmodule
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

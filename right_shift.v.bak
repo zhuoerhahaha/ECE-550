@@ -1,0 +1,3 @@
+module right_shift(in, shiftamout, out);
+
+endmodule
