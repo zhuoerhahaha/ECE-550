@@ -1,6 +1,0 @@
-module RCA_special(A16, B16, cin16, sum16, cout16);
-	
-	
-
-	
-endmodule
