@@ -3,7 +3,7 @@ $comment
 		vcd file ALU.msim.vcd -direction
 $end
 $date
-	Mon Sep 20 21:15:24 2021
+	Tue Sep 21 21:27:09 2021
 $end
 $version
 	ModelSim Version 10.4d
@@ -12,997 +12,495 @@ $timescale
 	1ps
 $end
 
-$scope module ALU_vlg_vec_tst $end
-$var reg 5 ! ctrl_ALUopcode [4:0] $end
-$var reg 5 " ctrl_shiftamt [4:0] $end
-$var reg 32 # data_operandA [31:0] $end
-$var reg 32 $ data_operandB [31:0] $end
-$var wire 1 % data_result [31] $end
-$var wire 1 & data_result [30] $end
-$var wire 1 ' data_result [29] $end
-$var wire 1 ( data_result [28] $end
-$var wire 1 ) data_result [27] $end
-$var wire 1 * data_result [26] $end
-$var wire 1 + data_result [25] $end
-$var wire 1 , data_result [24] $end
-$var wire 1 - data_result [23] $end
-$var wire 1 . data_result [22] $end
-$var wire 1 / data_result [21] $end
-$var wire 1 0 data_result [20] $end
-$var wire 1 1 data_result [19] $end
-$var wire 1 2 data_result [18] $end
-$var wire 1 3 data_result [17] $end
-$var wire 1 4 data_result [16] $end
-$var wire 1 5 data_result [15] $end
-$var wire 1 6 data_result [14] $end
-$var wire 1 7 data_result [13] $end
-$var wire 1 8 data_result [12] $end
-$var wire 1 9 data_result [11] $end
-$var wire 1 : data_result [10] $end
-$var wire 1 ; data_result [9] $end
-$var wire 1 < data_result [8] $end
-$var wire 1 = data_result [7] $end
-$var wire 1 > data_result [6] $end
-$var wire 1 ? data_result [5] $end
-$var wire 1 @ data_result [4] $end
-$var wire 1 A data_result [3] $end
-$var wire 1 B data_result [2] $end
-$var wire 1 C data_result [1] $end
-$var wire 1 D data_result [0] $end
-$var wire 1 E isLessThan $end
-$var wire 1 F isNotEqual $end
-$var wire 1 G overflow $end
+$scope module CSA_vlg_vec_tst $end
+$var reg 32 ! a [31:0] $end
+$var reg 32 " b [31:0] $end
+$var reg 5 # cin [4:0] $end
+$var wire 1 $ ove $end
+$var wire 1 % sum [31] $end
+$var wire 1 & sum [30] $end
+$var wire 1 ' sum [29] $end
+$var wire 1 ( sum [28] $end
+$var wire 1 ) sum [27] $end
+$var wire 1 * sum [26] $end
+$var wire 1 + sum [25] $end
+$var wire 1 , sum [24] $end
+$var wire 1 - sum [23] $end
+$var wire 1 . sum [22] $end
+$var wire 1 / sum [21] $end
+$var wire 1 0 sum [20] $end
+$var wire 1 1 sum [19] $end
+$var wire 1 2 sum [18] $end
+$var wire 1 3 sum [17] $end
+$var wire 1 4 sum [16] $end
+$var wire 1 5 sum [15] $end
+$var wire 1 6 sum [14] $end
+$var wire 1 7 sum [13] $end
+$var wire 1 8 sum [12] $end
+$var wire 1 9 sum [11] $end
+$var wire 1 : sum [10] $end
+$var wire 1 ; sum [9] $end
+$var wire 1 < sum [8] $end
+$var wire 1 = sum [7] $end
+$var wire 1 > sum [6] $end
+$var wire 1 ? sum [5] $end
+$var wire 1 @ sum [4] $end
+$var wire 1 A sum [3] $end
+$var wire 1 B sum [2] $end
+$var wire 1 C sum [1] $end
+$var wire 1 D sum [0] $end
 
 $scope module i1 $end
-$var wire 1 H gnd $end
-$var wire 1 I vcc $end
-$var wire 1 J unknown $end
-$var tri1 1 K devclrn $end
-$var tri1 1 L devpor $end
-$var tri1 1 M devoe $end
-$var wire 1 N ctrl_ALUopcode[3]~input_o $end
-$var wire 1 O ctrl_ALUopcode[4]~input_o $end
-$var wire 1 P data_result[0]~output_o $end
-$var wire 1 Q data_result[1]~output_o $end
-$var wire 1 R data_result[2]~output_o $end
-$var wire 1 S data_result[3]~output_o $end
-$var wire 1 T data_result[4]~output_o $end
-$var wire 1 U data_result[5]~output_o $end
-$var wire 1 V data_result[6]~output_o $end
-$var wire 1 W data_result[7]~output_o $end
-$var wire 1 X data_result[8]~output_o $end
-$var wire 1 Y data_result[9]~output_o $end
-$var wire 1 Z data_result[10]~output_o $end
-$var wire 1 [ data_result[11]~output_o $end
-$var wire 1 \ data_result[12]~output_o $end
-$var wire 1 ] data_result[13]~output_o $end
-$var wire 1 ^ data_result[14]~output_o $end
-$var wire 1 _ data_result[15]~output_o $end
-$var wire 1 ` data_result[16]~output_o $end
-$var wire 1 a data_result[17]~output_o $end
-$var wire 1 b data_result[18]~output_o $end
-$var wire 1 c data_result[19]~output_o $end
-$var wire 1 d data_result[20]~output_o $end
-$var wire 1 e data_result[21]~output_o $end
-$var wire 1 f data_result[22]~output_o $end
-$var wire 1 g data_result[23]~output_o $end
-$var wire 1 h data_result[24]~output_o $end
-$var wire 1 i data_result[25]~output_o $end
-$var wire 1 j data_result[26]~output_o $end
-$var wire 1 k data_result[27]~output_o $end
-$var wire 1 l data_result[28]~output_o $end
-$var wire 1 m data_result[29]~output_o $end
-$var wire 1 n data_result[30]~output_o $end
-$var wire 1 o data_result[31]~output_o $end
-$var wire 1 p isNotEqual~output_o $end
-$var wire 1 q isLessThan~output_o $end
-$var wire 1 r overflow~output_o $end
-$var wire 1 s data_operandB[0]~input_o $end
-$var wire 1 t data_operandA[0]~input_o $end
-$var wire 1 u ctrl_shiftamt[2]~input_o $end
-$var wire 1 v ctrl_shiftamt[3]~input_o $end
-$var wire 1 w ctrl_shiftamt[0]~input_o $end
-$var wire 1 x ctrl_shiftamt[1]~input_o $end
-$var wire 1 y shift0|layer3[4]~0_combout $end
-$var wire 1 z shift0|layer4[0]~27_combout $end
-$var wire 1 { csa0|rca0|fourBit_0|oneBit_0|xor_2~0_combout $end
-$var wire 1 | ctrl_ALUopcode[2]~input_o $end
-$var wire 1 } ctrl_ALUopcode[0]~input_o $end
-$var wire 1 ~ ctrl_shiftamt[4]~input_o $end
-$var wire 1 !! ctrl_ALUopcode[1]~input_o $end
-$var wire 1 "! data_result~0_combout $end
-$var wire 1 #! data_result~1_combout $end
-$var wire 1 $! data_result~2_combout $end
-$var wire 1 %! data_result~3_combout $end
-$var wire 1 &! data_result~4_combout $end
-$var wire 1 '! data_operandB[1]~input_o $end
-$var wire 1 (! data_operandA[1]~input_o $end
-$var wire 1 )! shift0|layer1[1]~0_combout $end
-$var wire 1 *! shift0|layer4[1]~28_combout $end
-$var wire 1 +! csa0|rca0|fourBit_0|oneBit_0|or_1~0_combout $end
-$var wire 1 ,! csa0|rca0|fourBit_0|oneBit_1|xor_2~combout $end
-$var wire 1 -! data_result~5_combout $end
-$var wire 1 .! data_result~6_combout $end
-$var wire 1 /! data_operandB[2]~input_o $end
-$var wire 1 0! data_operandA[2]~input_o $end
-$var wire 1 1! shift0|layer2[2]~0_combout $end
-$var wire 1 2! shift0|layer2[2]~1_combout $end
-$var wire 1 3! shift0|layer4[2]~29_combout $end
-$var wire 1 4! csa0|rca0|fourBit_0|oneBit_1|or_1~0_combout $end
-$var wire 1 5! csa0|rca0|fourBit_0|oneBit_2|xor_2~0_combout $end
-$var wire 1 6! data_result~7_combout $end
-$var wire 1 7! data_result~8_combout $end
-$var wire 1 8! data_operandB[3]~input_o $end
-$var wire 1 9! data_operandA[3]~input_o $end
-$var wire 1 :! shift0|layer4[0]~8_combout $end
-$var wire 1 ;! shift0|layer2[3]~2_combout $end
-$var wire 1 <! shift0|layer4[3]~9_combout $end
-$var wire 1 =! csa0|rca0|fourBit_0|oneBit_2|or_1~0_combout $end
-$var wire 1 >! csa0|rca0|fourBit_0|oneBit_3|xor_2~0_combout $end
-$var wire 1 ?! data_result~9_combout $end
-$var wire 1 @! data_result~10_combout $end
-$var wire 1 A! data_operandB[4]~input_o $end
-$var wire 1 B! data_operandA[4]~input_o $end
-$var wire 1 C! shift0|layer2[4]~3_combout $end
-$var wire 1 D! shift0|layer2[4]~4_combout $end
-$var wire 1 E! shift0|layer2[4]~5_combout $end
-$var wire 1 F! shift0|layer4[4]~10_combout $end
-$var wire 1 G! csa0|rca0|fourBit_0|oneBit_3|or_1~0_combout $end
-$var wire 1 H! csa0|rca0|fourBit_1|oneBit_0|xor_2~0_combout $end
-$var wire 1 I! data_result~11_combout $end
-$var wire 1 J! data_result~12_combout $end
-$var wire 1 K! data_operandB[5]~input_o $end
-$var wire 1 L! data_operandA[5]~input_o $end
-$var wire 1 M! shift0|layer2[5]~6_combout $end
-$var wire 1 N! shift0|layer2[5]~7_combout $end
-$var wire 1 O! shift0|layer4[13]~11_combout $end
-$var wire 1 P! shift0|layer4[5]~12_combout $end
-$var wire 1 Q! csa0|rca0|fourBit_1|oneBit_0|or_1~0_combout $end
-$var wire 1 R! csa0|rca0|fourBit_1|oneBit_1|xor_2~0_combout $end
-$var wire 1 S! data_result~13_combout $end
-$var wire 1 T! data_result~14_combout $end
-$var wire 1 U! data_operandB[6]~input_o $end
-$var wire 1 V! data_operandA[6]~input_o $end
-$var wire 1 W! shift0|layer2[6]~8_combout $end
-$var wire 1 X! shift0|layer2[6]~9_combout $end
-$var wire 1 Y! shift0|layer4[6]~13_combout $end
-$var wire 1 Z! csa0|rca0|fourBit_1|oneBit_1|or_1~0_combout $end
-$var wire 1 [! csa0|rca0|fourBit_1|oneBit_2|xor_2~0_combout $end
-$var wire 1 \! data_result~15_combout $end
-$var wire 1 ]! data_result~16_combout $end
-$var wire 1 ^! data_operandB[7]~input_o $end
-$var wire 1 _! data_operandA[7]~input_o $end
-$var wire 1 `! shift0|layer2[3]~10_combout $end
-$var wire 1 a! shift0|layer2[7]~11_combout $end
-$var wire 1 b! shift0|layer2[7]~12_combout $end
-$var wire 1 c! shift0|layer4[7]~14_combout $end
-$var wire 1 d! csa0|rca0|fourBit_1|oneBit_2|or_1~0_combout $end
-$var wire 1 e! csa0|rca0|fourBit_1|oneBit_3|xor_2~0_combout $end
-$var wire 1 f! data_result~17_combout $end
-$var wire 1 g! data_result~18_combout $end
-$var wire 1 h! data_operandB[8]~input_o $end
-$var wire 1 i! data_operandA[8]~input_o $end
-$var wire 1 j! shift0|layer2[8]~13_combout $end
-$var wire 1 k! shift0|layer2[8]~14_combout $end
-$var wire 1 l! shift0|layer4[8]~15_combout $end
-$var wire 1 m! shift0|layer4[8]~16_combout $end
-$var wire 1 n! csa0|rca0|fourBit_1|oneBit_3|or_1~0_combout $end
-$var wire 1 o! csa0|rca0|fourBit_2|oneBit_0|xor_2~0_combout $end
-$var wire 1 p! data_result~19_combout $end
-$var wire 1 q! data_result~20_combout $end
-$var wire 1 r! data_operandB[9]~input_o $end
-$var wire 1 s! data_operandA[9]~input_o $end
-$var wire 1 t! shift0|layer2[9]~15_combout $end
-$var wire 1 u! shift0|layer2[9]~16_combout $end
-$var wire 1 v! shift0|layer3[9]~2_combout $end
-$var wire 1 w! shift0|layer3[1]~1_combout $end
-$var wire 1 x! shift0|layer4[9]~17_combout $end
-$var wire 1 y! csa0|rca0|fourBit_2|oneBit_0|or_1~0_combout $end
-$var wire 1 z! csa0|rca0|fourBit_2|oneBit_1|xor_2~0_combout $end
-$var wire 1 {! data_result~21_combout $end
-$var wire 1 |! data_result~22_combout $end
-$var wire 1 }! data_operandB[10]~input_o $end
-$var wire 1 ~! data_operandA[10]~input_o $end
-$var wire 1 !" shift0|layer2[10]~17_combout $end
-$var wire 1 "" shift0|layer2[10]~18_combout $end
-$var wire 1 #" shift0|layer3[10]~3_combout $end
-$var wire 1 $" shift0|layer4[10]~18_combout $end
-$var wire 1 %" csa0|rca0|fourBit_2|oneBit_1|or_1~0_combout $end
-$var wire 1 &" csa0|rca0|fourBit_2|oneBit_2|xor_2~0_combout $end
-$var wire 1 '" data_result~23_combout $end
-$var wire 1 (" data_result~24_combout $end
-$var wire 1 )" data_operandB[11]~input_o $end
-$var wire 1 *" data_operandA[11]~input_o $end
-$var wire 1 +" shift0|layer2[11]~19_combout $end
-$var wire 1 ," shift0|layer2[11]~20_combout $end
-$var wire 1 -" shift0|layer3[11]~4_combout $end
-$var wire 1 ." shift0|layer4[11]~19_combout $end
-$var wire 1 /" csa0|rca0|fourBit_2|oneBit_2|or_1~0_combout $end
-$var wire 1 0" csa0|rca0|fourBit_2|oneBit_3|xor_2~0_combout $end
-$var wire 1 1" data_result~25_combout $end
-$var wire 1 2" data_result~26_combout $end
-$var wire 1 3" data_operandB[12]~input_o $end
-$var wire 1 4" data_operandA[12]~input_o $end
-$var wire 1 5" shift0|layer4[12]~20_combout $end
-$var wire 1 6" shift0|layer2[12]~21_combout $end
-$var wire 1 7" shift0|layer2[12]~22_combout $end
-$var wire 1 8" shift0|layer3[12]~5_combout $end
-$var wire 1 9" shift0|layer4[12]~21_combout $end
-$var wire 1 :" csa0|rca0|fourBit_2|oneBit_3|or_1~0_combout $end
-$var wire 1 ;" csa0|rca0|fourBit_3|oneBit_0|xor_2~0_combout $end
-$var wire 1 <" data_result~27_combout $end
-$var wire 1 =" data_result~28_combout $end
-$var wire 1 >" data_operandB[13]~input_o $end
-$var wire 1 ?" data_operandA[13]~input_o $end
-$var wire 1 @" shift0|layer2[13]~23_combout $end
-$var wire 1 A" shift0|layer2[13]~24_combout $end
-$var wire 1 B" shift0|layer3[13]~6_combout $end
-$var wire 1 C" shift0|layer4[13]~22_combout $end
-$var wire 1 D" csa0|rca0|fourBit_3|oneBit_0|or_1~0_combout $end
-$var wire 1 E" csa0|rca0|fourBit_3|oneBit_1|xor_2~0_combout $end
-$var wire 1 F" data_result~29_combout $end
-$var wire 1 G" data_result~30_combout $end
-$var wire 1 H" data_operandB[14]~input_o $end
-$var wire 1 I" data_operandA[14]~input_o $end
-$var wire 1 J" shift0|layer4[14]~23_combout $end
-$var wire 1 K" shift0|layer2[14]~25_combout $end
-$var wire 1 L" shift0|layer2[14]~26_combout $end
-$var wire 1 M" shift0|layer3[14]~7_combout $end
-$var wire 1 N" shift0|layer4[14]~24_combout $end
-$var wire 1 O" csa0|rca0|fourBit_3|oneBit_1|or_1~0_combout $end
-$var wire 1 P" csa0|rca0|fourBit_3|oneBit_2|xor_2~0_combout $end
-$var wire 1 Q" data_result~31_combout $end
-$var wire 1 R" data_result~32_combout $end
-$var wire 1 S" data_operandB[15]~input_o $end
-$var wire 1 T" data_operandA[15]~input_o $end
-$var wire 1 U" shift0|layer4[15]~25_combout $end
-$var wire 1 V" shift0|layer2[15]~27_combout $end
-$var wire 1 W" shift0|layer2[15]~28_combout $end
-$var wire 1 X" shift0|layer3[15]~8_combout $end
-$var wire 1 Y" shift0|layer4[15]~26_combout $end
-$var wire 1 Z" csa0|rca0|fourBit_3|oneBit_2|or_1~0_combout $end
-$var wire 1 [" csa0|rca0|fourBit_3|oneBit_3|xor_2~0_combout $end
-$var wire 1 \" data_result~33_combout $end
-$var wire 1 ]" data_result~34_combout $end
-$var wire 1 ^" data_operandA[16]~input_o $end
-$var wire 1 _" data_operandB[16]~input_o $end
-$var wire 1 `" bout[16]~0_combout $end
-$var wire 1 a" csa0|rca0|fourBit_3|oneBit_3|or_1~0_combout $end
-$var wire 1 b" data_result~35_combout $end
-$var wire 1 c" data_result~36_combout $end
-$var wire 1 d" data_result~37_combout $end
-$var wire 1 e" shift0|layer2[16]~29_combout $end
-$var wire 1 f" shift0|layer2[16]~30_combout $end
-$var wire 1 g" shift0|layer3[16]~9_combout $end
-$var wire 1 h" data_result~38_combout $end
-$var wire 1 i" data_result~39_combout $end
-$var wire 1 j" data_result~40_combout $end
-$var wire 1 k" data_operandA[17]~input_o $end
-$var wire 1 l" shift0|layer2[17]~31_combout $end
-$var wire 1 m" shift0|layer2[17]~32_combout $end
-$var wire 1 n" shift0|layer3[17]~10_combout $end
-$var wire 1 o" data_result~41_combout $end
-$var wire 1 p" data_operandB[17]~input_o $end
-$var wire 1 q" bout[17]~1_combout $end
-$var wire 1 r" csa0|rca2|fourBit_0|oneBit_1|xor_2~combout $end
-$var wire 1 s" data_result~42_combout $end
-$var wire 1 t" csa0|rca1|fourBit_0|oneBit_0|and_2~combout $end
-$var wire 1 u" data_result~43_combout $end
-$var wire 1 v" data_result~44_combout $end
-$var wire 1 w" data_result~45_combout $end
-$var wire 1 x" data_result~46_combout $end
-$var wire 1 y" data_result~47_combout $end
-$var wire 1 z" data_result~48_combout $end
-$var wire 1 {" data_result~49_combout $end
-$var wire 1 |" data_operandA[18]~input_o $end
-$var wire 1 }" shift0|layer2[18]~33_combout $end
-$var wire 1 ~" shift0|layer2[18]~34_combout $end
-$var wire 1 !# shift0|layer3[18]~11_combout $end
-$var wire 1 "# csa0|rca1|fourBit_0|oneBit_1|or_1~0_combout $end
-$var wire 1 ## data_operandB[18]~input_o $end
-$var wire 1 $# data_result~50_combout $end
-$var wire 1 %# data_result~51_combout $end
-$var wire 1 &# csa0|rca2|fourBit_0|oneBit_1|or_1~0_combout $end
-$var wire 1 '# data_result~52_combout $end
-$var wire 1 (# data_result~53_combout $end
-$var wire 1 )# data_result~54_combout $end
-$var wire 1 *# data_result~55_combout $end
-$var wire 1 +# data_operandA[19]~input_o $end
-$var wire 1 ,# shift0|layer2[19]~35_combout $end
-$var wire 1 -# shift0|layer2[19]~36_combout $end
-$var wire 1 .# shift0|layer3[19]~12_combout $end
-$var wire 1 /# csa0|rca1|fourBit_0|oneBit_2|or_1~0_combout $end
-$var wire 1 0# data_operandB[19]~input_o $end
-$var wire 1 1# data_result~56_combout $end
-$var wire 1 2# data_result~57_combout $end
-$var wire 1 3# csa0|rca2|fourBit_0|oneBit_2|or_1~0_combout $end
-$var wire 1 4# data_result~58_combout $end
-$var wire 1 5# data_result~59_combout $end
-$var wire 1 6# data_result~60_combout $end
-$var wire 1 7# data_result~61_combout $end
-$var wire 1 8# data_operandA[20]~input_o $end
-$var wire 1 9# shift0|layer2[20]~37_combout $end
-$var wire 1 :# shift0|layer2[20]~38_combout $end
-$var wire 1 ;# shift0|layer3[20]~13_combout $end
-$var wire 1 <# data_operandB[20]~input_o $end
-$var wire 1 =# data_result~62_combout $end
-$var wire 1 ># csa0|rca2|fourBit_0|oneBit_3|or_1~0_combout $end
-$var wire 1 ?# csa0|rca1|fourBit_0|oneBit_3|or_1~0_combout $end
-$var wire 1 @# data_result~63_combout $end
-$var wire 1 A# data_result~64_combout $end
-$var wire 1 B# data_result~65_combout $end
-$var wire 1 C# data_result~66_combout $end
-$var wire 1 D# data_operandA[21]~input_o $end
-$var wire 1 E# shift0|layer2[21]~39_combout $end
-$var wire 1 F# shift0|layer2[21]~40_combout $end
-$var wire 1 G# shift0|layer3[21]~14_combout $end
-$var wire 1 H# csa0|rca1|fourBit_1|oneBit_0|or_1~0_combout $end
-$var wire 1 I# data_operandB[21]~input_o $end
-$var wire 1 J# data_result~67_combout $end
-$var wire 1 K# data_result~68_combout $end
-$var wire 1 L# csa0|rca2|fourBit_1|oneBit_0|or_1~0_combout $end
-$var wire 1 M# data_result~69_combout $end
-$var wire 1 N# data_result~70_combout $end
-$var wire 1 O# data_result~71_combout $end
-$var wire 1 P# data_result~72_combout $end
-$var wire 1 Q# data_operandA[22]~input_o $end
-$var wire 1 R# shift0|layer2[22]~41_combout $end
-$var wire 1 S# shift0|layer2[22]~42_combout $end
-$var wire 1 T# shift0|layer3[22]~15_combout $end
-$var wire 1 U# data_operandB[22]~input_o $end
-$var wire 1 V# data_result~73_combout $end
-$var wire 1 W# csa0|rca2|fourBit_1|oneBit_1|or_1~0_combout $end
-$var wire 1 X# csa0|rca1|fourBit_1|oneBit_1|or_1~0_combout $end
-$var wire 1 Y# data_result~74_combout $end
-$var wire 1 Z# data_result~75_combout $end
-$var wire 1 [# data_result~76_combout $end
-$var wire 1 \# data_result~77_combout $end
-$var wire 1 ]# data_operandA[23]~input_o $end
-$var wire 1 ^# shift0|layer2[23]~43_combout $end
-$var wire 1 _# shift0|layer2[23]~44_combout $end
-$var wire 1 `# shift0|layer3[23]~16_combout $end
-$var wire 1 a# csa0|rca1|fourBit_1|oneBit_2|or_1~0_combout $end
-$var wire 1 b# data_operandB[23]~input_o $end
-$var wire 1 c# data_result~78_combout $end
-$var wire 1 d# data_result~79_combout $end
-$var wire 1 e# csa0|rca2|fourBit_1|oneBit_2|or_1~0_combout $end
-$var wire 1 f# data_result~80_combout $end
-$var wire 1 g# data_result~81_combout $end
-$var wire 1 h# data_result~82_combout $end
-$var wire 1 i# data_result~83_combout $end
-$var wire 1 j# data_operandA[24]~input_o $end
-$var wire 1 k# data_operandB[24]~input_o $end
-$var wire 1 l# data_result~84_combout $end
-$var wire 1 m# csa0|rca2|fourBit_1|oneBit_3|or_1~0_combout $end
-$var wire 1 n# csa0|rca1|fourBit_1|oneBit_3|or_1~0_combout $end
-$var wire 1 o# data_result~85_combout $end
-$var wire 1 p# data_result~86_combout $end
-$var wire 1 q# data_result~87_combout $end
-$var wire 1 r# data_result~88_combout $end
-$var wire 1 s# shift0|layer2[24]~45_combout $end
-$var wire 1 t# shift0|layer2[24]~46_combout $end
-$var wire 1 u# data_result~89_combout $end
-$var wire 1 v# data_result~90_combout $end
-$var wire 1 w# data_result~91_combout $end
-$var wire 1 x# csa0|rca1|fourBit_2|oneBit_0|or_1~0_combout $end
-$var wire 1 y# data_operandA[25]~input_o $end
-$var wire 1 z# data_operandB[25]~input_o $end
-$var wire 1 {# data_result~92_combout $end
-$var wire 1 |# data_result~93_combout $end
-$var wire 1 }# csa0|rca2|fourBit_2|oneBit_0|or_1~0_combout $end
-$var wire 1 ~# data_result~94_combout $end
-$var wire 1 !$ data_result~95_combout $end
-$var wire 1 "$ shift0|layer2[25]~47_combout $end
-$var wire 1 #$ shift0|layer2[25]~48_combout $end
-$var wire 1 $$ data_result~96_combout $end
-$var wire 1 %$ data_result~97_combout $end
-$var wire 1 &$ data_result~98_combout $end
-$var wire 1 '$ data_operandA[26]~input_o $end
-$var wire 1 ($ data_operandB[26]~input_o $end
-$var wire 1 )$ data_result~99_combout $end
-$var wire 1 *$ csa0|rca2|fourBit_2|oneBit_1|or_1~0_combout $end
-$var wire 1 +$ csa0|rca1|fourBit_2|oneBit_1|or_1~0_combout $end
-$var wire 1 ,$ data_result~100_combout $end
-$var wire 1 -$ data_result~101_combout $end
-$var wire 1 .$ shift0|layer2[26]~49_combout $end
-$var wire 1 /$ shift0|layer1[26]~1_combout $end
-$var wire 1 0$ shift0|layer2[26]~50_combout $end
-$var wire 1 1$ data_result~102_combout $end
-$var wire 1 2$ data_result~103_combout $end
-$var wire 1 3$ data_result~104_combout $end
-$var wire 1 4$ csa0|rca1|fourBit_2|oneBit_2|or_1~0_combout $end
-$var wire 1 5$ data_operandA[27]~input_o $end
-$var wire 1 6$ data_operandB[27]~input_o $end
-$var wire 1 7$ data_result~105_combout $end
-$var wire 1 8$ data_result~106_combout $end
-$var wire 1 9$ csa0|rca2|fourBit_2|oneBit_2|or_1~0_combout $end
-$var wire 1 :$ data_result~107_combout $end
-$var wire 1 ;$ data_result~108_combout $end
-$var wire 1 <$ shift0|layer2[27]~51_combout $end
-$var wire 1 =$ shift0|layer1[27]~2_combout $end
-$var wire 1 >$ shift0|layer2[27]~52_combout $end
-$var wire 1 ?$ data_result~109_combout $end
-$var wire 1 @$ data_result~110_combout $end
-$var wire 1 A$ data_result~111_combout $end
-$var wire 1 B$ data_operandB[28]~input_o $end
-$var wire 1 C$ data_operandA[28]~input_o $end
-$var wire 1 D$ data_result~112_combout $end
-$var wire 1 E$ csa0|rca2|fourBit_2|oneBit_3|or_1~0_combout $end
-$var wire 1 F$ csa0|rca1|fourBit_2|oneBit_3|or_1~0_combout $end
-$var wire 1 G$ data_result~113_combout $end
-$var wire 1 H$ data_result~114_combout $end
-$var wire 1 I$ data_result~115_combout $end
-$var wire 1 J$ shift0|layer1[28]~3_combout $end
-$var wire 1 K$ data_result~116_combout $end
-$var wire 1 L$ data_result~117_combout $end
-$var wire 1 M$ data_result~118_combout $end
-$var wire 1 N$ data_result~119_combout $end
-$var wire 1 O$ csa0|rca1|fourBit_3|oneBit_0|or_1~0_combout $end
-$var wire 1 P$ data_operandA[29]~input_o $end
-$var wire 1 Q$ data_operandB[29]~input_o $end
-$var wire 1 R$ data_result~120_combout $end
-$var wire 1 S$ data_result~121_combout $end
-$var wire 1 T$ csa0|rca2|oneBit_0|or_1~0_combout $end
-$var wire 1 U$ data_result~122_combout $end
-$var wire 1 V$ data_result~123_combout $end
-$var wire 1 W$ shift0|layer1[29]~4_combout $end
-$var wire 1 X$ data_result~124_combout $end
-$var wire 1 Y$ data_result~125_combout $end
-$var wire 1 Z$ data_result~126_combout $end
-$var wire 1 [$ data_result~127_combout $end
-$var wire 1 \$ data_result~128_combout $end
-$var wire 1 ]$ data_operandA[30]~input_o $end
-$var wire 1 ^$ data_result~129_combout $end
-$var wire 1 _$ data_result~130_combout $end
-$var wire 1 `$ data_operandB[30]~input_o $end
-$var wire 1 a$ data_result~131_combout $end
-$var wire 1 b$ csa0|rca2|oneBit_1|or_1~0_combout $end
-$var wire 1 c$ csa0|rca1|fourBit_3|oneBit_1|or_1~0_combout $end
-$var wire 1 d$ data_result~132_combout $end
-$var wire 1 e$ data_result~133_combout $end
-$var wire 1 f$ data_result~134_combout $end
-$var wire 1 g$ data_result~135_combout $end
-$var wire 1 h$ data_operandA[31]~input_o $end
-$var wire 1 i$ data_result~136_combout $end
-$var wire 1 j$ data_result~137_combout $end
-$var wire 1 k$ data_operandB[31]~input_o $end
-$var wire 1 l$ data_result~138_combout $end
-$var wire 1 m$ data_result~139_combout $end
-$var wire 1 n$ data_result~140_combout $end
-$var wire 1 o$ csa0|rca2|oneBit_2|or_1~0_combout $end
-$var wire 1 p$ data_result~141_combout $end
-$var wire 1 q$ data_result~142_combout $end
-$var wire 1 r$ data_result~143_combout $end
-$var wire 1 s$ data_result~144_combout $end
-$var wire 1 t$ csa0|ove~0_combout $end
-$var wire 1 u$ or0|out [31] $end
-$var wire 1 v$ or0|out [30] $end
-$var wire 1 w$ or0|out [29] $end
-$var wire 1 x$ or0|out [28] $end
-$var wire 1 y$ or0|out [27] $end
-$var wire 1 z$ or0|out [26] $end
-$var wire 1 {$ or0|out [25] $end
-$var wire 1 |$ or0|out [24] $end
-$var wire 1 }$ or0|out [23] $end
-$var wire 1 ~$ or0|out [22] $end
-$var wire 1 !% or0|out [21] $end
-$var wire 1 "% or0|out [20] $end
-$var wire 1 #% or0|out [19] $end
-$var wire 1 $% or0|out [18] $end
-$var wire 1 %% or0|out [17] $end
-$var wire 1 &% or0|out [16] $end
-$var wire 1 '% or0|out [15] $end
-$var wire 1 (% or0|out [14] $end
-$var wire 1 )% or0|out [13] $end
-$var wire 1 *% or0|out [12] $end
-$var wire 1 +% or0|out [11] $end
-$var wire 1 ,% or0|out [10] $end
-$var wire 1 -% or0|out [9] $end
-$var wire 1 .% or0|out [8] $end
-$var wire 1 /% or0|out [7] $end
-$var wire 1 0% or0|out [6] $end
-$var wire 1 1% or0|out [5] $end
-$var wire 1 2% or0|out [4] $end
-$var wire 1 3% or0|out [3] $end
-$var wire 1 4% or0|out [2] $end
-$var wire 1 5% or0|out [1] $end
-$var wire 1 6% or0|out [0] $end
+$var wire 1 E gnd $end
+$var wire 1 F vcc $end
+$var wire 1 G unknown $end
+$var tri1 1 H devclrn $end
+$var tri1 1 I devpor $end
+$var tri1 1 J devoe $end
+$var wire 1 K cin[1]~input_o $end
+$var wire 1 L cin[2]~input_o $end
+$var wire 1 M cin[3]~input_o $end
+$var wire 1 N cin[4]~input_o $end
+$var wire 1 O ove~output_o $end
+$var wire 1 P sum[0]~output_o $end
+$var wire 1 Q sum[1]~output_o $end
+$var wire 1 R sum[2]~output_o $end
+$var wire 1 S sum[3]~output_o $end
+$var wire 1 T sum[4]~output_o $end
+$var wire 1 U sum[5]~output_o $end
+$var wire 1 V sum[6]~output_o $end
+$var wire 1 W sum[7]~output_o $end
+$var wire 1 X sum[8]~output_o $end
+$var wire 1 Y sum[9]~output_o $end
+$var wire 1 Z sum[10]~output_o $end
+$var wire 1 [ sum[11]~output_o $end
+$var wire 1 \ sum[12]~output_o $end
+$var wire 1 ] sum[13]~output_o $end
+$var wire 1 ^ sum[14]~output_o $end
+$var wire 1 _ sum[15]~output_o $end
+$var wire 1 ` sum[16]~output_o $end
+$var wire 1 a sum[17]~output_o $end
+$var wire 1 b sum[18]~output_o $end
+$var wire 1 c sum[19]~output_o $end
+$var wire 1 d sum[20]~output_o $end
+$var wire 1 e sum[21]~output_o $end
+$var wire 1 f sum[22]~output_o $end
+$var wire 1 g sum[23]~output_o $end
+$var wire 1 h sum[24]~output_o $end
+$var wire 1 i sum[25]~output_o $end
+$var wire 1 j sum[26]~output_o $end
+$var wire 1 k sum[27]~output_o $end
+$var wire 1 l sum[28]~output_o $end
+$var wire 1 m sum[29]~output_o $end
+$var wire 1 n sum[30]~output_o $end
+$var wire 1 o sum[31]~output_o $end
+$var wire 1 p a[31]~input_o $end
+$var wire 1 q b[31]~input_o $end
+$var wire 1 r a[30]~input_o $end
+$var wire 1 s b[30]~input_o $end
+$var wire 1 t a[29]~input_o $end
+$var wire 1 u b[29]~input_o $end
+$var wire 1 v a[28]~input_o $end
+$var wire 1 w b[28]~input_o $end
+$var wire 1 x a[27]~input_o $end
+$var wire 1 y b[27]~input_o $end
+$var wire 1 z a[26]~input_o $end
+$var wire 1 { b[26]~input_o $end
+$var wire 1 | a[25]~input_o $end
+$var wire 1 } b[25]~input_o $end
+$var wire 1 ~ a[24]~input_o $end
+$var wire 1 !! b[24]~input_o $end
+$var wire 1 "! a[23]~input_o $end
+$var wire 1 #! b[23]~input_o $end
+$var wire 1 $! a[22]~input_o $end
+$var wire 1 %! b[22]~input_o $end
+$var wire 1 &! a[21]~input_o $end
+$var wire 1 '! b[21]~input_o $end
+$var wire 1 (! a[20]~input_o $end
+$var wire 1 )! b[20]~input_o $end
+$var wire 1 *! a[19]~input_o $end
+$var wire 1 +! b[19]~input_o $end
+$var wire 1 ,! a[18]~input_o $end
+$var wire 1 -! b[18]~input_o $end
+$var wire 1 .! b[16]~input_o $end
+$var wire 1 /! a[16]~input_o $end
+$var wire 1 0! a[17]~input_o $end
+$var wire 1 1! b[17]~input_o $end
+$var wire 1 2! rca2|fourBit_0|oneBit_1|or_1~0_combout $end
+$var wire 1 3! rca2|fourBit_0|oneBit_2|or_1~0_combout $end
+$var wire 1 4! rca2|fourBit_0|oneBit_3|or_1~0_combout $end
+$var wire 1 5! rca2|fourBit_1|oneBit_0|or_1~0_combout $end
+$var wire 1 6! rca2|fourBit_1|oneBit_1|or_1~0_combout $end
+$var wire 1 7! rca2|fourBit_1|oneBit_2|or_1~0_combout $end
+$var wire 1 8! rca2|fourBit_1|oneBit_3|or_1~0_combout $end
+$var wire 1 9! rca2|fourBit_2|oneBit_0|or_1~0_combout $end
+$var wire 1 :! rca2|fourBit_2|oneBit_1|or_1~0_combout $end
+$var wire 1 ;! rca2|fourBit_2|oneBit_2|or_1~0_combout $end
+$var wire 1 <! rca2|fourBit_2|oneBit_3|or_1~0_combout $end
+$var wire 1 =! rca2|oneBit_0|or_1~0_combout $end
+$var wire 1 >! rca2|oneBit_1|or_1~0_combout $end
+$var wire 1 ?! rca2|oneBit_2|or_1~0_combout $end
+$var wire 1 @! rca1|fourBit_0|oneBit_1|or_1~0_combout $end
+$var wire 1 A! rca1|fourBit_0|oneBit_2|or_1~0_combout $end
+$var wire 1 B! rca1|fourBit_0|oneBit_3|or_1~0_combout $end
+$var wire 1 C! rca1|fourBit_1|oneBit_0|or_1~0_combout $end
+$var wire 1 D! rca1|fourBit_1|oneBit_1|or_1~0_combout $end
+$var wire 1 E! rca1|fourBit_1|oneBit_2|or_1~0_combout $end
+$var wire 1 F! rca1|fourBit_1|oneBit_3|or_1~0_combout $end
+$var wire 1 G! rca1|fourBit_2|oneBit_0|or_1~0_combout $end
+$var wire 1 H! rca1|fourBit_2|oneBit_1|or_1~0_combout $end
+$var wire 1 I! rca1|fourBit_2|oneBit_2|or_1~0_combout $end
+$var wire 1 J! rca1|fourBit_2|oneBit_3|or_1~0_combout $end
+$var wire 1 K! rca1|oneBit_0|or_1~0_combout $end
+$var wire 1 L! rca1|oneBit_1|or_1~0_combout $end
+$var wire 1 M! rca1|oneBit_2|or_1~0_combout $end
+$var wire 1 N! a[15]~input_o $end
+$var wire 1 O! b[15]~input_o $end
+$var wire 1 P! a[14]~input_o $end
+$var wire 1 Q! b[14]~input_o $end
+$var wire 1 R! rca0|fourBit_3|oneBit_2|or_1~0_combout $end
+$var wire 1 S! rca0|fourBit_3|oneBit_2|or_1~1_combout $end
+$var wire 1 T! a[13]~input_o $end
+$var wire 1 U! b[13]~input_o $end
+$var wire 1 V! a[12]~input_o $end
+$var wire 1 W! b[12]~input_o $end
+$var wire 1 X! a[11]~input_o $end
+$var wire 1 Y! b[11]~input_o $end
+$var wire 1 Z! a[10]~input_o $end
+$var wire 1 [! b[10]~input_o $end
+$var wire 1 \! a[9]~input_o $end
+$var wire 1 ]! b[9]~input_o $end
+$var wire 1 ^! a[8]~input_o $end
+$var wire 1 _! b[8]~input_o $end
+$var wire 1 `! a[7]~input_o $end
+$var wire 1 a! b[7]~input_o $end
+$var wire 1 b! a[6]~input_o $end
+$var wire 1 c! b[6]~input_o $end
+$var wire 1 d! rca0|fourBit_1|oneBit_2|or_1~0_combout $end
+$var wire 1 e! rca0|fourBit_1|oneBit_2|or_1~1_combout $end
+$var wire 1 f! a[5]~input_o $end
+$var wire 1 g! b[5]~input_o $end
+$var wire 1 h! a[4]~input_o $end
+$var wire 1 i! b[4]~input_o $end
+$var wire 1 j! a[3]~input_o $end
+$var wire 1 k! b[3]~input_o $end
+$var wire 1 l! a[2]~input_o $end
+$var wire 1 m! b[2]~input_o $end
+$var wire 1 n! a[1]~input_o $end
+$var wire 1 o! b[1]~input_o $end
+$var wire 1 p! b[0]~input_o $end
+$var wire 1 q! cin[0]~input_o $end
+$var wire 1 r! a[0]~input_o $end
+$var wire 1 s! rca0|fourBit_0|oneBit_0|or_1~0_combout $end
+$var wire 1 t! rca0|fourBit_0|oneBit_1|or_1~0_combout $end
+$var wire 1 u! rca0|fourBit_0|oneBit_2|or_1~0_combout $end
+$var wire 1 v! rca0|fourBit_0|oneBit_3|or_1~0_combout $end
+$var wire 1 w! rca0|fourBit_1|oneBit_0|or_1~0_combout $end
+$var wire 1 x! rca0|fourBit_1|oneBit_2|or_1~2_combout $end
+$var wire 1 y! rca0|fourBit_1|oneBit_3|or_1~0_combout $end
+$var wire 1 z! rca0|fourBit_2|oneBit_0|or_1~0_combout $end
+$var wire 1 {! rca0|fourBit_2|oneBit_1|or_1~0_combout $end
+$var wire 1 |! rca0|fourBit_2|oneBit_2|or_1~0_combout $end
+$var wire 1 }! rca0|fourBit_2|oneBit_3|or_1~0_combout $end
+$var wire 1 ~! rca0|fourBit_3|oneBit_0|or_1~0_combout $end
+$var wire 1 !" rca0|fourBit_3|oneBit_2|or_1~2_combout $end
+$var wire 1 "" rca0|fourBit_3|oneBit_3|or_1~0_combout $end
+$var wire 1 #" ove~0_combout $end
+$var wire 1 $" ove~1_combout $end
+$var wire 1 %" rca0|fourBit_0|oneBit_0|xor_2~0_combout $end
+$var wire 1 &" rca0|fourBit_0|oneBit_1|xor_2~combout $end
+$var wire 1 '" rca0|fourBit_0|oneBit_2|xor_2~combout $end
+$var wire 1 (" rca0|fourBit_0|oneBit_3|xor_2~combout $end
+$var wire 1 )" rca0|fourBit_1|oneBit_0|xor_2~combout $end
+$var wire 1 *" rca0|fourBit_1|oneBit_1|xor_2~combout $end
+$var wire 1 +" rca0|fourBit_1|oneBit_2|xor_2~0_combout $end
+$var wire 1 ," rca0|fourBit_1|oneBit_2|xor_2~combout $end
+$var wire 1 -" rca0|fourBit_1|oneBit_3|xor_2~combout $end
+$var wire 1 ." rca0|fourBit_2|oneBit_0|xor_2~combout $end
+$var wire 1 /" rca0|fourBit_2|oneBit_1|xor_2~combout $end
+$var wire 1 0" rca0|fourBit_2|oneBit_2|xor_2~combout $end
+$var wire 1 1" rca0|fourBit_2|oneBit_3|xor_2~combout $end
+$var wire 1 2" rca0|fourBit_3|oneBit_0|xor_2~combout $end
+$var wire 1 3" rca0|fourBit_3|oneBit_1|xor_2~combout $end
+$var wire 1 4" rca0|fourBit_3|oneBit_2|xor_2~0_combout $end
+$var wire 1 5" rca0|fourBit_3|oneBit_2|xor_2~combout $end
+$var wire 1 6" rca0|fourBit_3|oneBit_3|xor_2~combout $end
+$var wire 1 7" sum~0_combout $end
+$var wire 1 8" rca2|fourBit_0|oneBit_1|xor_2~0_combout $end
+$var wire 1 9" sum~1_combout $end
+$var wire 1 :" rca2|fourBit_0|oneBit_2|xor_2~0_combout $end
+$var wire 1 ;" sum~2_combout $end
+$var wire 1 <" rca2|fourBit_0|oneBit_3|xor_2~0_combout $end
+$var wire 1 =" sum~3_combout $end
+$var wire 1 >" rca2|fourBit_1|oneBit_0|xor_2~0_combout $end
+$var wire 1 ?" sum~4_combout $end
+$var wire 1 @" rca2|fourBit_1|oneBit_1|xor_2~0_combout $end
+$var wire 1 A" sum~5_combout $end
+$var wire 1 B" rca2|fourBit_1|oneBit_2|xor_2~0_combout $end
+$var wire 1 C" sum~6_combout $end
+$var wire 1 D" rca2|fourBit_1|oneBit_3|xor_2~0_combout $end
+$var wire 1 E" sum~7_combout $end
+$var wire 1 F" rca2|fourBit_2|oneBit_0|xor_2~0_combout $end
+$var wire 1 G" sum~8_combout $end
+$var wire 1 H" rca2|fourBit_2|oneBit_1|xor_2~0_combout $end
+$var wire 1 I" sum~9_combout $end
+$var wire 1 J" rca2|fourBit_2|oneBit_2|xor_2~0_combout $end
+$var wire 1 K" sum~10_combout $end
+$var wire 1 L" rca2|fourBit_2|oneBit_3|xor_2~0_combout $end
+$var wire 1 M" sum~11_combout $end
+$var wire 1 N" rca2|oneBit_0|xor_2~0_combout $end
+$var wire 1 O" sum~12_combout $end
+$var wire 1 P" rca2|oneBit_1|xor_2~0_combout $end
+$var wire 1 Q" sum~13_combout $end
+$var wire 1 R" rca2|oneBit_2|xor_2~0_combout $end
+$var wire 1 S" sum~14_combout $end
+$var wire 1 T" rca2|oneBit_3|xor_2~0_combout $end
+$var wire 1 U" sum~15_combout $end
 $upscope $end
 $upscope $end
 $enddefinitions $end
 #0
 $dumpvars
-b100 !
-b111 "
-b10101010101010101010101010101010 #
-b1010101010101010101010101010101 $
-0D
-0C
-0B
-0A
-0@
-0?
-0>
-0=
+b1111111111111111111111111111111 !
+b0 "
+b0 #
+0$
+1D
+1C
+1B
+1A
+1@
+1?
+1>
+1=
 1<
-0;
+1;
 1:
-09
+19
 18
-07
+17
 16
-05
+15
 14
-03
+13
 12
-01
+11
 10
-0/
+1/
 1.
-0-
+1-
 1,
-0+
+1+
 1*
-0)
+1)
 1(
-0'
+1'
 1&
 0%
 0E
-0F
-0G
-0H
+1F
+xG
+1H
 1I
-xJ
-1K
-1L
-1M
+1J
+0K
+0L
+0M
 0N
 0O
-0P
-0Q
-0R
-0S
-0T
-0U
-0V
-0W
+1P
+1Q
+1R
+1S
+1T
+1U
+1V
+1W
 1X
-0Y
+1Y
 1Z
-0[
+1[
 1\
-0]
+1]
 1^
-0_
+1_
 1`
-0a
+1a
 1b
-0c
+1c
 1d
-0e
+1e
 1f
-0g
+1g
 1h
-0i
+1i
 1j
-0k
+1k
 1l
-0m
+1m
 1n
 0o
 0p
 0q
-0r
-1s
-0t
-1u
-0v
-1w
+1r
+0s
+1t
+0u
+1v
+0w
 1x
 0y
-0z
-1{
+1z
+0{
 1|
 0}
-0~
+1~
 0!!
 1"!
-1#!
-0$!
+0#!
+1$!
 0%!
-0&!
+1&!
 0'!
 1(!
 0)!
-0*!
+1*!
 0+!
 1,!
 0-!
 0.!
 1/!
-00!
+10!
 01!
-02!
-03!
-04!
+12!
+13!
+14!
 15!
-06!
-07!
-08!
+16!
+17!
+18!
 19!
-0:!
-0;!
-0<!
-0=!
+1:!
+1;!
+1<!
+1=!
 1>!
-0?!
+1?!
 0@!
-1A!
+0A!
 0B!
-1C!
+0C!
 0D!
-1E!
+0E!
 0F!
 0G!
-1H!
+0H!
 0I!
 0J!
 0K!
-1L!
-1M!
-0N!
+0L!
+0M!
+1N!
 0O!
-0P!
+1P!
 0Q!
-1R!
-0S!
-0T!
-1U!
-0V!
+0R!
+1S!
+1T!
+0U!
+1V!
 0W!
 1X!
 0Y!
-0Z!
-1[!
-0\!
+1Z!
+0[!
+1\!
 0]!
-0^!
-1_!
-0`!
-1a!
-0b!
+1^!
+0_!
+1`!
+0a!
+1b!
 0c!
 0d!
 1e!
-0f!
+1f!
 0g!
 1h!
 0i!
-0j!
-1k!
-0l!
-1m!
-0n!
-1o!
-1p!
-1q!
-0r!
-1s!
-1t!
+1j!
+0k!
+1l!
+0m!
+1n!
+0o!
+0p!
+0q!
+1r!
+0s!
+0t!
 0u!
 0v!
-1w!
+0w!
 0x!
 0y!
-1z!
+0z!
 0{!
 0|!
-1}!
+0}!
 0~!
 0!"
-1""
-1#"
-1$"
-0%"
+0""
+0#"
+0$"
+1%"
 1&"
 1'"
 1("
-0)"
+1)"
 1*"
 1+"
-0,"
-0-"
-0."
-0/"
+1,"
+1-"
+1."
+1/"
 10"
-01"
-02"
+11"
+12"
 13"
-04"
-05"
-06"
+14"
+15"
+16"
 17"
 18"
 19"
-0:"
+1:"
 1;"
 1<"
 1="
-0>"
+1>"
 1?"
 1@"
-0A"
-0B"
-0C"
-0D"
+1A"
+1B"
+1C"
+1D"
 1E"
-0F"
-0G"
+1F"
+1G"
 1H"
-0I"
-0J"
-0K"
+1I"
+1J"
+1K"
 1L"
 1M"
 1N"
-0O"
+1O"
 1P"
 1Q"
 1R"
-0S"
-1T"
+1S"
+0T"
 0U"
-1V"
-0W"
-0X"
-0Y"
-0Z"
-1["
-0\"
-0]"
-0^"
-1_"
-1`"
-0a"
-1b"
-0c"
-0d"
-0e"
-1f"
-1g"
-1h"
-1i"
-1j"
-1k"
-1l"
-0m"
-0n"
-0o"
-0p"
-0q"
-0r"
-0s"
-0t"
-1u"
-1v"
-1w"
-0x"
-0y"
-1z"
-0{"
-0|"
-0}"
-1~"
-1!#
-0"#
-1##
-1$#
-1%#
-1&#
-1'#
-1(#
-1)#
-1*#
-1+#
-1,#
-0-#
-0.#
-0/#
-00#
-11#
-12#
-13#
-14#
-15#
-16#
-07#
-08#
-09#
-1:#
-1;#
-1<#
-1=#
-1>#
-0?#
-0@#
-1A#
-1B#
-1C#
-1D#
-1E#
-0F#
-0G#
-0H#
-0I#
-1J#
-1K#
-1L#
-1M#
-1N#
-1O#
-0P#
-0Q#
-0R#
-1S#
-1T#
-1U#
-1V#
-1W#
-0X#
-0Y#
-1Z#
-1[#
-1\#
-1]#
-1^#
-0_#
-0`#
-0a#
-0b#
-1c#
-1d#
-1e#
-1f#
-1g#
-1h#
-0i#
-0j#
-1k#
-1l#
-1m#
-0n#
-0o#
-1p#
-0q#
-1r#
-0s#
-1t#
-1u#
-1v#
-1w#
-0x#
-1y#
-0z#
-1{#
-1|#
-1}#
-1~#
-1!$
-0"$
-0#$
-0$$
-0%$
-0&$
-0'$
-1($
-1)$
-1*$
-0+$
-0,$
-1-$
-1.$
-1/$
-10$
-11$
-12$
-13$
-04$
-15$
-06$
-17$
-18$
-19$
-1:$
-1;$
-0<$
-0=$
-0>$
-0?$
-0@$
-0A$
-1B$
-0C$
-0D$
-1E$
-0F$
-0G$
-1H$
-0I$
-1J$
-1K$
-1L$
-1M$
-1N$
-0O$
-1P$
-0Q$
-1R$
-1S$
-1T$
-1U$
-1V$
-0W$
-0X$
-0Y$
-0Z$
-0[$
-1\$
-0]$
-1^$
-1_$
-1`$
-1a$
-1b$
-0c$
-0d$
-1e$
-1f$
-1g$
-1h$
-1i$
-0j$
-0k$
-1l$
-0m$
-1n$
-1o$
-1p$
-1q$
-1r$
-0s$
-0t$
-z6%
-z5%
-z4%
-z3%
-z2%
-z1%
-z0%
-z/%
-z.%
-z-%
-z,%
-z+%
-z*%
-z)%
-z(%
-z'%
-z&%
-1%%
-z$%
-z#%
-z"%
-z!%
-z~$
-z}$
-z|$
-z{$
-zz$
-zy$
-zx$
-zw$
-zv$
-zu$
 $end
 #1000000

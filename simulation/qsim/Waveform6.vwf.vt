@@ -19,204 +19,381 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "09/11/2021 20:06:37"
+// Generated on "09/21/2021 21:27:07"
                                                                                 
-// Verilog Test Bench (with test vectors) for design :                          RCA_special
+// Verilog Test Bench (with test vectors) for design :                          CSA
 // 
 // Simulation tool : 3rd Party
 // 
 
 `timescale 1 ps/ 1 ps
-module RCA_special_vlg_vec_tst();
+module CSA_vlg_vec_tst();
 // constants                                           
 // general purpose registers
-reg [15:0] A16;
-reg [15:0] B16;
-reg cin16;
+reg [31:0] a;
+reg [31:0] b;
+reg [4:0] cin;
 // wires                                               
-wire c_lastin;
-wire cout16;
-wire [15:0] sum16;
+wire ove;
+wire [31:0] sum;
 
 // assign statements (if any)                          
-RCA_special i1 (
+CSA i1 (
 // port map - connection between master ports and signals/registers   
-	.A16(A16),
-	.B16(B16),
-	.c_lastin(c_lastin),
-	.cin16(cin16),
-	.cout16(cout16),
-	.sum16(sum16)
+	.a(a),
+	.b(b),
+	.cin(cin),
+	.ove(ove),
+	.sum(sum)
 );
 initial 
 begin 
 #1000000 $finish;
 end 
-// A16[ 15 ]
+// a[ 31 ]
 initial
 begin
-	A16[15] = 1'b0;
+	a[31] = 1'b0;
 end 
-// A16[ 14 ]
+// a[ 30 ]
 initial
 begin
-	A16[14] = 1'b0;
+	a[30] = 1'b1;
 end 
-// A16[ 13 ]
+// a[ 29 ]
 initial
 begin
-	A16[13] = 1'b0;
+	a[29] = 1'b1;
 end 
-// A16[ 12 ]
+// a[ 28 ]
 initial
 begin
-	A16[12] = 1'b0;
+	a[28] = 1'b1;
 end 
-// A16[ 11 ]
+// a[ 27 ]
 initial
 begin
-	A16[11] = 1'b0;
+	a[27] = 1'b1;
 end 
-// A16[ 10 ]
+// a[ 26 ]
 initial
 begin
-	A16[10] = 1'b0;
+	a[26] = 1'b1;
 end 
-// A16[ 9 ]
+// a[ 25 ]
 initial
 begin
-	A16[9] = 1'b0;
+	a[25] = 1'b1;
 end 
-// A16[ 8 ]
+// a[ 24 ]
 initial
 begin
-	A16[8] = 1'b0;
+	a[24] = 1'b1;
 end 
-// A16[ 7 ]
+// a[ 23 ]
 initial
 begin
-	A16[7] = 1'b0;
+	a[23] = 1'b1;
 end 
-// A16[ 6 ]
+// a[ 22 ]
 initial
 begin
-	A16[6] = 1'b0;
+	a[22] = 1'b1;
 end 
-// A16[ 5 ]
+// a[ 21 ]
 initial
 begin
-	A16[5] = 1'b0;
+	a[21] = 1'b1;
 end 
-// A16[ 4 ]
+// a[ 20 ]
 initial
 begin
-	A16[4] = 1'b1;
+	a[20] = 1'b1;
 end 
-// A16[ 3 ]
+// a[ 19 ]
 initial
 begin
-	A16[3] = 1'b1;
+	a[19] = 1'b1;
 end 
-// A16[ 2 ]
+// a[ 18 ]
 initial
 begin
-	A16[2] = 1'b0;
+	a[18] = 1'b1;
 end 
-// A16[ 1 ]
+// a[ 17 ]
 initial
 begin
-	A16[1] = 1'b0;
+	a[17] = 1'b1;
 end 
-// A16[ 0 ]
+// a[ 16 ]
 initial
 begin
-	A16[0] = 1'b0;
+	a[16] = 1'b1;
 end 
-// B16[ 15 ]
+// a[ 15 ]
 initial
 begin
-	B16[15] = 1'b0;
+	a[15] = 1'b1;
 end 
-// B16[ 14 ]
+// a[ 14 ]
 initial
 begin
-	B16[14] = 1'b0;
+	a[14] = 1'b1;
 end 
-// B16[ 13 ]
+// a[ 13 ]
 initial
 begin
-	B16[13] = 1'b0;
+	a[13] = 1'b1;
 end 
-// B16[ 12 ]
+// a[ 12 ]
 initial
 begin
-	B16[12] = 1'b0;
+	a[12] = 1'b1;
 end 
-// B16[ 11 ]
+// a[ 11 ]
 initial
 begin
-	B16[11] = 1'b0;
+	a[11] = 1'b1;
 end 
-// B16[ 10 ]
+// a[ 10 ]
 initial
 begin
-	B16[10] = 1'b0;
+	a[10] = 1'b1;
 end 
-// B16[ 9 ]
+// a[ 9 ]
 initial
 begin
-	B16[9] = 1'b0;
+	a[9] = 1'b1;
 end 
-// B16[ 8 ]
+// a[ 8 ]
 initial
 begin
-	B16[8] = 1'b0;
+	a[8] = 1'b1;
 end 
-// B16[ 7 ]
+// a[ 7 ]
 initial
 begin
-	B16[7] = 1'b0;
+	a[7] = 1'b1;
 end 
-// B16[ 6 ]
+// a[ 6 ]
 initial
 begin
-	B16[6] = 1'b0;
+	a[6] = 1'b1;
 end 
-// B16[ 5 ]
+// a[ 5 ]
 initial
 begin
-	B16[5] = 1'b1;
+	a[5] = 1'b1;
 end 
-// B16[ 4 ]
+// a[ 4 ]
 initial
 begin
-	B16[4] = 1'b0;
+	a[4] = 1'b1;
 end 
-// B16[ 3 ]
+// a[ 3 ]
 initial
 begin
-	B16[3] = 1'b0;
+	a[3] = 1'b1;
 end 
-// B16[ 2 ]
+// a[ 2 ]
 initial
 begin
-	B16[2] = 1'b1;
+	a[2] = 1'b1;
 end 
-// B16[ 1 ]
+// a[ 1 ]
 initial
 begin
-	B16[1] = 1'b0;
+	a[1] = 1'b1;
 end 
-// B16[ 0 ]
+// a[ 0 ]
 initial
 begin
-	B16[0] = 1'b0;
+	a[0] = 1'b1;
 end 
-
-// cin16
+// b[ 31 ]
 initial
 begin
-	cin16 = 1'b0;
+	b[31] = 1'b0;
+end 
+// b[ 30 ]
+initial
+begin
+	b[30] = 1'b0;
+end 
+// b[ 29 ]
+initial
+begin
+	b[29] = 1'b0;
+end 
+// b[ 28 ]
+initial
+begin
+	b[28] = 1'b0;
+end 
+// b[ 27 ]
+initial
+begin
+	b[27] = 1'b0;
+end 
+// b[ 26 ]
+initial
+begin
+	b[26] = 1'b0;
+end 
+// b[ 25 ]
+initial
+begin
+	b[25] = 1'b0;
+end 
+// b[ 24 ]
+initial
+begin
+	b[24] = 1'b0;
+end 
+// b[ 23 ]
+initial
+begin
+	b[23] = 1'b0;
+end 
+// b[ 22 ]
+initial
+begin
+	b[22] = 1'b0;
+end 
+// b[ 21 ]
+initial
+begin
+	b[21] = 1'b0;
+end 
+// b[ 20 ]
+initial
+begin
+	b[20] = 1'b0;
+end 
+// b[ 19 ]
+initial
+begin
+	b[19] = 1'b0;
+end 
+// b[ 18 ]
+initial
+begin
+	b[18] = 1'b0;
+end 
+// b[ 17 ]
+initial
+begin
+	b[17] = 1'b0;
+end 
+// b[ 16 ]
+initial
+begin
+	b[16] = 1'b0;
+end 
+// b[ 15 ]
+initial
+begin
+	b[15] = 1'b0;
+end 
+// b[ 14 ]
+initial
+begin
+	b[14] = 1'b0;
+end 
+// b[ 13 ]
+initial
+begin
+	b[13] = 1'b0;
+end 
+// b[ 12 ]
+initial
+begin
+	b[12] = 1'b0;
+end 
+// b[ 11 ]
+initial
+begin
+	b[11] = 1'b0;
+end 
+// b[ 10 ]
+initial
+begin
+	b[10] = 1'b0;
+end 
+// b[ 9 ]
+initial
+begin
+	b[9] = 1'b0;
+end 
+// b[ 8 ]
+initial
+begin
+	b[8] = 1'b0;
+end 
+// b[ 7 ]
+initial
+begin
+	b[7] = 1'b0;
+end 
+// b[ 6 ]
+initial
+begin
+	b[6] = 1'b0;
+end 
+// b[ 5 ]
+initial
+begin
+	b[5] = 1'b0;
+end 
+// b[ 4 ]
+initial
+begin
+	b[4] = 1'b0;
+end 
+// b[ 3 ]
+initial
+begin
+	b[3] = 1'b0;
+end 
+// b[ 2 ]
+initial
+begin
+	b[2] = 1'b0;
+end 
+// b[ 1 ]
+initial
+begin
+	b[1] = 1'b0;
+end 
+// b[ 0 ]
+initial
+begin
+	b[0] = 1'b0;
+end 
+// cin[ 4 ]
+initial
+begin
+	cin[4] = 1'b0;
+end 
+// cin[ 3 ]
+initial
+begin
+	cin[3] = 1'b0;
+end 
+// cin[ 2 ]
+initial
+begin
+	cin[2] = 1'b0;
+end 
+// cin[ 1 ]
+initial
+begin
+	cin[1] = 1'b0;
+end 
+// cin[ 0 ]
+initial
+begin
+	cin[0] = 1'b0;
 end 
 endmodule
 

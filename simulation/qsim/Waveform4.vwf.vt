@@ -19,198 +19,387 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "09/11/2021 20:03:05"
+// Generated on "09/21/2021 21:09:41"
                                                                                 
-// Verilog Test Bench (with test vectors) for design :                          RCA_special
+// Verilog Test Bench (with test vectors) for design :                          ALU
 // 
 // Simulation tool : 3rd Party
 // 
 
 `timescale 1 ps/ 1 ps
-module RCA_special_vlg_vec_tst();
+module ALU_vlg_vec_tst();
 // constants                                           
 // general purpose registers
-reg [15:0] A16;
-reg [15:0] B16;
-reg cin16;
+reg [4:0] ctrl_ALUopcode;
+reg [4:0] ctrl_shiftamt;
+reg [31:0] data_operandA;
+reg [31:0] data_operandB;
 // wires                                               
-wire c_lastin;
-wire cout16;
-wire [15:0] sum16;
+wire [31:0] data_result;
+wire isLessThan;
+wire isNotEqual;
+wire overflow;
 
 // assign statements (if any)                          
-RCA_special i1 (
+ALU i1 (
 // port map - connection between master ports and signals/registers   
-	.A16(A16),
-	.B16(B16),
-	.c_lastin(c_lastin),
-	.cin16(cin16),
-	.cout16(cout16),
-	.sum16(sum16)
+	.ctrl_ALUopcode(ctrl_ALUopcode),
+	.ctrl_shiftamt(ctrl_shiftamt),
+	.data_operandA(data_operandA),
+	.data_operandB(data_operandB),
+	.data_result(data_result),
+	.isLessThan(isLessThan),
+	.isNotEqual(isNotEqual),
+	.overflow(overflow)
 );
 initial 
 begin 
 #1000000 $finish;
 end 
-// A16[ 15 ]
+// ctrl_ALUopcode[ 4 ]
 initial
 begin
-	A16[15] = 1'b0;
+	ctrl_ALUopcode[4] = 1'b0;
 end 
-// A16[ 14 ]
+// ctrl_ALUopcode[ 3 ]
 initial
 begin
-	A16[14] = 1'b0;
+	ctrl_ALUopcode[3] = 1'b0;
 end 
-// A16[ 13 ]
+// ctrl_ALUopcode[ 2 ]
 initial
 begin
-	A16[13] = 1'b0;
+	ctrl_ALUopcode[2] = 1'b0;
 end 
-// A16[ 12 ]
+// ctrl_ALUopcode[ 1 ]
 initial
 begin
-	A16[12] = 1'b0;
+	ctrl_ALUopcode[1] = 1'b0;
 end 
-// A16[ 11 ]
+// ctrl_ALUopcode[ 0 ]
 initial
 begin
-	A16[11] = 1'b0;
+	ctrl_ALUopcode[0] = 1'b0;
 end 
-// A16[ 10 ]
+// data_operandA[ 31 ]
 initial
 begin
-	A16[10] = 1'b0;
+	data_operandA[31] = 1'b0;
 end 
-// A16[ 9 ]
+// data_operandA[ 30 ]
 initial
 begin
-	A16[9] = 1'b0;
+	data_operandA[30] = 1'b1;
 end 
-// A16[ 8 ]
+// data_operandA[ 29 ]
 initial
 begin
-	A16[8] = 1'b0;
+	data_operandA[29] = 1'b1;
 end 
-// A16[ 7 ]
+// data_operandA[ 28 ]
 initial
 begin
-	A16[7] = 1'b0;
+	data_operandA[28] = 1'b1;
 end 
-// A16[ 6 ]
+// data_operandA[ 27 ]
 initial
 begin
-	A16[6] = 1'b0;
+	data_operandA[27] = 1'b1;
 end 
-// A16[ 5 ]
+// data_operandA[ 26 ]
 initial
 begin
-	A16[5] = 1'b0;
+	data_operandA[26] = 1'b1;
 end 
-// A16[ 4 ]
+// data_operandA[ 25 ]
 initial
 begin
-	A16[4] = 1'b1;
+	data_operandA[25] = 1'b1;
 end 
-// A16[ 3 ]
+// data_operandA[ 24 ]
 initial
 begin
-	A16[3] = 1'b1;
+	data_operandA[24] = 1'b1;
 end 
-// A16[ 2 ]
+// data_operandA[ 23 ]
 initial
 begin
-	A16[2] = 1'b0;
+	data_operandA[23] = 1'b1;
 end 
-// A16[ 1 ]
+// data_operandA[ 22 ]
 initial
 begin
-	A16[1] = 1'b1;
+	data_operandA[22] = 1'b1;
 end 
-// A16[ 0 ]
+// data_operandA[ 21 ]
 initial
 begin
-	A16[0] = 1'b0;
+	data_operandA[21] = 1'b1;
 end 
-// B16[ 15 ]
+// data_operandA[ 20 ]
 initial
 begin
-	B16[15] = 1'b0;
+	data_operandA[20] = 1'b1;
 end 
-// B16[ 14 ]
+// data_operandA[ 19 ]
 initial
 begin
-	B16[14] = 1'b0;
+	data_operandA[19] = 1'b1;
 end 
-// B16[ 13 ]
+// data_operandA[ 18 ]
 initial
 begin
-	B16[13] = 1'b0;
+	data_operandA[18] = 1'b1;
 end 
-// B16[ 12 ]
+// data_operandA[ 17 ]
 initial
 begin
-	B16[12] = 1'b0;
+	data_operandA[17] = 1'b1;
 end 
-// B16[ 11 ]
+// data_operandA[ 16 ]
 initial
 begin
-	B16[11] = 1'b0;
+	data_operandA[16] = 1'b1;
 end 
-// B16[ 10 ]
+// data_operandA[ 15 ]
 initial
 begin
-	B16[10] = 1'b0;
+	data_operandA[15] = 1'b1;
 end 
-// B16[ 9 ]
+// data_operandA[ 14 ]
 initial
 begin
-	B16[9] = 1'b0;
+	data_operandA[14] = 1'b1;
 end 
-// B16[ 8 ]
+// data_operandA[ 13 ]
 initial
 begin
-	B16[8] = 1'b0;
+	data_operandA[13] = 1'b1;
 end 
-// B16[ 7 ]
+// data_operandA[ 12 ]
 initial
 begin
-	B16[7] = 1'b0;
+	data_operandA[12] = 1'b1;
 end 
-// B16[ 6 ]
+// data_operandA[ 11 ]
 initial
 begin
-	B16[6] = 1'b0;
+	data_operandA[11] = 1'b1;
 end 
-// B16[ 5 ]
+// data_operandA[ 10 ]
 initial
 begin
-	B16[5] = 1'b1;
+	data_operandA[10] = 1'b1;
 end 
-// B16[ 4 ]
+// data_operandA[ 9 ]
 initial
 begin
-	B16[4] = 1'b0;
+	data_operandA[9] = 1'b1;
 end 
-// B16[ 3 ]
+// data_operandA[ 8 ]
 initial
 begin
-	B16[3] = 1'b0;
+	data_operandA[8] = 1'b1;
 end 
-// B16[ 2 ]
+// data_operandA[ 7 ]
 initial
 begin
-	B16[2] = 1'b0;
+	data_operandA[7] = 1'b1;
 end 
-// B16[ 1 ]
+// data_operandA[ 6 ]
 initial
 begin
-	B16[1] = 1'b1;
+	data_operandA[6] = 1'b1;
 end 
-// B16[ 0 ]
+// data_operandA[ 5 ]
 initial
 begin
-	B16[0] = 1'b0;
+	data_operandA[5] = 1'b1;
+end 
+// data_operandA[ 4 ]
+initial
+begin
+	data_operandA[4] = 1'b1;
+end 
+// data_operandA[ 3 ]
+initial
+begin
+	data_operandA[3] = 1'b1;
+end 
+// data_operandA[ 2 ]
+initial
+begin
+	data_operandA[2] = 1'b1;
+end 
+// data_operandA[ 1 ]
+initial
+begin
+	data_operandA[1] = 1'b1;
+end 
+// data_operandA[ 0 ]
+initial
+begin
+	data_operandA[0] = 1'b1;
+end 
+// data_operandB[ 31 ]
+initial
+begin
+	data_operandB[31] = 1'b0;
+end 
+// data_operandB[ 30 ]
+initial
+begin
+	data_operandB[30] = 1'b0;
+end 
+// data_operandB[ 29 ]
+initial
+begin
+	data_operandB[29] = 1'b0;
+end 
+// data_operandB[ 28 ]
+initial
+begin
+	data_operandB[28] = 1'b0;
+end 
+// data_operandB[ 27 ]
+initial
+begin
+	data_operandB[27] = 1'b0;
+end 
+// data_operandB[ 26 ]
+initial
+begin
+	data_operandB[26] = 1'b0;
+end 
+// data_operandB[ 25 ]
+initial
+begin
+	data_operandB[25] = 1'b0;
+end 
+// data_operandB[ 24 ]
+initial
+begin
+	data_operandB[24] = 1'b0;
+end 
+// data_operandB[ 23 ]
+initial
+begin
+	data_operandB[23] = 1'b0;
+end 
+// data_operandB[ 22 ]
+initial
+begin
+	data_operandB[22] = 1'b0;
+end 
+// data_operandB[ 21 ]
+initial
+begin
+	data_operandB[21] = 1'b0;
+end 
+// data_operandB[ 20 ]
+initial
+begin
+	data_operandB[20] = 1'b0;
+end 
+// data_operandB[ 19 ]
+initial
+begin
+	data_operandB[19] = 1'b0;
+end 
+// data_operandB[ 18 ]
+initial
+begin
+	data_operandB[18] = 1'b0;
+end 
+// data_operandB[ 17 ]
+initial
+begin
+	data_operandB[17] = 1'b0;
+end 
+// data_operandB[ 16 ]
+initial
+begin
+	data_operandB[16] = 1'b0;
+end 
+// data_operandB[ 15 ]
+initial
+begin
+	data_operandB[15] = 1'b0;
+end 
+// data_operandB[ 14 ]
+initial
+begin
+	data_operandB[14] = 1'b0;
+end 
+// data_operandB[ 13 ]
+initial
+begin
+	data_operandB[13] = 1'b0;
+end 
+// data_operandB[ 12 ]
+initial
+begin
+	data_operandB[12] = 1'b0;
+end 
+// data_operandB[ 11 ]
+initial
+begin
+	data_operandB[11] = 1'b0;
+end 
+// data_operandB[ 10 ]
+initial
+begin
+	data_operandB[10] = 1'b0;
+end 
+// data_operandB[ 9 ]
+initial
+begin
+	data_operandB[9] = 1'b0;
+end 
+// data_operandB[ 8 ]
+initial
+begin
+	data_operandB[8] = 1'b0;
+end 
+// data_operandB[ 7 ]
+initial
+begin
+	data_operandB[7] = 1'b0;
+end 
+// data_operandB[ 6 ]
+initial
+begin
+	data_operandB[6] = 1'b0;
+end 
+// data_operandB[ 5 ]
+initial
+begin
+	data_operandB[5] = 1'b0;
+end 
+// data_operandB[ 4 ]
+initial
+begin
+	data_operandB[4] = 1'b0;
+end 
+// data_operandB[ 3 ]
+initial
+begin
+	data_operandB[3] = 1'b0;
+end 
+// data_operandB[ 2 ]
+initial
+begin
+	data_operandB[2] = 1'b0;
+end 
+// data_operandB[ 1 ]
+initial
+begin
+	data_operandB[1] = 1'b0;
+end 
+// data_operandB[ 0 ]
+initial
+begin
+	data_operandB[0] = 1'b0;
 end 
 endmodule
 

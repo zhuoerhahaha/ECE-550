@@ -19,7 +19,7 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "09/20/2021 21:15:22"
+// Generated on "09/21/2021 17:54:00"
                                                                                 
 // Verilog Test Bench (with test vectors) for design :                          ALU
 // 
@@ -79,7 +79,7 @@ end
 // ctrl_ALUopcode[ 0 ]
 initial
 begin
-	ctrl_ALUopcode[0] = 1'b0;
+	ctrl_ALUopcode[0] = 1'b1;
 end 
 // ctrl_shiftamt[ 4 ]
 initial
@@ -94,17 +94,17 @@ end
 // ctrl_shiftamt[ 2 ]
 initial
 begin
-	ctrl_shiftamt[2] = 1'b1;
+	ctrl_shiftamt[2] = 1'b0;
 end 
 // ctrl_shiftamt[ 1 ]
 initial
 begin
-	ctrl_shiftamt[1] = 1'b1;
+	ctrl_shiftamt[1] = 1'b0;
 end 
 // ctrl_shiftamt[ 0 ]
 initial
 begin
-	ctrl_shiftamt[0] = 1'b1;
+	ctrl_shiftamt[0] = 1'b0;
 end 
 // data_operandA[ 31 ]
 initial

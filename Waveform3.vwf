@@ -1184,7 +1184,7 @@ TRANSITION_LIST("ctrl_ALUopcode[0]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
+		LEVEL 1 FOR 1000.0;
 	}
 }
 
@@ -1211,7 +1211,7 @@ TRANSITION_LIST("ctrl_shiftamt[2]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 1000.0;
+		LEVEL 0 FOR 1000.0;
 	}
 }
 
@@ -1220,7 +1220,7 @@ TRANSITION_LIST("ctrl_shiftamt[1]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 1000.0;
+		LEVEL 0 FOR 1000.0;
 	}
 }
 
@@ -1229,7 +1229,7 @@ TRANSITION_LIST("ctrl_shiftamt[0]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 1000.0;
+		LEVEL 0 FOR 1000.0;
 	}
 }
 

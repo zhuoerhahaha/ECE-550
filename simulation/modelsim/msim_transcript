@@ -12,89 +12,119 @@
 # 
 # vlog -vlog01compat -work work +incdir+C:/Users/lizhu/Desktop/ECE\ 550/Proj1 {C:/Users/lizhu/Desktop/ECE 550/Proj1/ALU.v}
 # Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
-# Start time: 20:45:44 on Sep 11,2021
+# Start time: 18:38:21 on Sep 21,2021
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/lizhu/Desktop/ECE 550/Proj1" C:/Users/lizhu/Desktop/ECE 550/Proj1/ALU.v 
 # -- Compiling module ALU
 # 
 # Top level modules:
 # 	ALU
-# End time: 20:45:44 on Sep 11,2021, Elapsed time: 0:00:00
+# End time: 18:38:21 on Sep 21,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/lizhu/Desktop/ECE\ 550/Proj1 {C:/Users/lizhu/Desktop/ECE 550/Proj1/CSA.v}
 # Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
-# Start time: 20:45:44 on Sep 11,2021
+# Start time: 18:38:21 on Sep 21,2021
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/lizhu/Desktop/ECE 550/Proj1" C:/Users/lizhu/Desktop/ECE 550/Proj1/CSA.v 
 # -- Compiling module CSA
 # 
 # Top level modules:
 # 	CSA
-# End time: 20:45:44 on Sep 11,2021, Elapsed time: 0:00:00
+# End time: 18:38:21 on Sep 21,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/lizhu/Desktop/ECE\ 550/Proj1 {C:/Users/lizhu/Desktop/ECE 550/Proj1/negateb.v}
 # Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
-# Start time: 20:45:44 on Sep 11,2021
+# Start time: 18:38:21 on Sep 21,2021
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/lizhu/Desktop/ECE 550/Proj1" C:/Users/lizhu/Desktop/ECE 550/Proj1/negateb.v 
 # -- Compiling module negateb
 # 
 # Top level modules:
 # 	negateb
-# End time: 20:45:44 on Sep 11,2021, Elapsed time: 0:00:00
+# End time: 18:38:21 on Sep 21,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/lizhu/Desktop/ECE\ 550/Proj1 {C:/Users/lizhu/Desktop/ECE 550/Proj1/RCA.v}
 # Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
-# Start time: 20:45:44 on Sep 11,2021
+# Start time: 18:38:21 on Sep 21,2021
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/lizhu/Desktop/ECE 550/Proj1" C:/Users/lizhu/Desktop/ECE 550/Proj1/RCA.v 
 # -- Compiling module RCA
 # 
 # Top level modules:
 # 	RCA
-# End time: 20:45:44 on Sep 11,2021, Elapsed time: 0:00:00
+# End time: 18:38:21 on Sep 21,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/lizhu/Desktop/ECE\ 550/Proj1 {C:/Users/lizhu/Desktop/ECE 550/Proj1/fourBitAdder.v}
 # Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
-# Start time: 20:45:44 on Sep 11,2021
+# Start time: 18:38:21 on Sep 21,2021
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/lizhu/Desktop/ECE 550/Proj1" C:/Users/lizhu/Desktop/ECE 550/Proj1/fourBitAdder.v 
 # -- Compiling module fourBitAdder
 # 
 # Top level modules:
 # 	fourBitAdder
-# End time: 20:45:44 on Sep 11,2021, Elapsed time: 0:00:00
+# End time: 18:38:21 on Sep 21,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/lizhu/Desktop/ECE\ 550/Proj1 {C:/Users/lizhu/Desktop/ECE 550/Proj1/oneBit.v}
 # Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
-# Start time: 20:45:44 on Sep 11,2021
+# Start time: 18:38:22 on Sep 21,2021
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/lizhu/Desktop/ECE 550/Proj1" C:/Users/lizhu/Desktop/ECE 550/Proj1/oneBit.v 
 # -- Compiling module oneBit
 # 
 # Top level modules:
 # 	oneBit
-# End time: 20:45:44 on Sep 11,2021, Elapsed time: 0:00:00
+# End time: 18:38:22 on Sep 21,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/lizhu/Desktop/ECE\ 550/Proj1 {C:/Users/lizhu/Desktop/ECE 550/Proj1/RCA_special.v}
 # Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
-# Start time: 20:45:44 on Sep 11,2021
+# Start time: 18:38:22 on Sep 21,2021
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/lizhu/Desktop/ECE 550/Proj1" C:/Users/lizhu/Desktop/ECE 550/Proj1/RCA_special.v 
 # -- Compiling module RCA_special
 # 
 # Top level modules:
 # 	RCA_special
-# End time: 20:45:44 on Sep 11,2021, Elapsed time: 0:00:00
+# End time: 18:38:22 on Sep 21,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/lizhu/Desktop/ECE\ 550/Proj1 {C:/Users/lizhu/Desktop/ECE 550/Proj1/bit_And.v}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 18:38:22 on Sep 21,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/lizhu/Desktop/ECE 550/Proj1" C:/Users/lizhu/Desktop/ECE 550/Proj1/bit_And.v 
+# -- Compiling module bit_And
+# 
+# Top level modules:
+# 	bit_And
+# End time: 18:38:22 on Sep 21,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/lizhu/Desktop/ECE\ 550/Proj1 {C:/Users/lizhu/Desktop/ECE 550/Proj1/bit_Or.v}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 18:38:22 on Sep 21,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/lizhu/Desktop/ECE 550/Proj1" C:/Users/lizhu/Desktop/ECE 550/Proj1/bit_Or.v 
+# -- Compiling module bit_Or
+# 
+# Top level modules:
+# 	bit_Or
+# End time: 18:38:22 on Sep 21,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/lizhu/Desktop/ECE\ 550/Proj1 {C:/Users/lizhu/Desktop/ECE 550/Proj1/left_shift.v}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 18:38:22 on Sep 21,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/lizhu/Desktop/ECE 550/Proj1" C:/Users/lizhu/Desktop/ECE 550/Proj1/left_shift.v 
+# -- Compiling module left_shift
+# 
+# Top level modules:
+# 	left_shift
+# End time: 18:38:22 on Sep 21,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlog -vlog01compat -work work +incdir+C:/Users/lizhu/Desktop/ECE\ 550/Proj1 {C:/Users/lizhu/Desktop/ECE 550/Proj1/ALU_tb.v}
 # Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
-# Start time: 20:45:44 on Sep 11,2021
+# Start time: 18:38:22 on Sep 21,2021
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/lizhu/Desktop/ECE 550/Proj1" C:/Users/lizhu/Desktop/ECE 550/Proj1/ALU_tb.v 
 # -- Compiling module ALU_tb
 # 
 # Top level modules:
 # 	ALU_tb
-# End time: 20:45:44 on Sep 11,2021, Elapsed time: 0:00:00
+# End time: 18:38:22 on Sep 21,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  ALU_tb
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=""+acc"" ALU_tb 
-# Start time: 20:45:44 on Sep 11,2021
+# Start time: 18:38:22 on Sep 21,2021
 # Loading work.ALU_tb
 # Loading work.ALU
 # Loading work.negateb
@@ -103,6 +133,9 @@
 # Loading work.fourBitAdder
 # Loading work.oneBit
 # Loading work.RCA_special
+# Loading work.bit_And
+# Loading work.bit_Or
+# Loading work.left_shift
 # ** Warning: (vsim-3015) C:/Users/lizhu/Desktop/ECE 550/Proj1/CSA.v(10): [PCDPC] - Port size (1) does not match connection size (32) for port 'cin16'. The port definition is at: C:/Users/lizhu/Desktop/ECE 550/Proj1/RCA.v(1).
 #    Time: 0 ps  Iteration: 0  Instance: /ALU_tb/alu_ut/csa0/rca1 File: C:/Users/lizhu/Desktop/ECE 550/Proj1/RCA.v
 # ** Warning: (vsim-3015) C:/Users/lizhu/Desktop/ECE 550/Proj1/CSA.v(11): [PCDPC] - Port size (1) does not match connection size (32) for port 'cin16'. The port definition is at: C:/Users/lizhu/Desktop/ECE 550/Proj1/RCA_special.v(1).
@@ -115,9 +148,10 @@
 # .main_pane.objects.interior.cs.body.tree
 # run -all
 #                    0 << Starting the Simulation >>
-# The simulation completed without errors
+# **Error in SRA (test 12); expected: 00000000, actual: zzzzzzzz
+# The simulation failed with           1 errors
 # ** Note: $stop    : C:/Users/lizhu/Desktop/ECE 550/Proj1/ALU_tb.v(51)
-#    Time: 1560 ns  Iteration: 1  Instance: /ALU_tb
+#    Time: 2320 ns  Iteration: 1  Instance: /ALU_tb
 # Break in Module ALU_tb at C:/Users/lizhu/Desktop/ECE 550/Proj1/ALU_tb.v line 51
-# End time: 20:53:44 on Sep 11,2021, Elapsed time: 0:08:00
+# End time: 18:38:31 on Sep 21,2021, Elapsed time: 0:00:09
 # Errors: 0, Warnings: 2

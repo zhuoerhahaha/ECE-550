@@ -19,15 +19,15 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "09/20/2021 20:48:32"
+// Generated on "09/21/2021 18:34:15"
                                                                                 
-// Verilog Test Bench (with test vectors) for design :                          left_shift
+// Verilog Test Bench (with test vectors) for design :                          right_shift
 // 
 // Simulation tool : 3rd Party
 // 
 
 `timescale 1 ps/ 1 ps
-module left_shift_vlg_vec_tst();
+module right_shift_vlg_vec_tst();
 // constants                                           
 // general purpose registers
 reg [31:0] in;
@@ -36,7 +36,7 @@ reg [4:0] shiftamout;
 wire [31:0] out;
 
 // assign statements (if any)                          
-left_shift i1 (
+right_shift i1 (
 // port map - connection between master ports and signals/registers   
 	.in(in),
 	.out(out),
@@ -49,12 +49,12 @@ end
 // in[ 31 ]
 initial
 begin
-	in[31] = 1'b0;
+	in[31] = 1'b1;
 end 
 // in[ 30 ]
 initial
 begin
-	in[30] = 1'b0;
+	in[30] = 1'b1;
 end 
 // in[ 29 ]
 initial
@@ -229,7 +229,7 @@ end
 // shiftamout[ 0 ]
 initial
 begin
-	shiftamout[0] = 1'b0;
+	shiftamout[0] = 1'b1;
 end 
 endmodule
 

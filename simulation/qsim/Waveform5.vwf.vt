@@ -19,29 +19,31 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "09/11/2021 20:05:25"
+// Generated on "09/21/2021 21:18:08"
                                                                                 
-// Verilog Test Bench (with test vectors) for design :                          RCA
+// Verilog Test Bench (with test vectors) for design :                          RCA_special
 // 
 // Simulation tool : 3rd Party
 // 
 
 `timescale 1 ps/ 1 ps
-module RCA_vlg_vec_tst();
+module RCA_special_vlg_vec_tst();
 // constants                                           
 // general purpose registers
 reg [15:0] A16;
 reg [15:0] B16;
 reg cin16;
 // wires                                               
+wire c_lastin;
 wire cout16;
 wire [15:0] sum16;
 
 // assign statements (if any)                          
-RCA i1 (
+RCA_special i1 (
 // port map - connection between master ports and signals/registers   
 	.A16(A16),
 	.B16(B16),
+	.c_lastin(c_lastin),
 	.cin16(cin16),
 	.cout16(cout16),
 	.sum16(sum16)
@@ -58,52 +60,52 @@ end
 // A16[ 14 ]
 initial
 begin
-	A16[14] = 1'b0;
+	A16[14] = 1'b1;
 end 
 // A16[ 13 ]
 initial
 begin
-	A16[13] = 1'b0;
+	A16[13] = 1'b1;
 end 
 // A16[ 12 ]
 initial
 begin
-	A16[12] = 1'b0;
+	A16[12] = 1'b1;
 end 
 // A16[ 11 ]
 initial
 begin
-	A16[11] = 1'b0;
+	A16[11] = 1'b1;
 end 
 // A16[ 10 ]
 initial
 begin
-	A16[10] = 1'b0;
+	A16[10] = 1'b1;
 end 
 // A16[ 9 ]
 initial
 begin
-	A16[9] = 1'b0;
+	A16[9] = 1'b1;
 end 
 // A16[ 8 ]
 initial
 begin
-	A16[8] = 1'b0;
+	A16[8] = 1'b1;
 end 
 // A16[ 7 ]
 initial
 begin
-	A16[7] = 1'b0;
+	A16[7] = 1'b1;
 end 
 // A16[ 6 ]
 initial
 begin
-	A16[6] = 1'b0;
+	A16[6] = 1'b1;
 end 
 // A16[ 5 ]
 initial
 begin
-	A16[5] = 1'b0;
+	A16[5] = 1'b1;
 end 
 // A16[ 4 ]
 initial
@@ -118,17 +120,17 @@ end
 // A16[ 2 ]
 initial
 begin
-	A16[2] = 1'b0;
+	A16[2] = 1'b1;
 end 
 // A16[ 1 ]
 initial
 begin
-	A16[1] = 1'b0;
+	A16[1] = 1'b1;
 end 
 // A16[ 0 ]
 initial
 begin
-	A16[0] = 1'b0;
+	A16[0] = 1'b1;
 end 
 // B16[ 15 ]
 initial
@@ -183,7 +185,7 @@ end
 // B16[ 5 ]
 initial
 begin
-	B16[5] = 1'b1;
+	B16[5] = 1'b0;
 end 
 // B16[ 4 ]
 initial
@@ -198,7 +200,7 @@ end
 // B16[ 2 ]
 initial
 begin
-	B16[2] = 1'b1;
+	B16[2] = 1'b0;
 end 
 // B16[ 1 ]
 initial

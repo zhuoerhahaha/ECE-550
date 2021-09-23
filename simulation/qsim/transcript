@@ -2,31 +2,31 @@
 # ** Warning: (vlib-34) Library already exists at "work".
 # 
 # Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
-# Start time: 21:15:23 on Sep 20,2021
+# Start time: 21:27:09 on Sep 21,2021
 # vlog -work work ALU.vo 
-# -- Compiling module ALU
+# -- Compiling module CSA
 # 
 # Top level modules:
-# 	ALU
-# End time: 21:15:23 on Sep 20,2021, Elapsed time: 0:00:00
+# 	CSA
+# End time: 21:27:09 on Sep 21,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
-# Start time: 21:15:23 on Sep 20,2021
-# vlog -work work Waveform3.vwf.vt 
-# -- Compiling module ALU_vlg_vec_tst
+# Start time: 21:27:09 on Sep 21,2021
+# vlog -work work Waveform6.vwf.vt 
+# -- Compiling module CSA_vlg_vec_tst
 # 
 # Top level modules:
-# 	ALU_vlg_vec_tst
-# End time: 21:15:23 on Sep 20,2021, Elapsed time: 0:00:00
+# 	CSA_vlg_vec_tst
+# End time: 21:27:09 on Sep 21,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vsim -novopt -c -t 1ps -L cycloneive_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.ALU_vlg_vec_tst -voptargs=""+acc"" 
-# Start time: 21:15:23 on Sep 20,2021
-# Loading work.ALU_vlg_vec_tst
-# Loading work.ALU
+# vsim -novopt -c -t 1ps -L cycloneive_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.CSA_vlg_vec_tst -voptargs=""+acc"" 
+# Start time: 21:27:09 on Sep 21,2021
+# Loading work.CSA_vlg_vec_tst
+# Loading work.CSA
 # Loading cycloneive_ver.cycloneive_io_obuf
 # Loading cycloneive_ver.cycloneive_io_ibuf
 # Loading cycloneive_ver.cycloneive_lcell_comb
-# ** Note: $finish    : Waveform3.vwf.vt(57)
-#    Time: 1 us  Iteration: 0  Instance: /ALU_vlg_vec_tst
-# End time: 21:15:24 on Sep 20,2021, Elapsed time: 0:00:01
+# ** Note: $finish    : Waveform6.vwf.vt(51)
+#    Time: 1 us  Iteration: 0  Instance: /CSA_vlg_vec_tst
+# End time: 21:27:09 on Sep 21,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0

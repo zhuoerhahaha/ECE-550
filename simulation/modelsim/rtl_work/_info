@@ -9,13 +9,13 @@ z2
 cModel Technology
 Z0 dC:/Users/lizhu/Desktop/ECE 550/Proj1/simulation/modelsim
 vALU
-Z1 !s110 1631407544
+Z1 !s110 1632263901
 !i10b 1
-!s100 1X]@lXRI>5oVSKUSEH[d^2
-IN`nmXT@>T:Y?;OGkTcj8]0
+!s100 @0=W:RbBL3Gld9WU_SIH42
+Ik;FPUim98k=QDfe3Jg5B]0
 Z2 VDg1SIo80bB@j0V0VzS_@n1
 R0
-w1631393436
+w1632263881
 8C:/Users/lizhu/Desktop/ECE 550/Proj1/ALU.v
 FC:/Users/lizhu/Desktop/ECE 550/Proj1/ALU.v
 L0 1
@@ -23,7 +23,7 @@ Z3 OV;L;10.4d;61
 r1
 !s85 0
 31
-Z4 !s108 1631407544.000000
+Z4 !s108 1632263901.000000
 !s107 C:/Users/lizhu/Desktop/ECE 550/Proj1/ALU.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/lizhu/Desktop/ECE 550/Proj1|C:/Users/lizhu/Desktop/ECE 550/Proj1/ALU.v|
 !i113 1
@@ -31,13 +31,13 @@ Z5 o-vlog01compat -work work
 Z6 !s92 -vlog01compat -work work {+incdir+C:/Users/lizhu/Desktop/ECE 550/Proj1}
 n@a@l@u
 vALU_tb
-R1
+Z7 !s110 1632263902
 !i10b 1
-!s100 ;ngVOLA9>AgNjX_lNK3IZ0
-Ia3mDQ`<cz4@bS[4G^Il`X3
+!s100 h5mhl8_:EKi1K91OSOPO`3
+Il8:b2_HS]2@C;GXU0A9;A0
 R2
 R0
-w1631393300
+w1632263829
 8C:/Users/lizhu/Desktop/ECE 550/Proj1/ALU_tb.v
 FC:/Users/lizhu/Desktop/ECE 550/Proj1/ALU_tb.v
 L0 3
@@ -45,13 +45,57 @@ R3
 r1
 !s85 0
 31
-R4
+Z8 !s108 1632263902.000000
 !s107 C:/Users/lizhu/Desktop/ECE 550/Proj1/ALU_tb.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/lizhu/Desktop/ECE 550/Proj1|C:/Users/lizhu/Desktop/ECE 550/Proj1/ALU_tb.v|
 !i113 1
 R5
 R6
 n@a@l@u_tb
+vbit_And
+R7
+!i10b 1
+!s100 2cT<?hQma^KzPHM=@gaM31
+I=dhg`>V1`JooW]JzHPNn<2
+R2
+R0
+w1632178036
+8C:/Users/lizhu/Desktop/ECE 550/Proj1/bit_And.v
+FC:/Users/lizhu/Desktop/ECE 550/Proj1/bit_And.v
+L0 1
+R3
+r1
+!s85 0
+31
+R8
+!s107 C:/Users/lizhu/Desktop/ECE 550/Proj1/bit_And.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/lizhu/Desktop/ECE 550/Proj1|C:/Users/lizhu/Desktop/ECE 550/Proj1/bit_And.v|
+!i113 1
+R5
+R6
+nbit_@and
+vbit_Or
+R7
+!i10b 1
+!s100 00?3KkoSk?EceeQKNIVA]0
+IC_4Tf4:n9Ie6_[3`UgTd23
+R2
+R0
+w1632178067
+8C:/Users/lizhu/Desktop/ECE 550/Proj1/bit_Or.v
+FC:/Users/lizhu/Desktop/ECE 550/Proj1/bit_Or.v
+L0 1
+R3
+r1
+!s85 0
+31
+R8
+!s107 C:/Users/lizhu/Desktop/ECE 550/Proj1/bit_Or.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/lizhu/Desktop/ECE 550/Proj1|C:/Users/lizhu/Desktop/ECE 550/Proj1/bit_Or.v|
+!i113 1
+R5
+R6
+nbit_@or
 vCSA
 R1
 !i10b 1
@@ -96,6 +140,27 @@ R4
 R5
 R6
 nfour@bit@adder
+vleft_shift
+R7
+!i10b 1
+!s100 I0O07UeX?3oPVCd:L6lY^0
+I>`_nZkgCJG9GjZjXah=Aa0
+R2
+R0
+w1632186622
+8C:/Users/lizhu/Desktop/ECE 550/Proj1/left_shift.v
+FC:/Users/lizhu/Desktop/ECE 550/Proj1/left_shift.v
+L0 1
+R3
+r1
+!s85 0
+31
+R8
+!s107 C:/Users/lizhu/Desktop/ECE 550/Proj1/left_shift.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/lizhu/Desktop/ECE 550/Proj1|C:/Users/lizhu/Desktop/ECE 550/Proj1/left_shift.v|
+!i113 1
+R5
+R6
 vnegateb
 R1
 !i10b 1
@@ -118,7 +183,7 @@ R4
 R5
 R6
 voneBit
-R1
+R7
 !i10b 1
 !s100 JcYe6S1ZMHE7Ueh_NNA>G2
 I663HTkIB6RznQX2]NU<z20
@@ -132,7 +197,7 @@ R3
 r1
 !s85 0
 31
-R4
+R8
 !s107 C:/Users/lizhu/Desktop/ECE 550/Proj1/oneBit.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/lizhu/Desktop/ECE 550/Proj1|C:/Users/lizhu/Desktop/ECE 550/Proj1/oneBit.v|
 !i113 1
@@ -162,7 +227,7 @@ R5
 R6
 n@r@c@a
 vRCA_special
-R1
+R7
 !i10b 1
 !s100 WlmBh2G^F<:Sh=TmZ8W<62
 In2P^d@UalfA`jPV=X2gKO1
@@ -176,7 +241,7 @@ R3
 r1
 !s85 0
 31
-R4
+R8
 !s107 C:/Users/lizhu/Desktop/ECE 550/Proj1/RCA_special.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/lizhu/Desktop/ECE 550/Proj1|C:/Users/lizhu/Desktop/ECE 550/Proj1/RCA_special.v|
 !i113 1
