@@ -1,5 +1,9 @@
 Analysis & Synthesis report for ALU
+<<<<<<< HEAD
 Thu Sep 23 18:02:42 2021
+=======
+Thu Sep 23 18:19:48 2021
+>>>>>>> 905415823baa60d8b96fc8614b7b713843bc6782
 Quartus Prime Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
 
 
@@ -14,6 +18,7 @@ Quartus Prime Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
   8. General Register Statistics
+<<<<<<< HEAD
   9. Multiplexer Restructuring Statistics (Restructuring Performed)
  10. Port Connectivity Checks: "CSA:csa1"
  11. Port Connectivity Checks: "CSA:csa0|RCA_special:rca2"
@@ -21,6 +26,11 @@ Quartus Prime Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
  13. Post-Synthesis Netlist Statistics for Top Partition
  14. Elapsed Time Per Partition
  15. Analysis & Synthesis Messages
+=======
+  9. Post-Synthesis Netlist Statistics for Top Partition
+ 10. Elapsed Time Per Partition
+ 11. Analysis & Synthesis Messages
+>>>>>>> 905415823baa60d8b96fc8614b7b713843bc6782
 
 
 
@@ -47,6 +57,7 @@ agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
+<<<<<<< HEAD
 ; Analysis & Synthesis Status        ; Successful - Thu Sep 23 18:02:42 2021       ;
 ; Quartus Prime Version              ; 16.0.0 Build 211 04/27/2016 SJ Lite Edition ;
 ; Revision Name                      ; ALU                                         ;
@@ -57,6 +68,18 @@ agreement for further details.
 ;     Dedicated logic registers      ; 0                                           ;
 ; Total registers                    ; 0                                           ;
 ; Total pins                         ; 109                                         ;
+=======
+; Analysis & Synthesis Status        ; Successful - Thu Sep 23 18:19:48 2021       ;
+; Quartus Prime Version              ; 16.0.0 Build 211 04/27/2016 SJ Lite Edition ;
+; Revision Name                      ; ALU                                         ;
+; Top-level Entity Name              ; is_not_equal                                ;
+; Family                             ; Cyclone IV E                                ;
+; Total logic elements               ; 21                                          ;
+;     Total combinational functions  ; 21                                          ;
+;     Dedicated logic registers      ; 0                                           ;
+; Total registers                    ; 0                                           ;
+; Total pins                         ; 65                                          ;
+>>>>>>> 905415823baa60d8b96fc8614b7b713843bc6782
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
@@ -70,7 +93,11 @@ agreement for further details.
 ; Option                                                                     ; Setting            ; Default Value      ;
 +----------------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                                     ; EP4CE115F29C7      ;                    ;
+<<<<<<< HEAD
 ; Top-level entity name                                                      ; ALU                ; ALU                ;
+=======
+; Top-level entity name                                                      ; is_not_equal       ; ALU                ;
+>>>>>>> 905415823baa60d8b96fc8614b7b713843bc6782
 ; Family name                                                                ; Cyclone IV E       ; Cyclone V          ;
 ; Use smart compilation                                                      ; Off                ; Off                ;
 ; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
@@ -167,6 +194,7 @@ agreement for further details.
 +----------------------------+-------------+
 
 
+<<<<<<< HEAD
 +---------------------------------------------------------------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Source Files Read                                                                                                      ;
 +----------------------------------+-----------------+------------------------+-----------------------------------------------------+---------+
@@ -287,6 +315,56 @@ agreement for further details.
 ;    |left_shift:shift0|            ; 101 (101)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|left_shift:shift0                                                ; left_shift   ; work         ;
 ;    |right_shift:shift1|           ; 90 (90)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|right_shift:shift1                                               ; right_shift  ; work         ;
 +-----------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------+--------------+--------------+
+=======
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                             ;
++----------------------------------+-----------------+------------------------+--------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                                               ; Library ;
++----------------------------------+-----------------+------------------------+--------------------------------------------------------------------------------------------+---------+
+; is_not_equal.v                   ; yes             ; User Verilog HDL File  ; C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project2/ECE-550/is_not_equal.v ;         ;
++----------------------------------+-----------------+------------------------+--------------------------------------------------------------------------------------------+---------+
+
+
++------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary          ;
++---------------------------------------------+--------+
+; Resource                                    ; Usage  ;
++---------------------------------------------+--------+
+; Estimated Total logic elements              ; 21     ;
+;                                             ;        ;
+; Total combinational functions               ; 21     ;
+; Logic element usage by number of LUT inputs ;        ;
+;     -- 4 input functions                    ; 21     ;
+;     -- 3 input functions                    ; 0      ;
+;     -- <=2 input functions                  ; 0      ;
+;                                             ;        ;
+; Logic elements by mode                      ;        ;
+;     -- normal mode                          ; 21     ;
+;     -- arithmetic mode                      ; 0      ;
+;                                             ;        ;
+; Total registers                             ; 0      ;
+;     -- Dedicated logic registers            ; 0      ;
+;     -- I/O registers                        ; 0      ;
+;                                             ;        ;
+; I/O pins                                    ; 65     ;
+;                                             ;        ;
+; Embedded Multiplier 9-bit elements          ; 0      ;
+;                                             ;        ;
+; Maximum fan-out node                        ; comb~0 ;
+; Maximum fan-out                             ; 1      ;
+; Total fan-out                               ; 150    ;
+; Average fan-out                             ; 0.99   ;
++---------------------------------------------+--------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                        ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+--------------+
+; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name  ; Library Name ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+--------------+
+; |is_not_equal              ; 21 (21)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 65   ; 0            ; |is_not_equal       ; is_not_equal ; work         ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+--------------+
+>>>>>>> 905415823baa60d8b96fc8614b7b713843bc6782
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -305,6 +383,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 
 
+<<<<<<< HEAD
 +------------------------------------------------------------------------------------------------------------------------------------------+
 ; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                           ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
@@ -350,11 +429,14 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-------+-------+----------+----------------------------+
 
 
+=======
+>>>>>>> 905415823baa60d8b96fc8614b7b713843bc6782
 +-----------------------------------------------------+
 ; Post-Synthesis Netlist Statistics for Top Partition ;
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
+<<<<<<< HEAD
 ; boundary_port         ; 109                         ;
 ; cycloneiii_lcell_comb ; 484                         ;
 ;     normal            ; 484                         ;
@@ -365,6 +447,15 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;                       ;                             ;
 ; Max LUT depth         ; 22.00                       ;
 ; Average LUT depth     ; 10.50                       ;
+=======
+; boundary_port         ; 65                          ;
+; cycloneiii_lcell_comb ; 21                          ;
+;     normal            ; 21                          ;
+;         4 data inputs ; 21                          ;
+;                       ;                             ;
+; Max LUT depth         ; 3.00                        ;
+; Average LUT depth     ; 3.00                        ;
+>>>>>>> 905415823baa60d8b96fc8614b7b713843bc6782
 +-----------------------+-----------------------------+
 
 
@@ -383,33 +474,43 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
+<<<<<<< HEAD
     Info: Processing started: Thu Sep 23 18:02:32 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ALU -c ALU
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
+=======
+    Info: Processing started: Thu Sep 23 18:19:38 2021
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ALU -c ALU
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file sra_32bit.v
+    Info (12023): Found entity 1: SRA_32bit File: C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project2/ECE-550/SRA_32bit.v Line: 1
+>>>>>>> 905415823baa60d8b96fc8614b7b713843bc6782
 Info (12021): Found 1 design units, including 1 entities, in source file alu.v
-    Info (12023): Found entity 1: ALU File: C:/Users/lizhu/Desktop/ECE 550/Proj1/ALU.v Line: 1
+    Info (12023): Found entity 1: ALU File: C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project2/ECE-550/ALU.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file alu_tb.v
-    Info (12023): Found entity 1: ALU_tb File: C:/Users/lizhu/Desktop/ECE 550/Proj1/ALU_tb.v Line: 3
+    Info (12023): Found entity 1: ALU_tb File: C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project2/ECE-550/ALU_tb.v Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file csa.v
-    Info (12023): Found entity 1: CSA File: C:/Users/lizhu/Desktop/ECE 550/Proj1/CSA.v Line: 1
+    Info (12023): Found entity 1: CSA File: C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project2/ECE-550/CSA.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file negateb.v
-    Info (12023): Found entity 1: negateb File: C:/Users/lizhu/Desktop/ECE 550/Proj1/negateb.v Line: 1
+    Info (12023): Found entity 1: negateb File: C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project2/ECE-550/negateb.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file rca.v
-    Info (12023): Found entity 1: RCA File: C:/Users/lizhu/Desktop/ECE 550/Proj1/RCA.v Line: 1
+    Info (12023): Found entity 1: RCA File: C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project2/ECE-550/RCA.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file fourbitadder.v
-    Info (12023): Found entity 1: fourBitAdder File: C:/Users/lizhu/Desktop/ECE 550/Proj1/fourBitAdder.v Line: 1
+    Info (12023): Found entity 1: fourBitAdder File: C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project2/ECE-550/fourBitAdder.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file onebit.v
-    Info (12023): Found entity 1: oneBit File: C:/Users/lizhu/Desktop/ECE 550/Proj1/oneBit.v Line: 1
+    Info (12023): Found entity 1: oneBit File: C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project2/ECE-550/oneBit.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file rca_special.v
-    Info (12023): Found entity 1: RCA_special File: C:/Users/lizhu/Desktop/ECE 550/Proj1/RCA_special.v Line: 1
+    Info (12023): Found entity 1: RCA_special File: C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project2/ECE-550/RCA_special.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file bit_and.v
-    Info (12023): Found entity 1: bit_And File: C:/Users/lizhu/Desktop/ECE 550/Proj1/bit_And.v Line: 1
+    Info (12023): Found entity 1: bit_And File: C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project2/ECE-550/bit_And.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file bit_or.v
-    Info (12023): Found entity 1: bit_Or File: C:/Users/lizhu/Desktop/ECE 550/Proj1/bit_Or.v Line: 1
+    Info (12023): Found entity 1: bit_Or File: C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project2/ECE-550/bit_Or.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file left_shift.v
-    Info (12023): Found entity 1: left_shift File: C:/Users/lizhu/Desktop/ECE 550/Proj1/left_shift.v Line: 1
+    Info (12023): Found entity 1: left_shift File: C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project2/ECE-550/left_shift.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file right_shift.v
+<<<<<<< HEAD
     Info (12023): Found entity 1: right_shift File: C:/Users/lizhu/Desktop/ECE 550/Proj1/right_shift.v Line: 1
 Info (12127): Elaborating entity "ALU" for the top level hierarchy
 Warning (10030): Net "isNotEqual" at ALU.v(7) has no driver or initial value, using a default initial value '0' File: C:/Users/lizhu/Desktop/ECE 550/Proj1/ALU.v Line: 7
@@ -439,6 +540,22 @@ Info (21057): Implemented 592 device resources after synthesis - the final resou
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 8 warnings
     Info: Peak virtual memory: 4988 megabytes
     Info: Processing ended: Thu Sep 23 18:02:42 2021
+=======
+    Info (12023): Found entity 1: right_shift File: C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project2/ECE-550/right_shift.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file is_not_equal.v
+    Info (12023): Found entity 1: is_not_equal File: C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project2/ECE-550/is_not_equal.v Line: 1
+Info (12127): Elaborating entity "is_not_equal" for the top level hierarchy
+Info (286030): Timing-Driven Synthesis is running
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 86 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 64 input pins
+    Info (21059): Implemented 1 output pins
+    Info (21061): Implemented 21 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 5009 megabytes
+    Info: Processing ended: Thu Sep 23 18:19:48 2021
+>>>>>>> 905415823baa60d8b96fc8614b7b713843bc6782
     Info: Elapsed time: 00:00:10
     Info: Total CPU time (on all processors): 00:00:20
 

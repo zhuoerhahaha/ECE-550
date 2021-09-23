@@ -2,6 +2,7 @@ module ALU(data_operandA, data_operandB, ctrl_ALUopcode, ctrl_shiftamt, data_res
 
    input [31:0] data_operandA, data_operandB;
    input [4:0] ctrl_ALUopcode, ctrl_shiftamt;
+	
 
    output [31:0] data_result;
    output isNotEqual, isLessThan, overflow;
@@ -9,6 +10,10 @@ module ALU(data_operandA, data_operandB, ctrl_ALUopcode, ctrl_shiftamt, data_res
    // YOUR CODE HERE //
 	wire[31:0] bout, notb, add_sub_result, and_result, or_result, leftshift, rightshift, sub_result;
 	wire nothing;
+<<<<<<< HEAD
+=======
+	
+>>>>>>> 905415823baa60d8b96fc8614b7b713843bc6782
 	//negate operand_B
 	negateb negateb0(data_operandB, notb);
 	

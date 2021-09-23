@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Analysis & Synthesis Status : Successful - Thu Sep 23 18:02:42 2021
 Quartus Prime Version : 16.0.0 Build 211 04/27/2016 SJ Lite Edition
 Revision Name : ALU
@@ -8,6 +9,18 @@ Total logic elements : 483
     Dedicated logic registers : 0
 Total registers : 0
 Total pins : 109
+=======
+Analysis & Synthesis Status : Successful - Thu Sep 23 18:19:48 2021
+Quartus Prime Version : 16.0.0 Build 211 04/27/2016 SJ Lite Edition
+Revision Name : ALU
+Top-level Entity Name : is_not_equal
+Family : Cyclone IV E
+Total logic elements : 21
+    Total combinational functions : 21
+    Dedicated logic registers : 0
+Total registers : 0
+Total pins : 65
+>>>>>>> 905415823baa60d8b96fc8614b7b713843bc6782
 Total virtual pins : 0
 Total memory bits : 0
 Embedded Multiplier 9-bit elements : 0

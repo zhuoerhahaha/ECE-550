@@ -1,2 +1,7 @@
+<<<<<<< HEAD
 start_analysis_synthesis:s:00:00:10
 start_analysis_elaboration:s
+=======
+start_analysis_synthesis:s:00:00:10-start_full_compilation
+start_analysis_elaboration:s-start_full_compilation
+>>>>>>> 905415823baa60d8b96fc8614b7b713843bc6782
