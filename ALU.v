@@ -2,26 +2,16 @@ module ALU(data_operandA, data_operandB, ctrl_ALUopcode, ctrl_shiftamt, data_res
 
    input [31:0] data_operandA, data_operandB;
    input [4:0] ctrl_ALUopcode, ctrl_shiftamt;
-	
 
    output [31:0] data_result;
    output isNotEqual, isLessThan, overflow;
 	
    // YOUR CODE HERE //
-	wire[31:0] bout, notb, add_sub_result, and_result, or_result, leftshift, rightshift, sub_result;
+	wire[31:0] add_sub_result, and_result, or_result, leftshift, rightshift, sub_result;
 	wire nothing;
-<<<<<<< HEAD
-=======
-	
->>>>>>> 905415823baa60d8b96fc8614b7b713843bc6782
-	//negate operand_B
-	negateb negateb0(data_operandB, notb);
-	
-	//2-1 mux
-	assign bout = ctrl_ALUopcode[0] ? notb : data_operandB;     //correct way to select?
-	
-	//csa
-	CSA csa0(data_operandA, bout, ctrl_ALUopcode, overflow, add_sub_result);
+
+	//add-sub
+	CheckAddSub calculate0(.A(data_operandA), .B(data_operandB), .mode(ctrl_ALUopcode[0]), .D(add_sub_result), .overflow(overflow));
 	
 	//and
 	bit_And and0(data_operandA, data_operandB, and_result);
@@ -33,11 +23,13 @@ module ALU(data_operandA, data_operandB, ctrl_ALUopcode, ctrl_shiftamt, data_res
 	left_shift shift0(data_operandA, ctrl_shiftamt, leftshift);
 	right_shift shift1(data_operandA, ctrl_shiftamt, rightshift);
 	
+	//is not equal
+	is_not_equal ine0(data_operandA, data_operandB, isNotEqual);
 	
 	//subtract
-	CSA csa1(data_operandA, data_operandB, 5'd1, nothing, sub_result);
+	CheckAddSub calculate1(.A(data_operandA), .B(data_operandB), .mode(1'b1), .D(sub_result), .overflow(nothing));
 	//less than
-	assign isLessThan = isNotEqual ? (overflow ? (data_operandA[31] ? 1'b1 : 1'b0) : (sub_result[31] ? 1'b1 : 1'b0)) : 1'b0;
+	assign isLessThan = isNotEqual ? (nothing ? (data_operandA[31] ? 1'b1 : 1'b0) : (sub_result[31] ? 1'b1 : 1'b0)) : 1'b0;
 	
 	
 	//assign result

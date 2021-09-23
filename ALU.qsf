@@ -39,11 +39,7 @@
 
 set_global_assignment -name FAMILY "Cyclone IV E"
 set_global_assignment -name DEVICE EP4CE115F29C7
-<<<<<<< HEAD
 set_global_assignment -name TOP_LEVEL_ENTITY ALU
-=======
-set_global_assignment -name TOP_LEVEL_ENTITY is_not_equal
->>>>>>> 905415823baa60d8b96fc8614b7b713843bc6782
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 16.0.0
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "12:29:46  SEPTEMBER 10, 2021"
 set_global_assignment -name LAST_QUARTUS_VERSION 16.0.0
@@ -65,26 +61,15 @@ set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME ALU_tb -section_id ALU_tb
 set_global_assignment -name EDA_TEST_BENCH_FILE ALU_tb.v -section_id ALU_tb
 set_global_assignment -name VERILOG_FILE ALU.v
 set_global_assignment -name VERILOG_FILE ALU_tb.v
-set_global_assignment -name VERILOG_FILE CSA.v
-set_global_assignment -name VERILOG_FILE negateb.v
-set_global_assignment -name VERILOG_FILE RCA.v
-set_global_assignment -name VERILOG_FILE fourBitAdder.v
-set_global_assignment -name VERILOG_FILE oneBit.v
-set_global_assignment -name VERILOG_FILE RCA_special.v
-set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform.vwf
 set_global_assignment -name VERILOG_FILE bit_And.v
 set_global_assignment -name VERILOG_FILE bit_Or.v
-set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform1.vwf
 set_global_assignment -name VERILOG_FILE left_shift.v
-set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform2.vwf
 set_global_assignment -name VERILOG_FILE right_shift.v
-set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform3.vwf
-set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform4.vwf
-set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform5.vwf
-set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform6.vwf
 set_global_assignment -name VERILOG_FILE is_not_equal.v
+set_global_assignment -name VERILOG_FILE CheckAddSub.v
+set_global_assignment -name VERILOG_FILE RCA16Bit.v
+set_global_assignment -name VERILOG_FILE OneBitAdder.v
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
-set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform7.vwf

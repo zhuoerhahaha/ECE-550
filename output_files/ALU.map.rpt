@@ -1,9 +1,5 @@
 Analysis & Synthesis report for ALU
-<<<<<<< HEAD
-Thu Sep 23 18:02:42 2021
-=======
-Thu Sep 23 18:19:48 2021
->>>>>>> 905415823baa60d8b96fc8614b7b713843bc6782
+Thu Sep 23 19:40:56 2021
 Quartus Prime Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
 
 
@@ -18,19 +14,14 @@ Quartus Prime Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
   8. General Register Statistics
-<<<<<<< HEAD
   9. Multiplexer Restructuring Statistics (Restructuring Performed)
- 10. Port Connectivity Checks: "CSA:csa1"
- 11. Port Connectivity Checks: "CSA:csa0|RCA_special:rca2"
- 12. Port Connectivity Checks: "CSA:csa0|RCA_special:rca1"
- 13. Post-Synthesis Netlist Statistics for Top Partition
- 14. Elapsed Time Per Partition
- 15. Analysis & Synthesis Messages
-=======
-  9. Post-Synthesis Netlist Statistics for Top Partition
- 10. Elapsed Time Per Partition
- 11. Analysis & Synthesis Messages
->>>>>>> 905415823baa60d8b96fc8614b7b713843bc6782
+ 10. Port Connectivity Checks: "CheckAddSub:calculate1"
+ 11. Port Connectivity Checks: "CheckAddSub:calculate0|RCA16Bit:second_cin1"
+ 12. Port Connectivity Checks: "CheckAddSub:calculate0|RCA16Bit:second_cin0"
+ 13. Port Connectivity Checks: "CheckAddSub:calculate0|RCA16Bit:first"
+ 14. Post-Synthesis Netlist Statistics for Top Partition
+ 15. Elapsed Time Per Partition
+ 16. Analysis & Synthesis Messages
 
 
 
@@ -57,29 +48,16 @@ agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-<<<<<<< HEAD
-; Analysis & Synthesis Status        ; Successful - Thu Sep 23 18:02:42 2021       ;
+; Analysis & Synthesis Status        ; Successful - Thu Sep 23 19:40:56 2021       ;
 ; Quartus Prime Version              ; 16.0.0 Build 211 04/27/2016 SJ Lite Edition ;
 ; Revision Name                      ; ALU                                         ;
 ; Top-level Entity Name              ; ALU                                         ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 483                                         ;
-;     Total combinational functions  ; 483                                         ;
+; Total logic elements               ; 534                                         ;
+;     Total combinational functions  ; 534                                         ;
 ;     Dedicated logic registers      ; 0                                           ;
 ; Total registers                    ; 0                                           ;
 ; Total pins                         ; 109                                         ;
-=======
-; Analysis & Synthesis Status        ; Successful - Thu Sep 23 18:19:48 2021       ;
-; Quartus Prime Version              ; 16.0.0 Build 211 04/27/2016 SJ Lite Edition ;
-; Revision Name                      ; ALU                                         ;
-; Top-level Entity Name              ; is_not_equal                                ;
-; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 21                                          ;
-;     Total combinational functions  ; 21                                          ;
-;     Dedicated logic registers      ; 0                                           ;
-; Total registers                    ; 0                                           ;
-; Total pins                         ; 65                                          ;
->>>>>>> 905415823baa60d8b96fc8614b7b713843bc6782
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
@@ -93,11 +71,7 @@ agreement for further details.
 ; Option                                                                     ; Setting            ; Default Value      ;
 +----------------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                                     ; EP4CE115F29C7      ;                    ;
-<<<<<<< HEAD
 ; Top-level entity name                                                      ; ALU                ; ALU                ;
-=======
-; Top-level entity name                                                      ; is_not_equal       ; ALU                ;
->>>>>>> 905415823baa60d8b96fc8614b7b713843bc6782
 ; Family name                                                                ; Cyclone IV E       ; Cyclone V          ;
 ; Use smart compilation                                                      ; Off                ; Off                ;
 ; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
@@ -194,23 +168,20 @@ agreement for further details.
 +----------------------------+-------------+
 
 
-<<<<<<< HEAD
 +---------------------------------------------------------------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Source Files Read                                                                                                      ;
 +----------------------------------+-----------------+------------------------+-----------------------------------------------------+---------+
 ; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                        ; Library ;
 +----------------------------------+-----------------+------------------------+-----------------------------------------------------+---------+
 ; ALU.v                            ; yes             ; User Verilog HDL File  ; C:/Users/lizhu/Desktop/ECE 550/Proj1/ALU.v          ;         ;
-; CSA.v                            ; yes             ; User Verilog HDL File  ; C:/Users/lizhu/Desktop/ECE 550/Proj1/CSA.v          ;         ;
-; negateb.v                        ; yes             ; User Verilog HDL File  ; C:/Users/lizhu/Desktop/ECE 550/Proj1/negateb.v      ;         ;
-; RCA.v                            ; yes             ; User Verilog HDL File  ; C:/Users/lizhu/Desktop/ECE 550/Proj1/RCA.v          ;         ;
-; fourBitAdder.v                   ; yes             ; User Verilog HDL File  ; C:/Users/lizhu/Desktop/ECE 550/Proj1/fourBitAdder.v ;         ;
-; oneBit.v                         ; yes             ; User Verilog HDL File  ; C:/Users/lizhu/Desktop/ECE 550/Proj1/oneBit.v       ;         ;
-; RCA_special.v                    ; yes             ; User Verilog HDL File  ; C:/Users/lizhu/Desktop/ECE 550/Proj1/RCA_special.v  ;         ;
 ; bit_And.v                        ; yes             ; User Verilog HDL File  ; C:/Users/lizhu/Desktop/ECE 550/Proj1/bit_And.v      ;         ;
 ; bit_Or.v                         ; yes             ; User Verilog HDL File  ; C:/Users/lizhu/Desktop/ECE 550/Proj1/bit_Or.v       ;         ;
 ; left_shift.v                     ; yes             ; User Verilog HDL File  ; C:/Users/lizhu/Desktop/ECE 550/Proj1/left_shift.v   ;         ;
 ; right_shift.v                    ; yes             ; User Verilog HDL File  ; C:/Users/lizhu/Desktop/ECE 550/Proj1/right_shift.v  ;         ;
+; is_not_equal.v                   ; yes             ; User Verilog HDL File  ; C:/Users/lizhu/Desktop/ECE 550/Proj1/is_not_equal.v ;         ;
+; CheckAddSub.v                    ; yes             ; User Verilog HDL File  ; C:/Users/lizhu/Desktop/ECE 550/Proj1/CheckAddSub.v  ;         ;
+; RCA16Bit.v                       ; yes             ; User Verilog HDL File  ; C:/Users/lizhu/Desktop/ECE 550/Proj1/RCA16Bit.v     ;         ;
+; OneBitAdder.v                    ; yes             ; User Verilog HDL File  ; C:/Users/lizhu/Desktop/ECE 550/Proj1/OneBitAdder.v  ;         ;
 +----------------------------------+-----------------+------------------------+-----------------------------------------------------+---------+
 
 
@@ -219,16 +190,16 @@ agreement for further details.
 +---------------------------------------------+-------------------------+
 ; Resource                                    ; Usage                   ;
 +---------------------------------------------+-------------------------+
-; Estimated Total logic elements              ; 483                     ;
+; Estimated Total logic elements              ; 534                     ;
 ;                                             ;                         ;
-; Total combinational functions               ; 483                     ;
+; Total combinational functions               ; 534                     ;
 ; Logic element usage by number of LUT inputs ;                         ;
-;     -- 4 input functions                    ; 275                     ;
-;     -- 3 input functions                    ; 186                     ;
-;     -- <=2 input functions                  ; 22                      ;
+;     -- 4 input functions                    ; 309                     ;
+;     -- 3 input functions                    ; 199                     ;
+;     -- <=2 input functions                  ; 26                      ;
 ;                                             ;                         ;
 ; Logic elements by mode                      ;                         ;
-;     -- normal mode                          ; 483                     ;
+;     -- normal mode                          ; 534                     ;
 ;     -- arithmetic mode                      ; 0                       ;
 ;                                             ;                         ;
 ; Total registers                             ; 0                       ;
@@ -241,130 +212,76 @@ agreement for further details.
 ;                                             ;                         ;
 ; Maximum fan-out node                        ; ctrl_ALUopcode[0]~input ;
 ; Maximum fan-out                             ; 119                     ;
-; Total fan-out                               ; 1844                    ;
-; Average fan-out                             ; 2.63                    ;
+; Total fan-out                               ; 2029                    ;
+; Average fan-out                             ; 2.70                    ;
 +---------------------------------------------+-------------------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                 ;
-+-----------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------+--------------+--------------+
-; Compilation Hierarchy Node        ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                   ; Entity Name  ; Library Name ;
-+-----------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------+--------------+--------------+
-; |ALU                              ; 483 (228)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 109  ; 0            ; |ALU                                                                  ; ALU          ; work         ;
-;    |CSA:csa0|                     ; 56 (2)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|CSA:csa0                                                         ; CSA          ; work         ;
-;       |RCA:rca0|                  ; 24 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|CSA:csa0|RCA:rca0                                                ; RCA          ; work         ;
-;          |fourBitAdder:fourBit_0| ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|CSA:csa0|RCA:rca0|fourBitAdder:fourBit_0                         ; fourBitAdder ; work         ;
-;             |oneBit:oneBit_0|     ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|CSA:csa0|RCA:rca0|fourBitAdder:fourBit_0|oneBit:oneBit_0         ; oneBit       ; work         ;
-;             |oneBit:oneBit_1|     ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|CSA:csa0|RCA:rca0|fourBitAdder:fourBit_0|oneBit:oneBit_1         ; oneBit       ; work         ;
-;             |oneBit:oneBit_2|     ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|CSA:csa0|RCA:rca0|fourBitAdder:fourBit_0|oneBit:oneBit_2         ; oneBit       ; work         ;
-;             |oneBit:oneBit_3|     ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|CSA:csa0|RCA:rca0|fourBitAdder:fourBit_0|oneBit:oneBit_3         ; oneBit       ; work         ;
-;          |fourBitAdder:fourBit_1| ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|CSA:csa0|RCA:rca0|fourBitAdder:fourBit_1                         ; fourBitAdder ; work         ;
-;             |oneBit:oneBit_0|     ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|CSA:csa0|RCA:rca0|fourBitAdder:fourBit_1|oneBit:oneBit_0         ; oneBit       ; work         ;
-;             |oneBit:oneBit_1|     ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|CSA:csa0|RCA:rca0|fourBitAdder:fourBit_1|oneBit:oneBit_1         ; oneBit       ; work         ;
-;             |oneBit:oneBit_2|     ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|CSA:csa0|RCA:rca0|fourBitAdder:fourBit_1|oneBit:oneBit_2         ; oneBit       ; work         ;
-;             |oneBit:oneBit_3|     ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|CSA:csa0|RCA:rca0|fourBitAdder:fourBit_1|oneBit:oneBit_3         ; oneBit       ; work         ;
-;          |fourBitAdder:fourBit_2| ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|CSA:csa0|RCA:rca0|fourBitAdder:fourBit_2                         ; fourBitAdder ; work         ;
-;             |oneBit:oneBit_0|     ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|CSA:csa0|RCA:rca0|fourBitAdder:fourBit_2|oneBit:oneBit_0         ; oneBit       ; work         ;
-;             |oneBit:oneBit_1|     ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|CSA:csa0|RCA:rca0|fourBitAdder:fourBit_2|oneBit:oneBit_1         ; oneBit       ; work         ;
-;             |oneBit:oneBit_2|     ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|CSA:csa0|RCA:rca0|fourBitAdder:fourBit_2|oneBit:oneBit_2         ; oneBit       ; work         ;
-;             |oneBit:oneBit_3|     ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|CSA:csa0|RCA:rca0|fourBitAdder:fourBit_2|oneBit:oneBit_3         ; oneBit       ; work         ;
-;          |fourBitAdder:fourBit_3| ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|CSA:csa0|RCA:rca0|fourBitAdder:fourBit_3                         ; fourBitAdder ; work         ;
-;             |oneBit:oneBit_0|     ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|CSA:csa0|RCA:rca0|fourBitAdder:fourBit_3|oneBit:oneBit_0         ; oneBit       ; work         ;
-;             |oneBit:oneBit_1|     ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|CSA:csa0|RCA:rca0|fourBitAdder:fourBit_3|oneBit:oneBit_1         ; oneBit       ; work         ;
-;             |oneBit:oneBit_2|     ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|CSA:csa0|RCA:rca0|fourBitAdder:fourBit_3|oneBit:oneBit_2         ; oneBit       ; work         ;
-;             |oneBit:oneBit_3|     ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|CSA:csa0|RCA:rca0|fourBitAdder:fourBit_3|oneBit:oneBit_3         ; oneBit       ; work         ;
-;       |RCA_special:rca1|          ; 15 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|CSA:csa0|RCA_special:rca1                                        ; RCA_special  ; work         ;
-;          |fourBitAdder:fourBit_0| ; 4 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|CSA:csa0|RCA_special:rca1|fourBitAdder:fourBit_0                 ; fourBitAdder ; work         ;
-;             |oneBit:oneBit_0|     ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|CSA:csa0|RCA_special:rca1|fourBitAdder:fourBit_0|oneBit:oneBit_0 ; oneBit       ; work         ;
-;             |oneBit:oneBit_1|     ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|CSA:csa0|RCA_special:rca1|fourBitAdder:fourBit_0|oneBit:oneBit_1 ; oneBit       ; work         ;
-;             |oneBit:oneBit_2|     ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|CSA:csa0|RCA_special:rca1|fourBitAdder:fourBit_0|oneBit:oneBit_2 ; oneBit       ; work         ;
-;             |oneBit:oneBit_3|     ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|CSA:csa0|RCA_special:rca1|fourBitAdder:fourBit_0|oneBit:oneBit_3 ; oneBit       ; work         ;
-;          |fourBitAdder:fourBit_1| ; 4 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|CSA:csa0|RCA_special:rca1|fourBitAdder:fourBit_1                 ; fourBitAdder ; work         ;
-;             |oneBit:oneBit_0|     ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|CSA:csa0|RCA_special:rca1|fourBitAdder:fourBit_1|oneBit:oneBit_0 ; oneBit       ; work         ;
-;             |oneBit:oneBit_1|     ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|CSA:csa0|RCA_special:rca1|fourBitAdder:fourBit_1|oneBit:oneBit_1 ; oneBit       ; work         ;
-;             |oneBit:oneBit_2|     ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|CSA:csa0|RCA_special:rca1|fourBitAdder:fourBit_1|oneBit:oneBit_2 ; oneBit       ; work         ;
-;             |oneBit:oneBit_3|     ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|CSA:csa0|RCA_special:rca1|fourBitAdder:fourBit_1|oneBit:oneBit_3 ; oneBit       ; work         ;
-;          |fourBitAdder:fourBit_2| ; 4 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|CSA:csa0|RCA_special:rca1|fourBitAdder:fourBit_2                 ; fourBitAdder ; work         ;
-;             |oneBit:oneBit_0|     ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|CSA:csa0|RCA_special:rca1|fourBitAdder:fourBit_2|oneBit:oneBit_0 ; oneBit       ; work         ;
-;             |oneBit:oneBit_1|     ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|CSA:csa0|RCA_special:rca1|fourBitAdder:fourBit_2|oneBit:oneBit_1 ; oneBit       ; work         ;
-;             |oneBit:oneBit_2|     ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|CSA:csa0|RCA_special:rca1|fourBitAdder:fourBit_2|oneBit:oneBit_2 ; oneBit       ; work         ;
-;             |oneBit:oneBit_3|     ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|CSA:csa0|RCA_special:rca1|fourBitAdder:fourBit_2|oneBit:oneBit_3 ; oneBit       ; work         ;
-;          |oneBit:oneBit_0|        ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|CSA:csa0|RCA_special:rca1|oneBit:oneBit_0                        ; oneBit       ; work         ;
-;          |oneBit:oneBit_1|        ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|CSA:csa0|RCA_special:rca1|oneBit:oneBit_1                        ; oneBit       ; work         ;
-;          |oneBit:oneBit_2|        ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|CSA:csa0|RCA_special:rca1|oneBit:oneBit_2                        ; oneBit       ; work         ;
-;       |RCA_special:rca2|          ; 15 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|CSA:csa0|RCA_special:rca2                                        ; RCA_special  ; work         ;
-;          |fourBitAdder:fourBit_0| ; 4 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|CSA:csa0|RCA_special:rca2|fourBitAdder:fourBit_0                 ; fourBitAdder ; work         ;
-;             |oneBit:oneBit_1|     ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|CSA:csa0|RCA_special:rca2|fourBitAdder:fourBit_0|oneBit:oneBit_1 ; oneBit       ; work         ;
-;             |oneBit:oneBit_2|     ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|CSA:csa0|RCA_special:rca2|fourBitAdder:fourBit_0|oneBit:oneBit_2 ; oneBit       ; work         ;
-;             |oneBit:oneBit_3|     ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|CSA:csa0|RCA_special:rca2|fourBitAdder:fourBit_0|oneBit:oneBit_3 ; oneBit       ; work         ;
-;          |fourBitAdder:fourBit_1| ; 4 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|CSA:csa0|RCA_special:rca2|fourBitAdder:fourBit_1                 ; fourBitAdder ; work         ;
-;             |oneBit:oneBit_0|     ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|CSA:csa0|RCA_special:rca2|fourBitAdder:fourBit_1|oneBit:oneBit_0 ; oneBit       ; work         ;
-;             |oneBit:oneBit_1|     ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|CSA:csa0|RCA_special:rca2|fourBitAdder:fourBit_1|oneBit:oneBit_1 ; oneBit       ; work         ;
-;             |oneBit:oneBit_2|     ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|CSA:csa0|RCA_special:rca2|fourBitAdder:fourBit_1|oneBit:oneBit_2 ; oneBit       ; work         ;
-;             |oneBit:oneBit_3|     ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|CSA:csa0|RCA_special:rca2|fourBitAdder:fourBit_1|oneBit:oneBit_3 ; oneBit       ; work         ;
-;          |fourBitAdder:fourBit_2| ; 4 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|CSA:csa0|RCA_special:rca2|fourBitAdder:fourBit_2                 ; fourBitAdder ; work         ;
-;             |oneBit:oneBit_0|     ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|CSA:csa0|RCA_special:rca2|fourBitAdder:fourBit_2|oneBit:oneBit_0 ; oneBit       ; work         ;
-;             |oneBit:oneBit_1|     ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|CSA:csa0|RCA_special:rca2|fourBitAdder:fourBit_2|oneBit:oneBit_1 ; oneBit       ; work         ;
-;             |oneBit:oneBit_2|     ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|CSA:csa0|RCA_special:rca2|fourBitAdder:fourBit_2|oneBit:oneBit_2 ; oneBit       ; work         ;
-;             |oneBit:oneBit_3|     ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|CSA:csa0|RCA_special:rca2|fourBitAdder:fourBit_2|oneBit:oneBit_3 ; oneBit       ; work         ;
-;          |oneBit:oneBit_0|        ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|CSA:csa0|RCA_special:rca2|oneBit:oneBit_0                        ; oneBit       ; work         ;
-;          |oneBit:oneBit_1|        ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|CSA:csa0|RCA_special:rca2|oneBit:oneBit_1                        ; oneBit       ; work         ;
-;          |oneBit:oneBit_2|        ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|CSA:csa0|RCA_special:rca2|oneBit:oneBit_2                        ; oneBit       ; work         ;
-;    |bit_Or:or0|                   ; 8 (8)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|bit_Or:or0                                                       ; bit_Or       ; work         ;
-;    |left_shift:shift0|            ; 101 (101)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|left_shift:shift0                                                ; left_shift   ; work         ;
-;    |right_shift:shift1|           ; 90 (90)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|right_shift:shift1                                               ; right_shift  ; work         ;
-+-----------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------+--------------+--------------+
-=======
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                             ;
-+----------------------------------+-----------------+------------------------+--------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                                               ; Library ;
-+----------------------------------+-----------------+------------------------+--------------------------------------------------------------------------------------------+---------+
-; is_not_equal.v                   ; yes             ; User Verilog HDL File  ; C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project2/ECE-550/is_not_equal.v ;         ;
-+----------------------------------+-----------------+------------------------+--------------------------------------------------------------------------------------------+---------+
-
-
-+------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary          ;
-+---------------------------------------------+--------+
-; Resource                                    ; Usage  ;
-+---------------------------------------------+--------+
-; Estimated Total logic elements              ; 21     ;
-;                                             ;        ;
-; Total combinational functions               ; 21     ;
-; Logic element usage by number of LUT inputs ;        ;
-;     -- 4 input functions                    ; 21     ;
-;     -- 3 input functions                    ; 0      ;
-;     -- <=2 input functions                  ; 0      ;
-;                                             ;        ;
-; Logic elements by mode                      ;        ;
-;     -- normal mode                          ; 21     ;
-;     -- arithmetic mode                      ; 0      ;
-;                                             ;        ;
-; Total registers                             ; 0      ;
-;     -- Dedicated logic registers            ; 0      ;
-;     -- I/O registers                        ; 0      ;
-;                                             ;        ;
-; I/O pins                                    ; 65     ;
-;                                             ;        ;
-; Embedded Multiplier 9-bit elements          ; 0      ;
-;                                             ;        ;
-; Maximum fan-out node                        ; comb~0 ;
-; Maximum fan-out                             ; 1      ;
-; Total fan-out                               ; 150    ;
-; Average fan-out                             ; 0.99   ;
-+---------------------------------------------+--------+
-
-
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                        ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+--------------+
-; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name  ; Library Name ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+--------------+
-; |is_not_equal              ; 21 (21)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 65   ; 0            ; |is_not_equal       ; is_not_equal ; work         ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+--------------+
->>>>>>> 905415823baa60d8b96fc8614b7b713843bc6782
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                           ;
++-------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------+--------------+--------------+
+; Compilation Hierarchy Node    ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                 ; Entity Name  ; Library Name ;
++-------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------+--------------+--------------+
+; |ALU                          ; 534 (244)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 109  ; 0            ; |ALU                                                                ; ALU          ; work         ;
+;    |CheckAddSub:calculate0|   ; 58 (4)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|CheckAddSub:calculate0                                         ; CheckAddSub  ; work         ;
+;       |RCA16Bit:first|        ; 24 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|CheckAddSub:calculate0|RCA16Bit:first                          ; RCA16Bit     ; work         ;
+;          |OneBitAdder:Full10| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|CheckAddSub:calculate0|RCA16Bit:first|OneBitAdder:Full10       ; OneBitAdder  ; work         ;
+;          |OneBitAdder:Full11| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|CheckAddSub:calculate0|RCA16Bit:first|OneBitAdder:Full11       ; OneBitAdder  ; work         ;
+;          |OneBitAdder:Full12| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|CheckAddSub:calculate0|RCA16Bit:first|OneBitAdder:Full12       ; OneBitAdder  ; work         ;
+;          |OneBitAdder:Full13| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|CheckAddSub:calculate0|RCA16Bit:first|OneBitAdder:Full13       ; OneBitAdder  ; work         ;
+;          |OneBitAdder:Full14| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|CheckAddSub:calculate0|RCA16Bit:first|OneBitAdder:Full14       ; OneBitAdder  ; work         ;
+;          |OneBitAdder:Full15| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|CheckAddSub:calculate0|RCA16Bit:first|OneBitAdder:Full15       ; OneBitAdder  ; work         ;
+;          |OneBitAdder:Full16| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|CheckAddSub:calculate0|RCA16Bit:first|OneBitAdder:Full16       ; OneBitAdder  ; work         ;
+;          |OneBitAdder:Full1|  ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|CheckAddSub:calculate0|RCA16Bit:first|OneBitAdder:Full1        ; OneBitAdder  ; work         ;
+;          |OneBitAdder:Full2|  ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|CheckAddSub:calculate0|RCA16Bit:first|OneBitAdder:Full2        ; OneBitAdder  ; work         ;
+;          |OneBitAdder:Full3|  ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|CheckAddSub:calculate0|RCA16Bit:first|OneBitAdder:Full3        ; OneBitAdder  ; work         ;
+;          |OneBitAdder:Full4|  ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|CheckAddSub:calculate0|RCA16Bit:first|OneBitAdder:Full4        ; OneBitAdder  ; work         ;
+;          |OneBitAdder:Full5|  ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|CheckAddSub:calculate0|RCA16Bit:first|OneBitAdder:Full5        ; OneBitAdder  ; work         ;
+;          |OneBitAdder:Full6|  ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|CheckAddSub:calculate0|RCA16Bit:first|OneBitAdder:Full6        ; OneBitAdder  ; work         ;
+;          |OneBitAdder:Full7|  ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|CheckAddSub:calculate0|RCA16Bit:first|OneBitAdder:Full7        ; OneBitAdder  ; work         ;
+;          |OneBitAdder:Full8|  ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|CheckAddSub:calculate0|RCA16Bit:first|OneBitAdder:Full8        ; OneBitAdder  ; work         ;
+;          |OneBitAdder:Full9|  ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|CheckAddSub:calculate0|RCA16Bit:first|OneBitAdder:Full9        ; OneBitAdder  ; work         ;
+;       |RCA16Bit:second_cin0|  ; 15 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|CheckAddSub:calculate0|RCA16Bit:second_cin0                    ; RCA16Bit     ; work         ;
+;          |OneBitAdder:Full10| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|CheckAddSub:calculate0|RCA16Bit:second_cin0|OneBitAdder:Full10 ; OneBitAdder  ; work         ;
+;          |OneBitAdder:Full11| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|CheckAddSub:calculate0|RCA16Bit:second_cin0|OneBitAdder:Full11 ; OneBitAdder  ; work         ;
+;          |OneBitAdder:Full12| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|CheckAddSub:calculate0|RCA16Bit:second_cin0|OneBitAdder:Full12 ; OneBitAdder  ; work         ;
+;          |OneBitAdder:Full13| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|CheckAddSub:calculate0|RCA16Bit:second_cin0|OneBitAdder:Full13 ; OneBitAdder  ; work         ;
+;          |OneBitAdder:Full14| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|CheckAddSub:calculate0|RCA16Bit:second_cin0|OneBitAdder:Full14 ; OneBitAdder  ; work         ;
+;          |OneBitAdder:Full15| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|CheckAddSub:calculate0|RCA16Bit:second_cin0|OneBitAdder:Full15 ; OneBitAdder  ; work         ;
+;          |OneBitAdder:Full1|  ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|CheckAddSub:calculate0|RCA16Bit:second_cin0|OneBitAdder:Full1  ; OneBitAdder  ; work         ;
+;          |OneBitAdder:Full2|  ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|CheckAddSub:calculate0|RCA16Bit:second_cin0|OneBitAdder:Full2  ; OneBitAdder  ; work         ;
+;          |OneBitAdder:Full3|  ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|CheckAddSub:calculate0|RCA16Bit:second_cin0|OneBitAdder:Full3  ; OneBitAdder  ; work         ;
+;          |OneBitAdder:Full4|  ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|CheckAddSub:calculate0|RCA16Bit:second_cin0|OneBitAdder:Full4  ; OneBitAdder  ; work         ;
+;          |OneBitAdder:Full5|  ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|CheckAddSub:calculate0|RCA16Bit:second_cin0|OneBitAdder:Full5  ; OneBitAdder  ; work         ;
+;          |OneBitAdder:Full6|  ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|CheckAddSub:calculate0|RCA16Bit:second_cin0|OneBitAdder:Full6  ; OneBitAdder  ; work         ;
+;          |OneBitAdder:Full7|  ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|CheckAddSub:calculate0|RCA16Bit:second_cin0|OneBitAdder:Full7  ; OneBitAdder  ; work         ;
+;          |OneBitAdder:Full8|  ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|CheckAddSub:calculate0|RCA16Bit:second_cin0|OneBitAdder:Full8  ; OneBitAdder  ; work         ;
+;          |OneBitAdder:Full9|  ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|CheckAddSub:calculate0|RCA16Bit:second_cin0|OneBitAdder:Full9  ; OneBitAdder  ; work         ;
+;       |RCA16Bit:second_cin1|  ; 15 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|CheckAddSub:calculate0|RCA16Bit:second_cin1                    ; RCA16Bit     ; work         ;
+;          |OneBitAdder:Full10| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|CheckAddSub:calculate0|RCA16Bit:second_cin1|OneBitAdder:Full10 ; OneBitAdder  ; work         ;
+;          |OneBitAdder:Full11| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|CheckAddSub:calculate0|RCA16Bit:second_cin1|OneBitAdder:Full11 ; OneBitAdder  ; work         ;
+;          |OneBitAdder:Full12| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|CheckAddSub:calculate0|RCA16Bit:second_cin1|OneBitAdder:Full12 ; OneBitAdder  ; work         ;
+;          |OneBitAdder:Full13| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|CheckAddSub:calculate0|RCA16Bit:second_cin1|OneBitAdder:Full13 ; OneBitAdder  ; work         ;
+;          |OneBitAdder:Full14| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|CheckAddSub:calculate0|RCA16Bit:second_cin1|OneBitAdder:Full14 ; OneBitAdder  ; work         ;
+;          |OneBitAdder:Full15| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|CheckAddSub:calculate0|RCA16Bit:second_cin1|OneBitAdder:Full15 ; OneBitAdder  ; work         ;
+;          |OneBitAdder:Full2|  ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|CheckAddSub:calculate0|RCA16Bit:second_cin1|OneBitAdder:Full2  ; OneBitAdder  ; work         ;
+;          |OneBitAdder:Full3|  ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|CheckAddSub:calculate0|RCA16Bit:second_cin1|OneBitAdder:Full3  ; OneBitAdder  ; work         ;
+;          |OneBitAdder:Full4|  ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|CheckAddSub:calculate0|RCA16Bit:second_cin1|OneBitAdder:Full4  ; OneBitAdder  ; work         ;
+;          |OneBitAdder:Full5|  ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|CheckAddSub:calculate0|RCA16Bit:second_cin1|OneBitAdder:Full5  ; OneBitAdder  ; work         ;
+;          |OneBitAdder:Full6|  ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|CheckAddSub:calculate0|RCA16Bit:second_cin1|OneBitAdder:Full6  ; OneBitAdder  ; work         ;
+;          |OneBitAdder:Full7|  ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|CheckAddSub:calculate0|RCA16Bit:second_cin1|OneBitAdder:Full7  ; OneBitAdder  ; work         ;
+;          |OneBitAdder:Full8|  ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|CheckAddSub:calculate0|RCA16Bit:second_cin1|OneBitAdder:Full8  ; OneBitAdder  ; work         ;
+;          |OneBitAdder:Full9|  ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|CheckAddSub:calculate0|RCA16Bit:second_cin1|OneBitAdder:Full9  ; OneBitAdder  ; work         ;
+;    |CheckAddSub:calculate1|   ; 15 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|CheckAddSub:calculate1                                         ; CheckAddSub  ; work         ;
+;       |RCA16Bit:first|        ; 15 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|CheckAddSub:calculate1|RCA16Bit:first                          ; RCA16Bit     ; work         ;
+;          |OneBitAdder:Full14| ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|CheckAddSub:calculate1|RCA16Bit:first|OneBitAdder:Full14       ; OneBitAdder  ; work         ;
+;          |OneBitAdder:Full16| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|CheckAddSub:calculate1|RCA16Bit:first|OneBitAdder:Full16       ; OneBitAdder  ; work         ;
+;          |OneBitAdder:Full7|  ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|CheckAddSub:calculate1|RCA16Bit:first|OneBitAdder:Full7        ; OneBitAdder  ; work         ;
+;    |bit_Or:or0|               ; 8 (8)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|bit_Or:or0                                                     ; bit_Or       ; work         ;
+;    |is_not_equal:ine0|        ; 19 (19)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|is_not_equal:ine0                                              ; is_not_equal ; work         ;
+;    |left_shift:shift0|        ; 101 (101)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|left_shift:shift0                                              ; left_shift   ; work         ;
+;    |right_shift:shift1|       ; 89 (89)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|right_shift:shift1                                             ; right_shift  ; work         ;
++-------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------+--------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -383,7 +300,6 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 
 
-<<<<<<< HEAD
 +------------------------------------------------------------------------------------------------------------------------------------------+
 ; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                           ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
@@ -399,63 +315,59 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "CSA:csa1"                                                                                ;
-+-----------+--------+----------+-------------------------------------------------------------------------------------+
-; Port      ; Type   ; Severity ; Details                                                                             ;
-+-----------+--------+----------+-------------------------------------------------------------------------------------+
-; cin[4..1] ; Input  ; Info     ; Stuck at GND                                                                        ;
-; cin[0]    ; Input  ; Info     ; Stuck at VCC                                                                        ;
-; ove       ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; sum       ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+-----------+--------+----------+-------------------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "CheckAddSub:calculate1"                                                                 ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; Port     ; Type   ; Severity ; Details                                                                             ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; mode     ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; D[30..0] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
 
 
-+-------------------------------------------------------+
-; Port Connectivity Checks: "CSA:csa0|RCA_special:rca2" ;
-+-------+-------+----------+----------------------------+
-; Port  ; Type  ; Severity ; Details                    ;
-+-------+-------+----------+----------------------------+
-; cin16 ; Input ; Info     ; Stuck at VCC               ;
-+-------+-------+----------+----------------------------+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "CheckAddSub:calculate0|RCA16Bit:second_cin1"                                        ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; cin  ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; cout ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
 
 
-+-------------------------------------------------------+
-; Port Connectivity Checks: "CSA:csa0|RCA_special:rca1" ;
-+-------+-------+----------+----------------------------+
-; Port  ; Type  ; Severity ; Details                    ;
-+-------+-------+----------+----------------------------+
-; cin16 ; Input ; Info     ; Stuck at GND               ;
-+-------+-------+----------+----------------------------+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "CheckAddSub:calculate0|RCA16Bit:second_cin0"                                        ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; cin  ; Input  ; Info     ; Stuck at GND                                                                        ;
+; cout ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
 
 
-=======
->>>>>>> 905415823baa60d8b96fc8614b7b713843bc6782
++--------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "CheckAddSub:calculate0|RCA16Bit:first"                                                  ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; Port     ; Type   ; Severity ; Details                                                                             ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; overflow ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+
+
 +-----------------------------------------------------+
 ; Post-Synthesis Netlist Statistics for Top Partition ;
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-<<<<<<< HEAD
 ; boundary_port         ; 109                         ;
-; cycloneiii_lcell_comb ; 484                         ;
-;     normal            ; 484                         ;
-;         0 data inputs ; 1                           ;
-;         2 data inputs ; 22                          ;
-;         3 data inputs ; 186                         ;
-;         4 data inputs ; 275                         ;
+; cycloneiii_lcell_comb ; 534                         ;
+;     normal            ; 534                         ;
+;         2 data inputs ; 26                          ;
+;         3 data inputs ; 199                         ;
+;         4 data inputs ; 309                         ;
 ;                       ;                             ;
-; Max LUT depth         ; 22.00                       ;
-; Average LUT depth     ; 10.50                       ;
-=======
-; boundary_port         ; 65                          ;
-; cycloneiii_lcell_comb ; 21                          ;
-;     normal            ; 21                          ;
-;         4 data inputs ; 21                          ;
-;                       ;                             ;
-; Max LUT depth         ; 3.00                        ;
-; Average LUT depth     ; 3.00                        ;
->>>>>>> 905415823baa60d8b96fc8614b7b713843bc6782
+; Max LUT depth         ; 23.00                       ;
+; Average LUT depth     ; 10.88                       ;
 +-----------------------+-----------------------------+
 
 
@@ -474,89 +386,54 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
-<<<<<<< HEAD
-    Info: Processing started: Thu Sep 23 18:02:32 2021
+    Info: Processing started: Thu Sep 23 19:40:47 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ALU -c ALU
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
-=======
-    Info: Processing started: Thu Sep 23 18:19:38 2021
-Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ALU -c ALU
-Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
-Info (12021): Found 1 design units, including 1 entities, in source file sra_32bit.v
-    Info (12023): Found entity 1: SRA_32bit File: C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project2/ECE-550/SRA_32bit.v Line: 1
->>>>>>> 905415823baa60d8b96fc8614b7b713843bc6782
 Info (12021): Found 1 design units, including 1 entities, in source file alu.v
-    Info (12023): Found entity 1: ALU File: C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project2/ECE-550/ALU.v Line: 1
+    Info (12023): Found entity 1: ALU File: C:/Users/lizhu/Desktop/ECE 550/Proj1/ALU.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file alu_tb.v
-    Info (12023): Found entity 1: ALU_tb File: C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project2/ECE-550/ALU_tb.v Line: 3
-Info (12021): Found 1 design units, including 1 entities, in source file csa.v
-    Info (12023): Found entity 1: CSA File: C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project2/ECE-550/CSA.v Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file negateb.v
-    Info (12023): Found entity 1: negateb File: C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project2/ECE-550/negateb.v Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file rca.v
-    Info (12023): Found entity 1: RCA File: C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project2/ECE-550/RCA.v Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file fourbitadder.v
-    Info (12023): Found entity 1: fourBitAdder File: C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project2/ECE-550/fourBitAdder.v Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file onebit.v
-    Info (12023): Found entity 1: oneBit File: C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project2/ECE-550/oneBit.v Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file rca_special.v
-    Info (12023): Found entity 1: RCA_special File: C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project2/ECE-550/RCA_special.v Line: 1
+    Info (12023): Found entity 1: ALU_tb File: C:/Users/lizhu/Desktop/ECE 550/Proj1/ALU_tb.v Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file bit_and.v
-    Info (12023): Found entity 1: bit_And File: C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project2/ECE-550/bit_And.v Line: 1
+    Info (12023): Found entity 1: bit_And File: C:/Users/lizhu/Desktop/ECE 550/Proj1/bit_And.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file bit_or.v
-    Info (12023): Found entity 1: bit_Or File: C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project2/ECE-550/bit_Or.v Line: 1
+    Info (12023): Found entity 1: bit_Or File: C:/Users/lizhu/Desktop/ECE 550/Proj1/bit_Or.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file left_shift.v
-    Info (12023): Found entity 1: left_shift File: C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project2/ECE-550/left_shift.v Line: 1
+    Info (12023): Found entity 1: left_shift File: C:/Users/lizhu/Desktop/ECE 550/Proj1/left_shift.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file right_shift.v
-<<<<<<< HEAD
     Info (12023): Found entity 1: right_shift File: C:/Users/lizhu/Desktop/ECE 550/Proj1/right_shift.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file is_not_equal.v
+    Info (12023): Found entity 1: is_not_equal File: C:/Users/lizhu/Desktop/ECE 550/Proj1/is_not_equal.v Line: 1
+Warning (10463): Verilog HDL Declaration warning at CheckAddSub.v(7): "bit" is SystemVerilog-2005 keyword File: C:/Users/lizhu/Desktop/ECE 550/Proj1/CheckAddSub.v Line: 7
+Info (12021): Found 1 design units, including 1 entities, in source file checkaddsub.v
+    Info (12023): Found entity 1: CheckAddSub File: C:/Users/lizhu/Desktop/ECE 550/Proj1/CheckAddSub.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file rca16bit.v
+    Info (12023): Found entity 1: RCA16Bit File: C:/Users/lizhu/Desktop/ECE 550/Proj1/RCA16Bit.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file onebitadder.v
+    Info (12023): Found entity 1: OneBitAdder File: C:/Users/lizhu/Desktop/ECE 550/Proj1/OneBitAdder.v Line: 1
 Info (12127): Elaborating entity "ALU" for the top level hierarchy
-Warning (10030): Net "isNotEqual" at ALU.v(7) has no driver or initial value, using a default initial value '0' File: C:/Users/lizhu/Desktop/ECE 550/Proj1/ALU.v Line: 7
-Info (12128): Elaborating entity "negateb" for hierarchy "negateb:negateb0" File: C:/Users/lizhu/Desktop/ECE 550/Proj1/ALU.v Line: 13
-Info (12128): Elaborating entity "CSA" for hierarchy "CSA:csa0" File: C:/Users/lizhu/Desktop/ECE 550/Proj1/ALU.v Line: 19
-Info (12128): Elaborating entity "RCA" for hierarchy "CSA:csa0|RCA:rca0" File: C:/Users/lizhu/Desktop/ECE 550/Proj1/CSA.v Line: 9
-Info (12128): Elaborating entity "fourBitAdder" for hierarchy "CSA:csa0|RCA:rca0|fourBitAdder:fourBit_0" File: C:/Users/lizhu/Desktop/ECE 550/Proj1/RCA.v Line: 9
-Info (12128): Elaborating entity "oneBit" for hierarchy "CSA:csa0|RCA:rca0|fourBitAdder:fourBit_0|oneBit:oneBit_0" File: C:/Users/lizhu/Desktop/ECE 550/Proj1/fourBitAdder.v Line: 9
-Info (12128): Elaborating entity "RCA_special" for hierarchy "CSA:csa0|RCA_special:rca1" File: C:/Users/lizhu/Desktop/ECE 550/Proj1/CSA.v Line: 10
-Info (12128): Elaborating entity "bit_And" for hierarchy "bit_And:and0" File: C:/Users/lizhu/Desktop/ECE 550/Proj1/ALU.v Line: 22
-Info (12128): Elaborating entity "bit_Or" for hierarchy "bit_Or:or0" File: C:/Users/lizhu/Desktop/ECE 550/Proj1/ALU.v Line: 25
-Info (12128): Elaborating entity "left_shift" for hierarchy "left_shift:shift0" File: C:/Users/lizhu/Desktop/ECE 550/Proj1/ALU.v Line: 28
-Info (12128): Elaborating entity "right_shift" for hierarchy "right_shift:shift1" File: C:/Users/lizhu/Desktop/ECE 550/Proj1/ALU.v Line: 29
-Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "isNotEqual" is stuck at GND File: C:/Users/lizhu/Desktop/ECE 550/Proj1/ALU.v Line: 7
-    Warning (13410): Pin "isLessThan" is stuck at GND File: C:/Users/lizhu/Desktop/ECE 550/Proj1/ALU.v Line: 7
+Info (12128): Elaborating entity "CheckAddSub" for hierarchy "CheckAddSub:calculate0" File: C:/Users/lizhu/Desktop/ECE 550/Proj1/ALU.v Line: 14
+Info (12128): Elaborating entity "RCA16Bit" for hierarchy "CheckAddSub:calculate0|RCA16Bit:first" File: C:/Users/lizhu/Desktop/ECE 550/Proj1/CheckAddSub.v Line: 45
+Info (12128): Elaborating entity "OneBitAdder" for hierarchy "CheckAddSub:calculate0|RCA16Bit:first|OneBitAdder:Full1" File: C:/Users/lizhu/Desktop/ECE 550/Proj1/RCA16Bit.v Line: 9
+Info (12128): Elaborating entity "bit_And" for hierarchy "bit_And:and0" File: C:/Users/lizhu/Desktop/ECE 550/Proj1/ALU.v Line: 17
+Info (12128): Elaborating entity "bit_Or" for hierarchy "bit_Or:or0" File: C:/Users/lizhu/Desktop/ECE 550/Proj1/ALU.v Line: 20
+Info (12128): Elaborating entity "left_shift" for hierarchy "left_shift:shift0" File: C:/Users/lizhu/Desktop/ECE 550/Proj1/ALU.v Line: 23
+Info (12128): Elaborating entity "right_shift" for hierarchy "right_shift:shift1" File: C:/Users/lizhu/Desktop/ECE 550/Proj1/ALU.v Line: 24
+Info (12128): Elaborating entity "is_not_equal" for hierarchy "is_not_equal:ine0" File: C:/Users/lizhu/Desktop/ECE 550/Proj1/ALU.v Line: 27
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
 Warning (21074): Design contains 2 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "ctrl_ALUopcode[3]" File: C:/Users/lizhu/Desktop/ECE 550/Proj1/ALU.v Line: 4
     Warning (15610): No output dependent on input pin "ctrl_ALUopcode[4]" File: C:/Users/lizhu/Desktop/ECE 550/Proj1/ALU.v Line: 4
-Info (21057): Implemented 592 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 643 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 74 input pins
     Info (21059): Implemented 35 output pins
-    Info (21061): Implemented 483 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 8 warnings
-    Info: Peak virtual memory: 4988 megabytes
-    Info: Processing ended: Thu Sep 23 18:02:42 2021
-=======
-    Info (12023): Found entity 1: right_shift File: C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project2/ECE-550/right_shift.v Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file is_not_equal.v
-    Info (12023): Found entity 1: is_not_equal File: C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project2/ECE-550/is_not_equal.v Line: 1
-Info (12127): Elaborating entity "is_not_equal" for the top level hierarchy
-Info (286030): Timing-Driven Synthesis is running
-Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
-    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 86 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 64 input pins
-    Info (21059): Implemented 1 output pins
-    Info (21061): Implemented 21 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 5009 megabytes
-    Info: Processing ended: Thu Sep 23 18:19:48 2021
->>>>>>> 905415823baa60d8b96fc8614b7b713843bc6782
-    Info: Elapsed time: 00:00:10
-    Info: Total CPU time (on all processors): 00:00:20
+    Info (21061): Implemented 534 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 5 warnings
+    Info: Peak virtual memory: 4989 megabytes
+    Info: Processing ended: Thu Sep 23 19:40:56 2021
+    Info: Elapsed time: 00:00:09
+    Info: Total CPU time (on all processors): 00:00:18
 
 

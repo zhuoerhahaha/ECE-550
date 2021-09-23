@@ -2,33 +2,31 @@
 # ** Warning: (vlib-34) Library already exists at "work".
 # 
 # Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
-# Start time: 18:23:34 on Sep 23,2021
+# Start time: 19:34:29 on Sep 23,2021
 # vlog -work work ALU.vo 
-# -- Compiling module is_not_equal
+# -- Compiling module ALU
 # 
 # Top level modules:
-# 	is_not_equal
-# End time: 18:23:34 on Sep 23,2021, Elapsed time: 0:00:00
+# 	ALU
+# End time: 19:34:29 on Sep 23,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
-# Start time: 18:23:34 on Sep 23,2021
-# vlog -work work Waveform7.vwf.vt 
-# -- Compiling module is_not_equal_vlg_vec_tst
+# Start time: 19:34:29 on Sep 23,2021
+# vlog -work work Waveform12.vwf.vt 
+# -- Compiling module ALU_vlg_vec_tst
 # 
 # Top level modules:
-# 	is_not_equal_vlg_vec_tst
-# End time: 18:23:35 on Sep 23,2021, Elapsed time: 0:00:01
+# 	ALU_vlg_vec_tst
+# End time: 19:34:29 on Sep 23,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vsim -novopt -c -t 1ps -L cycloneive_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.is_not_equal_vlg_vec_tst -voptargs=""+acc"" 
-# Start time: 18:23:35 on Sep 23,2021
-# Loading work.is_not_equal_vlg_vec_tst
-# Loading work.is_not_equal
+# vsim -novopt -c -t 1ps -L cycloneive_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.ALU_vlg_vec_tst -voptargs=""+acc"" 
+# Start time: 19:34:29 on Sep 23,2021
+# Loading work.ALU_vlg_vec_tst
+# Loading work.ALU
 # Loading cycloneive_ver.cycloneive_io_obuf
 # Loading cycloneive_ver.cycloneive_io_ibuf
 # Loading cycloneive_ver.cycloneive_lcell_comb
-# ** Note: $stop    : Waveform7.vwf.vt(47)
-#    Time: 1 us  Iteration: 0  Instance: /is_not_equal_vlg_vec_tst
-# Break in Module is_not_equal_vlg_vec_tst at Waveform7.vwf.vt line 47
-# Stopped at Waveform7.vwf.vt line 47
-# End time: 18:23:35 on Sep 23,2021, Elapsed time: 0:00:00
+# ** Note: $finish    : Waveform12.vwf.vt(57)
+#    Time: 1 us  Iteration: 0  Instance: /ALU_vlg_vec_tst
+# End time: 19:34:29 on Sep 23,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0

@@ -1,1145 +1,966 @@
-<<<<<<< HEAD
 |ALU
-data_operandA[0] => data_operandA[0].IN6
-data_operandA[1] => data_operandA[1].IN6
-data_operandA[2] => data_operandA[2].IN6
-data_operandA[3] => data_operandA[3].IN6
-data_operandA[4] => data_operandA[4].IN6
-data_operandA[5] => data_operandA[5].IN6
-data_operandA[6] => data_operandA[6].IN6
-data_operandA[7] => data_operandA[7].IN6
-data_operandA[8] => data_operandA[8].IN6
-data_operandA[9] => data_operandA[9].IN6
-data_operandA[10] => data_operandA[10].IN6
-data_operandA[11] => data_operandA[11].IN6
-data_operandA[12] => data_operandA[12].IN6
-data_operandA[13] => data_operandA[13].IN6
-data_operandA[14] => data_operandA[14].IN6
-data_operandA[15] => data_operandA[15].IN6
-data_operandA[16] => data_operandA[16].IN6
-data_operandA[17] => data_operandA[17].IN6
-data_operandA[18] => data_operandA[18].IN6
-data_operandA[19] => data_operandA[19].IN6
-data_operandA[20] => data_operandA[20].IN6
-data_operandA[21] => data_operandA[21].IN6
-data_operandA[22] => data_operandA[22].IN6
-data_operandA[23] => data_operandA[23].IN6
-data_operandA[24] => data_operandA[24].IN6
-data_operandA[25] => data_operandA[25].IN6
-data_operandA[26] => data_operandA[26].IN6
-data_operandA[27] => data_operandA[27].IN6
-data_operandA[28] => data_operandA[28].IN6
-data_operandA[29] => data_operandA[29].IN6
-data_operandA[30] => data_operandA[30].IN6
-data_operandA[31] => data_operandA[31].IN6
-data_operandB[0] => data_operandB[0].IN4
-data_operandB[1] => data_operandB[1].IN4
-data_operandB[2] => data_operandB[2].IN4
-data_operandB[3] => data_operandB[3].IN4
-data_operandB[4] => data_operandB[4].IN4
-data_operandB[5] => data_operandB[5].IN4
-data_operandB[6] => data_operandB[6].IN4
-data_operandB[7] => data_operandB[7].IN4
-data_operandB[8] => data_operandB[8].IN4
-data_operandB[9] => data_operandB[9].IN4
-data_operandB[10] => data_operandB[10].IN4
-data_operandB[11] => data_operandB[11].IN4
-data_operandB[12] => data_operandB[12].IN4
-data_operandB[13] => data_operandB[13].IN4
-data_operandB[14] => data_operandB[14].IN4
-data_operandB[15] => data_operandB[15].IN4
-data_operandB[16] => data_operandB[16].IN4
-data_operandB[17] => data_operandB[17].IN4
-data_operandB[18] => data_operandB[18].IN4
-data_operandB[19] => data_operandB[19].IN4
-data_operandB[20] => data_operandB[20].IN4
-data_operandB[21] => data_operandB[21].IN4
-data_operandB[22] => data_operandB[22].IN4
-data_operandB[23] => data_operandB[23].IN4
-data_operandB[24] => data_operandB[24].IN4
-data_operandB[25] => data_operandB[25].IN4
-data_operandB[26] => data_operandB[26].IN4
-data_operandB[27] => data_operandB[27].IN4
-data_operandB[28] => data_operandB[28].IN4
-data_operandB[29] => data_operandB[29].IN4
-data_operandB[30] => data_operandB[30].IN4
-data_operandB[31] => data_operandB[31].IN4
+data_operandA[0] => data_operandA[0].IN7
+data_operandA[1] => data_operandA[1].IN7
+data_operandA[2] => data_operandA[2].IN7
+data_operandA[3] => data_operandA[3].IN7
+data_operandA[4] => data_operandA[4].IN7
+data_operandA[5] => data_operandA[5].IN7
+data_operandA[6] => data_operandA[6].IN7
+data_operandA[7] => data_operandA[7].IN7
+data_operandA[8] => data_operandA[8].IN7
+data_operandA[9] => data_operandA[9].IN7
+data_operandA[10] => data_operandA[10].IN7
+data_operandA[11] => data_operandA[11].IN7
+data_operandA[12] => data_operandA[12].IN7
+data_operandA[13] => data_operandA[13].IN7
+data_operandA[14] => data_operandA[14].IN7
+data_operandA[15] => data_operandA[15].IN7
+data_operandA[16] => data_operandA[16].IN7
+data_operandA[17] => data_operandA[17].IN7
+data_operandA[18] => data_operandA[18].IN7
+data_operandA[19] => data_operandA[19].IN7
+data_operandA[20] => data_operandA[20].IN7
+data_operandA[21] => data_operandA[21].IN7
+data_operandA[22] => data_operandA[22].IN7
+data_operandA[23] => data_operandA[23].IN7
+data_operandA[24] => data_operandA[24].IN7
+data_operandA[25] => data_operandA[25].IN7
+data_operandA[26] => data_operandA[26].IN7
+data_operandA[27] => data_operandA[27].IN7
+data_operandA[28] => data_operandA[28].IN7
+data_operandA[29] => data_operandA[29].IN7
+data_operandA[30] => data_operandA[30].IN7
+data_operandA[31] => data_operandA[31].IN7
+data_operandB[0] => data_operandB[0].IN5
+data_operandB[1] => data_operandB[1].IN5
+data_operandB[2] => data_operandB[2].IN5
+data_operandB[3] => data_operandB[3].IN5
+data_operandB[4] => data_operandB[4].IN5
+data_operandB[5] => data_operandB[5].IN5
+data_operandB[6] => data_operandB[6].IN5
+data_operandB[7] => data_operandB[7].IN5
+data_operandB[8] => data_operandB[8].IN5
+data_operandB[9] => data_operandB[9].IN5
+data_operandB[10] => data_operandB[10].IN5
+data_operandB[11] => data_operandB[11].IN5
+data_operandB[12] => data_operandB[12].IN5
+data_operandB[13] => data_operandB[13].IN5
+data_operandB[14] => data_operandB[14].IN5
+data_operandB[15] => data_operandB[15].IN5
+data_operandB[16] => data_operandB[16].IN5
+data_operandB[17] => data_operandB[17].IN5
+data_operandB[18] => data_operandB[18].IN5
+data_operandB[19] => data_operandB[19].IN5
+data_operandB[20] => data_operandB[20].IN5
+data_operandB[21] => data_operandB[21].IN5
+data_operandB[22] => data_operandB[22].IN5
+data_operandB[23] => data_operandB[23].IN5
+data_operandB[24] => data_operandB[24].IN5
+data_operandB[25] => data_operandB[25].IN5
+data_operandB[26] => data_operandB[26].IN5
+data_operandB[27] => data_operandB[27].IN5
+data_operandB[28] => data_operandB[28].IN5
+data_operandB[29] => data_operandB[29].IN5
+data_operandB[30] => data_operandB[30].IN5
+data_operandB[31] => data_operandB[31].IN5
 ctrl_ALUopcode[0] => ctrl_ALUopcode[0].IN1
-ctrl_ALUopcode[1] => ctrl_ALUopcode[1].IN1
-ctrl_ALUopcode[2] => ctrl_ALUopcode[2].IN1
-ctrl_ALUopcode[3] => ctrl_ALUopcode[3].IN1
-ctrl_ALUopcode[4] => ctrl_ALUopcode[4].IN1
+ctrl_ALUopcode[1] => data_result.OUTPUTSELECT
+ctrl_ALUopcode[1] => data_result.OUTPUTSELECT
+ctrl_ALUopcode[1] => data_result.OUTPUTSELECT
+ctrl_ALUopcode[1] => data_result.OUTPUTSELECT
+ctrl_ALUopcode[1] => data_result.OUTPUTSELECT
+ctrl_ALUopcode[1] => data_result.OUTPUTSELECT
+ctrl_ALUopcode[1] => data_result.OUTPUTSELECT
+ctrl_ALUopcode[1] => data_result.OUTPUTSELECT
+ctrl_ALUopcode[1] => data_result.OUTPUTSELECT
+ctrl_ALUopcode[1] => data_result.OUTPUTSELECT
+ctrl_ALUopcode[1] => data_result.OUTPUTSELECT
+ctrl_ALUopcode[1] => data_result.OUTPUTSELECT
+ctrl_ALUopcode[1] => data_result.OUTPUTSELECT
+ctrl_ALUopcode[1] => data_result.OUTPUTSELECT
+ctrl_ALUopcode[1] => data_result.OUTPUTSELECT
+ctrl_ALUopcode[1] => data_result.OUTPUTSELECT
+ctrl_ALUopcode[1] => data_result.OUTPUTSELECT
+ctrl_ALUopcode[1] => data_result.OUTPUTSELECT
+ctrl_ALUopcode[1] => data_result.OUTPUTSELECT
+ctrl_ALUopcode[1] => data_result.OUTPUTSELECT
+ctrl_ALUopcode[1] => data_result.OUTPUTSELECT
+ctrl_ALUopcode[1] => data_result.OUTPUTSELECT
+ctrl_ALUopcode[1] => data_result.OUTPUTSELECT
+ctrl_ALUopcode[1] => data_result.OUTPUTSELECT
+ctrl_ALUopcode[1] => data_result.OUTPUTSELECT
+ctrl_ALUopcode[1] => data_result.OUTPUTSELECT
+ctrl_ALUopcode[1] => data_result.OUTPUTSELECT
+ctrl_ALUopcode[1] => data_result.OUTPUTSELECT
+ctrl_ALUopcode[1] => data_result.OUTPUTSELECT
+ctrl_ALUopcode[1] => data_result.OUTPUTSELECT
+ctrl_ALUopcode[1] => data_result.OUTPUTSELECT
+ctrl_ALUopcode[1] => data_result.OUTPUTSELECT
+ctrl_ALUopcode[2] => data_result.OUTPUTSELECT
+ctrl_ALUopcode[2] => data_result.OUTPUTSELECT
+ctrl_ALUopcode[2] => data_result.OUTPUTSELECT
+ctrl_ALUopcode[2] => data_result.OUTPUTSELECT
+ctrl_ALUopcode[2] => data_result.OUTPUTSELECT
+ctrl_ALUopcode[2] => data_result.OUTPUTSELECT
+ctrl_ALUopcode[2] => data_result.OUTPUTSELECT
+ctrl_ALUopcode[2] => data_result.OUTPUTSELECT
+ctrl_ALUopcode[2] => data_result.OUTPUTSELECT
+ctrl_ALUopcode[2] => data_result.OUTPUTSELECT
+ctrl_ALUopcode[2] => data_result.OUTPUTSELECT
+ctrl_ALUopcode[2] => data_result.OUTPUTSELECT
+ctrl_ALUopcode[2] => data_result.OUTPUTSELECT
+ctrl_ALUopcode[2] => data_result.OUTPUTSELECT
+ctrl_ALUopcode[2] => data_result.OUTPUTSELECT
+ctrl_ALUopcode[2] => data_result.OUTPUTSELECT
+ctrl_ALUopcode[2] => data_result.OUTPUTSELECT
+ctrl_ALUopcode[2] => data_result.OUTPUTSELECT
+ctrl_ALUopcode[2] => data_result.OUTPUTSELECT
+ctrl_ALUopcode[2] => data_result.OUTPUTSELECT
+ctrl_ALUopcode[2] => data_result.OUTPUTSELECT
+ctrl_ALUopcode[2] => data_result.OUTPUTSELECT
+ctrl_ALUopcode[2] => data_result.OUTPUTSELECT
+ctrl_ALUopcode[2] => data_result.OUTPUTSELECT
+ctrl_ALUopcode[2] => data_result.OUTPUTSELECT
+ctrl_ALUopcode[2] => data_result.OUTPUTSELECT
+ctrl_ALUopcode[2] => data_result.OUTPUTSELECT
+ctrl_ALUopcode[2] => data_result.OUTPUTSELECT
+ctrl_ALUopcode[2] => data_result.OUTPUTSELECT
+ctrl_ALUopcode[2] => data_result.OUTPUTSELECT
+ctrl_ALUopcode[2] => data_result.OUTPUTSELECT
+ctrl_ALUopcode[2] => data_result.OUTPUTSELECT
+ctrl_ALUopcode[3] => ~NO_FANOUT~
+ctrl_ALUopcode[4] => ~NO_FANOUT~
 ctrl_shiftamt[0] => ctrl_shiftamt[0].IN2
 ctrl_shiftamt[1] => ctrl_shiftamt[1].IN2
 ctrl_shiftamt[2] => ctrl_shiftamt[2].IN2
 ctrl_shiftamt[3] => ctrl_shiftamt[3].IN2
 ctrl_shiftamt[4] => ctrl_shiftamt[4].IN2
-data_result[0] << data_result.DB_MAX_OUTPUT_PORT_TYPE
-data_result[1] << data_result.DB_MAX_OUTPUT_PORT_TYPE
-data_result[2] << data_result.DB_MAX_OUTPUT_PORT_TYPE
-data_result[3] << data_result.DB_MAX_OUTPUT_PORT_TYPE
-data_result[4] << data_result.DB_MAX_OUTPUT_PORT_TYPE
-data_result[5] << data_result.DB_MAX_OUTPUT_PORT_TYPE
-data_result[6] << data_result.DB_MAX_OUTPUT_PORT_TYPE
-data_result[7] << data_result.DB_MAX_OUTPUT_PORT_TYPE
-data_result[8] << data_result.DB_MAX_OUTPUT_PORT_TYPE
-data_result[9] << data_result.DB_MAX_OUTPUT_PORT_TYPE
-data_result[10] << data_result.DB_MAX_OUTPUT_PORT_TYPE
-data_result[11] << data_result.DB_MAX_OUTPUT_PORT_TYPE
-data_result[12] << data_result.DB_MAX_OUTPUT_PORT_TYPE
-data_result[13] << data_result.DB_MAX_OUTPUT_PORT_TYPE
-data_result[14] << data_result.DB_MAX_OUTPUT_PORT_TYPE
-data_result[15] << data_result.DB_MAX_OUTPUT_PORT_TYPE
-data_result[16] << data_result.DB_MAX_OUTPUT_PORT_TYPE
-data_result[17] << data_result.DB_MAX_OUTPUT_PORT_TYPE
-data_result[18] << data_result.DB_MAX_OUTPUT_PORT_TYPE
-data_result[19] << data_result.DB_MAX_OUTPUT_PORT_TYPE
-data_result[20] << data_result.DB_MAX_OUTPUT_PORT_TYPE
-data_result[21] << data_result.DB_MAX_OUTPUT_PORT_TYPE
-data_result[22] << data_result.DB_MAX_OUTPUT_PORT_TYPE
-data_result[23] << data_result.DB_MAX_OUTPUT_PORT_TYPE
-data_result[24] << data_result.DB_MAX_OUTPUT_PORT_TYPE
-data_result[25] << data_result.DB_MAX_OUTPUT_PORT_TYPE
-data_result[26] << data_result.DB_MAX_OUTPUT_PORT_TYPE
-data_result[27] << data_result.DB_MAX_OUTPUT_PORT_TYPE
-data_result[28] << data_result.DB_MAX_OUTPUT_PORT_TYPE
-data_result[29] << data_result.DB_MAX_OUTPUT_PORT_TYPE
-data_result[30] << data_result.DB_MAX_OUTPUT_PORT_TYPE
-data_result[31] << data_result.DB_MAX_OUTPUT_PORT_TYPE
-isNotEqual << <GND>
-isLessThan << <GND>
-overflow << CSA:csa0.port3
+data_result[0] <= data_result.DB_MAX_OUTPUT_PORT_TYPE
+data_result[1] <= data_result.DB_MAX_OUTPUT_PORT_TYPE
+data_result[2] <= data_result.DB_MAX_OUTPUT_PORT_TYPE
+data_result[3] <= data_result.DB_MAX_OUTPUT_PORT_TYPE
+data_result[4] <= data_result.DB_MAX_OUTPUT_PORT_TYPE
+data_result[5] <= data_result.DB_MAX_OUTPUT_PORT_TYPE
+data_result[6] <= data_result.DB_MAX_OUTPUT_PORT_TYPE
+data_result[7] <= data_result.DB_MAX_OUTPUT_PORT_TYPE
+data_result[8] <= data_result.DB_MAX_OUTPUT_PORT_TYPE
+data_result[9] <= data_result.DB_MAX_OUTPUT_PORT_TYPE
+data_result[10] <= data_result.DB_MAX_OUTPUT_PORT_TYPE
+data_result[11] <= data_result.DB_MAX_OUTPUT_PORT_TYPE
+data_result[12] <= data_result.DB_MAX_OUTPUT_PORT_TYPE
+data_result[13] <= data_result.DB_MAX_OUTPUT_PORT_TYPE
+data_result[14] <= data_result.DB_MAX_OUTPUT_PORT_TYPE
+data_result[15] <= data_result.DB_MAX_OUTPUT_PORT_TYPE
+data_result[16] <= data_result.DB_MAX_OUTPUT_PORT_TYPE
+data_result[17] <= data_result.DB_MAX_OUTPUT_PORT_TYPE
+data_result[18] <= data_result.DB_MAX_OUTPUT_PORT_TYPE
+data_result[19] <= data_result.DB_MAX_OUTPUT_PORT_TYPE
+data_result[20] <= data_result.DB_MAX_OUTPUT_PORT_TYPE
+data_result[21] <= data_result.DB_MAX_OUTPUT_PORT_TYPE
+data_result[22] <= data_result.DB_MAX_OUTPUT_PORT_TYPE
+data_result[23] <= data_result.DB_MAX_OUTPUT_PORT_TYPE
+data_result[24] <= data_result.DB_MAX_OUTPUT_PORT_TYPE
+data_result[25] <= data_result.DB_MAX_OUTPUT_PORT_TYPE
+data_result[26] <= data_result.DB_MAX_OUTPUT_PORT_TYPE
+data_result[27] <= data_result.DB_MAX_OUTPUT_PORT_TYPE
+data_result[28] <= data_result.DB_MAX_OUTPUT_PORT_TYPE
+data_result[29] <= data_result.DB_MAX_OUTPUT_PORT_TYPE
+data_result[30] <= data_result.DB_MAX_OUTPUT_PORT_TYPE
+data_result[31] <= data_result.DB_MAX_OUTPUT_PORT_TYPE
+isNotEqual <= is_not_equal:ine0.port2
+isLessThan <= isLessThan.DB_MAX_OUTPUT_PORT_TYPE
+overflow <= CheckAddSub:calculate0.overflow
 
 
-|ALU|negateb:negateb0
-bin[0] => bout[0].DATAIN
-bin[1] => bout[1].DATAIN
-bin[2] => bout[2].DATAIN
-bin[3] => bout[3].DATAIN
-bin[4] => bout[4].DATAIN
-bin[5] => bout[5].DATAIN
-bin[6] => bout[6].DATAIN
-bin[7] => bout[7].DATAIN
-bin[8] => bout[8].DATAIN
-bin[9] => bout[9].DATAIN
-bin[10] => bout[10].DATAIN
-bin[11] => bout[11].DATAIN
-bin[12] => bout[12].DATAIN
-bin[13] => bout[13].DATAIN
-bin[14] => bout[14].DATAIN
-bin[15] => bout[15].DATAIN
-bin[16] => bout[16].DATAIN
-bin[17] => bout[17].DATAIN
-bin[18] => bout[18].DATAIN
-bin[19] => bout[19].DATAIN
-bin[20] => bout[20].DATAIN
-bin[21] => bout[21].DATAIN
-bin[22] => bout[22].DATAIN
-bin[23] => bout[23].DATAIN
-bin[24] => bout[24].DATAIN
-bin[25] => bout[25].DATAIN
-bin[26] => bout[26].DATAIN
-bin[27] => bout[27].DATAIN
-bin[28] => bout[28].DATAIN
-bin[29] => bout[29].DATAIN
-bin[30] => bout[30].DATAIN
-bin[31] => bout[31].DATAIN
-bout[0] <= bin[0].DB_MAX_OUTPUT_PORT_TYPE
-bout[1] <= bin[1].DB_MAX_OUTPUT_PORT_TYPE
-bout[2] <= bin[2].DB_MAX_OUTPUT_PORT_TYPE
-bout[3] <= bin[3].DB_MAX_OUTPUT_PORT_TYPE
-bout[4] <= bin[4].DB_MAX_OUTPUT_PORT_TYPE
-bout[5] <= bin[5].DB_MAX_OUTPUT_PORT_TYPE
-bout[6] <= bin[6].DB_MAX_OUTPUT_PORT_TYPE
-bout[7] <= bin[7].DB_MAX_OUTPUT_PORT_TYPE
-bout[8] <= bin[8].DB_MAX_OUTPUT_PORT_TYPE
-bout[9] <= bin[9].DB_MAX_OUTPUT_PORT_TYPE
-bout[10] <= bin[10].DB_MAX_OUTPUT_PORT_TYPE
-bout[11] <= bin[11].DB_MAX_OUTPUT_PORT_TYPE
-bout[12] <= bin[12].DB_MAX_OUTPUT_PORT_TYPE
-bout[13] <= bin[13].DB_MAX_OUTPUT_PORT_TYPE
-bout[14] <= bin[14].DB_MAX_OUTPUT_PORT_TYPE
-bout[15] <= bin[15].DB_MAX_OUTPUT_PORT_TYPE
-bout[16] <= bin[16].DB_MAX_OUTPUT_PORT_TYPE
-bout[17] <= bin[17].DB_MAX_OUTPUT_PORT_TYPE
-bout[18] <= bin[18].DB_MAX_OUTPUT_PORT_TYPE
-bout[19] <= bin[19].DB_MAX_OUTPUT_PORT_TYPE
-bout[20] <= bin[20].DB_MAX_OUTPUT_PORT_TYPE
-bout[21] <= bin[21].DB_MAX_OUTPUT_PORT_TYPE
-bout[22] <= bin[22].DB_MAX_OUTPUT_PORT_TYPE
-bout[23] <= bin[23].DB_MAX_OUTPUT_PORT_TYPE
-bout[24] <= bin[24].DB_MAX_OUTPUT_PORT_TYPE
-bout[25] <= bin[25].DB_MAX_OUTPUT_PORT_TYPE
-bout[26] <= bin[26].DB_MAX_OUTPUT_PORT_TYPE
-bout[27] <= bin[27].DB_MAX_OUTPUT_PORT_TYPE
-bout[28] <= bin[28].DB_MAX_OUTPUT_PORT_TYPE
-bout[29] <= bin[29].DB_MAX_OUTPUT_PORT_TYPE
-bout[30] <= bin[30].DB_MAX_OUTPUT_PORT_TYPE
-bout[31] <= bin[31].DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU|CSA:csa0
-a[0] => a[0].IN1
-a[1] => a[1].IN1
-a[2] => a[2].IN1
-a[3] => a[3].IN1
-a[4] => a[4].IN1
-a[5] => a[5].IN1
-a[6] => a[6].IN1
-a[7] => a[7].IN1
-a[8] => a[8].IN1
-a[9] => a[9].IN1
-a[10] => a[10].IN1
-a[11] => a[11].IN1
-a[12] => a[12].IN1
-a[13] => a[13].IN1
-a[14] => a[14].IN1
-a[15] => a[15].IN1
-a[16] => a[16].IN2
-a[17] => a[17].IN2
-a[18] => a[18].IN2
-a[19] => a[19].IN2
-a[20] => a[20].IN2
-a[21] => a[21].IN2
-a[22] => a[22].IN2
-a[23] => a[23].IN2
-a[24] => a[24].IN2
-a[25] => a[25].IN2
-a[26] => a[26].IN2
-a[27] => a[27].IN2
-a[28] => a[28].IN2
-a[29] => a[29].IN2
-a[30] => a[30].IN2
-a[31] => a[31].IN2
-b[0] => b[0].IN1
-b[1] => b[1].IN1
-b[2] => b[2].IN1
-b[3] => b[3].IN1
-b[4] => b[4].IN1
-b[5] => b[5].IN1
-b[6] => b[6].IN1
-b[7] => b[7].IN1
-b[8] => b[8].IN1
-b[9] => b[9].IN1
-b[10] => b[10].IN1
-b[11] => b[11].IN1
-b[12] => b[12].IN1
-b[13] => b[13].IN1
-b[14] => b[14].IN1
-b[15] => b[15].IN1
-b[16] => b[16].IN2
-b[17] => b[17].IN2
-b[18] => b[18].IN2
-b[19] => b[19].IN2
-b[20] => b[20].IN2
-b[21] => b[21].IN2
-b[22] => b[22].IN2
-b[23] => b[23].IN2
-b[24] => b[24].IN2
-b[25] => b[25].IN2
-b[26] => b[26].IN2
-b[27] => b[27].IN2
-b[28] => b[28].IN2
-b[29] => b[29].IN2
-b[30] => b[30].IN2
-b[31] => b[31].IN2
-cin[0] => cin[0].IN1
-cin[1] => ~NO_FANOUT~
-cin[2] => ~NO_FANOUT~
-cin[3] => ~NO_FANOUT~
-cin[4] => ~NO_FANOUT~
-ove <= ove.DB_MAX_OUTPUT_PORT_TYPE
-sum[0] <= RCA:rca0.port3
-sum[1] <= RCA:rca0.port3
-sum[2] <= RCA:rca0.port3
-sum[3] <= RCA:rca0.port3
-sum[4] <= RCA:rca0.port3
-sum[5] <= RCA:rca0.port3
-sum[6] <= RCA:rca0.port3
-sum[7] <= RCA:rca0.port3
-sum[8] <= RCA:rca0.port3
-sum[9] <= RCA:rca0.port3
-sum[10] <= RCA:rca0.port3
-sum[11] <= RCA:rca0.port3
-sum[12] <= RCA:rca0.port3
-sum[13] <= RCA:rca0.port3
-sum[14] <= RCA:rca0.port3
-sum[15] <= RCA:rca0.port3
-sum[16] <= sum.DB_MAX_OUTPUT_PORT_TYPE
-sum[17] <= sum.DB_MAX_OUTPUT_PORT_TYPE
-sum[18] <= sum.DB_MAX_OUTPUT_PORT_TYPE
-sum[19] <= sum.DB_MAX_OUTPUT_PORT_TYPE
-sum[20] <= sum.DB_MAX_OUTPUT_PORT_TYPE
-sum[21] <= sum.DB_MAX_OUTPUT_PORT_TYPE
-sum[22] <= sum.DB_MAX_OUTPUT_PORT_TYPE
-sum[23] <= sum.DB_MAX_OUTPUT_PORT_TYPE
-sum[24] <= sum.DB_MAX_OUTPUT_PORT_TYPE
-sum[25] <= sum.DB_MAX_OUTPUT_PORT_TYPE
-sum[26] <= sum.DB_MAX_OUTPUT_PORT_TYPE
-sum[27] <= sum.DB_MAX_OUTPUT_PORT_TYPE
-sum[28] <= sum.DB_MAX_OUTPUT_PORT_TYPE
-sum[29] <= sum.DB_MAX_OUTPUT_PORT_TYPE
-sum[30] <= sum.DB_MAX_OUTPUT_PORT_TYPE
-sum[31] <= sum.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU|CSA:csa0|RCA:rca0
-A16[0] => A16[0].IN1
-A16[1] => A16[1].IN1
-A16[2] => A16[2].IN1
-A16[3] => A16[3].IN1
-A16[4] => A16[4].IN1
-A16[5] => A16[5].IN1
-A16[6] => A16[6].IN1
-A16[7] => A16[7].IN1
-A16[8] => A16[8].IN1
-A16[9] => A16[9].IN1
-A16[10] => A16[10].IN1
-A16[11] => A16[11].IN1
-A16[12] => A16[12].IN1
-A16[13] => A16[13].IN1
-A16[14] => A16[14].IN1
-A16[15] => A16[15].IN1
-B16[0] => B16[0].IN1
-B16[1] => B16[1].IN1
-B16[2] => B16[2].IN1
-B16[3] => B16[3].IN1
-B16[4] => B16[4].IN1
-B16[5] => B16[5].IN1
-B16[6] => B16[6].IN1
-B16[7] => B16[7].IN1
-B16[8] => B16[8].IN1
-B16[9] => B16[9].IN1
-B16[10] => B16[10].IN1
-B16[11] => B16[11].IN1
-B16[12] => B16[12].IN1
-B16[13] => B16[13].IN1
-B16[14] => B16[14].IN1
-B16[15] => B16[15].IN1
-cin16 => cin16.IN1
-sum16[0] <= fourBitAdder:fourBit_0.sum
-sum16[1] <= fourBitAdder:fourBit_0.sum
-sum16[2] <= fourBitAdder:fourBit_0.sum
-sum16[3] <= fourBitAdder:fourBit_0.sum
-sum16[4] <= fourBitAdder:fourBit_1.sum
-sum16[5] <= fourBitAdder:fourBit_1.sum
-sum16[6] <= fourBitAdder:fourBit_1.sum
-sum16[7] <= fourBitAdder:fourBit_1.sum
-sum16[8] <= fourBitAdder:fourBit_2.sum
-sum16[9] <= fourBitAdder:fourBit_2.sum
-sum16[10] <= fourBitAdder:fourBit_2.sum
-sum16[11] <= fourBitAdder:fourBit_2.sum
-sum16[12] <= fourBitAdder:fourBit_3.sum
-sum16[13] <= fourBitAdder:fourBit_3.sum
-sum16[14] <= fourBitAdder:fourBit_3.sum
-sum16[15] <= fourBitAdder:fourBit_3.sum
-cout16 <= fourBitAdder:fourBit_3.cout
-
-
-|ALU|CSA:csa0|RCA:rca0|fourBitAdder:fourBit_0
+|ALU|CheckAddSub:calculate0
 A[0] => A[0].IN1
 A[1] => A[1].IN1
 A[2] => A[2].IN1
 A[3] => A[3].IN1
-B[0] => B[0].IN1
-B[1] => B[1].IN1
-B[2] => B[2].IN1
-B[3] => B[3].IN1
+A[4] => A[4].IN1
+A[5] => A[5].IN1
+A[6] => A[6].IN1
+A[7] => A[7].IN1
+A[8] => A[8].IN1
+A[9] => A[9].IN1
+A[10] => A[10].IN1
+A[11] => A[11].IN1
+A[12] => A[12].IN1
+A[13] => A[13].IN1
+A[14] => A[14].IN1
+A[15] => A[15].IN1
+A[16] => A[16].IN2
+A[17] => A[17].IN2
+A[18] => A[18].IN2
+A[19] => A[19].IN2
+A[20] => A[20].IN2
+A[21] => A[21].IN2
+A[22] => A[22].IN2
+A[23] => A[23].IN2
+A[24] => A[24].IN2
+A[25] => A[25].IN2
+A[26] => A[26].IN2
+A[27] => A[27].IN2
+A[28] => A[28].IN2
+A[29] => A[29].IN2
+A[30] => A[30].IN2
+A[31] => A[31].IN2
+B[0] => xor_bit0.IN0
+B[1] => xor_bit1.IN0
+B[2] => xor_bit2.IN0
+B[3] => xor_bit3.IN0
+B[4] => xor_bit4.IN0
+B[5] => xor_bit5.IN0
+B[6] => xor_bit6.IN0
+B[7] => xor_bit7.IN0
+B[8] => xor_bit8.IN0
+B[9] => xor_bit9.IN0
+B[10] => xor_bit10.IN0
+B[11] => xor_bit11.IN0
+B[12] => xor_bit12.IN0
+B[13] => xor_bit13.IN0
+B[14] => xor_bit14.IN0
+B[15] => xor_bit15.IN0
+B[16] => xor_bit16.IN0
+B[17] => xor_bit17.IN0
+B[18] => xor_bit18.IN0
+B[19] => xor_bit19.IN0
+B[20] => xor_bit20.IN0
+B[21] => xor_bit21.IN0
+B[22] => xor_bit22.IN0
+B[23] => xor_bit23.IN0
+B[24] => xor_bit24.IN0
+B[25] => xor_bit25.IN0
+B[26] => xor_bit26.IN0
+B[27] => xor_bit27.IN0
+B[28] => xor_bit28.IN0
+B[29] => xor_bit29.IN0
+B[30] => xor_bit30.IN0
+B[31] => xor_bit31.IN0
+mode => mode.IN1
+overflow <= overflow.DB_MAX_OUTPUT_PORT_TYPE
+D[0] <= RCA16Bit:first.sum
+D[1] <= RCA16Bit:first.sum
+D[2] <= RCA16Bit:first.sum
+D[3] <= RCA16Bit:first.sum
+D[4] <= RCA16Bit:first.sum
+D[5] <= RCA16Bit:first.sum
+D[6] <= RCA16Bit:first.sum
+D[7] <= RCA16Bit:first.sum
+D[8] <= RCA16Bit:first.sum
+D[9] <= RCA16Bit:first.sum
+D[10] <= RCA16Bit:first.sum
+D[11] <= RCA16Bit:first.sum
+D[12] <= RCA16Bit:first.sum
+D[13] <= RCA16Bit:first.sum
+D[14] <= RCA16Bit:first.sum
+D[15] <= RCA16Bit:first.sum
+D[16] <= D.DB_MAX_OUTPUT_PORT_TYPE
+D[17] <= D.DB_MAX_OUTPUT_PORT_TYPE
+D[18] <= D.DB_MAX_OUTPUT_PORT_TYPE
+D[19] <= D.DB_MAX_OUTPUT_PORT_TYPE
+D[20] <= D.DB_MAX_OUTPUT_PORT_TYPE
+D[21] <= D.DB_MAX_OUTPUT_PORT_TYPE
+D[22] <= D.DB_MAX_OUTPUT_PORT_TYPE
+D[23] <= D.DB_MAX_OUTPUT_PORT_TYPE
+D[24] <= D.DB_MAX_OUTPUT_PORT_TYPE
+D[25] <= D.DB_MAX_OUTPUT_PORT_TYPE
+D[26] <= D.DB_MAX_OUTPUT_PORT_TYPE
+D[27] <= D.DB_MAX_OUTPUT_PORT_TYPE
+D[28] <= D.DB_MAX_OUTPUT_PORT_TYPE
+D[29] <= D.DB_MAX_OUTPUT_PORT_TYPE
+D[30] <= D.DB_MAX_OUTPUT_PORT_TYPE
+D[31] <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|CheckAddSub:calculate0|RCA16Bit:first
+in1[0] => in1[0].IN1
+in1[1] => in1[1].IN1
+in1[2] => in1[2].IN1
+in1[3] => in1[3].IN1
+in1[4] => in1[4].IN1
+in1[5] => in1[5].IN1
+in1[6] => in1[6].IN1
+in1[7] => in1[7].IN1
+in1[8] => in1[8].IN1
+in1[9] => in1[9].IN1
+in1[10] => in1[10].IN1
+in1[11] => in1[11].IN1
+in1[12] => in1[12].IN1
+in1[13] => in1[13].IN1
+in1[14] => in1[14].IN1
+in1[15] => in1[15].IN1
+in2[0] => in2[0].IN1
+in2[1] => in2[1].IN1
+in2[2] => in2[2].IN1
+in2[3] => in2[3].IN1
+in2[4] => in2[4].IN1
+in2[5] => in2[5].IN1
+in2[6] => in2[6].IN1
+in2[7] => in2[7].IN1
+in2[8] => in2[8].IN1
+in2[9] => in2[9].IN1
+in2[10] => in2[10].IN1
+in2[11] => in2[11].IN1
+in2[12] => in2[12].IN1
+in2[13] => in2[13].IN1
+in2[14] => in2[14].IN1
+in2[15] => in2[15].IN1
 cin => cin.IN1
-sum[0] <= oneBit:oneBit_0.sum
-sum[1] <= oneBit:oneBit_1.sum
-sum[2] <= oneBit:oneBit_2.sum
-sum[3] <= oneBit:oneBit_3.sum
-cout <= oneBit:oneBit_3.c_out
+sum[0] <= OneBitAdder:Full1.sum
+sum[1] <= OneBitAdder:Full2.sum
+sum[2] <= OneBitAdder:Full3.sum
+sum[3] <= OneBitAdder:Full4.sum
+sum[4] <= OneBitAdder:Full5.sum
+sum[5] <= OneBitAdder:Full6.sum
+sum[6] <= OneBitAdder:Full7.sum
+sum[7] <= OneBitAdder:Full8.sum
+sum[8] <= OneBitAdder:Full9.sum
+sum[9] <= OneBitAdder:Full10.sum
+sum[10] <= OneBitAdder:Full11.sum
+sum[11] <= OneBitAdder:Full12.sum
+sum[12] <= OneBitAdder:Full13.sum
+sum[13] <= OneBitAdder:Full14.sum
+sum[14] <= OneBitAdder:Full15.sum
+sum[15] <= OneBitAdder:Full16.sum
+cout <= OneBitAdder:Full16.cout
+overflow <= xor_bit.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|CSA:csa0|RCA:rca0|fourBitAdder:fourBit_0|oneBit:oneBit_0
-in_A => and_2.IN0
-in_A => xor_1.IN0
-in_B => and_2.IN1
-in_B => xor_1.IN1
-c_in => and_1.IN1
-c_in => xor_2.IN1
+|ALU|CheckAddSub:calculate0|RCA16Bit:first|OneBitAdder:Full1
+inA => xor_1.IN0
+inA => and_2.IN0
+inB => xor_1.IN1
+inB => and_2.IN1
+cin => xor_2.IN1
+cin => and_1.IN1
 sum <= xor_2.DB_MAX_OUTPUT_PORT_TYPE
-c_out <= or_1.DB_MAX_OUTPUT_PORT_TYPE
+cout <= or_1.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|CSA:csa0|RCA:rca0|fourBitAdder:fourBit_0|oneBit:oneBit_1
-in_A => and_2.IN0
-in_A => xor_1.IN0
-in_B => and_2.IN1
-in_B => xor_1.IN1
-c_in => and_1.IN1
-c_in => xor_2.IN1
+|ALU|CheckAddSub:calculate0|RCA16Bit:first|OneBitAdder:Full2
+inA => xor_1.IN0
+inA => and_2.IN0
+inB => xor_1.IN1
+inB => and_2.IN1
+cin => xor_2.IN1
+cin => and_1.IN1
 sum <= xor_2.DB_MAX_OUTPUT_PORT_TYPE
-c_out <= or_1.DB_MAX_OUTPUT_PORT_TYPE
+cout <= or_1.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|CSA:csa0|RCA:rca0|fourBitAdder:fourBit_0|oneBit:oneBit_2
-in_A => and_2.IN0
-in_A => xor_1.IN0
-in_B => and_2.IN1
-in_B => xor_1.IN1
-c_in => and_1.IN1
-c_in => xor_2.IN1
+|ALU|CheckAddSub:calculate0|RCA16Bit:first|OneBitAdder:Full3
+inA => xor_1.IN0
+inA => and_2.IN0
+inB => xor_1.IN1
+inB => and_2.IN1
+cin => xor_2.IN1
+cin => and_1.IN1
 sum <= xor_2.DB_MAX_OUTPUT_PORT_TYPE
-c_out <= or_1.DB_MAX_OUTPUT_PORT_TYPE
+cout <= or_1.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|CSA:csa0|RCA:rca0|fourBitAdder:fourBit_0|oneBit:oneBit_3
-in_A => and_2.IN0
-in_A => xor_1.IN0
-in_B => and_2.IN1
-in_B => xor_1.IN1
-c_in => and_1.IN1
-c_in => xor_2.IN1
+|ALU|CheckAddSub:calculate0|RCA16Bit:first|OneBitAdder:Full4
+inA => xor_1.IN0
+inA => and_2.IN0
+inB => xor_1.IN1
+inB => and_2.IN1
+cin => xor_2.IN1
+cin => and_1.IN1
 sum <= xor_2.DB_MAX_OUTPUT_PORT_TYPE
-c_out <= or_1.DB_MAX_OUTPUT_PORT_TYPE
+cout <= or_1.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|CSA:csa0|RCA:rca0|fourBitAdder:fourBit_1
-A[0] => A[0].IN1
-A[1] => A[1].IN1
-A[2] => A[2].IN1
-A[3] => A[3].IN1
-B[0] => B[0].IN1
-B[1] => B[1].IN1
-B[2] => B[2].IN1
-B[3] => B[3].IN1
+|ALU|CheckAddSub:calculate0|RCA16Bit:first|OneBitAdder:Full5
+inA => xor_1.IN0
+inA => and_2.IN0
+inB => xor_1.IN1
+inB => and_2.IN1
+cin => xor_2.IN1
+cin => and_1.IN1
+sum <= xor_2.DB_MAX_OUTPUT_PORT_TYPE
+cout <= or_1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|CheckAddSub:calculate0|RCA16Bit:first|OneBitAdder:Full6
+inA => xor_1.IN0
+inA => and_2.IN0
+inB => xor_1.IN1
+inB => and_2.IN1
+cin => xor_2.IN1
+cin => and_1.IN1
+sum <= xor_2.DB_MAX_OUTPUT_PORT_TYPE
+cout <= or_1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|CheckAddSub:calculate0|RCA16Bit:first|OneBitAdder:Full7
+inA => xor_1.IN0
+inA => and_2.IN0
+inB => xor_1.IN1
+inB => and_2.IN1
+cin => xor_2.IN1
+cin => and_1.IN1
+sum <= xor_2.DB_MAX_OUTPUT_PORT_TYPE
+cout <= or_1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|CheckAddSub:calculate0|RCA16Bit:first|OneBitAdder:Full8
+inA => xor_1.IN0
+inA => and_2.IN0
+inB => xor_1.IN1
+inB => and_2.IN1
+cin => xor_2.IN1
+cin => and_1.IN1
+sum <= xor_2.DB_MAX_OUTPUT_PORT_TYPE
+cout <= or_1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|CheckAddSub:calculate0|RCA16Bit:first|OneBitAdder:Full9
+inA => xor_1.IN0
+inA => and_2.IN0
+inB => xor_1.IN1
+inB => and_2.IN1
+cin => xor_2.IN1
+cin => and_1.IN1
+sum <= xor_2.DB_MAX_OUTPUT_PORT_TYPE
+cout <= or_1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|CheckAddSub:calculate0|RCA16Bit:first|OneBitAdder:Full10
+inA => xor_1.IN0
+inA => and_2.IN0
+inB => xor_1.IN1
+inB => and_2.IN1
+cin => xor_2.IN1
+cin => and_1.IN1
+sum <= xor_2.DB_MAX_OUTPUT_PORT_TYPE
+cout <= or_1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|CheckAddSub:calculate0|RCA16Bit:first|OneBitAdder:Full11
+inA => xor_1.IN0
+inA => and_2.IN0
+inB => xor_1.IN1
+inB => and_2.IN1
+cin => xor_2.IN1
+cin => and_1.IN1
+sum <= xor_2.DB_MAX_OUTPUT_PORT_TYPE
+cout <= or_1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|CheckAddSub:calculate0|RCA16Bit:first|OneBitAdder:Full12
+inA => xor_1.IN0
+inA => and_2.IN0
+inB => xor_1.IN1
+inB => and_2.IN1
+cin => xor_2.IN1
+cin => and_1.IN1
+sum <= xor_2.DB_MAX_OUTPUT_PORT_TYPE
+cout <= or_1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|CheckAddSub:calculate0|RCA16Bit:first|OneBitAdder:Full13
+inA => xor_1.IN0
+inA => and_2.IN0
+inB => xor_1.IN1
+inB => and_2.IN1
+cin => xor_2.IN1
+cin => and_1.IN1
+sum <= xor_2.DB_MAX_OUTPUT_PORT_TYPE
+cout <= or_1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|CheckAddSub:calculate0|RCA16Bit:first|OneBitAdder:Full14
+inA => xor_1.IN0
+inA => and_2.IN0
+inB => xor_1.IN1
+inB => and_2.IN1
+cin => xor_2.IN1
+cin => and_1.IN1
+sum <= xor_2.DB_MAX_OUTPUT_PORT_TYPE
+cout <= or_1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|CheckAddSub:calculate0|RCA16Bit:first|OneBitAdder:Full15
+inA => xor_1.IN0
+inA => and_2.IN0
+inB => xor_1.IN1
+inB => and_2.IN1
+cin => xor_2.IN1
+cin => and_1.IN1
+sum <= xor_2.DB_MAX_OUTPUT_PORT_TYPE
+cout <= or_1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|CheckAddSub:calculate0|RCA16Bit:first|OneBitAdder:Full16
+inA => xor_1.IN0
+inA => and_2.IN0
+inB => xor_1.IN1
+inB => and_2.IN1
+cin => xor_2.IN1
+cin => and_1.IN1
+sum <= xor_2.DB_MAX_OUTPUT_PORT_TYPE
+cout <= or_1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|CheckAddSub:calculate0|RCA16Bit:second_cin0
+in1[0] => in1[0].IN1
+in1[1] => in1[1].IN1
+in1[2] => in1[2].IN1
+in1[3] => in1[3].IN1
+in1[4] => in1[4].IN1
+in1[5] => in1[5].IN1
+in1[6] => in1[6].IN1
+in1[7] => in1[7].IN1
+in1[8] => in1[8].IN1
+in1[9] => in1[9].IN1
+in1[10] => in1[10].IN1
+in1[11] => in1[11].IN1
+in1[12] => in1[12].IN1
+in1[13] => in1[13].IN1
+in1[14] => in1[14].IN1
+in1[15] => in1[15].IN1
+in2[0] => in2[0].IN1
+in2[1] => in2[1].IN1
+in2[2] => in2[2].IN1
+in2[3] => in2[3].IN1
+in2[4] => in2[4].IN1
+in2[5] => in2[5].IN1
+in2[6] => in2[6].IN1
+in2[7] => in2[7].IN1
+in2[8] => in2[8].IN1
+in2[9] => in2[9].IN1
+in2[10] => in2[10].IN1
+in2[11] => in2[11].IN1
+in2[12] => in2[12].IN1
+in2[13] => in2[13].IN1
+in2[14] => in2[14].IN1
+in2[15] => in2[15].IN1
 cin => cin.IN1
-sum[0] <= oneBit:oneBit_0.sum
-sum[1] <= oneBit:oneBit_1.sum
-sum[2] <= oneBit:oneBit_2.sum
-sum[3] <= oneBit:oneBit_3.sum
-cout <= oneBit:oneBit_3.c_out
+sum[0] <= OneBitAdder:Full1.sum
+sum[1] <= OneBitAdder:Full2.sum
+sum[2] <= OneBitAdder:Full3.sum
+sum[3] <= OneBitAdder:Full4.sum
+sum[4] <= OneBitAdder:Full5.sum
+sum[5] <= OneBitAdder:Full6.sum
+sum[6] <= OneBitAdder:Full7.sum
+sum[7] <= OneBitAdder:Full8.sum
+sum[8] <= OneBitAdder:Full9.sum
+sum[9] <= OneBitAdder:Full10.sum
+sum[10] <= OneBitAdder:Full11.sum
+sum[11] <= OneBitAdder:Full12.sum
+sum[12] <= OneBitAdder:Full13.sum
+sum[13] <= OneBitAdder:Full14.sum
+sum[14] <= OneBitAdder:Full15.sum
+sum[15] <= OneBitAdder:Full16.sum
+cout <= OneBitAdder:Full16.cout
+overflow <= xor_bit.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|CSA:csa0|RCA:rca0|fourBitAdder:fourBit_1|oneBit:oneBit_0
-in_A => and_2.IN0
-in_A => xor_1.IN0
-in_B => and_2.IN1
-in_B => xor_1.IN1
-c_in => and_1.IN1
-c_in => xor_2.IN1
+|ALU|CheckAddSub:calculate0|RCA16Bit:second_cin0|OneBitAdder:Full1
+inA => xor_1.IN0
+inA => and_2.IN0
+inB => xor_1.IN1
+inB => and_2.IN1
+cin => xor_2.IN1
+cin => and_1.IN1
 sum <= xor_2.DB_MAX_OUTPUT_PORT_TYPE
-c_out <= or_1.DB_MAX_OUTPUT_PORT_TYPE
+cout <= or_1.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|CSA:csa0|RCA:rca0|fourBitAdder:fourBit_1|oneBit:oneBit_1
-in_A => and_2.IN0
-in_A => xor_1.IN0
-in_B => and_2.IN1
-in_B => xor_1.IN1
-c_in => and_1.IN1
-c_in => xor_2.IN1
+|ALU|CheckAddSub:calculate0|RCA16Bit:second_cin0|OneBitAdder:Full2
+inA => xor_1.IN0
+inA => and_2.IN0
+inB => xor_1.IN1
+inB => and_2.IN1
+cin => xor_2.IN1
+cin => and_1.IN1
 sum <= xor_2.DB_MAX_OUTPUT_PORT_TYPE
-c_out <= or_1.DB_MAX_OUTPUT_PORT_TYPE
+cout <= or_1.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|CSA:csa0|RCA:rca0|fourBitAdder:fourBit_1|oneBit:oneBit_2
-in_A => and_2.IN0
-in_A => xor_1.IN0
-in_B => and_2.IN1
-in_B => xor_1.IN1
-c_in => and_1.IN1
-c_in => xor_2.IN1
+|ALU|CheckAddSub:calculate0|RCA16Bit:second_cin0|OneBitAdder:Full3
+inA => xor_1.IN0
+inA => and_2.IN0
+inB => xor_1.IN1
+inB => and_2.IN1
+cin => xor_2.IN1
+cin => and_1.IN1
 sum <= xor_2.DB_MAX_OUTPUT_PORT_TYPE
-c_out <= or_1.DB_MAX_OUTPUT_PORT_TYPE
+cout <= or_1.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|CSA:csa0|RCA:rca0|fourBitAdder:fourBit_1|oneBit:oneBit_3
-in_A => and_2.IN0
-in_A => xor_1.IN0
-in_B => and_2.IN1
-in_B => xor_1.IN1
-c_in => and_1.IN1
-c_in => xor_2.IN1
+|ALU|CheckAddSub:calculate0|RCA16Bit:second_cin0|OneBitAdder:Full4
+inA => xor_1.IN0
+inA => and_2.IN0
+inB => xor_1.IN1
+inB => and_2.IN1
+cin => xor_2.IN1
+cin => and_1.IN1
 sum <= xor_2.DB_MAX_OUTPUT_PORT_TYPE
-c_out <= or_1.DB_MAX_OUTPUT_PORT_TYPE
+cout <= or_1.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|CSA:csa0|RCA:rca0|fourBitAdder:fourBit_2
-A[0] => A[0].IN1
-A[1] => A[1].IN1
-A[2] => A[2].IN1
-A[3] => A[3].IN1
-B[0] => B[0].IN1
-B[1] => B[1].IN1
-B[2] => B[2].IN1
-B[3] => B[3].IN1
+|ALU|CheckAddSub:calculate0|RCA16Bit:second_cin0|OneBitAdder:Full5
+inA => xor_1.IN0
+inA => and_2.IN0
+inB => xor_1.IN1
+inB => and_2.IN1
+cin => xor_2.IN1
+cin => and_1.IN1
+sum <= xor_2.DB_MAX_OUTPUT_PORT_TYPE
+cout <= or_1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|CheckAddSub:calculate0|RCA16Bit:second_cin0|OneBitAdder:Full6
+inA => xor_1.IN0
+inA => and_2.IN0
+inB => xor_1.IN1
+inB => and_2.IN1
+cin => xor_2.IN1
+cin => and_1.IN1
+sum <= xor_2.DB_MAX_OUTPUT_PORT_TYPE
+cout <= or_1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|CheckAddSub:calculate0|RCA16Bit:second_cin0|OneBitAdder:Full7
+inA => xor_1.IN0
+inA => and_2.IN0
+inB => xor_1.IN1
+inB => and_2.IN1
+cin => xor_2.IN1
+cin => and_1.IN1
+sum <= xor_2.DB_MAX_OUTPUT_PORT_TYPE
+cout <= or_1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|CheckAddSub:calculate0|RCA16Bit:second_cin0|OneBitAdder:Full8
+inA => xor_1.IN0
+inA => and_2.IN0
+inB => xor_1.IN1
+inB => and_2.IN1
+cin => xor_2.IN1
+cin => and_1.IN1
+sum <= xor_2.DB_MAX_OUTPUT_PORT_TYPE
+cout <= or_1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|CheckAddSub:calculate0|RCA16Bit:second_cin0|OneBitAdder:Full9
+inA => xor_1.IN0
+inA => and_2.IN0
+inB => xor_1.IN1
+inB => and_2.IN1
+cin => xor_2.IN1
+cin => and_1.IN1
+sum <= xor_2.DB_MAX_OUTPUT_PORT_TYPE
+cout <= or_1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|CheckAddSub:calculate0|RCA16Bit:second_cin0|OneBitAdder:Full10
+inA => xor_1.IN0
+inA => and_2.IN0
+inB => xor_1.IN1
+inB => and_2.IN1
+cin => xor_2.IN1
+cin => and_1.IN1
+sum <= xor_2.DB_MAX_OUTPUT_PORT_TYPE
+cout <= or_1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|CheckAddSub:calculate0|RCA16Bit:second_cin0|OneBitAdder:Full11
+inA => xor_1.IN0
+inA => and_2.IN0
+inB => xor_1.IN1
+inB => and_2.IN1
+cin => xor_2.IN1
+cin => and_1.IN1
+sum <= xor_2.DB_MAX_OUTPUT_PORT_TYPE
+cout <= or_1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|CheckAddSub:calculate0|RCA16Bit:second_cin0|OneBitAdder:Full12
+inA => xor_1.IN0
+inA => and_2.IN0
+inB => xor_1.IN1
+inB => and_2.IN1
+cin => xor_2.IN1
+cin => and_1.IN1
+sum <= xor_2.DB_MAX_OUTPUT_PORT_TYPE
+cout <= or_1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|CheckAddSub:calculate0|RCA16Bit:second_cin0|OneBitAdder:Full13
+inA => xor_1.IN0
+inA => and_2.IN0
+inB => xor_1.IN1
+inB => and_2.IN1
+cin => xor_2.IN1
+cin => and_1.IN1
+sum <= xor_2.DB_MAX_OUTPUT_PORT_TYPE
+cout <= or_1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|CheckAddSub:calculate0|RCA16Bit:second_cin0|OneBitAdder:Full14
+inA => xor_1.IN0
+inA => and_2.IN0
+inB => xor_1.IN1
+inB => and_2.IN1
+cin => xor_2.IN1
+cin => and_1.IN1
+sum <= xor_2.DB_MAX_OUTPUT_PORT_TYPE
+cout <= or_1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|CheckAddSub:calculate0|RCA16Bit:second_cin0|OneBitAdder:Full15
+inA => xor_1.IN0
+inA => and_2.IN0
+inB => xor_1.IN1
+inB => and_2.IN1
+cin => xor_2.IN1
+cin => and_1.IN1
+sum <= xor_2.DB_MAX_OUTPUT_PORT_TYPE
+cout <= or_1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|CheckAddSub:calculate0|RCA16Bit:second_cin0|OneBitAdder:Full16
+inA => xor_1.IN0
+inA => and_2.IN0
+inB => xor_1.IN1
+inB => and_2.IN1
+cin => xor_2.IN1
+cin => and_1.IN1
+sum <= xor_2.DB_MAX_OUTPUT_PORT_TYPE
+cout <= or_1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|CheckAddSub:calculate0|RCA16Bit:second_cin1
+in1[0] => in1[0].IN1
+in1[1] => in1[1].IN1
+in1[2] => in1[2].IN1
+in1[3] => in1[3].IN1
+in1[4] => in1[4].IN1
+in1[5] => in1[5].IN1
+in1[6] => in1[6].IN1
+in1[7] => in1[7].IN1
+in1[8] => in1[8].IN1
+in1[9] => in1[9].IN1
+in1[10] => in1[10].IN1
+in1[11] => in1[11].IN1
+in1[12] => in1[12].IN1
+in1[13] => in1[13].IN1
+in1[14] => in1[14].IN1
+in1[15] => in1[15].IN1
+in2[0] => in2[0].IN1
+in2[1] => in2[1].IN1
+in2[2] => in2[2].IN1
+in2[3] => in2[3].IN1
+in2[4] => in2[4].IN1
+in2[5] => in2[5].IN1
+in2[6] => in2[6].IN1
+in2[7] => in2[7].IN1
+in2[8] => in2[8].IN1
+in2[9] => in2[9].IN1
+in2[10] => in2[10].IN1
+in2[11] => in2[11].IN1
+in2[12] => in2[12].IN1
+in2[13] => in2[13].IN1
+in2[14] => in2[14].IN1
+in2[15] => in2[15].IN1
 cin => cin.IN1
-sum[0] <= oneBit:oneBit_0.sum
-sum[1] <= oneBit:oneBit_1.sum
-sum[2] <= oneBit:oneBit_2.sum
-sum[3] <= oneBit:oneBit_3.sum
-cout <= oneBit:oneBit_3.c_out
+sum[0] <= OneBitAdder:Full1.sum
+sum[1] <= OneBitAdder:Full2.sum
+sum[2] <= OneBitAdder:Full3.sum
+sum[3] <= OneBitAdder:Full4.sum
+sum[4] <= OneBitAdder:Full5.sum
+sum[5] <= OneBitAdder:Full6.sum
+sum[6] <= OneBitAdder:Full7.sum
+sum[7] <= OneBitAdder:Full8.sum
+sum[8] <= OneBitAdder:Full9.sum
+sum[9] <= OneBitAdder:Full10.sum
+sum[10] <= OneBitAdder:Full11.sum
+sum[11] <= OneBitAdder:Full12.sum
+sum[12] <= OneBitAdder:Full13.sum
+sum[13] <= OneBitAdder:Full14.sum
+sum[14] <= OneBitAdder:Full15.sum
+sum[15] <= OneBitAdder:Full16.sum
+cout <= OneBitAdder:Full16.cout
+overflow <= xor_bit.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|CSA:csa0|RCA:rca0|fourBitAdder:fourBit_2|oneBit:oneBit_0
-in_A => and_2.IN0
-in_A => xor_1.IN0
-in_B => and_2.IN1
-in_B => xor_1.IN1
-c_in => and_1.IN1
-c_in => xor_2.IN1
+|ALU|CheckAddSub:calculate0|RCA16Bit:second_cin1|OneBitAdder:Full1
+inA => xor_1.IN0
+inA => and_2.IN0
+inB => xor_1.IN1
+inB => and_2.IN1
+cin => xor_2.IN1
+cin => and_1.IN1
 sum <= xor_2.DB_MAX_OUTPUT_PORT_TYPE
-c_out <= or_1.DB_MAX_OUTPUT_PORT_TYPE
+cout <= or_1.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|CSA:csa0|RCA:rca0|fourBitAdder:fourBit_2|oneBit:oneBit_1
-in_A => and_2.IN0
-in_A => xor_1.IN0
-in_B => and_2.IN1
-in_B => xor_1.IN1
-c_in => and_1.IN1
-c_in => xor_2.IN1
+|ALU|CheckAddSub:calculate0|RCA16Bit:second_cin1|OneBitAdder:Full2
+inA => xor_1.IN0
+inA => and_2.IN0
+inB => xor_1.IN1
+inB => and_2.IN1
+cin => xor_2.IN1
+cin => and_1.IN1
 sum <= xor_2.DB_MAX_OUTPUT_PORT_TYPE
-c_out <= or_1.DB_MAX_OUTPUT_PORT_TYPE
+cout <= or_1.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|CSA:csa0|RCA:rca0|fourBitAdder:fourBit_2|oneBit:oneBit_2
-in_A => and_2.IN0
-in_A => xor_1.IN0
-in_B => and_2.IN1
-in_B => xor_1.IN1
-c_in => and_1.IN1
-c_in => xor_2.IN1
+|ALU|CheckAddSub:calculate0|RCA16Bit:second_cin1|OneBitAdder:Full3
+inA => xor_1.IN0
+inA => and_2.IN0
+inB => xor_1.IN1
+inB => and_2.IN1
+cin => xor_2.IN1
+cin => and_1.IN1
 sum <= xor_2.DB_MAX_OUTPUT_PORT_TYPE
-c_out <= or_1.DB_MAX_OUTPUT_PORT_TYPE
+cout <= or_1.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|CSA:csa0|RCA:rca0|fourBitAdder:fourBit_2|oneBit:oneBit_3
-in_A => and_2.IN0
-in_A => xor_1.IN0
-in_B => and_2.IN1
-in_B => xor_1.IN1
-c_in => and_1.IN1
-c_in => xor_2.IN1
+|ALU|CheckAddSub:calculate0|RCA16Bit:second_cin1|OneBitAdder:Full4
+inA => xor_1.IN0
+inA => and_2.IN0
+inB => xor_1.IN1
+inB => and_2.IN1
+cin => xor_2.IN1
+cin => and_1.IN1
 sum <= xor_2.DB_MAX_OUTPUT_PORT_TYPE
-c_out <= or_1.DB_MAX_OUTPUT_PORT_TYPE
+cout <= or_1.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|CSA:csa0|RCA:rca0|fourBitAdder:fourBit_3
-A[0] => A[0].IN1
-A[1] => A[1].IN1
-A[2] => A[2].IN1
-A[3] => A[3].IN1
-B[0] => B[0].IN1
-B[1] => B[1].IN1
-B[2] => B[2].IN1
-B[3] => B[3].IN1
-cin => cin.IN1
-sum[0] <= oneBit:oneBit_0.sum
-sum[1] <= oneBit:oneBit_1.sum
-sum[2] <= oneBit:oneBit_2.sum
-sum[3] <= oneBit:oneBit_3.sum
-cout <= oneBit:oneBit_3.c_out
-
-
-|ALU|CSA:csa0|RCA:rca0|fourBitAdder:fourBit_3|oneBit:oneBit_0
-in_A => and_2.IN0
-in_A => xor_1.IN0
-in_B => and_2.IN1
-in_B => xor_1.IN1
-c_in => and_1.IN1
-c_in => xor_2.IN1
+|ALU|CheckAddSub:calculate0|RCA16Bit:second_cin1|OneBitAdder:Full5
+inA => xor_1.IN0
+inA => and_2.IN0
+inB => xor_1.IN1
+inB => and_2.IN1
+cin => xor_2.IN1
+cin => and_1.IN1
 sum <= xor_2.DB_MAX_OUTPUT_PORT_TYPE
-c_out <= or_1.DB_MAX_OUTPUT_PORT_TYPE
+cout <= or_1.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|CSA:csa0|RCA:rca0|fourBitAdder:fourBit_3|oneBit:oneBit_1
-in_A => and_2.IN0
-in_A => xor_1.IN0
-in_B => and_2.IN1
-in_B => xor_1.IN1
-c_in => and_1.IN1
-c_in => xor_2.IN1
+|ALU|CheckAddSub:calculate0|RCA16Bit:second_cin1|OneBitAdder:Full6
+inA => xor_1.IN0
+inA => and_2.IN0
+inB => xor_1.IN1
+inB => and_2.IN1
+cin => xor_2.IN1
+cin => and_1.IN1
 sum <= xor_2.DB_MAX_OUTPUT_PORT_TYPE
-c_out <= or_1.DB_MAX_OUTPUT_PORT_TYPE
+cout <= or_1.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|CSA:csa0|RCA:rca0|fourBitAdder:fourBit_3|oneBit:oneBit_2
-in_A => and_2.IN0
-in_A => xor_1.IN0
-in_B => and_2.IN1
-in_B => xor_1.IN1
-c_in => and_1.IN1
-c_in => xor_2.IN1
+|ALU|CheckAddSub:calculate0|RCA16Bit:second_cin1|OneBitAdder:Full7
+inA => xor_1.IN0
+inA => and_2.IN0
+inB => xor_1.IN1
+inB => and_2.IN1
+cin => xor_2.IN1
+cin => and_1.IN1
 sum <= xor_2.DB_MAX_OUTPUT_PORT_TYPE
-c_out <= or_1.DB_MAX_OUTPUT_PORT_TYPE
+cout <= or_1.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|CSA:csa0|RCA:rca0|fourBitAdder:fourBit_3|oneBit:oneBit_3
-in_A => and_2.IN0
-in_A => xor_1.IN0
-in_B => and_2.IN1
-in_B => xor_1.IN1
-c_in => and_1.IN1
-c_in => xor_2.IN1
+|ALU|CheckAddSub:calculate0|RCA16Bit:second_cin1|OneBitAdder:Full8
+inA => xor_1.IN0
+inA => and_2.IN0
+inB => xor_1.IN1
+inB => and_2.IN1
+cin => xor_2.IN1
+cin => and_1.IN1
 sum <= xor_2.DB_MAX_OUTPUT_PORT_TYPE
-c_out <= or_1.DB_MAX_OUTPUT_PORT_TYPE
+cout <= or_1.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|CSA:csa0|RCA_special:rca1
-A16[0] => A16[0].IN1
-A16[1] => A16[1].IN1
-A16[2] => A16[2].IN1
-A16[3] => A16[3].IN1
-A16[4] => A16[4].IN1
-A16[5] => A16[5].IN1
-A16[6] => A16[6].IN1
-A16[7] => A16[7].IN1
-A16[8] => A16[8].IN1
-A16[9] => A16[9].IN1
-A16[10] => A16[10].IN1
-A16[11] => A16[11].IN1
-A16[12] => A16[12].IN1
-A16[13] => A16[13].IN1
-A16[14] => A16[14].IN1
-A16[15] => A16[15].IN1
-B16[0] => B16[0].IN1
-B16[1] => B16[1].IN1
-B16[2] => B16[2].IN1
-B16[3] => B16[3].IN1
-B16[4] => B16[4].IN1
-B16[5] => B16[5].IN1
-B16[6] => B16[6].IN1
-B16[7] => B16[7].IN1
-B16[8] => B16[8].IN1
-B16[9] => B16[9].IN1
-B16[10] => B16[10].IN1
-B16[11] => B16[11].IN1
-B16[12] => B16[12].IN1
-B16[13] => B16[13].IN1
-B16[14] => B16[14].IN1
-B16[15] => B16[15].IN1
-cin16 => cin16.IN1
-sum16[0] <= fourBitAdder:fourBit_0.sum
-sum16[1] <= fourBitAdder:fourBit_0.sum
-sum16[2] <= fourBitAdder:fourBit_0.sum
-sum16[3] <= fourBitAdder:fourBit_0.sum
-sum16[4] <= fourBitAdder:fourBit_1.sum
-sum16[5] <= fourBitAdder:fourBit_1.sum
-sum16[6] <= fourBitAdder:fourBit_1.sum
-sum16[7] <= fourBitAdder:fourBit_1.sum
-sum16[8] <= fourBitAdder:fourBit_2.sum
-sum16[9] <= fourBitAdder:fourBit_2.sum
-sum16[10] <= fourBitAdder:fourBit_2.sum
-sum16[11] <= fourBitAdder:fourBit_2.sum
-sum16[12] <= oneBit:oneBit_0.sum
-sum16[13] <= oneBit:oneBit_1.sum
-sum16[14] <= oneBit:oneBit_2.sum
-sum16[15] <= oneBit:oneBit_3.sum
-cout16 <= oneBit:oneBit_3.c_out
-c_lastin <= w16[5].DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU|CSA:csa0|RCA_special:rca1|fourBitAdder:fourBit_0
-A[0] => A[0].IN1
-A[1] => A[1].IN1
-A[2] => A[2].IN1
-A[3] => A[3].IN1
-B[0] => B[0].IN1
-B[1] => B[1].IN1
-B[2] => B[2].IN1
-B[3] => B[3].IN1
-cin => cin.IN1
-sum[0] <= oneBit:oneBit_0.sum
-sum[1] <= oneBit:oneBit_1.sum
-sum[2] <= oneBit:oneBit_2.sum
-sum[3] <= oneBit:oneBit_3.sum
-cout <= oneBit:oneBit_3.c_out
-
-
-|ALU|CSA:csa0|RCA_special:rca1|fourBitAdder:fourBit_0|oneBit:oneBit_0
-in_A => and_2.IN0
-in_A => xor_1.IN0
-in_B => and_2.IN1
-in_B => xor_1.IN1
-c_in => and_1.IN1
-c_in => xor_2.IN1
+|ALU|CheckAddSub:calculate0|RCA16Bit:second_cin1|OneBitAdder:Full9
+inA => xor_1.IN0
+inA => and_2.IN0
+inB => xor_1.IN1
+inB => and_2.IN1
+cin => xor_2.IN1
+cin => and_1.IN1
 sum <= xor_2.DB_MAX_OUTPUT_PORT_TYPE
-c_out <= or_1.DB_MAX_OUTPUT_PORT_TYPE
+cout <= or_1.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|CSA:csa0|RCA_special:rca1|fourBitAdder:fourBit_0|oneBit:oneBit_1
-in_A => and_2.IN0
-in_A => xor_1.IN0
-in_B => and_2.IN1
-in_B => xor_1.IN1
-c_in => and_1.IN1
-c_in => xor_2.IN1
+|ALU|CheckAddSub:calculate0|RCA16Bit:second_cin1|OneBitAdder:Full10
+inA => xor_1.IN0
+inA => and_2.IN0
+inB => xor_1.IN1
+inB => and_2.IN1
+cin => xor_2.IN1
+cin => and_1.IN1
 sum <= xor_2.DB_MAX_OUTPUT_PORT_TYPE
-c_out <= or_1.DB_MAX_OUTPUT_PORT_TYPE
+cout <= or_1.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|CSA:csa0|RCA_special:rca1|fourBitAdder:fourBit_0|oneBit:oneBit_2
-in_A => and_2.IN0
-in_A => xor_1.IN0
-in_B => and_2.IN1
-in_B => xor_1.IN1
-c_in => and_1.IN1
-c_in => xor_2.IN1
+|ALU|CheckAddSub:calculate0|RCA16Bit:second_cin1|OneBitAdder:Full11
+inA => xor_1.IN0
+inA => and_2.IN0
+inB => xor_1.IN1
+inB => and_2.IN1
+cin => xor_2.IN1
+cin => and_1.IN1
 sum <= xor_2.DB_MAX_OUTPUT_PORT_TYPE
-c_out <= or_1.DB_MAX_OUTPUT_PORT_TYPE
+cout <= or_1.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|CSA:csa0|RCA_special:rca1|fourBitAdder:fourBit_0|oneBit:oneBit_3
-in_A => and_2.IN0
-in_A => xor_1.IN0
-in_B => and_2.IN1
-in_B => xor_1.IN1
-c_in => and_1.IN1
-c_in => xor_2.IN1
+|ALU|CheckAddSub:calculate0|RCA16Bit:second_cin1|OneBitAdder:Full12
+inA => xor_1.IN0
+inA => and_2.IN0
+inB => xor_1.IN1
+inB => and_2.IN1
+cin => xor_2.IN1
+cin => and_1.IN1
 sum <= xor_2.DB_MAX_OUTPUT_PORT_TYPE
-c_out <= or_1.DB_MAX_OUTPUT_PORT_TYPE
+cout <= or_1.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|CSA:csa0|RCA_special:rca1|fourBitAdder:fourBit_1
-A[0] => A[0].IN1
-A[1] => A[1].IN1
-A[2] => A[2].IN1
-A[3] => A[3].IN1
-B[0] => B[0].IN1
-B[1] => B[1].IN1
-B[2] => B[2].IN1
-B[3] => B[3].IN1
-cin => cin.IN1
-sum[0] <= oneBit:oneBit_0.sum
-sum[1] <= oneBit:oneBit_1.sum
-sum[2] <= oneBit:oneBit_2.sum
-sum[3] <= oneBit:oneBit_3.sum
-cout <= oneBit:oneBit_3.c_out
-
-
-|ALU|CSA:csa0|RCA_special:rca1|fourBitAdder:fourBit_1|oneBit:oneBit_0
-in_A => and_2.IN0
-in_A => xor_1.IN0
-in_B => and_2.IN1
-in_B => xor_1.IN1
-c_in => and_1.IN1
-c_in => xor_2.IN1
+|ALU|CheckAddSub:calculate0|RCA16Bit:second_cin1|OneBitAdder:Full13
+inA => xor_1.IN0
+inA => and_2.IN0
+inB => xor_1.IN1
+inB => and_2.IN1
+cin => xor_2.IN1
+cin => and_1.IN1
 sum <= xor_2.DB_MAX_OUTPUT_PORT_TYPE
-c_out <= or_1.DB_MAX_OUTPUT_PORT_TYPE
+cout <= or_1.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|CSA:csa0|RCA_special:rca1|fourBitAdder:fourBit_1|oneBit:oneBit_1
-in_A => and_2.IN0
-in_A => xor_1.IN0
-in_B => and_2.IN1
-in_B => xor_1.IN1
-c_in => and_1.IN1
-c_in => xor_2.IN1
+|ALU|CheckAddSub:calculate0|RCA16Bit:second_cin1|OneBitAdder:Full14
+inA => xor_1.IN0
+inA => and_2.IN0
+inB => xor_1.IN1
+inB => and_2.IN1
+cin => xor_2.IN1
+cin => and_1.IN1
 sum <= xor_2.DB_MAX_OUTPUT_PORT_TYPE
-c_out <= or_1.DB_MAX_OUTPUT_PORT_TYPE
+cout <= or_1.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|CSA:csa0|RCA_special:rca1|fourBitAdder:fourBit_1|oneBit:oneBit_2
-in_A => and_2.IN0
-in_A => xor_1.IN0
-in_B => and_2.IN1
-in_B => xor_1.IN1
-c_in => and_1.IN1
-c_in => xor_2.IN1
+|ALU|CheckAddSub:calculate0|RCA16Bit:second_cin1|OneBitAdder:Full15
+inA => xor_1.IN0
+inA => and_2.IN0
+inB => xor_1.IN1
+inB => and_2.IN1
+cin => xor_2.IN1
+cin => and_1.IN1
 sum <= xor_2.DB_MAX_OUTPUT_PORT_TYPE
-c_out <= or_1.DB_MAX_OUTPUT_PORT_TYPE
+cout <= or_1.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|CSA:csa0|RCA_special:rca1|fourBitAdder:fourBit_1|oneBit:oneBit_3
-in_A => and_2.IN0
-in_A => xor_1.IN0
-in_B => and_2.IN1
-in_B => xor_1.IN1
-c_in => and_1.IN1
-c_in => xor_2.IN1
+|ALU|CheckAddSub:calculate0|RCA16Bit:second_cin1|OneBitAdder:Full16
+inA => xor_1.IN0
+inA => and_2.IN0
+inB => xor_1.IN1
+inB => and_2.IN1
+cin => xor_2.IN1
+cin => and_1.IN1
 sum <= xor_2.DB_MAX_OUTPUT_PORT_TYPE
-c_out <= or_1.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU|CSA:csa0|RCA_special:rca1|fourBitAdder:fourBit_2
-A[0] => A[0].IN1
-A[1] => A[1].IN1
-A[2] => A[2].IN1
-A[3] => A[3].IN1
-B[0] => B[0].IN1
-B[1] => B[1].IN1
-B[2] => B[2].IN1
-B[3] => B[3].IN1
-cin => cin.IN1
-sum[0] <= oneBit:oneBit_0.sum
-sum[1] <= oneBit:oneBit_1.sum
-sum[2] <= oneBit:oneBit_2.sum
-sum[3] <= oneBit:oneBit_3.sum
-cout <= oneBit:oneBit_3.c_out
-
-
-|ALU|CSA:csa0|RCA_special:rca1|fourBitAdder:fourBit_2|oneBit:oneBit_0
-in_A => and_2.IN0
-in_A => xor_1.IN0
-in_B => and_2.IN1
-in_B => xor_1.IN1
-c_in => and_1.IN1
-c_in => xor_2.IN1
-sum <= xor_2.DB_MAX_OUTPUT_PORT_TYPE
-c_out <= or_1.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU|CSA:csa0|RCA_special:rca1|fourBitAdder:fourBit_2|oneBit:oneBit_1
-in_A => and_2.IN0
-in_A => xor_1.IN0
-in_B => and_2.IN1
-in_B => xor_1.IN1
-c_in => and_1.IN1
-c_in => xor_2.IN1
-sum <= xor_2.DB_MAX_OUTPUT_PORT_TYPE
-c_out <= or_1.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU|CSA:csa0|RCA_special:rca1|fourBitAdder:fourBit_2|oneBit:oneBit_2
-in_A => and_2.IN0
-in_A => xor_1.IN0
-in_B => and_2.IN1
-in_B => xor_1.IN1
-c_in => and_1.IN1
-c_in => xor_2.IN1
-sum <= xor_2.DB_MAX_OUTPUT_PORT_TYPE
-c_out <= or_1.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU|CSA:csa0|RCA_special:rca1|fourBitAdder:fourBit_2|oneBit:oneBit_3
-in_A => and_2.IN0
-in_A => xor_1.IN0
-in_B => and_2.IN1
-in_B => xor_1.IN1
-c_in => and_1.IN1
-c_in => xor_2.IN1
-sum <= xor_2.DB_MAX_OUTPUT_PORT_TYPE
-c_out <= or_1.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU|CSA:csa0|RCA_special:rca1|oneBit:oneBit_0
-in_A => and_2.IN0
-in_A => xor_1.IN0
-in_B => and_2.IN1
-in_B => xor_1.IN1
-c_in => and_1.IN1
-c_in => xor_2.IN1
-sum <= xor_2.DB_MAX_OUTPUT_PORT_TYPE
-c_out <= or_1.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU|CSA:csa0|RCA_special:rca1|oneBit:oneBit_1
-in_A => and_2.IN0
-in_A => xor_1.IN0
-in_B => and_2.IN1
-in_B => xor_1.IN1
-c_in => and_1.IN1
-c_in => xor_2.IN1
-sum <= xor_2.DB_MAX_OUTPUT_PORT_TYPE
-c_out <= or_1.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU|CSA:csa0|RCA_special:rca1|oneBit:oneBit_2
-in_A => and_2.IN0
-in_A => xor_1.IN0
-in_B => and_2.IN1
-in_B => xor_1.IN1
-c_in => and_1.IN1
-c_in => xor_2.IN1
-sum <= xor_2.DB_MAX_OUTPUT_PORT_TYPE
-c_out <= or_1.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU|CSA:csa0|RCA_special:rca1|oneBit:oneBit_3
-in_A => and_2.IN0
-in_A => xor_1.IN0
-in_B => and_2.IN1
-in_B => xor_1.IN1
-c_in => and_1.IN1
-c_in => xor_2.IN1
-sum <= xor_2.DB_MAX_OUTPUT_PORT_TYPE
-c_out <= or_1.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU|CSA:csa0|RCA_special:rca2
-A16[0] => A16[0].IN1
-A16[1] => A16[1].IN1
-A16[2] => A16[2].IN1
-A16[3] => A16[3].IN1
-A16[4] => A16[4].IN1
-A16[5] => A16[5].IN1
-A16[6] => A16[6].IN1
-A16[7] => A16[7].IN1
-A16[8] => A16[8].IN1
-A16[9] => A16[9].IN1
-A16[10] => A16[10].IN1
-A16[11] => A16[11].IN1
-A16[12] => A16[12].IN1
-A16[13] => A16[13].IN1
-A16[14] => A16[14].IN1
-A16[15] => A16[15].IN1
-B16[0] => B16[0].IN1
-B16[1] => B16[1].IN1
-B16[2] => B16[2].IN1
-B16[3] => B16[3].IN1
-B16[4] => B16[4].IN1
-B16[5] => B16[5].IN1
-B16[6] => B16[6].IN1
-B16[7] => B16[7].IN1
-B16[8] => B16[8].IN1
-B16[9] => B16[9].IN1
-B16[10] => B16[10].IN1
-B16[11] => B16[11].IN1
-B16[12] => B16[12].IN1
-B16[13] => B16[13].IN1
-B16[14] => B16[14].IN1
-B16[15] => B16[15].IN1
-cin16 => cin16.IN1
-sum16[0] <= fourBitAdder:fourBit_0.sum
-sum16[1] <= fourBitAdder:fourBit_0.sum
-sum16[2] <= fourBitAdder:fourBit_0.sum
-sum16[3] <= fourBitAdder:fourBit_0.sum
-sum16[4] <= fourBitAdder:fourBit_1.sum
-sum16[5] <= fourBitAdder:fourBit_1.sum
-sum16[6] <= fourBitAdder:fourBit_1.sum
-sum16[7] <= fourBitAdder:fourBit_1.sum
-sum16[8] <= fourBitAdder:fourBit_2.sum
-sum16[9] <= fourBitAdder:fourBit_2.sum
-sum16[10] <= fourBitAdder:fourBit_2.sum
-sum16[11] <= fourBitAdder:fourBit_2.sum
-sum16[12] <= oneBit:oneBit_0.sum
-sum16[13] <= oneBit:oneBit_1.sum
-sum16[14] <= oneBit:oneBit_2.sum
-sum16[15] <= oneBit:oneBit_3.sum
-cout16 <= oneBit:oneBit_3.c_out
-c_lastin <= w16[5].DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU|CSA:csa0|RCA_special:rca2|fourBitAdder:fourBit_0
-A[0] => A[0].IN1
-A[1] => A[1].IN1
-A[2] => A[2].IN1
-A[3] => A[3].IN1
-B[0] => B[0].IN1
-B[1] => B[1].IN1
-B[2] => B[2].IN1
-B[3] => B[3].IN1
-cin => cin.IN1
-sum[0] <= oneBit:oneBit_0.sum
-sum[1] <= oneBit:oneBit_1.sum
-sum[2] <= oneBit:oneBit_2.sum
-sum[3] <= oneBit:oneBit_3.sum
-cout <= oneBit:oneBit_3.c_out
-
-
-|ALU|CSA:csa0|RCA_special:rca2|fourBitAdder:fourBit_0|oneBit:oneBit_0
-in_A => and_2.IN0
-in_A => xor_1.IN0
-in_B => and_2.IN1
-in_B => xor_1.IN1
-c_in => and_1.IN1
-c_in => xor_2.IN1
-sum <= xor_2.DB_MAX_OUTPUT_PORT_TYPE
-c_out <= or_1.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU|CSA:csa0|RCA_special:rca2|fourBitAdder:fourBit_0|oneBit:oneBit_1
-in_A => and_2.IN0
-in_A => xor_1.IN0
-in_B => and_2.IN1
-in_B => xor_1.IN1
-c_in => and_1.IN1
-c_in => xor_2.IN1
-sum <= xor_2.DB_MAX_OUTPUT_PORT_TYPE
-c_out <= or_1.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU|CSA:csa0|RCA_special:rca2|fourBitAdder:fourBit_0|oneBit:oneBit_2
-in_A => and_2.IN0
-in_A => xor_1.IN0
-in_B => and_2.IN1
-in_B => xor_1.IN1
-c_in => and_1.IN1
-c_in => xor_2.IN1
-sum <= xor_2.DB_MAX_OUTPUT_PORT_TYPE
-c_out <= or_1.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU|CSA:csa0|RCA_special:rca2|fourBitAdder:fourBit_0|oneBit:oneBit_3
-in_A => and_2.IN0
-in_A => xor_1.IN0
-in_B => and_2.IN1
-in_B => xor_1.IN1
-c_in => and_1.IN1
-c_in => xor_2.IN1
-sum <= xor_2.DB_MAX_OUTPUT_PORT_TYPE
-c_out <= or_1.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU|CSA:csa0|RCA_special:rca2|fourBitAdder:fourBit_1
-A[0] => A[0].IN1
-A[1] => A[1].IN1
-A[2] => A[2].IN1
-A[3] => A[3].IN1
-B[0] => B[0].IN1
-B[1] => B[1].IN1
-B[2] => B[2].IN1
-B[3] => B[3].IN1
-cin => cin.IN1
-sum[0] <= oneBit:oneBit_0.sum
-sum[1] <= oneBit:oneBit_1.sum
-sum[2] <= oneBit:oneBit_2.sum
-sum[3] <= oneBit:oneBit_3.sum
-cout <= oneBit:oneBit_3.c_out
-
-
-|ALU|CSA:csa0|RCA_special:rca2|fourBitAdder:fourBit_1|oneBit:oneBit_0
-in_A => and_2.IN0
-in_A => xor_1.IN0
-in_B => and_2.IN1
-in_B => xor_1.IN1
-c_in => and_1.IN1
-c_in => xor_2.IN1
-sum <= xor_2.DB_MAX_OUTPUT_PORT_TYPE
-c_out <= or_1.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU|CSA:csa0|RCA_special:rca2|fourBitAdder:fourBit_1|oneBit:oneBit_1
-in_A => and_2.IN0
-in_A => xor_1.IN0
-in_B => and_2.IN1
-in_B => xor_1.IN1
-c_in => and_1.IN1
-c_in => xor_2.IN1
-sum <= xor_2.DB_MAX_OUTPUT_PORT_TYPE
-c_out <= or_1.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU|CSA:csa0|RCA_special:rca2|fourBitAdder:fourBit_1|oneBit:oneBit_2
-in_A => and_2.IN0
-in_A => xor_1.IN0
-in_B => and_2.IN1
-in_B => xor_1.IN1
-c_in => and_1.IN1
-c_in => xor_2.IN1
-sum <= xor_2.DB_MAX_OUTPUT_PORT_TYPE
-c_out <= or_1.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU|CSA:csa0|RCA_special:rca2|fourBitAdder:fourBit_1|oneBit:oneBit_3
-in_A => and_2.IN0
-in_A => xor_1.IN0
-in_B => and_2.IN1
-in_B => xor_1.IN1
-c_in => and_1.IN1
-c_in => xor_2.IN1
-sum <= xor_2.DB_MAX_OUTPUT_PORT_TYPE
-c_out <= or_1.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU|CSA:csa0|RCA_special:rca2|fourBitAdder:fourBit_2
-A[0] => A[0].IN1
-A[1] => A[1].IN1
-A[2] => A[2].IN1
-A[3] => A[3].IN1
-B[0] => B[0].IN1
-B[1] => B[1].IN1
-B[2] => B[2].IN1
-B[3] => B[3].IN1
-cin => cin.IN1
-sum[0] <= oneBit:oneBit_0.sum
-sum[1] <= oneBit:oneBit_1.sum
-sum[2] <= oneBit:oneBit_2.sum
-sum[3] <= oneBit:oneBit_3.sum
-cout <= oneBit:oneBit_3.c_out
-
-
-|ALU|CSA:csa0|RCA_special:rca2|fourBitAdder:fourBit_2|oneBit:oneBit_0
-in_A => and_2.IN0
-in_A => xor_1.IN0
-in_B => and_2.IN1
-in_B => xor_1.IN1
-c_in => and_1.IN1
-c_in => xor_2.IN1
-sum <= xor_2.DB_MAX_OUTPUT_PORT_TYPE
-c_out <= or_1.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU|CSA:csa0|RCA_special:rca2|fourBitAdder:fourBit_2|oneBit:oneBit_1
-in_A => and_2.IN0
-in_A => xor_1.IN0
-in_B => and_2.IN1
-in_B => xor_1.IN1
-c_in => and_1.IN1
-c_in => xor_2.IN1
-sum <= xor_2.DB_MAX_OUTPUT_PORT_TYPE
-c_out <= or_1.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU|CSA:csa0|RCA_special:rca2|fourBitAdder:fourBit_2|oneBit:oneBit_2
-in_A => and_2.IN0
-in_A => xor_1.IN0
-in_B => and_2.IN1
-in_B => xor_1.IN1
-c_in => and_1.IN1
-c_in => xor_2.IN1
-sum <= xor_2.DB_MAX_OUTPUT_PORT_TYPE
-c_out <= or_1.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU|CSA:csa0|RCA_special:rca2|fourBitAdder:fourBit_2|oneBit:oneBit_3
-in_A => and_2.IN0
-in_A => xor_1.IN0
-in_B => and_2.IN1
-in_B => xor_1.IN1
-c_in => and_1.IN1
-c_in => xor_2.IN1
-sum <= xor_2.DB_MAX_OUTPUT_PORT_TYPE
-c_out <= or_1.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU|CSA:csa0|RCA_special:rca2|oneBit:oneBit_0
-in_A => and_2.IN0
-in_A => xor_1.IN0
-in_B => and_2.IN1
-in_B => xor_1.IN1
-c_in => and_1.IN1
-c_in => xor_2.IN1
-sum <= xor_2.DB_MAX_OUTPUT_PORT_TYPE
-c_out <= or_1.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU|CSA:csa0|RCA_special:rca2|oneBit:oneBit_1
-in_A => and_2.IN0
-in_A => xor_1.IN0
-in_B => and_2.IN1
-in_B => xor_1.IN1
-c_in => and_1.IN1
-c_in => xor_2.IN1
-sum <= xor_2.DB_MAX_OUTPUT_PORT_TYPE
-c_out <= or_1.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU|CSA:csa0|RCA_special:rca2|oneBit:oneBit_2
-in_A => and_2.IN0
-in_A => xor_1.IN0
-in_B => and_2.IN1
-in_B => xor_1.IN1
-c_in => and_1.IN1
-c_in => xor_2.IN1
-sum <= xor_2.DB_MAX_OUTPUT_PORT_TYPE
-c_out <= or_1.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU|CSA:csa0|RCA_special:rca2|oneBit:oneBit_3
-in_A => and_2.IN0
-in_A => xor_1.IN0
-in_B => and_2.IN1
-in_B => xor_1.IN1
-c_in => and_1.IN1
-c_in => xor_2.IN1
-sum <= xor_2.DB_MAX_OUTPUT_PORT_TYPE
-c_out <= or_1.DB_MAX_OUTPUT_PORT_TYPE
+cout <= or_1.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |ALU|bit_And:and0
@@ -1881,970 +1702,7 @@ out[30] <= muxS4.DB_MAX_OUTPUT_PORT_TYPE
 out[31] <= in[31].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|CSA:csa1
-a[0] => a[0].IN1
-a[1] => a[1].IN1
-a[2] => a[2].IN1
-a[3] => a[3].IN1
-a[4] => a[4].IN1
-a[5] => a[5].IN1
-a[6] => a[6].IN1
-a[7] => a[7].IN1
-a[8] => a[8].IN1
-a[9] => a[9].IN1
-a[10] => a[10].IN1
-a[11] => a[11].IN1
-a[12] => a[12].IN1
-a[13] => a[13].IN1
-a[14] => a[14].IN1
-a[15] => a[15].IN1
-a[16] => a[16].IN2
-a[17] => a[17].IN2
-a[18] => a[18].IN2
-a[19] => a[19].IN2
-a[20] => a[20].IN2
-a[21] => a[21].IN2
-a[22] => a[22].IN2
-a[23] => a[23].IN2
-a[24] => a[24].IN2
-a[25] => a[25].IN2
-a[26] => a[26].IN2
-a[27] => a[27].IN2
-a[28] => a[28].IN2
-a[29] => a[29].IN2
-a[30] => a[30].IN2
-a[31] => a[31].IN2
-b[0] => b[0].IN1
-b[1] => b[1].IN1
-b[2] => b[2].IN1
-b[3] => b[3].IN1
-b[4] => b[4].IN1
-b[5] => b[5].IN1
-b[6] => b[6].IN1
-b[7] => b[7].IN1
-b[8] => b[8].IN1
-b[9] => b[9].IN1
-b[10] => b[10].IN1
-b[11] => b[11].IN1
-b[12] => b[12].IN1
-b[13] => b[13].IN1
-b[14] => b[14].IN1
-b[15] => b[15].IN1
-b[16] => b[16].IN2
-b[17] => b[17].IN2
-b[18] => b[18].IN2
-b[19] => b[19].IN2
-b[20] => b[20].IN2
-b[21] => b[21].IN2
-b[22] => b[22].IN2
-b[23] => b[23].IN2
-b[24] => b[24].IN2
-b[25] => b[25].IN2
-b[26] => b[26].IN2
-b[27] => b[27].IN2
-b[28] => b[28].IN2
-b[29] => b[29].IN2
-b[30] => b[30].IN2
-b[31] => b[31].IN2
-cin[0] => cin[0].IN1
-cin[1] => ~NO_FANOUT~
-cin[2] => ~NO_FANOUT~
-cin[3] => ~NO_FANOUT~
-cin[4] => ~NO_FANOUT~
-ove <= ove.DB_MAX_OUTPUT_PORT_TYPE
-sum[0] <= RCA:rca0.port3
-sum[1] <= RCA:rca0.port3
-sum[2] <= RCA:rca0.port3
-sum[3] <= RCA:rca0.port3
-sum[4] <= RCA:rca0.port3
-sum[5] <= RCA:rca0.port3
-sum[6] <= RCA:rca0.port3
-sum[7] <= RCA:rca0.port3
-sum[8] <= RCA:rca0.port3
-sum[9] <= RCA:rca0.port3
-sum[10] <= RCA:rca0.port3
-sum[11] <= RCA:rca0.port3
-sum[12] <= RCA:rca0.port3
-sum[13] <= RCA:rca0.port3
-sum[14] <= RCA:rca0.port3
-sum[15] <= RCA:rca0.port3
-sum[16] <= sum.DB_MAX_OUTPUT_PORT_TYPE
-sum[17] <= sum.DB_MAX_OUTPUT_PORT_TYPE
-sum[18] <= sum.DB_MAX_OUTPUT_PORT_TYPE
-sum[19] <= sum.DB_MAX_OUTPUT_PORT_TYPE
-sum[20] <= sum.DB_MAX_OUTPUT_PORT_TYPE
-sum[21] <= sum.DB_MAX_OUTPUT_PORT_TYPE
-sum[22] <= sum.DB_MAX_OUTPUT_PORT_TYPE
-sum[23] <= sum.DB_MAX_OUTPUT_PORT_TYPE
-sum[24] <= sum.DB_MAX_OUTPUT_PORT_TYPE
-sum[25] <= sum.DB_MAX_OUTPUT_PORT_TYPE
-sum[26] <= sum.DB_MAX_OUTPUT_PORT_TYPE
-sum[27] <= sum.DB_MAX_OUTPUT_PORT_TYPE
-sum[28] <= sum.DB_MAX_OUTPUT_PORT_TYPE
-sum[29] <= sum.DB_MAX_OUTPUT_PORT_TYPE
-sum[30] <= sum.DB_MAX_OUTPUT_PORT_TYPE
-sum[31] <= sum.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU|CSA:csa1|RCA:rca0
-A16[0] => A16[0].IN1
-A16[1] => A16[1].IN1
-A16[2] => A16[2].IN1
-A16[3] => A16[3].IN1
-A16[4] => A16[4].IN1
-A16[5] => A16[5].IN1
-A16[6] => A16[6].IN1
-A16[7] => A16[7].IN1
-A16[8] => A16[8].IN1
-A16[9] => A16[9].IN1
-A16[10] => A16[10].IN1
-A16[11] => A16[11].IN1
-A16[12] => A16[12].IN1
-A16[13] => A16[13].IN1
-A16[14] => A16[14].IN1
-A16[15] => A16[15].IN1
-B16[0] => B16[0].IN1
-B16[1] => B16[1].IN1
-B16[2] => B16[2].IN1
-B16[3] => B16[3].IN1
-B16[4] => B16[4].IN1
-B16[5] => B16[5].IN1
-B16[6] => B16[6].IN1
-B16[7] => B16[7].IN1
-B16[8] => B16[8].IN1
-B16[9] => B16[9].IN1
-B16[10] => B16[10].IN1
-B16[11] => B16[11].IN1
-B16[12] => B16[12].IN1
-B16[13] => B16[13].IN1
-B16[14] => B16[14].IN1
-B16[15] => B16[15].IN1
-cin16 => cin16.IN1
-sum16[0] <= fourBitAdder:fourBit_0.sum
-sum16[1] <= fourBitAdder:fourBit_0.sum
-sum16[2] <= fourBitAdder:fourBit_0.sum
-sum16[3] <= fourBitAdder:fourBit_0.sum
-sum16[4] <= fourBitAdder:fourBit_1.sum
-sum16[5] <= fourBitAdder:fourBit_1.sum
-sum16[6] <= fourBitAdder:fourBit_1.sum
-sum16[7] <= fourBitAdder:fourBit_1.sum
-sum16[8] <= fourBitAdder:fourBit_2.sum
-sum16[9] <= fourBitAdder:fourBit_2.sum
-sum16[10] <= fourBitAdder:fourBit_2.sum
-sum16[11] <= fourBitAdder:fourBit_2.sum
-sum16[12] <= fourBitAdder:fourBit_3.sum
-sum16[13] <= fourBitAdder:fourBit_3.sum
-sum16[14] <= fourBitAdder:fourBit_3.sum
-sum16[15] <= fourBitAdder:fourBit_3.sum
-cout16 <= fourBitAdder:fourBit_3.cout
-
-
-|ALU|CSA:csa1|RCA:rca0|fourBitAdder:fourBit_0
-A[0] => A[0].IN1
-A[1] => A[1].IN1
-A[2] => A[2].IN1
-A[3] => A[3].IN1
-B[0] => B[0].IN1
-B[1] => B[1].IN1
-B[2] => B[2].IN1
-B[3] => B[3].IN1
-cin => cin.IN1
-sum[0] <= oneBit:oneBit_0.sum
-sum[1] <= oneBit:oneBit_1.sum
-sum[2] <= oneBit:oneBit_2.sum
-sum[3] <= oneBit:oneBit_3.sum
-cout <= oneBit:oneBit_3.c_out
-
-
-|ALU|CSA:csa1|RCA:rca0|fourBitAdder:fourBit_0|oneBit:oneBit_0
-in_A => and_2.IN0
-in_A => xor_1.IN0
-in_B => and_2.IN1
-in_B => xor_1.IN1
-c_in => and_1.IN1
-c_in => xor_2.IN1
-sum <= xor_2.DB_MAX_OUTPUT_PORT_TYPE
-c_out <= or_1.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU|CSA:csa1|RCA:rca0|fourBitAdder:fourBit_0|oneBit:oneBit_1
-in_A => and_2.IN0
-in_A => xor_1.IN0
-in_B => and_2.IN1
-in_B => xor_1.IN1
-c_in => and_1.IN1
-c_in => xor_2.IN1
-sum <= xor_2.DB_MAX_OUTPUT_PORT_TYPE
-c_out <= or_1.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU|CSA:csa1|RCA:rca0|fourBitAdder:fourBit_0|oneBit:oneBit_2
-in_A => and_2.IN0
-in_A => xor_1.IN0
-in_B => and_2.IN1
-in_B => xor_1.IN1
-c_in => and_1.IN1
-c_in => xor_2.IN1
-sum <= xor_2.DB_MAX_OUTPUT_PORT_TYPE
-c_out <= or_1.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU|CSA:csa1|RCA:rca0|fourBitAdder:fourBit_0|oneBit:oneBit_3
-in_A => and_2.IN0
-in_A => xor_1.IN0
-in_B => and_2.IN1
-in_B => xor_1.IN1
-c_in => and_1.IN1
-c_in => xor_2.IN1
-sum <= xor_2.DB_MAX_OUTPUT_PORT_TYPE
-c_out <= or_1.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU|CSA:csa1|RCA:rca0|fourBitAdder:fourBit_1
-A[0] => A[0].IN1
-A[1] => A[1].IN1
-A[2] => A[2].IN1
-A[3] => A[3].IN1
-B[0] => B[0].IN1
-B[1] => B[1].IN1
-B[2] => B[2].IN1
-B[3] => B[3].IN1
-cin => cin.IN1
-sum[0] <= oneBit:oneBit_0.sum
-sum[1] <= oneBit:oneBit_1.sum
-sum[2] <= oneBit:oneBit_2.sum
-sum[3] <= oneBit:oneBit_3.sum
-cout <= oneBit:oneBit_3.c_out
-
-
-|ALU|CSA:csa1|RCA:rca0|fourBitAdder:fourBit_1|oneBit:oneBit_0
-in_A => and_2.IN0
-in_A => xor_1.IN0
-in_B => and_2.IN1
-in_B => xor_1.IN1
-c_in => and_1.IN1
-c_in => xor_2.IN1
-sum <= xor_2.DB_MAX_OUTPUT_PORT_TYPE
-c_out <= or_1.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU|CSA:csa1|RCA:rca0|fourBitAdder:fourBit_1|oneBit:oneBit_1
-in_A => and_2.IN0
-in_A => xor_1.IN0
-in_B => and_2.IN1
-in_B => xor_1.IN1
-c_in => and_1.IN1
-c_in => xor_2.IN1
-sum <= xor_2.DB_MAX_OUTPUT_PORT_TYPE
-c_out <= or_1.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU|CSA:csa1|RCA:rca0|fourBitAdder:fourBit_1|oneBit:oneBit_2
-in_A => and_2.IN0
-in_A => xor_1.IN0
-in_B => and_2.IN1
-in_B => xor_1.IN1
-c_in => and_1.IN1
-c_in => xor_2.IN1
-sum <= xor_2.DB_MAX_OUTPUT_PORT_TYPE
-c_out <= or_1.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU|CSA:csa1|RCA:rca0|fourBitAdder:fourBit_1|oneBit:oneBit_3
-in_A => and_2.IN0
-in_A => xor_1.IN0
-in_B => and_2.IN1
-in_B => xor_1.IN1
-c_in => and_1.IN1
-c_in => xor_2.IN1
-sum <= xor_2.DB_MAX_OUTPUT_PORT_TYPE
-c_out <= or_1.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU|CSA:csa1|RCA:rca0|fourBitAdder:fourBit_2
-A[0] => A[0].IN1
-A[1] => A[1].IN1
-A[2] => A[2].IN1
-A[3] => A[3].IN1
-B[0] => B[0].IN1
-B[1] => B[1].IN1
-B[2] => B[2].IN1
-B[3] => B[3].IN1
-cin => cin.IN1
-sum[0] <= oneBit:oneBit_0.sum
-sum[1] <= oneBit:oneBit_1.sum
-sum[2] <= oneBit:oneBit_2.sum
-sum[3] <= oneBit:oneBit_3.sum
-cout <= oneBit:oneBit_3.c_out
-
-
-|ALU|CSA:csa1|RCA:rca0|fourBitAdder:fourBit_2|oneBit:oneBit_0
-in_A => and_2.IN0
-in_A => xor_1.IN0
-in_B => and_2.IN1
-in_B => xor_1.IN1
-c_in => and_1.IN1
-c_in => xor_2.IN1
-sum <= xor_2.DB_MAX_OUTPUT_PORT_TYPE
-c_out <= or_1.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU|CSA:csa1|RCA:rca0|fourBitAdder:fourBit_2|oneBit:oneBit_1
-in_A => and_2.IN0
-in_A => xor_1.IN0
-in_B => and_2.IN1
-in_B => xor_1.IN1
-c_in => and_1.IN1
-c_in => xor_2.IN1
-sum <= xor_2.DB_MAX_OUTPUT_PORT_TYPE
-c_out <= or_1.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU|CSA:csa1|RCA:rca0|fourBitAdder:fourBit_2|oneBit:oneBit_2
-in_A => and_2.IN0
-in_A => xor_1.IN0
-in_B => and_2.IN1
-in_B => xor_1.IN1
-c_in => and_1.IN1
-c_in => xor_2.IN1
-sum <= xor_2.DB_MAX_OUTPUT_PORT_TYPE
-c_out <= or_1.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU|CSA:csa1|RCA:rca0|fourBitAdder:fourBit_2|oneBit:oneBit_3
-in_A => and_2.IN0
-in_A => xor_1.IN0
-in_B => and_2.IN1
-in_B => xor_1.IN1
-c_in => and_1.IN1
-c_in => xor_2.IN1
-sum <= xor_2.DB_MAX_OUTPUT_PORT_TYPE
-c_out <= or_1.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU|CSA:csa1|RCA:rca0|fourBitAdder:fourBit_3
-A[0] => A[0].IN1
-A[1] => A[1].IN1
-A[2] => A[2].IN1
-A[3] => A[3].IN1
-B[0] => B[0].IN1
-B[1] => B[1].IN1
-B[2] => B[2].IN1
-B[3] => B[3].IN1
-cin => cin.IN1
-sum[0] <= oneBit:oneBit_0.sum
-sum[1] <= oneBit:oneBit_1.sum
-sum[2] <= oneBit:oneBit_2.sum
-sum[3] <= oneBit:oneBit_3.sum
-cout <= oneBit:oneBit_3.c_out
-
-
-|ALU|CSA:csa1|RCA:rca0|fourBitAdder:fourBit_3|oneBit:oneBit_0
-in_A => and_2.IN0
-in_A => xor_1.IN0
-in_B => and_2.IN1
-in_B => xor_1.IN1
-c_in => and_1.IN1
-c_in => xor_2.IN1
-sum <= xor_2.DB_MAX_OUTPUT_PORT_TYPE
-c_out <= or_1.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU|CSA:csa1|RCA:rca0|fourBitAdder:fourBit_3|oneBit:oneBit_1
-in_A => and_2.IN0
-in_A => xor_1.IN0
-in_B => and_2.IN1
-in_B => xor_1.IN1
-c_in => and_1.IN1
-c_in => xor_2.IN1
-sum <= xor_2.DB_MAX_OUTPUT_PORT_TYPE
-c_out <= or_1.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU|CSA:csa1|RCA:rca0|fourBitAdder:fourBit_3|oneBit:oneBit_2
-in_A => and_2.IN0
-in_A => xor_1.IN0
-in_B => and_2.IN1
-in_B => xor_1.IN1
-c_in => and_1.IN1
-c_in => xor_2.IN1
-sum <= xor_2.DB_MAX_OUTPUT_PORT_TYPE
-c_out <= or_1.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU|CSA:csa1|RCA:rca0|fourBitAdder:fourBit_3|oneBit:oneBit_3
-in_A => and_2.IN0
-in_A => xor_1.IN0
-in_B => and_2.IN1
-in_B => xor_1.IN1
-c_in => and_1.IN1
-c_in => xor_2.IN1
-sum <= xor_2.DB_MAX_OUTPUT_PORT_TYPE
-c_out <= or_1.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU|CSA:csa1|RCA_special:rca1
-A16[0] => A16[0].IN1
-A16[1] => A16[1].IN1
-A16[2] => A16[2].IN1
-A16[3] => A16[3].IN1
-A16[4] => A16[4].IN1
-A16[5] => A16[5].IN1
-A16[6] => A16[6].IN1
-A16[7] => A16[7].IN1
-A16[8] => A16[8].IN1
-A16[9] => A16[9].IN1
-A16[10] => A16[10].IN1
-A16[11] => A16[11].IN1
-A16[12] => A16[12].IN1
-A16[13] => A16[13].IN1
-A16[14] => A16[14].IN1
-A16[15] => A16[15].IN1
-B16[0] => B16[0].IN1
-B16[1] => B16[1].IN1
-B16[2] => B16[2].IN1
-B16[3] => B16[3].IN1
-B16[4] => B16[4].IN1
-B16[5] => B16[5].IN1
-B16[6] => B16[6].IN1
-B16[7] => B16[7].IN1
-B16[8] => B16[8].IN1
-B16[9] => B16[9].IN1
-B16[10] => B16[10].IN1
-B16[11] => B16[11].IN1
-B16[12] => B16[12].IN1
-B16[13] => B16[13].IN1
-B16[14] => B16[14].IN1
-B16[15] => B16[15].IN1
-cin16 => cin16.IN1
-sum16[0] <= fourBitAdder:fourBit_0.sum
-sum16[1] <= fourBitAdder:fourBit_0.sum
-sum16[2] <= fourBitAdder:fourBit_0.sum
-sum16[3] <= fourBitAdder:fourBit_0.sum
-sum16[4] <= fourBitAdder:fourBit_1.sum
-sum16[5] <= fourBitAdder:fourBit_1.sum
-sum16[6] <= fourBitAdder:fourBit_1.sum
-sum16[7] <= fourBitAdder:fourBit_1.sum
-sum16[8] <= fourBitAdder:fourBit_2.sum
-sum16[9] <= fourBitAdder:fourBit_2.sum
-sum16[10] <= fourBitAdder:fourBit_2.sum
-sum16[11] <= fourBitAdder:fourBit_2.sum
-sum16[12] <= oneBit:oneBit_0.sum
-sum16[13] <= oneBit:oneBit_1.sum
-sum16[14] <= oneBit:oneBit_2.sum
-sum16[15] <= oneBit:oneBit_3.sum
-cout16 <= oneBit:oneBit_3.c_out
-c_lastin <= w16[5].DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU|CSA:csa1|RCA_special:rca1|fourBitAdder:fourBit_0
-A[0] => A[0].IN1
-A[1] => A[1].IN1
-A[2] => A[2].IN1
-A[3] => A[3].IN1
-B[0] => B[0].IN1
-B[1] => B[1].IN1
-B[2] => B[2].IN1
-B[3] => B[3].IN1
-cin => cin.IN1
-sum[0] <= oneBit:oneBit_0.sum
-sum[1] <= oneBit:oneBit_1.sum
-sum[2] <= oneBit:oneBit_2.sum
-sum[3] <= oneBit:oneBit_3.sum
-cout <= oneBit:oneBit_3.c_out
-
-
-|ALU|CSA:csa1|RCA_special:rca1|fourBitAdder:fourBit_0|oneBit:oneBit_0
-in_A => and_2.IN0
-in_A => xor_1.IN0
-in_B => and_2.IN1
-in_B => xor_1.IN1
-c_in => and_1.IN1
-c_in => xor_2.IN1
-sum <= xor_2.DB_MAX_OUTPUT_PORT_TYPE
-c_out <= or_1.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU|CSA:csa1|RCA_special:rca1|fourBitAdder:fourBit_0|oneBit:oneBit_1
-in_A => and_2.IN0
-in_A => xor_1.IN0
-in_B => and_2.IN1
-in_B => xor_1.IN1
-c_in => and_1.IN1
-c_in => xor_2.IN1
-sum <= xor_2.DB_MAX_OUTPUT_PORT_TYPE
-c_out <= or_1.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU|CSA:csa1|RCA_special:rca1|fourBitAdder:fourBit_0|oneBit:oneBit_2
-in_A => and_2.IN0
-in_A => xor_1.IN0
-in_B => and_2.IN1
-in_B => xor_1.IN1
-c_in => and_1.IN1
-c_in => xor_2.IN1
-sum <= xor_2.DB_MAX_OUTPUT_PORT_TYPE
-c_out <= or_1.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU|CSA:csa1|RCA_special:rca1|fourBitAdder:fourBit_0|oneBit:oneBit_3
-in_A => and_2.IN0
-in_A => xor_1.IN0
-in_B => and_2.IN1
-in_B => xor_1.IN1
-c_in => and_1.IN1
-c_in => xor_2.IN1
-sum <= xor_2.DB_MAX_OUTPUT_PORT_TYPE
-c_out <= or_1.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU|CSA:csa1|RCA_special:rca1|fourBitAdder:fourBit_1
-A[0] => A[0].IN1
-A[1] => A[1].IN1
-A[2] => A[2].IN1
-A[3] => A[3].IN1
-B[0] => B[0].IN1
-B[1] => B[1].IN1
-B[2] => B[2].IN1
-B[3] => B[3].IN1
-cin => cin.IN1
-sum[0] <= oneBit:oneBit_0.sum
-sum[1] <= oneBit:oneBit_1.sum
-sum[2] <= oneBit:oneBit_2.sum
-sum[3] <= oneBit:oneBit_3.sum
-cout <= oneBit:oneBit_3.c_out
-
-
-|ALU|CSA:csa1|RCA_special:rca1|fourBitAdder:fourBit_1|oneBit:oneBit_0
-in_A => and_2.IN0
-in_A => xor_1.IN0
-in_B => and_2.IN1
-in_B => xor_1.IN1
-c_in => and_1.IN1
-c_in => xor_2.IN1
-sum <= xor_2.DB_MAX_OUTPUT_PORT_TYPE
-c_out <= or_1.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU|CSA:csa1|RCA_special:rca1|fourBitAdder:fourBit_1|oneBit:oneBit_1
-in_A => and_2.IN0
-in_A => xor_1.IN0
-in_B => and_2.IN1
-in_B => xor_1.IN1
-c_in => and_1.IN1
-c_in => xor_2.IN1
-sum <= xor_2.DB_MAX_OUTPUT_PORT_TYPE
-c_out <= or_1.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU|CSA:csa1|RCA_special:rca1|fourBitAdder:fourBit_1|oneBit:oneBit_2
-in_A => and_2.IN0
-in_A => xor_1.IN0
-in_B => and_2.IN1
-in_B => xor_1.IN1
-c_in => and_1.IN1
-c_in => xor_2.IN1
-sum <= xor_2.DB_MAX_OUTPUT_PORT_TYPE
-c_out <= or_1.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU|CSA:csa1|RCA_special:rca1|fourBitAdder:fourBit_1|oneBit:oneBit_3
-in_A => and_2.IN0
-in_A => xor_1.IN0
-in_B => and_2.IN1
-in_B => xor_1.IN1
-c_in => and_1.IN1
-c_in => xor_2.IN1
-sum <= xor_2.DB_MAX_OUTPUT_PORT_TYPE
-c_out <= or_1.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU|CSA:csa1|RCA_special:rca1|fourBitAdder:fourBit_2
-A[0] => A[0].IN1
-A[1] => A[1].IN1
-A[2] => A[2].IN1
-A[3] => A[3].IN1
-B[0] => B[0].IN1
-B[1] => B[1].IN1
-B[2] => B[2].IN1
-B[3] => B[3].IN1
-cin => cin.IN1
-sum[0] <= oneBit:oneBit_0.sum
-sum[1] <= oneBit:oneBit_1.sum
-sum[2] <= oneBit:oneBit_2.sum
-sum[3] <= oneBit:oneBit_3.sum
-cout <= oneBit:oneBit_3.c_out
-
-
-|ALU|CSA:csa1|RCA_special:rca1|fourBitAdder:fourBit_2|oneBit:oneBit_0
-in_A => and_2.IN0
-in_A => xor_1.IN0
-in_B => and_2.IN1
-in_B => xor_1.IN1
-c_in => and_1.IN1
-c_in => xor_2.IN1
-sum <= xor_2.DB_MAX_OUTPUT_PORT_TYPE
-c_out <= or_1.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU|CSA:csa1|RCA_special:rca1|fourBitAdder:fourBit_2|oneBit:oneBit_1
-in_A => and_2.IN0
-in_A => xor_1.IN0
-in_B => and_2.IN1
-in_B => xor_1.IN1
-c_in => and_1.IN1
-c_in => xor_2.IN1
-sum <= xor_2.DB_MAX_OUTPUT_PORT_TYPE
-c_out <= or_1.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU|CSA:csa1|RCA_special:rca1|fourBitAdder:fourBit_2|oneBit:oneBit_2
-in_A => and_2.IN0
-in_A => xor_1.IN0
-in_B => and_2.IN1
-in_B => xor_1.IN1
-c_in => and_1.IN1
-c_in => xor_2.IN1
-sum <= xor_2.DB_MAX_OUTPUT_PORT_TYPE
-c_out <= or_1.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU|CSA:csa1|RCA_special:rca1|fourBitAdder:fourBit_2|oneBit:oneBit_3
-in_A => and_2.IN0
-in_A => xor_1.IN0
-in_B => and_2.IN1
-in_B => xor_1.IN1
-c_in => and_1.IN1
-c_in => xor_2.IN1
-sum <= xor_2.DB_MAX_OUTPUT_PORT_TYPE
-c_out <= or_1.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU|CSA:csa1|RCA_special:rca1|oneBit:oneBit_0
-in_A => and_2.IN0
-in_A => xor_1.IN0
-in_B => and_2.IN1
-in_B => xor_1.IN1
-c_in => and_1.IN1
-c_in => xor_2.IN1
-sum <= xor_2.DB_MAX_OUTPUT_PORT_TYPE
-c_out <= or_1.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU|CSA:csa1|RCA_special:rca1|oneBit:oneBit_1
-in_A => and_2.IN0
-in_A => xor_1.IN0
-in_B => and_2.IN1
-in_B => xor_1.IN1
-c_in => and_1.IN1
-c_in => xor_2.IN1
-sum <= xor_2.DB_MAX_OUTPUT_PORT_TYPE
-c_out <= or_1.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU|CSA:csa1|RCA_special:rca1|oneBit:oneBit_2
-in_A => and_2.IN0
-in_A => xor_1.IN0
-in_B => and_2.IN1
-in_B => xor_1.IN1
-c_in => and_1.IN1
-c_in => xor_2.IN1
-sum <= xor_2.DB_MAX_OUTPUT_PORT_TYPE
-c_out <= or_1.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU|CSA:csa1|RCA_special:rca1|oneBit:oneBit_3
-in_A => and_2.IN0
-in_A => xor_1.IN0
-in_B => and_2.IN1
-in_B => xor_1.IN1
-c_in => and_1.IN1
-c_in => xor_2.IN1
-sum <= xor_2.DB_MAX_OUTPUT_PORT_TYPE
-c_out <= or_1.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU|CSA:csa1|RCA_special:rca2
-A16[0] => A16[0].IN1
-A16[1] => A16[1].IN1
-A16[2] => A16[2].IN1
-A16[3] => A16[3].IN1
-A16[4] => A16[4].IN1
-A16[5] => A16[5].IN1
-A16[6] => A16[6].IN1
-A16[7] => A16[7].IN1
-A16[8] => A16[8].IN1
-A16[9] => A16[9].IN1
-A16[10] => A16[10].IN1
-A16[11] => A16[11].IN1
-A16[12] => A16[12].IN1
-A16[13] => A16[13].IN1
-A16[14] => A16[14].IN1
-A16[15] => A16[15].IN1
-B16[0] => B16[0].IN1
-B16[1] => B16[1].IN1
-B16[2] => B16[2].IN1
-B16[3] => B16[3].IN1
-B16[4] => B16[4].IN1
-B16[5] => B16[5].IN1
-B16[6] => B16[6].IN1
-B16[7] => B16[7].IN1
-B16[8] => B16[8].IN1
-B16[9] => B16[9].IN1
-B16[10] => B16[10].IN1
-B16[11] => B16[11].IN1
-B16[12] => B16[12].IN1
-B16[13] => B16[13].IN1
-B16[14] => B16[14].IN1
-B16[15] => B16[15].IN1
-cin16 => cin16.IN1
-sum16[0] <= fourBitAdder:fourBit_0.sum
-sum16[1] <= fourBitAdder:fourBit_0.sum
-sum16[2] <= fourBitAdder:fourBit_0.sum
-sum16[3] <= fourBitAdder:fourBit_0.sum
-sum16[4] <= fourBitAdder:fourBit_1.sum
-sum16[5] <= fourBitAdder:fourBit_1.sum
-sum16[6] <= fourBitAdder:fourBit_1.sum
-sum16[7] <= fourBitAdder:fourBit_1.sum
-sum16[8] <= fourBitAdder:fourBit_2.sum
-sum16[9] <= fourBitAdder:fourBit_2.sum
-sum16[10] <= fourBitAdder:fourBit_2.sum
-sum16[11] <= fourBitAdder:fourBit_2.sum
-sum16[12] <= oneBit:oneBit_0.sum
-sum16[13] <= oneBit:oneBit_1.sum
-sum16[14] <= oneBit:oneBit_2.sum
-sum16[15] <= oneBit:oneBit_3.sum
-cout16 <= oneBit:oneBit_3.c_out
-c_lastin <= w16[5].DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU|CSA:csa1|RCA_special:rca2|fourBitAdder:fourBit_0
-A[0] => A[0].IN1
-A[1] => A[1].IN1
-A[2] => A[2].IN1
-A[3] => A[3].IN1
-B[0] => B[0].IN1
-B[1] => B[1].IN1
-B[2] => B[2].IN1
-B[3] => B[3].IN1
-cin => cin.IN1
-sum[0] <= oneBit:oneBit_0.sum
-sum[1] <= oneBit:oneBit_1.sum
-sum[2] <= oneBit:oneBit_2.sum
-sum[3] <= oneBit:oneBit_3.sum
-cout <= oneBit:oneBit_3.c_out
-
-
-|ALU|CSA:csa1|RCA_special:rca2|fourBitAdder:fourBit_0|oneBit:oneBit_0
-in_A => and_2.IN0
-in_A => xor_1.IN0
-in_B => and_2.IN1
-in_B => xor_1.IN1
-c_in => and_1.IN1
-c_in => xor_2.IN1
-sum <= xor_2.DB_MAX_OUTPUT_PORT_TYPE
-c_out <= or_1.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU|CSA:csa1|RCA_special:rca2|fourBitAdder:fourBit_0|oneBit:oneBit_1
-in_A => and_2.IN0
-in_A => xor_1.IN0
-in_B => and_2.IN1
-in_B => xor_1.IN1
-c_in => and_1.IN1
-c_in => xor_2.IN1
-sum <= xor_2.DB_MAX_OUTPUT_PORT_TYPE
-c_out <= or_1.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU|CSA:csa1|RCA_special:rca2|fourBitAdder:fourBit_0|oneBit:oneBit_2
-in_A => and_2.IN0
-in_A => xor_1.IN0
-in_B => and_2.IN1
-in_B => xor_1.IN1
-c_in => and_1.IN1
-c_in => xor_2.IN1
-sum <= xor_2.DB_MAX_OUTPUT_PORT_TYPE
-c_out <= or_1.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU|CSA:csa1|RCA_special:rca2|fourBitAdder:fourBit_0|oneBit:oneBit_3
-in_A => and_2.IN0
-in_A => xor_1.IN0
-in_B => and_2.IN1
-in_B => xor_1.IN1
-c_in => and_1.IN1
-c_in => xor_2.IN1
-sum <= xor_2.DB_MAX_OUTPUT_PORT_TYPE
-c_out <= or_1.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU|CSA:csa1|RCA_special:rca2|fourBitAdder:fourBit_1
-A[0] => A[0].IN1
-A[1] => A[1].IN1
-A[2] => A[2].IN1
-A[3] => A[3].IN1
-B[0] => B[0].IN1
-B[1] => B[1].IN1
-B[2] => B[2].IN1
-B[3] => B[3].IN1
-cin => cin.IN1
-sum[0] <= oneBit:oneBit_0.sum
-sum[1] <= oneBit:oneBit_1.sum
-sum[2] <= oneBit:oneBit_2.sum
-sum[3] <= oneBit:oneBit_3.sum
-cout <= oneBit:oneBit_3.c_out
-
-
-|ALU|CSA:csa1|RCA_special:rca2|fourBitAdder:fourBit_1|oneBit:oneBit_0
-in_A => and_2.IN0
-in_A => xor_1.IN0
-in_B => and_2.IN1
-in_B => xor_1.IN1
-c_in => and_1.IN1
-c_in => xor_2.IN1
-sum <= xor_2.DB_MAX_OUTPUT_PORT_TYPE
-c_out <= or_1.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU|CSA:csa1|RCA_special:rca2|fourBitAdder:fourBit_1|oneBit:oneBit_1
-in_A => and_2.IN0
-in_A => xor_1.IN0
-in_B => and_2.IN1
-in_B => xor_1.IN1
-c_in => and_1.IN1
-c_in => xor_2.IN1
-sum <= xor_2.DB_MAX_OUTPUT_PORT_TYPE
-c_out <= or_1.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU|CSA:csa1|RCA_special:rca2|fourBitAdder:fourBit_1|oneBit:oneBit_2
-in_A => and_2.IN0
-in_A => xor_1.IN0
-in_B => and_2.IN1
-in_B => xor_1.IN1
-c_in => and_1.IN1
-c_in => xor_2.IN1
-sum <= xor_2.DB_MAX_OUTPUT_PORT_TYPE
-c_out <= or_1.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU|CSA:csa1|RCA_special:rca2|fourBitAdder:fourBit_1|oneBit:oneBit_3
-in_A => and_2.IN0
-in_A => xor_1.IN0
-in_B => and_2.IN1
-in_B => xor_1.IN1
-c_in => and_1.IN1
-c_in => xor_2.IN1
-sum <= xor_2.DB_MAX_OUTPUT_PORT_TYPE
-c_out <= or_1.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU|CSA:csa1|RCA_special:rca2|fourBitAdder:fourBit_2
-A[0] => A[0].IN1
-A[1] => A[1].IN1
-A[2] => A[2].IN1
-A[3] => A[3].IN1
-B[0] => B[0].IN1
-B[1] => B[1].IN1
-B[2] => B[2].IN1
-B[3] => B[3].IN1
-cin => cin.IN1
-sum[0] <= oneBit:oneBit_0.sum
-sum[1] <= oneBit:oneBit_1.sum
-sum[2] <= oneBit:oneBit_2.sum
-sum[3] <= oneBit:oneBit_3.sum
-cout <= oneBit:oneBit_3.c_out
-
-
-|ALU|CSA:csa1|RCA_special:rca2|fourBitAdder:fourBit_2|oneBit:oneBit_0
-in_A => and_2.IN0
-in_A => xor_1.IN0
-in_B => and_2.IN1
-in_B => xor_1.IN1
-c_in => and_1.IN1
-c_in => xor_2.IN1
-sum <= xor_2.DB_MAX_OUTPUT_PORT_TYPE
-c_out <= or_1.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU|CSA:csa1|RCA_special:rca2|fourBitAdder:fourBit_2|oneBit:oneBit_1
-in_A => and_2.IN0
-in_A => xor_1.IN0
-in_B => and_2.IN1
-in_B => xor_1.IN1
-c_in => and_1.IN1
-c_in => xor_2.IN1
-sum <= xor_2.DB_MAX_OUTPUT_PORT_TYPE
-c_out <= or_1.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU|CSA:csa1|RCA_special:rca2|fourBitAdder:fourBit_2|oneBit:oneBit_2
-in_A => and_2.IN0
-in_A => xor_1.IN0
-in_B => and_2.IN1
-in_B => xor_1.IN1
-c_in => and_1.IN1
-c_in => xor_2.IN1
-sum <= xor_2.DB_MAX_OUTPUT_PORT_TYPE
-c_out <= or_1.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU|CSA:csa1|RCA_special:rca2|fourBitAdder:fourBit_2|oneBit:oneBit_3
-in_A => and_2.IN0
-in_A => xor_1.IN0
-in_B => and_2.IN1
-in_B => xor_1.IN1
-c_in => and_1.IN1
-c_in => xor_2.IN1
-sum <= xor_2.DB_MAX_OUTPUT_PORT_TYPE
-c_out <= or_1.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU|CSA:csa1|RCA_special:rca2|oneBit:oneBit_0
-in_A => and_2.IN0
-in_A => xor_1.IN0
-in_B => and_2.IN1
-in_B => xor_1.IN1
-c_in => and_1.IN1
-c_in => xor_2.IN1
-sum <= xor_2.DB_MAX_OUTPUT_PORT_TYPE
-c_out <= or_1.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU|CSA:csa1|RCA_special:rca2|oneBit:oneBit_1
-in_A => and_2.IN0
-in_A => xor_1.IN0
-in_B => and_2.IN1
-in_B => xor_1.IN1
-c_in => and_1.IN1
-c_in => xor_2.IN1
-sum <= xor_2.DB_MAX_OUTPUT_PORT_TYPE
-c_out <= or_1.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU|CSA:csa1|RCA_special:rca2|oneBit:oneBit_2
-in_A => and_2.IN0
-in_A => xor_1.IN0
-in_B => and_2.IN1
-in_B => xor_1.IN1
-c_in => and_1.IN1
-c_in => xor_2.IN1
-sum <= xor_2.DB_MAX_OUTPUT_PORT_TYPE
-c_out <= or_1.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU|CSA:csa1|RCA_special:rca2|oneBit:oneBit_3
-in_A => and_2.IN0
-in_A => xor_1.IN0
-in_B => and_2.IN1
-in_B => xor_1.IN1
-c_in => and_1.IN1
-c_in => xor_2.IN1
-sum <= xor_2.DB_MAX_OUTPUT_PORT_TYPE
-c_out <= or_1.DB_MAX_OUTPUT_PORT_TYPE
-=======
-|is_not_equal
+|ALU|is_not_equal:ine0
 A[0] => xor_res[0].IN0
 A[1] => xor_res[1].IN0
 A[2] => xor_res[2].IN0
@@ -2910,6 +1768,796 @@ B[29] => xor_res[29].IN1
 B[30] => xor_res[30].IN1
 B[31] => xor_res[31].IN1
 out <= comb.DB_MAX_OUTPUT_PORT_TYPE
->>>>>>> 905415823baa60d8b96fc8614b7b713843bc6782
+
+
+|ALU|CheckAddSub:calculate1
+A[0] => A[0].IN1
+A[1] => A[1].IN1
+A[2] => A[2].IN1
+A[3] => A[3].IN1
+A[4] => A[4].IN1
+A[5] => A[5].IN1
+A[6] => A[6].IN1
+A[7] => A[7].IN1
+A[8] => A[8].IN1
+A[9] => A[9].IN1
+A[10] => A[10].IN1
+A[11] => A[11].IN1
+A[12] => A[12].IN1
+A[13] => A[13].IN1
+A[14] => A[14].IN1
+A[15] => A[15].IN1
+A[16] => A[16].IN2
+A[17] => A[17].IN2
+A[18] => A[18].IN2
+A[19] => A[19].IN2
+A[20] => A[20].IN2
+A[21] => A[21].IN2
+A[22] => A[22].IN2
+A[23] => A[23].IN2
+A[24] => A[24].IN2
+A[25] => A[25].IN2
+A[26] => A[26].IN2
+A[27] => A[27].IN2
+A[28] => A[28].IN2
+A[29] => A[29].IN2
+A[30] => A[30].IN2
+A[31] => A[31].IN2
+B[0] => xor_bit0.IN0
+B[1] => xor_bit1.IN0
+B[2] => xor_bit2.IN0
+B[3] => xor_bit3.IN0
+B[4] => xor_bit4.IN0
+B[5] => xor_bit5.IN0
+B[6] => xor_bit6.IN0
+B[7] => xor_bit7.IN0
+B[8] => xor_bit8.IN0
+B[9] => xor_bit9.IN0
+B[10] => xor_bit10.IN0
+B[11] => xor_bit11.IN0
+B[12] => xor_bit12.IN0
+B[13] => xor_bit13.IN0
+B[14] => xor_bit14.IN0
+B[15] => xor_bit15.IN0
+B[16] => xor_bit16.IN0
+B[17] => xor_bit17.IN0
+B[18] => xor_bit18.IN0
+B[19] => xor_bit19.IN0
+B[20] => xor_bit20.IN0
+B[21] => xor_bit21.IN0
+B[22] => xor_bit22.IN0
+B[23] => xor_bit23.IN0
+B[24] => xor_bit24.IN0
+B[25] => xor_bit25.IN0
+B[26] => xor_bit26.IN0
+B[27] => xor_bit27.IN0
+B[28] => xor_bit28.IN0
+B[29] => xor_bit29.IN0
+B[30] => xor_bit30.IN0
+B[31] => xor_bit31.IN0
+mode => mode.IN1
+overflow <= overflow.DB_MAX_OUTPUT_PORT_TYPE
+D[0] <= RCA16Bit:first.sum
+D[1] <= RCA16Bit:first.sum
+D[2] <= RCA16Bit:first.sum
+D[3] <= RCA16Bit:first.sum
+D[4] <= RCA16Bit:first.sum
+D[5] <= RCA16Bit:first.sum
+D[6] <= RCA16Bit:first.sum
+D[7] <= RCA16Bit:first.sum
+D[8] <= RCA16Bit:first.sum
+D[9] <= RCA16Bit:first.sum
+D[10] <= RCA16Bit:first.sum
+D[11] <= RCA16Bit:first.sum
+D[12] <= RCA16Bit:first.sum
+D[13] <= RCA16Bit:first.sum
+D[14] <= RCA16Bit:first.sum
+D[15] <= RCA16Bit:first.sum
+D[16] <= D.DB_MAX_OUTPUT_PORT_TYPE
+D[17] <= D.DB_MAX_OUTPUT_PORT_TYPE
+D[18] <= D.DB_MAX_OUTPUT_PORT_TYPE
+D[19] <= D.DB_MAX_OUTPUT_PORT_TYPE
+D[20] <= D.DB_MAX_OUTPUT_PORT_TYPE
+D[21] <= D.DB_MAX_OUTPUT_PORT_TYPE
+D[22] <= D.DB_MAX_OUTPUT_PORT_TYPE
+D[23] <= D.DB_MAX_OUTPUT_PORT_TYPE
+D[24] <= D.DB_MAX_OUTPUT_PORT_TYPE
+D[25] <= D.DB_MAX_OUTPUT_PORT_TYPE
+D[26] <= D.DB_MAX_OUTPUT_PORT_TYPE
+D[27] <= D.DB_MAX_OUTPUT_PORT_TYPE
+D[28] <= D.DB_MAX_OUTPUT_PORT_TYPE
+D[29] <= D.DB_MAX_OUTPUT_PORT_TYPE
+D[30] <= D.DB_MAX_OUTPUT_PORT_TYPE
+D[31] <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|CheckAddSub:calculate1|RCA16Bit:first
+in1[0] => in1[0].IN1
+in1[1] => in1[1].IN1
+in1[2] => in1[2].IN1
+in1[3] => in1[3].IN1
+in1[4] => in1[4].IN1
+in1[5] => in1[5].IN1
+in1[6] => in1[6].IN1
+in1[7] => in1[7].IN1
+in1[8] => in1[8].IN1
+in1[9] => in1[9].IN1
+in1[10] => in1[10].IN1
+in1[11] => in1[11].IN1
+in1[12] => in1[12].IN1
+in1[13] => in1[13].IN1
+in1[14] => in1[14].IN1
+in1[15] => in1[15].IN1
+in2[0] => in2[0].IN1
+in2[1] => in2[1].IN1
+in2[2] => in2[2].IN1
+in2[3] => in2[3].IN1
+in2[4] => in2[4].IN1
+in2[5] => in2[5].IN1
+in2[6] => in2[6].IN1
+in2[7] => in2[7].IN1
+in2[8] => in2[8].IN1
+in2[9] => in2[9].IN1
+in2[10] => in2[10].IN1
+in2[11] => in2[11].IN1
+in2[12] => in2[12].IN1
+in2[13] => in2[13].IN1
+in2[14] => in2[14].IN1
+in2[15] => in2[15].IN1
+cin => cin.IN1
+sum[0] <= OneBitAdder:Full1.sum
+sum[1] <= OneBitAdder:Full2.sum
+sum[2] <= OneBitAdder:Full3.sum
+sum[3] <= OneBitAdder:Full4.sum
+sum[4] <= OneBitAdder:Full5.sum
+sum[5] <= OneBitAdder:Full6.sum
+sum[6] <= OneBitAdder:Full7.sum
+sum[7] <= OneBitAdder:Full8.sum
+sum[8] <= OneBitAdder:Full9.sum
+sum[9] <= OneBitAdder:Full10.sum
+sum[10] <= OneBitAdder:Full11.sum
+sum[11] <= OneBitAdder:Full12.sum
+sum[12] <= OneBitAdder:Full13.sum
+sum[13] <= OneBitAdder:Full14.sum
+sum[14] <= OneBitAdder:Full15.sum
+sum[15] <= OneBitAdder:Full16.sum
+cout <= OneBitAdder:Full16.cout
+overflow <= xor_bit.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|CheckAddSub:calculate1|RCA16Bit:first|OneBitAdder:Full1
+inA => xor_1.IN0
+inA => and_2.IN0
+inB => xor_1.IN1
+inB => and_2.IN1
+cin => xor_2.IN1
+cin => and_1.IN1
+sum <= xor_2.DB_MAX_OUTPUT_PORT_TYPE
+cout <= or_1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|CheckAddSub:calculate1|RCA16Bit:first|OneBitAdder:Full2
+inA => xor_1.IN0
+inA => and_2.IN0
+inB => xor_1.IN1
+inB => and_2.IN1
+cin => xor_2.IN1
+cin => and_1.IN1
+sum <= xor_2.DB_MAX_OUTPUT_PORT_TYPE
+cout <= or_1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|CheckAddSub:calculate1|RCA16Bit:first|OneBitAdder:Full3
+inA => xor_1.IN0
+inA => and_2.IN0
+inB => xor_1.IN1
+inB => and_2.IN1
+cin => xor_2.IN1
+cin => and_1.IN1
+sum <= xor_2.DB_MAX_OUTPUT_PORT_TYPE
+cout <= or_1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|CheckAddSub:calculate1|RCA16Bit:first|OneBitAdder:Full4
+inA => xor_1.IN0
+inA => and_2.IN0
+inB => xor_1.IN1
+inB => and_2.IN1
+cin => xor_2.IN1
+cin => and_1.IN1
+sum <= xor_2.DB_MAX_OUTPUT_PORT_TYPE
+cout <= or_1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|CheckAddSub:calculate1|RCA16Bit:first|OneBitAdder:Full5
+inA => xor_1.IN0
+inA => and_2.IN0
+inB => xor_1.IN1
+inB => and_2.IN1
+cin => xor_2.IN1
+cin => and_1.IN1
+sum <= xor_2.DB_MAX_OUTPUT_PORT_TYPE
+cout <= or_1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|CheckAddSub:calculate1|RCA16Bit:first|OneBitAdder:Full6
+inA => xor_1.IN0
+inA => and_2.IN0
+inB => xor_1.IN1
+inB => and_2.IN1
+cin => xor_2.IN1
+cin => and_1.IN1
+sum <= xor_2.DB_MAX_OUTPUT_PORT_TYPE
+cout <= or_1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|CheckAddSub:calculate1|RCA16Bit:first|OneBitAdder:Full7
+inA => xor_1.IN0
+inA => and_2.IN0
+inB => xor_1.IN1
+inB => and_2.IN1
+cin => xor_2.IN1
+cin => and_1.IN1
+sum <= xor_2.DB_MAX_OUTPUT_PORT_TYPE
+cout <= or_1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|CheckAddSub:calculate1|RCA16Bit:first|OneBitAdder:Full8
+inA => xor_1.IN0
+inA => and_2.IN0
+inB => xor_1.IN1
+inB => and_2.IN1
+cin => xor_2.IN1
+cin => and_1.IN1
+sum <= xor_2.DB_MAX_OUTPUT_PORT_TYPE
+cout <= or_1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|CheckAddSub:calculate1|RCA16Bit:first|OneBitAdder:Full9
+inA => xor_1.IN0
+inA => and_2.IN0
+inB => xor_1.IN1
+inB => and_2.IN1
+cin => xor_2.IN1
+cin => and_1.IN1
+sum <= xor_2.DB_MAX_OUTPUT_PORT_TYPE
+cout <= or_1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|CheckAddSub:calculate1|RCA16Bit:first|OneBitAdder:Full10
+inA => xor_1.IN0
+inA => and_2.IN0
+inB => xor_1.IN1
+inB => and_2.IN1
+cin => xor_2.IN1
+cin => and_1.IN1
+sum <= xor_2.DB_MAX_OUTPUT_PORT_TYPE
+cout <= or_1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|CheckAddSub:calculate1|RCA16Bit:first|OneBitAdder:Full11
+inA => xor_1.IN0
+inA => and_2.IN0
+inB => xor_1.IN1
+inB => and_2.IN1
+cin => xor_2.IN1
+cin => and_1.IN1
+sum <= xor_2.DB_MAX_OUTPUT_PORT_TYPE
+cout <= or_1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|CheckAddSub:calculate1|RCA16Bit:first|OneBitAdder:Full12
+inA => xor_1.IN0
+inA => and_2.IN0
+inB => xor_1.IN1
+inB => and_2.IN1
+cin => xor_2.IN1
+cin => and_1.IN1
+sum <= xor_2.DB_MAX_OUTPUT_PORT_TYPE
+cout <= or_1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|CheckAddSub:calculate1|RCA16Bit:first|OneBitAdder:Full13
+inA => xor_1.IN0
+inA => and_2.IN0
+inB => xor_1.IN1
+inB => and_2.IN1
+cin => xor_2.IN1
+cin => and_1.IN1
+sum <= xor_2.DB_MAX_OUTPUT_PORT_TYPE
+cout <= or_1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|CheckAddSub:calculate1|RCA16Bit:first|OneBitAdder:Full14
+inA => xor_1.IN0
+inA => and_2.IN0
+inB => xor_1.IN1
+inB => and_2.IN1
+cin => xor_2.IN1
+cin => and_1.IN1
+sum <= xor_2.DB_MAX_OUTPUT_PORT_TYPE
+cout <= or_1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|CheckAddSub:calculate1|RCA16Bit:first|OneBitAdder:Full15
+inA => xor_1.IN0
+inA => and_2.IN0
+inB => xor_1.IN1
+inB => and_2.IN1
+cin => xor_2.IN1
+cin => and_1.IN1
+sum <= xor_2.DB_MAX_OUTPUT_PORT_TYPE
+cout <= or_1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|CheckAddSub:calculate1|RCA16Bit:first|OneBitAdder:Full16
+inA => xor_1.IN0
+inA => and_2.IN0
+inB => xor_1.IN1
+inB => and_2.IN1
+cin => xor_2.IN1
+cin => and_1.IN1
+sum <= xor_2.DB_MAX_OUTPUT_PORT_TYPE
+cout <= or_1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|CheckAddSub:calculate1|RCA16Bit:second_cin0
+in1[0] => in1[0].IN1
+in1[1] => in1[1].IN1
+in1[2] => in1[2].IN1
+in1[3] => in1[3].IN1
+in1[4] => in1[4].IN1
+in1[5] => in1[5].IN1
+in1[6] => in1[6].IN1
+in1[7] => in1[7].IN1
+in1[8] => in1[8].IN1
+in1[9] => in1[9].IN1
+in1[10] => in1[10].IN1
+in1[11] => in1[11].IN1
+in1[12] => in1[12].IN1
+in1[13] => in1[13].IN1
+in1[14] => in1[14].IN1
+in1[15] => in1[15].IN1
+in2[0] => in2[0].IN1
+in2[1] => in2[1].IN1
+in2[2] => in2[2].IN1
+in2[3] => in2[3].IN1
+in2[4] => in2[4].IN1
+in2[5] => in2[5].IN1
+in2[6] => in2[6].IN1
+in2[7] => in2[7].IN1
+in2[8] => in2[8].IN1
+in2[9] => in2[9].IN1
+in2[10] => in2[10].IN1
+in2[11] => in2[11].IN1
+in2[12] => in2[12].IN1
+in2[13] => in2[13].IN1
+in2[14] => in2[14].IN1
+in2[15] => in2[15].IN1
+cin => cin.IN1
+sum[0] <= OneBitAdder:Full1.sum
+sum[1] <= OneBitAdder:Full2.sum
+sum[2] <= OneBitAdder:Full3.sum
+sum[3] <= OneBitAdder:Full4.sum
+sum[4] <= OneBitAdder:Full5.sum
+sum[5] <= OneBitAdder:Full6.sum
+sum[6] <= OneBitAdder:Full7.sum
+sum[7] <= OneBitAdder:Full8.sum
+sum[8] <= OneBitAdder:Full9.sum
+sum[9] <= OneBitAdder:Full10.sum
+sum[10] <= OneBitAdder:Full11.sum
+sum[11] <= OneBitAdder:Full12.sum
+sum[12] <= OneBitAdder:Full13.sum
+sum[13] <= OneBitAdder:Full14.sum
+sum[14] <= OneBitAdder:Full15.sum
+sum[15] <= OneBitAdder:Full16.sum
+cout <= OneBitAdder:Full16.cout
+overflow <= xor_bit.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|CheckAddSub:calculate1|RCA16Bit:second_cin0|OneBitAdder:Full1
+inA => xor_1.IN0
+inA => and_2.IN0
+inB => xor_1.IN1
+inB => and_2.IN1
+cin => xor_2.IN1
+cin => and_1.IN1
+sum <= xor_2.DB_MAX_OUTPUT_PORT_TYPE
+cout <= or_1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|CheckAddSub:calculate1|RCA16Bit:second_cin0|OneBitAdder:Full2
+inA => xor_1.IN0
+inA => and_2.IN0
+inB => xor_1.IN1
+inB => and_2.IN1
+cin => xor_2.IN1
+cin => and_1.IN1
+sum <= xor_2.DB_MAX_OUTPUT_PORT_TYPE
+cout <= or_1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|CheckAddSub:calculate1|RCA16Bit:second_cin0|OneBitAdder:Full3
+inA => xor_1.IN0
+inA => and_2.IN0
+inB => xor_1.IN1
+inB => and_2.IN1
+cin => xor_2.IN1
+cin => and_1.IN1
+sum <= xor_2.DB_MAX_OUTPUT_PORT_TYPE
+cout <= or_1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|CheckAddSub:calculate1|RCA16Bit:second_cin0|OneBitAdder:Full4
+inA => xor_1.IN0
+inA => and_2.IN0
+inB => xor_1.IN1
+inB => and_2.IN1
+cin => xor_2.IN1
+cin => and_1.IN1
+sum <= xor_2.DB_MAX_OUTPUT_PORT_TYPE
+cout <= or_1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|CheckAddSub:calculate1|RCA16Bit:second_cin0|OneBitAdder:Full5
+inA => xor_1.IN0
+inA => and_2.IN0
+inB => xor_1.IN1
+inB => and_2.IN1
+cin => xor_2.IN1
+cin => and_1.IN1
+sum <= xor_2.DB_MAX_OUTPUT_PORT_TYPE
+cout <= or_1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|CheckAddSub:calculate1|RCA16Bit:second_cin0|OneBitAdder:Full6
+inA => xor_1.IN0
+inA => and_2.IN0
+inB => xor_1.IN1
+inB => and_2.IN1
+cin => xor_2.IN1
+cin => and_1.IN1
+sum <= xor_2.DB_MAX_OUTPUT_PORT_TYPE
+cout <= or_1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|CheckAddSub:calculate1|RCA16Bit:second_cin0|OneBitAdder:Full7
+inA => xor_1.IN0
+inA => and_2.IN0
+inB => xor_1.IN1
+inB => and_2.IN1
+cin => xor_2.IN1
+cin => and_1.IN1
+sum <= xor_2.DB_MAX_OUTPUT_PORT_TYPE
+cout <= or_1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|CheckAddSub:calculate1|RCA16Bit:second_cin0|OneBitAdder:Full8
+inA => xor_1.IN0
+inA => and_2.IN0
+inB => xor_1.IN1
+inB => and_2.IN1
+cin => xor_2.IN1
+cin => and_1.IN1
+sum <= xor_2.DB_MAX_OUTPUT_PORT_TYPE
+cout <= or_1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|CheckAddSub:calculate1|RCA16Bit:second_cin0|OneBitAdder:Full9
+inA => xor_1.IN0
+inA => and_2.IN0
+inB => xor_1.IN1
+inB => and_2.IN1
+cin => xor_2.IN1
+cin => and_1.IN1
+sum <= xor_2.DB_MAX_OUTPUT_PORT_TYPE
+cout <= or_1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|CheckAddSub:calculate1|RCA16Bit:second_cin0|OneBitAdder:Full10
+inA => xor_1.IN0
+inA => and_2.IN0
+inB => xor_1.IN1
+inB => and_2.IN1
+cin => xor_2.IN1
+cin => and_1.IN1
+sum <= xor_2.DB_MAX_OUTPUT_PORT_TYPE
+cout <= or_1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|CheckAddSub:calculate1|RCA16Bit:second_cin0|OneBitAdder:Full11
+inA => xor_1.IN0
+inA => and_2.IN0
+inB => xor_1.IN1
+inB => and_2.IN1
+cin => xor_2.IN1
+cin => and_1.IN1
+sum <= xor_2.DB_MAX_OUTPUT_PORT_TYPE
+cout <= or_1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|CheckAddSub:calculate1|RCA16Bit:second_cin0|OneBitAdder:Full12
+inA => xor_1.IN0
+inA => and_2.IN0
+inB => xor_1.IN1
+inB => and_2.IN1
+cin => xor_2.IN1
+cin => and_1.IN1
+sum <= xor_2.DB_MAX_OUTPUT_PORT_TYPE
+cout <= or_1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|CheckAddSub:calculate1|RCA16Bit:second_cin0|OneBitAdder:Full13
+inA => xor_1.IN0
+inA => and_2.IN0
+inB => xor_1.IN1
+inB => and_2.IN1
+cin => xor_2.IN1
+cin => and_1.IN1
+sum <= xor_2.DB_MAX_OUTPUT_PORT_TYPE
+cout <= or_1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|CheckAddSub:calculate1|RCA16Bit:second_cin0|OneBitAdder:Full14
+inA => xor_1.IN0
+inA => and_2.IN0
+inB => xor_1.IN1
+inB => and_2.IN1
+cin => xor_2.IN1
+cin => and_1.IN1
+sum <= xor_2.DB_MAX_OUTPUT_PORT_TYPE
+cout <= or_1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|CheckAddSub:calculate1|RCA16Bit:second_cin0|OneBitAdder:Full15
+inA => xor_1.IN0
+inA => and_2.IN0
+inB => xor_1.IN1
+inB => and_2.IN1
+cin => xor_2.IN1
+cin => and_1.IN1
+sum <= xor_2.DB_MAX_OUTPUT_PORT_TYPE
+cout <= or_1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|CheckAddSub:calculate1|RCA16Bit:second_cin0|OneBitAdder:Full16
+inA => xor_1.IN0
+inA => and_2.IN0
+inB => xor_1.IN1
+inB => and_2.IN1
+cin => xor_2.IN1
+cin => and_1.IN1
+sum <= xor_2.DB_MAX_OUTPUT_PORT_TYPE
+cout <= or_1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|CheckAddSub:calculate1|RCA16Bit:second_cin1
+in1[0] => in1[0].IN1
+in1[1] => in1[1].IN1
+in1[2] => in1[2].IN1
+in1[3] => in1[3].IN1
+in1[4] => in1[4].IN1
+in1[5] => in1[5].IN1
+in1[6] => in1[6].IN1
+in1[7] => in1[7].IN1
+in1[8] => in1[8].IN1
+in1[9] => in1[9].IN1
+in1[10] => in1[10].IN1
+in1[11] => in1[11].IN1
+in1[12] => in1[12].IN1
+in1[13] => in1[13].IN1
+in1[14] => in1[14].IN1
+in1[15] => in1[15].IN1
+in2[0] => in2[0].IN1
+in2[1] => in2[1].IN1
+in2[2] => in2[2].IN1
+in2[3] => in2[3].IN1
+in2[4] => in2[4].IN1
+in2[5] => in2[5].IN1
+in2[6] => in2[6].IN1
+in2[7] => in2[7].IN1
+in2[8] => in2[8].IN1
+in2[9] => in2[9].IN1
+in2[10] => in2[10].IN1
+in2[11] => in2[11].IN1
+in2[12] => in2[12].IN1
+in2[13] => in2[13].IN1
+in2[14] => in2[14].IN1
+in2[15] => in2[15].IN1
+cin => cin.IN1
+sum[0] <= OneBitAdder:Full1.sum
+sum[1] <= OneBitAdder:Full2.sum
+sum[2] <= OneBitAdder:Full3.sum
+sum[3] <= OneBitAdder:Full4.sum
+sum[4] <= OneBitAdder:Full5.sum
+sum[5] <= OneBitAdder:Full6.sum
+sum[6] <= OneBitAdder:Full7.sum
+sum[7] <= OneBitAdder:Full8.sum
+sum[8] <= OneBitAdder:Full9.sum
+sum[9] <= OneBitAdder:Full10.sum
+sum[10] <= OneBitAdder:Full11.sum
+sum[11] <= OneBitAdder:Full12.sum
+sum[12] <= OneBitAdder:Full13.sum
+sum[13] <= OneBitAdder:Full14.sum
+sum[14] <= OneBitAdder:Full15.sum
+sum[15] <= OneBitAdder:Full16.sum
+cout <= OneBitAdder:Full16.cout
+overflow <= xor_bit.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|CheckAddSub:calculate1|RCA16Bit:second_cin1|OneBitAdder:Full1
+inA => xor_1.IN0
+inA => and_2.IN0
+inB => xor_1.IN1
+inB => and_2.IN1
+cin => xor_2.IN1
+cin => and_1.IN1
+sum <= xor_2.DB_MAX_OUTPUT_PORT_TYPE
+cout <= or_1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|CheckAddSub:calculate1|RCA16Bit:second_cin1|OneBitAdder:Full2
+inA => xor_1.IN0
+inA => and_2.IN0
+inB => xor_1.IN1
+inB => and_2.IN1
+cin => xor_2.IN1
+cin => and_1.IN1
+sum <= xor_2.DB_MAX_OUTPUT_PORT_TYPE
+cout <= or_1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|CheckAddSub:calculate1|RCA16Bit:second_cin1|OneBitAdder:Full3
+inA => xor_1.IN0
+inA => and_2.IN0
+inB => xor_1.IN1
+inB => and_2.IN1
+cin => xor_2.IN1
+cin => and_1.IN1
+sum <= xor_2.DB_MAX_OUTPUT_PORT_TYPE
+cout <= or_1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|CheckAddSub:calculate1|RCA16Bit:second_cin1|OneBitAdder:Full4
+inA => xor_1.IN0
+inA => and_2.IN0
+inB => xor_1.IN1
+inB => and_2.IN1
+cin => xor_2.IN1
+cin => and_1.IN1
+sum <= xor_2.DB_MAX_OUTPUT_PORT_TYPE
+cout <= or_1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|CheckAddSub:calculate1|RCA16Bit:second_cin1|OneBitAdder:Full5
+inA => xor_1.IN0
+inA => and_2.IN0
+inB => xor_1.IN1
+inB => and_2.IN1
+cin => xor_2.IN1
+cin => and_1.IN1
+sum <= xor_2.DB_MAX_OUTPUT_PORT_TYPE
+cout <= or_1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|CheckAddSub:calculate1|RCA16Bit:second_cin1|OneBitAdder:Full6
+inA => xor_1.IN0
+inA => and_2.IN0
+inB => xor_1.IN1
+inB => and_2.IN1
+cin => xor_2.IN1
+cin => and_1.IN1
+sum <= xor_2.DB_MAX_OUTPUT_PORT_TYPE
+cout <= or_1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|CheckAddSub:calculate1|RCA16Bit:second_cin1|OneBitAdder:Full7
+inA => xor_1.IN0
+inA => and_2.IN0
+inB => xor_1.IN1
+inB => and_2.IN1
+cin => xor_2.IN1
+cin => and_1.IN1
+sum <= xor_2.DB_MAX_OUTPUT_PORT_TYPE
+cout <= or_1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|CheckAddSub:calculate1|RCA16Bit:second_cin1|OneBitAdder:Full8
+inA => xor_1.IN0
+inA => and_2.IN0
+inB => xor_1.IN1
+inB => and_2.IN1
+cin => xor_2.IN1
+cin => and_1.IN1
+sum <= xor_2.DB_MAX_OUTPUT_PORT_TYPE
+cout <= or_1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|CheckAddSub:calculate1|RCA16Bit:second_cin1|OneBitAdder:Full9
+inA => xor_1.IN0
+inA => and_2.IN0
+inB => xor_1.IN1
+inB => and_2.IN1
+cin => xor_2.IN1
+cin => and_1.IN1
+sum <= xor_2.DB_MAX_OUTPUT_PORT_TYPE
+cout <= or_1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|CheckAddSub:calculate1|RCA16Bit:second_cin1|OneBitAdder:Full10
+inA => xor_1.IN0
+inA => and_2.IN0
+inB => xor_1.IN1
+inB => and_2.IN1
+cin => xor_2.IN1
+cin => and_1.IN1
+sum <= xor_2.DB_MAX_OUTPUT_PORT_TYPE
+cout <= or_1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|CheckAddSub:calculate1|RCA16Bit:second_cin1|OneBitAdder:Full11
+inA => xor_1.IN0
+inA => and_2.IN0
+inB => xor_1.IN1
+inB => and_2.IN1
+cin => xor_2.IN1
+cin => and_1.IN1
+sum <= xor_2.DB_MAX_OUTPUT_PORT_TYPE
+cout <= or_1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|CheckAddSub:calculate1|RCA16Bit:second_cin1|OneBitAdder:Full12
+inA => xor_1.IN0
+inA => and_2.IN0
+inB => xor_1.IN1
+inB => and_2.IN1
+cin => xor_2.IN1
+cin => and_1.IN1
+sum <= xor_2.DB_MAX_OUTPUT_PORT_TYPE
+cout <= or_1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|CheckAddSub:calculate1|RCA16Bit:second_cin1|OneBitAdder:Full13
+inA => xor_1.IN0
+inA => and_2.IN0
+inB => xor_1.IN1
+inB => and_2.IN1
+cin => xor_2.IN1
+cin => and_1.IN1
+sum <= xor_2.DB_MAX_OUTPUT_PORT_TYPE
+cout <= or_1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|CheckAddSub:calculate1|RCA16Bit:second_cin1|OneBitAdder:Full14
+inA => xor_1.IN0
+inA => and_2.IN0
+inB => xor_1.IN1
+inB => and_2.IN1
+cin => xor_2.IN1
+cin => and_1.IN1
+sum <= xor_2.DB_MAX_OUTPUT_PORT_TYPE
+cout <= or_1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|CheckAddSub:calculate1|RCA16Bit:second_cin1|OneBitAdder:Full15
+inA => xor_1.IN0
+inA => and_2.IN0
+inB => xor_1.IN1
+inB => and_2.IN1
+cin => xor_2.IN1
+cin => and_1.IN1
+sum <= xor_2.DB_MAX_OUTPUT_PORT_TYPE
+cout <= or_1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|CheckAddSub:calculate1|RCA16Bit:second_cin1|OneBitAdder:Full16
+inA => xor_1.IN0
+inA => and_2.IN0
+inB => xor_1.IN1
+inB => and_2.IN1
+cin => xor_2.IN1
+cin => and_1.IN1
+sum <= xor_2.DB_MAX_OUTPUT_PORT_TYPE
+cout <= or_1.DB_MAX_OUTPUT_PORT_TYPE
 
 

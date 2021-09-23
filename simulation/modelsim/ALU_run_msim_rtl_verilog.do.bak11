@@ -15,7 +15,6 @@ vlog -vlog01compat -work work +incdir+C:/Users/lizhu/Desktop/ECE\ 550/Proj1 {C:/
 vlog -vlog01compat -work work +incdir+C:/Users/lizhu/Desktop/ECE\ 550/Proj1 {C:/Users/lizhu/Desktop/ECE 550/Proj1/bit_And.v}
 vlog -vlog01compat -work work +incdir+C:/Users/lizhu/Desktop/ECE\ 550/Proj1 {C:/Users/lizhu/Desktop/ECE 550/Proj1/bit_Or.v}
 vlog -vlog01compat -work work +incdir+C:/Users/lizhu/Desktop/ECE\ 550/Proj1 {C:/Users/lizhu/Desktop/ECE 550/Proj1/left_shift.v}
-vlog -vlog01compat -work work +incdir+C:/Users/lizhu/Desktop/ECE\ 550/Proj1 {C:/Users/lizhu/Desktop/ECE 550/Proj1/right_shift.v}
 
 vlog -vlog01compat -work work +incdir+C:/Users/lizhu/Desktop/ECE\ 550/Proj1 {C:/Users/lizhu/Desktop/ECE 550/Proj1/ALU_tb.v}
 

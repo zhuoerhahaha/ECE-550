@@ -9,13 +9,13 @@ z2
 cModel Technology
 Z0 dC:/Users/lizhu/Desktop/ECE 550/Proj1/simulation/modelsim
 vALU
-Z1 !s110 1632263901
+Z1 !s110 1632437761
 !i10b 1
-!s100 @0=W:RbBL3Gld9WU_SIH42
-Ik;FPUim98k=QDfe3Jg5B]0
+!s100 ]6B]mGnHAPT^bbgVhc_HN3
+IF7TBSOed5]^lDAVmhjBe33
 Z2 VDg1SIo80bB@j0V0VzS_@n1
 R0
-w1632263881
+w1632437460
 8C:/Users/lizhu/Desktop/ECE 550/Proj1/ALU.v
 FC:/Users/lizhu/Desktop/ECE 550/Proj1/ALU.v
 L0 1
@@ -23,7 +23,7 @@ Z3 OV;L;10.4d;61
 r1
 !s85 0
 31
-Z4 !s108 1632263901.000000
+Z4 !s108 1632437761.000000
 !s107 C:/Users/lizhu/Desktop/ECE 550/Proj1/ALU.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/lizhu/Desktop/ECE 550/Proj1|C:/Users/lizhu/Desktop/ECE 550/Proj1/ALU.v|
 !i113 1
@@ -31,13 +31,13 @@ Z5 o-vlog01compat -work work
 Z6 !s92 -vlog01compat -work work {+incdir+C:/Users/lizhu/Desktop/ECE 550/Proj1}
 n@a@l@u
 vALU_tb
-Z7 !s110 1632263902
+Z7 !s110 1632437762
 !i10b 1
-!s100 h5mhl8_:EKi1K91OSOPO`3
-Il8:b2_HS]2@C;GXU0A9;A0
+!s100 Z7YH1DXCz[GJ;zhiKQ`gS0
+I:3=gMX`07izOUFDoKglYB0
 R2
 R0
-w1632263829
+w1632437733
 8C:/Users/lizhu/Desktop/ECE 550/Proj1/ALU_tb.v
 FC:/Users/lizhu/Desktop/ECE 550/Proj1/ALU_tb.v
 L0 3
@@ -45,7 +45,7 @@ R3
 r1
 !s85 0
 31
-Z8 !s108 1632263902.000000
+Z8 !s108 1632437762.000000
 !s107 C:/Users/lizhu/Desktop/ECE 550/Proj1/ALU_tb.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/lizhu/Desktop/ECE 550/Proj1|C:/Users/lizhu/Desktop/ECE 550/Proj1/ALU_tb.v|
 !i113 1
@@ -53,7 +53,7 @@ R5
 R6
 n@a@l@u_tb
 vbit_And
-R7
+R1
 !i10b 1
 !s100 2cT<?hQma^KzPHM=@gaM31
 I=dhg`>V1`JooW]JzHPNn<2
@@ -67,7 +67,7 @@ R3
 r1
 !s85 0
 31
-R8
+R4
 !s107 C:/Users/lizhu/Desktop/ECE 550/Proj1/bit_And.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/lizhu/Desktop/ECE 550/Proj1|C:/Users/lizhu/Desktop/ECE 550/Proj1/bit_And.v|
 !i113 1
@@ -89,57 +89,56 @@ R3
 r1
 !s85 0
 31
-R8
+R4
 !s107 C:/Users/lizhu/Desktop/ECE 550/Proj1/bit_Or.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/lizhu/Desktop/ECE 550/Proj1|C:/Users/lizhu/Desktop/ECE 550/Proj1/bit_Or.v|
 !i113 1
 R5
 R6
 nbit_@or
-vCSA
-R1
+vCheckAddSub
+R7
 !i10b 1
-!s100 S@C4T1AeXloPCd9^<e6N[3
-I4=ej4J;QcCoHi:I]Y4DGR0
+!s100 c7DYLFCZ_oj`eJ88>bcQc2
+I5:QIJTCQVYBLIFdIT@]HH3
 R2
 R0
-w1631407493
-8C:/Users/lizhu/Desktop/ECE 550/Proj1/CSA.v
-FC:/Users/lizhu/Desktop/ECE 550/Proj1/CSA.v
+w1632437275
+8C:/Users/lizhu/Desktop/ECE 550/Proj1/CheckAddSub.v
+FC:/Users/lizhu/Desktop/ECE 550/Proj1/CheckAddSub.v
 L0 1
 R3
 r1
 !s85 0
 31
-R4
-!s107 C:/Users/lizhu/Desktop/ECE 550/Proj1/CSA.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/lizhu/Desktop/ECE 550/Proj1|C:/Users/lizhu/Desktop/ECE 550/Proj1/CSA.v|
+R8
+!s107 C:/Users/lizhu/Desktop/ECE 550/Proj1/CheckAddSub.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/lizhu/Desktop/ECE 550/Proj1|C:/Users/lizhu/Desktop/ECE 550/Proj1/CheckAddSub.v|
 !i113 1
 R5
 R6
-n@c@s@a
-vfourBitAdder
-R1
+n@check@add@sub
+vis_not_equal
+R7
 !i10b 1
-!s100 9aeGNgZ>Ek2=R1k@4k88B3
-IdOgQg41PjKB<Z5NoPDP[T3
+!s100 2zXW;h^:2X7HI>3eJ<XUa3
+If=8]:VJhTFo5J8f=7oZF]2
 R2
 R0
-w1631392720
-8C:/Users/lizhu/Desktop/ECE 550/Proj1/fourBitAdder.v
-FC:/Users/lizhu/Desktop/ECE 550/Proj1/fourBitAdder.v
+w1632436056
+8C:/Users/lizhu/Desktop/ECE 550/Proj1/is_not_equal.v
+FC:/Users/lizhu/Desktop/ECE 550/Proj1/is_not_equal.v
 L0 1
 R3
 r1
 !s85 0
 31
-R4
-!s107 C:/Users/lizhu/Desktop/ECE 550/Proj1/fourBitAdder.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/lizhu/Desktop/ECE 550/Proj1|C:/Users/lizhu/Desktop/ECE 550/Proj1/fourBitAdder.v|
+R8
+!s107 C:/Users/lizhu/Desktop/ECE 550/Proj1/is_not_equal.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/lizhu/Desktop/ECE 550/Proj1|C:/Users/lizhu/Desktop/ECE 550/Proj1/is_not_equal.v|
 !i113 1
 R5
 R6
-nfour@bit@adder
 vleft_shift
 R7
 !i10b 1
@@ -182,69 +181,68 @@ R4
 !i113 1
 R5
 R6
-voneBit
+vOneBitAdder
 R7
 !i10b 1
-!s100 JcYe6S1ZMHE7Ueh_NNA>G2
-I663HTkIB6RznQX2]NU<z20
+!s100 n]FQIgO^f_`QCBSO6NidK3
+IPIE<H?oM6LT7;if9a@8Oi1
 R2
 R0
-w1631392735
-8C:/Users/lizhu/Desktop/ECE 550/Proj1/oneBit.v
-FC:/Users/lizhu/Desktop/ECE 550/Proj1/oneBit.v
+w1632437337
+8C:/Users/lizhu/Desktop/ECE 550/Proj1/OneBitAdder.v
+FC:/Users/lizhu/Desktop/ECE 550/Proj1/OneBitAdder.v
 L0 1
 R3
 r1
 !s85 0
 31
 R8
-!s107 C:/Users/lizhu/Desktop/ECE 550/Proj1/oneBit.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/lizhu/Desktop/ECE 550/Proj1|C:/Users/lizhu/Desktop/ECE 550/Proj1/oneBit.v|
+!s107 C:/Users/lizhu/Desktop/ECE 550/Proj1/OneBitAdder.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/lizhu/Desktop/ECE 550/Proj1|C:/Users/lizhu/Desktop/ECE 550/Proj1/OneBitAdder.v|
 !i113 1
 R5
 R6
-none@bit
-vRCA
-R1
-!i10b 1
-!s100 o[HSCe2WScWEOXLa_N5<X1
-I`iTGjBUV8E;FLEnN4BSLD2
-R2
-R0
-w1631392706
-8C:/Users/lizhu/Desktop/ECE 550/Proj1/RCA.v
-FC:/Users/lizhu/Desktop/ECE 550/Proj1/RCA.v
-L0 1
-R3
-r1
-!s85 0
-31
-R4
-!s107 C:/Users/lizhu/Desktop/ECE 550/Proj1/RCA.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/lizhu/Desktop/ECE 550/Proj1|C:/Users/lizhu/Desktop/ECE 550/Proj1/RCA.v|
-!i113 1
-R5
-R6
-n@r@c@a
-vRCA_special
+n@one@bit@adder
+vRCA16Bit
 R7
 !i10b 1
-!s100 WlmBh2G^F<:Sh=TmZ8W<62
-In2P^d@UalfA`jPV=X2gKO1
+!s100 03S_J8jhnB2D[D<TYCVnN2
+IRLYN]o0:ZoAL=VLhikKE92
 R2
 R0
-w1631404907
-8C:/Users/lizhu/Desktop/ECE 550/Proj1/RCA_special.v
-FC:/Users/lizhu/Desktop/ECE 550/Proj1/RCA_special.v
+w1632437311
+8C:/Users/lizhu/Desktop/ECE 550/Proj1/RCA16Bit.v
+FC:/Users/lizhu/Desktop/ECE 550/Proj1/RCA16Bit.v
 L0 1
 R3
 r1
 !s85 0
 31
 R8
-!s107 C:/Users/lizhu/Desktop/ECE 550/Proj1/RCA_special.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/lizhu/Desktop/ECE 550/Proj1|C:/Users/lizhu/Desktop/ECE 550/Proj1/RCA_special.v|
+!s107 C:/Users/lizhu/Desktop/ECE 550/Proj1/RCA16Bit.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/lizhu/Desktop/ECE 550/Proj1|C:/Users/lizhu/Desktop/ECE 550/Proj1/RCA16Bit.v|
 !i113 1
 R5
 R6
-n@r@c@a_special
+n@r@c@a16@bit
+vright_shift
+R7
+!i10b 1
+!s100 f`7DLiJ2@HRY1fX8B;:FJ2
+IhRLV`dlVVnSGY^J3zDZ?;0
+R2
+R0
+w1632436103
+8C:/Users/lizhu/Desktop/ECE 550/Proj1/right_shift.v
+FC:/Users/lizhu/Desktop/ECE 550/Proj1/right_shift.v
+L0 1
+R3
+r1
+!s85 0
+31
+R8
+!s107 C:/Users/lizhu/Desktop/ECE 550/Proj1/right_shift.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/lizhu/Desktop/ECE 550/Proj1|C:/Users/lizhu/Desktop/ECE 550/Proj1/right_shift.v|
+!i113 1
+R5
+R6
