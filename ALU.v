@@ -8,7 +8,7 @@ module ALU(data_operandA, data_operandB, ctrl_ALUopcode, ctrl_shiftamt, data_res
 	
    // YOUR CODE HERE //
 	wire[31:0] bout, notb, add_sub_result, and_result, or_result, leftshift, rightshift, sub_result;
-	
+	wire nothing;
 	//negate operand_B
 	negateb negateb0(data_operandB, notb);
 	
@@ -28,10 +28,14 @@ module ALU(data_operandA, data_operandB, ctrl_ALUopcode, ctrl_shiftamt, data_res
 	left_shift shift0(data_operandA, ctrl_shiftamt, leftshift);
 	right_shift shift1(data_operandA, ctrl_shiftamt, rightshift);
 	
+	
 	//subtract
-	subtract sub0(data_operandA, data_operandB, sub_result);
+	CSA csa1(data_operandA, data_operandB, 5'd1, nothing, sub_result);
+	//less than
+	assign isLessThan = isNotEqual ? (overflow ? (data_operandA[31] ? 1'b1 : 1'b0) : (sub_result[31] ? 1'b1 : 1'b0)) : 1'b0;
 	
 	
+	//assign result
 	assign data_result = ctrl_ALUopcode[2] ? (ctrl_ALUopcode[0] ? rightshift : leftshift) : (ctrl_ALUopcode[1] ? (ctrl_ALUopcode[0] ? or_result : and_result) : add_sub_result);
 	
 	

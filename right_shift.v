@@ -86,4 +86,4 @@ module right_shift(in, shiftamount, out);
 	assign out = muxS4;
 	
 endmodule
->>>>>>> 840820b44798cde323ccfdecac97747e49daf024
+
