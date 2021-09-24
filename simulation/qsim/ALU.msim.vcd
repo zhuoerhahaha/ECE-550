@@ -3,7 +3,7 @@ $comment
 		vcd file ALU.msim.vcd -direction
 $end
 $date
-	Thu Sep 23 19:34:29 2021
+	Fri Sep 24 12:21:43 2021
 $end
 $version
 	ModelSim Version 10.4d
@@ -97,283 +97,283 @@ $var wire 1 o data_result[31]~output_o $end
 $var wire 1 p isNotEqual~output_o $end
 $var wire 1 q isLessThan~output_o $end
 $var wire 1 r overflow~output_o $end
-$var wire 1 s ctrl_ALUopcode[1]~input_o $end
-$var wire 1 t ctrl_ALUopcode[2]~input_o $end
-$var wire 1 u data_result~14_combout $end
-$var wire 1 v ctrl_ALUopcode[0]~input_o $end
-$var wire 1 w data_result~13_combout $end
-$var wire 1 x data_operandB[0]~input_o $end
-$var wire 1 y data_operandA[15]~input_o $end
-$var wire 1 z data_operandA[13]~input_o $end
-$var wire 1 { ctrl_shiftamt[1]~input_o $end
-$var wire 1 | shift1|muxS1[13]~0_combout $end
+$var wire 1 s ctrl_shiftamt[0]~input_o $end
+$var wire 1 t data_operandA[11]~input_o $end
+$var wire 1 u ctrl_shiftamt[1]~input_o $end
+$var wire 1 v data_operandA[9]~input_o $end
+$var wire 1 w shift1|muxS1[9]~3_combout $end
+$var wire 1 x data_operandA[8]~input_o $end
+$var wire 1 y data_operandA[10]~input_o $end
+$var wire 1 z shift1|muxS1[7]~4_combout $end
+$var wire 1 { shift1|muxS1[8]~5_combout $end
+$var wire 1 | ctrl_shiftamt[2]~input_o $end
 $var wire 1 } data_operandA[14]~input_o $end
 $var wire 1 ~ data_operandA[12]~input_o $end
 $var wire 1 !! shift1|muxS1[12]~1_combout $end
-$var wire 1 "! ctrl_shiftamt[0]~input_o $end
-$var wire 1 #! shift1|muxS1[12]~2_combout $end
-$var wire 1 $! data_operandA[11]~input_o $end
-$var wire 1 %! data_operandA[9]~input_o $end
-$var wire 1 &! shift1|muxS1[9]~3_combout $end
-$var wire 1 '! data_operandA[10]~input_o $end
-$var wire 1 (! data_operandA[8]~input_o $end
-$var wire 1 )! shift1|muxS1[7]~4_combout $end
-$var wire 1 *! shift1|muxS1[8]~5_combout $end
-$var wire 1 +! ctrl_shiftamt[2]~input_o $end
-$var wire 1 ,! shift1|muxS2[8]~2_combout $end
-$var wire 1 -! data_operandA[1]~input_o $end
-$var wire 1 .! data_result~4_combout $end
-$var wire 1 /! data_operandA[3]~input_o $end
-$var wire 1 0! data_operandA[2]~input_o $end
-$var wire 1 1! shift1|muxS0[2]~0_combout $end
-$var wire 1 2! data_result~5_combout $end
-$var wire 1 3! data_operandA[0]~input_o $end
-$var wire 1 4! data_result~6_combout $end
-$var wire 1 5! data_operandA[7]~input_o $end
-$var wire 1 6! data_operandA[6]~input_o $end
-$var wire 1 7! shift1|muxS1[4]~6_combout $end
-$var wire 1 8! data_operandA[5]~input_o $end
-$var wire 1 9! data_operandA[4]~input_o $end
-$var wire 1 :! shift1|muxS0[4]~1_combout $end
-$var wire 1 ;! shift1|muxS1[4]~7_combout $end
-$var wire 1 <! data_result~7_combout $end
-$var wire 1 =! ctrl_shiftamt[4]~input_o $end
-$var wire 1 >! data_result~8_combout $end
-$var wire 1 ?! data_operandA[31]~input_o $end
-$var wire 1 @! data_operandA[29]~input_o $end
-$var wire 1 A! shift1|muxS1[28]~8_combout $end
-$var wire 1 B! data_operandA[30]~input_o $end
-$var wire 1 C! data_operandA[28]~input_o $end
-$var wire 1 D! shift1|muxS1[28]~9_combout $end
-$var wire 1 E! shift1|muxS1[28]~10_combout $end
-$var wire 1 F! data_operandA[27]~input_o $end
-$var wire 1 G! data_operandA[25]~input_o $end
-$var wire 1 H! shift1|muxS1[25]~11_combout $end
-$var wire 1 I! data_operandA[26]~input_o $end
-$var wire 1 J! data_operandA[24]~input_o $end
-$var wire 1 K! shift1|muxS1[24]~12_combout $end
-$var wire 1 L! shift1|muxS1[24]~13_combout $end
-$var wire 1 M! shift1|muxS2[24]~3_combout $end
-$var wire 1 N! data_operandA[23]~input_o $end
-$var wire 1 O! data_operandA[21]~input_o $end
-$var wire 1 P! shift1|muxS1[21]~14_combout $end
-$var wire 1 Q! data_operandA[22]~input_o $end
-$var wire 1 R! data_operandA[20]~input_o $end
-$var wire 1 S! shift1|muxS1[20]~15_combout $end
-$var wire 1 T! shift1|muxS1[20]~16_combout $end
-$var wire 1 U! data_operandA[19]~input_o $end
-$var wire 1 V! data_operandA[17]~input_o $end
-$var wire 1 W! shift1|muxS1[17]~17_combout $end
-$var wire 1 X! data_operandA[18]~input_o $end
-$var wire 1 Y! data_operandA[16]~input_o $end
-$var wire 1 Z! shift1|muxS1[16]~18_combout $end
-$var wire 1 [! shift1|muxS1[16]~19_combout $end
-$var wire 1 \! shift1|muxS2[16]~4_combout $end
-$var wire 1 ]! ctrl_shiftamt[3]~input_o $end
-$var wire 1 ^! shift1|muxS3[16]~0_combout $end
-$var wire 1 _! shift0|layer3[0]~0_combout $end
-$var wire 1 `! shift0|layer4[0]~4_combout $end
-$var wire 1 a! data_result~9_combout $end
-$var wire 1 b! data_result~10_combout $end
-$var wire 1 c! data_result~11_combout $end
-$var wire 1 d! data_result~12_combout $end
+$var wire 1 "! data_operandA[13]~input_o $end
+$var wire 1 #! data_operandA[15]~input_o $end
+$var wire 1 $! shift1|muxS1[13]~0_combout $end
+$var wire 1 %! shift1|muxS1[12]~2_combout $end
+$var wire 1 &! shift1|muxS2[8]~2_combout $end
+$var wire 1 '! ctrl_ALUopcode[0]~input_o $end
+$var wire 1 (! ctrl_shiftamt[4]~input_o $end
+$var wire 1 )! data_result~9_combout $end
+$var wire 1 *! ctrl_shiftamt[3]~input_o $end
+$var wire 1 +! shift0|layer3[0]~0_combout $end
+$var wire 1 ,! data_operandA[0]~input_o $end
+$var wire 1 -! shift0|layer4[0]~4_combout $end
+$var wire 1 .! data_result~10_combout $end
+$var wire 1 /! data_operandA[25]~input_o $end
+$var wire 1 0! data_operandA[27]~input_o $end
+$var wire 1 1! shift1|muxS1[25]~11_combout $end
+$var wire 1 2! data_operandA[24]~input_o $end
+$var wire 1 3! data_operandA[26]~input_o $end
+$var wire 1 4! shift1|muxS1[24]~12_combout $end
+$var wire 1 5! shift1|muxS1[24]~13_combout $end
+$var wire 1 6! data_operandA[28]~input_o $end
+$var wire 1 7! data_operandA[30]~input_o $end
+$var wire 1 8! shift1|muxS1[28]~9_combout $end
+$var wire 1 9! data_operandA[29]~input_o $end
+$var wire 1 :! data_operandA[31]~input_o $end
+$var wire 1 ;! shift1|muxS1[28]~8_combout $end
+$var wire 1 <! shift1|muxS1[28]~10_combout $end
+$var wire 1 =! shift1|muxS2[24]~3_combout $end
+$var wire 1 >! data_operandA[18]~input_o $end
+$var wire 1 ?! data_operandA[16]~input_o $end
+$var wire 1 @! shift1|muxS1[16]~18_combout $end
+$var wire 1 A! data_operandA[19]~input_o $end
+$var wire 1 B! data_operandA[17]~input_o $end
+$var wire 1 C! shift1|muxS1[17]~17_combout $end
+$var wire 1 D! shift1|muxS1[16]~19_combout $end
+$var wire 1 E! data_operandA[23]~input_o $end
+$var wire 1 F! data_operandA[21]~input_o $end
+$var wire 1 G! shift1|muxS1[21]~14_combout $end
+$var wire 1 H! data_operandA[22]~input_o $end
+$var wire 1 I! data_operandA[20]~input_o $end
+$var wire 1 J! shift1|muxS1[20]~15_combout $end
+$var wire 1 K! shift1|muxS1[20]~16_combout $end
+$var wire 1 L! shift1|muxS2[16]~4_combout $end
+$var wire 1 M! shift1|muxS3[16]~0_combout $end
+$var wire 1 N! data_result~11_combout $end
+$var wire 1 O! data_result~8_combout $end
+$var wire 1 P! data_operandA[1]~input_o $end
+$var wire 1 Q! data_result~4_combout $end
+$var wire 1 R! data_operandA[4]~input_o $end
+$var wire 1 S! data_operandA[5]~input_o $end
+$var wire 1 T! shift1|muxS0[4]~1_combout $end
+$var wire 1 U! data_operandA[6]~input_o $end
+$var wire 1 V! data_operandA[7]~input_o $end
+$var wire 1 W! shift1|muxS1[4]~6_combout $end
+$var wire 1 X! shift1|muxS1[4]~7_combout $end
+$var wire 1 Y! data_result~5_combout $end
+$var wire 1 Z! data_operandA[3]~input_o $end
+$var wire 1 [! data_operandA[2]~input_o $end
+$var wire 1 \! shift1|muxS0[2]~0_combout $end
+$var wire 1 ]! data_result~6_combout $end
+$var wire 1 ^! data_result~7_combout $end
+$var wire 1 _! data_result~12_combout $end
+$var wire 1 `! ctrl_ALUopcode[2]~input_o $end
+$var wire 1 a! ctrl_ALUopcode[1]~input_o $end
+$var wire 1 b! data_result~14_combout $end
+$var wire 1 c! data_result~13_combout $end
+$var wire 1 d! data_operandB[0]~input_o $end
 $var wire 1 e! data_result~228_combout $end
 $var wire 1 f! data_result~229_combout $end
-$var wire 1 g! shift1|muxS1[14]~20_combout $end
-$var wire 1 h! shift1|muxS1[13]~21_combout $end
-$var wire 1 i! shift1|muxS1[10]~22_combout $end
-$var wire 1 j! shift1|muxS1[9]~23_combout $end
-$var wire 1 k! shift1|muxS2[9]~5_combout $end
-$var wire 1 l! shift1|muxS0[3]~2_combout $end
-$var wire 1 m! data_result~15_combout $end
-$var wire 1 n! shift1|muxS1[5]~24_combout $end
-$var wire 1 o! shift1|muxS0[5]~3_combout $end
-$var wire 1 p! shift1|muxS1[5]~25_combout $end
-$var wire 1 q! data_result~16_combout $end
-$var wire 1 r! shift1|muxS2[25]~6_combout $end
-$var wire 1 s! shift1|muxS2[25]~7_combout $end
-$var wire 1 t! shift1|muxS1[26]~26_combout $end
-$var wire 1 u! shift1|muxS1[25]~27_combout $end
-$var wire 1 v! shift1|muxS2[25]~8_combout $end
-$var wire 1 w! shift1|muxS1[22]~28_combout $end
-$var wire 1 x! shift1|muxS1[21]~29_combout $end
-$var wire 1 y! shift1|muxS1[18]~30_combout $end
-$var wire 1 z! shift1|muxS1[17]~31_combout $end
-$var wire 1 {! shift1|muxS2[17]~9_combout $end
-$var wire 1 |! shift1|muxS3[17]~1_combout $end
-$var wire 1 }! shift0|layer1[1]~0_combout $end
-$var wire 1 ~! shift0|layer4[1]~27_combout $end
-$var wire 1 !" data_result~17_combout $end
+$var wire 1 g! shift1|muxS0[5]~3_combout $end
+$var wire 1 h! shift1|muxS1[5]~24_combout $end
+$var wire 1 i! shift1|muxS1[5]~25_combout $end
+$var wire 1 j! shift1|muxS0[3]~2_combout $end
+$var wire 1 k! data_result~15_combout $end
+$var wire 1 l! data_result~16_combout $end
+$var wire 1 m! shift0|layer1[1]~0_combout $end
+$var wire 1 n! shift0|layer4[1]~27_combout $end
+$var wire 1 o! shift1|muxS2[25]~6_combout $end
+$var wire 1 p! shift1|muxS2[25]~7_combout $end
+$var wire 1 q! shift1|muxS1[26]~26_combout $end
+$var wire 1 r! shift1|muxS1[25]~27_combout $end
+$var wire 1 s! shift1|muxS2[25]~8_combout $end
+$var wire 1 t! shift1|muxS1[22]~28_combout $end
+$var wire 1 u! shift1|muxS1[21]~29_combout $end
+$var wire 1 v! shift1|muxS1[18]~30_combout $end
+$var wire 1 w! shift1|muxS1[17]~31_combout $end
+$var wire 1 x! shift1|muxS2[17]~9_combout $end
+$var wire 1 y! shift1|muxS3[17]~1_combout $end
+$var wire 1 z! data_result~17_combout $end
+$var wire 1 {! shift1|muxS1[10]~22_combout $end
+$var wire 1 |! shift1|muxS1[9]~23_combout $end
+$var wire 1 }! shift1|muxS1[14]~20_combout $end
+$var wire 1 ~! shift1|muxS1[13]~21_combout $end
+$var wire 1 !" shift1|muxS2[9]~5_combout $end
 $var wire 1 "" data_result~18_combout $end
 $var wire 1 #" data_operandB[1]~input_o $end
 $var wire 1 $" calculate0|first|Full1|or_1~0_combout $end
 $var wire 1 %" data_result~19_combout $end
 $var wire 1 &" data_result~20_combout $end
 $var wire 1 '" data_result~21_combout $end
-$var wire 1 (" data_operandB[2]~input_o $end
-$var wire 1 )" data_result~22_combout $end
-$var wire 1 *" data_result~23_combout $end
-$var wire 1 +" shift1|muxS1[6]~32_combout $end
-$var wire 1 ," shift1|muxS1[7]~33_combout $end
-$var wire 1 -" shift1|muxS1[6]~34_combout $end
-$var wire 1 ." data_result~24_combout $end
-$var wire 1 /" data_result~25_combout $end
-$var wire 1 0" shift1|muxS1[15]~35_combout $end
-$var wire 1 1" shift1|muxS1[14]~36_combout $end
-$var wire 1 2" shift1|muxS1[11]~37_combout $end
-$var wire 1 3" shift1|muxS1[10]~38_combout $end
-$var wire 1 4" shift1|muxS2[10]~10_combout $end
-$var wire 1 5" data_result~26_combout $end
-$var wire 1 6" shift0|layer2[2]~0_combout $end
-$var wire 1 7" shift0|layer2[2]~1_combout $end
-$var wire 1 8" shift0|layer4[2]~28_combout $end
-$var wire 1 9" data_result~27_combout $end
-$var wire 1 :" shift1|muxS2[26]~11_combout $end
-$var wire 1 ;" shift1|muxS1[27]~39_combout $end
-$var wire 1 <" shift1|muxS1[26]~40_combout $end
-$var wire 1 =" shift1|muxS2[26]~12_combout $end
-$var wire 1 >" shift1|muxS1[23]~41_combout $end
-$var wire 1 ?" shift1|muxS1[22]~42_combout $end
-$var wire 1 @" shift1|muxS1[19]~43_combout $end
-$var wire 1 A" shift1|muxS1[18]~44_combout $end
-$var wire 1 B" shift1|muxS2[18]~13_combout $end
-$var wire 1 C" shift1|muxS3[18]~2_combout $end
-$var wire 1 D" calculate0|first|Full2|or_1~0_combout $end
-$var wire 1 E" calculate0|first|Full3|xor_2~0_combout $end
-$var wire 1 F" data_result~28_combout $end
-$var wire 1 G" data_result~29_combout $end
-$var wire 1 H" data_result~30_combout $end
-$var wire 1 I" data_result~31_combout $end
+$var wire 1 (" shift0|layer2[2]~0_combout $end
+$var wire 1 )" shift0|layer2[2]~1_combout $end
+$var wire 1 *" shift0|layer4[2]~28_combout $end
+$var wire 1 +" shift1|muxS1[27]~39_combout $end
+$var wire 1 ," shift1|muxS1[26]~40_combout $end
+$var wire 1 -" shift1|muxS2[26]~11_combout $end
+$var wire 1 ." shift1|muxS2[26]~12_combout $end
+$var wire 1 /" shift1|muxS1[19]~43_combout $end
+$var wire 1 0" shift1|muxS1[18]~44_combout $end
+$var wire 1 1" shift1|muxS1[23]~41_combout $end
+$var wire 1 2" shift1|muxS1[22]~42_combout $end
+$var wire 1 3" shift1|muxS2[18]~13_combout $end
+$var wire 1 4" shift1|muxS3[18]~2_combout $end
+$var wire 1 5" data_result~29_combout $end
+$var wire 1 6" data_result~28_combout $end
+$var wire 1 7" calculate0|first|Full2|or_1~0_combout $end
+$var wire 1 8" data_operandB[2]~input_o $end
+$var wire 1 9" calculate0|first|Full3|xor_2~0_combout $end
+$var wire 1 :" data_result~30_combout $end
+$var wire 1 ;" data_result~23_combout $end
+$var wire 1 <" shift1|muxS1[7]~33_combout $end
+$var wire 1 =" shift1|muxS1[6]~32_combout $end
+$var wire 1 >" shift1|muxS1[6]~34_combout $end
+$var wire 1 ?" data_result~24_combout $end
+$var wire 1 @" data_result~25_combout $end
+$var wire 1 A" shift1|muxS1[15]~35_combout $end
+$var wire 1 B" shift1|muxS1[14]~36_combout $end
+$var wire 1 C" shift1|muxS1[11]~37_combout $end
+$var wire 1 D" shift1|muxS1[10]~38_combout $end
+$var wire 1 E" shift1|muxS2[10]~10_combout $end
+$var wire 1 F" data_result~26_combout $end
+$var wire 1 G" data_result~27_combout $end
+$var wire 1 H" data_result~31_combout $end
+$var wire 1 I" data_result~22_combout $end
 $var wire 1 J" data_result~226_combout $end
 $var wire 1 K" data_operandB[3]~input_o $end
 $var wire 1 L" data_result~32_combout $end
-$var wire 1 M" shift1|muxS1[7]~45_combout $end
-$var wire 1 N" data_result~33_combout $end
-$var wire 1 O" shift1|muxS1[15]~46_combout $end
-$var wire 1 P" shift1|muxS1[11]~47_combout $end
-$var wire 1 Q" shift1|muxS2[11]~14_combout $end
-$var wire 1 R" data_result~34_combout $end
-$var wire 1 S" shift0|layer2[3]~2_combout $end
-$var wire 1 T" shift0|layer4[3]~5_combout $end
-$var wire 1 U" shift1|muxS1[27]~48_combout $end
-$var wire 1 V" shift1|muxS2[27]~15_combout $end
-$var wire 1 W" shift1|muxS1[23]~49_combout $end
-$var wire 1 X" shift1|muxS1[19]~50_combout $end
-$var wire 1 Y" shift1|muxS2[19]~16_combout $end
-$var wire 1 Z" shift1|muxS3[19]~3_combout $end
-$var wire 1 [" calculate0|first|Full3|or_1~0_combout $end
-$var wire 1 \" calculate0|first|Full4|xor_2~0_combout $end
-$var wire 1 ]" data_result~35_combout $end
+$var wire 1 M" shift1|muxS1[23]~49_combout $end
+$var wire 1 N" shift1|muxS1[19]~50_combout $end
+$var wire 1 O" shift1|muxS2[19]~16_combout $end
+$var wire 1 P" shift1|muxS1[27]~48_combout $end
+$var wire 1 Q" shift1|muxS2[27]~15_combout $end
+$var wire 1 R" shift1|muxS3[19]~3_combout $end
+$var wire 1 S" calculate0|first|Full3|or_1~0_combout $end
+$var wire 1 T" calculate0|first|Full4|xor_2~0_combout $end
+$var wire 1 U" data_result~35_combout $end
+$var wire 1 V" shift1|muxS1[7]~45_combout $end
+$var wire 1 W" data_result~33_combout $end
+$var wire 1 X" shift1|muxS1[15]~46_combout $end
+$var wire 1 Y" shift1|muxS1[11]~47_combout $end
+$var wire 1 Z" shift1|muxS2[11]~14_combout $end
+$var wire 1 [" data_result~34_combout $end
+$var wire 1 \" shift0|layer2[3]~2_combout $end
+$var wire 1 ]" shift0|layer4[3]~5_combout $end
 $var wire 1 ^" data_result~36_combout $end
 $var wire 1 _" data_result~227_combout $end
-$var wire 1 `" shift1|muxS2[28]~17_combout $end
-$var wire 1 a" shift1|muxS2[20]~18_combout $end
-$var wire 1 b" shift1|muxS3[20]~4_combout $end
-$var wire 1 c" data_result~37_combout $end
-$var wire 1 d" shift0|layer3[4]~1_combout $end
-$var wire 1 e" shift0|layer2[4]~3_combout $end
+$var wire 1 `" calculate0|first|Full4|or_1~0_combout $end
+$var wire 1 a" data_result~41_combout $end
+$var wire 1 b" data_operandB[4]~input_o $end
+$var wire 1 c" data_result~42_combout $end
+$var wire 1 d" data_result~37_combout $end
+$var wire 1 e" data_result~38_combout $end
 $var wire 1 f" shift0|layer2[4]~4_combout $end
-$var wire 1 g" shift0|layer2[4]~5_combout $end
-$var wire 1 h" shift0|layer4[4]~6_combout $end
-$var wire 1 i" data_result~38_combout $end
-$var wire 1 j" data_result~39_combout $end
-$var wire 1 k" shift1|muxS2[12]~19_combout $end
-$var wire 1 l" data_result~40_combout $end
-$var wire 1 m" data_operandB[4]~input_o $end
-$var wire 1 n" calculate0|first|Full4|or_1~0_combout $end
-$var wire 1 o" data_result~41_combout $end
-$var wire 1 p" data_result~42_combout $end
-$var wire 1 q" data_result~43_combout $end
-$var wire 1 r" data_result~44_combout $end
+$var wire 1 g" shift0|layer2[4]~3_combout $end
+$var wire 1 h" shift0|layer2[4]~5_combout $end
+$var wire 1 i" shift0|layer3[4]~1_combout $end
+$var wire 1 j" shift0|layer4[4]~6_combout $end
+$var wire 1 k" data_result~39_combout $end
+$var wire 1 l" shift1|muxS2[12]~19_combout $end
+$var wire 1 m" data_result~40_combout $end
+$var wire 1 n" data_result~43_combout $end
+$var wire 1 o" data_result~44_combout $end
+$var wire 1 p" shift1|muxS2[20]~18_combout $end
+$var wire 1 q" shift1|muxS2[28]~17_combout $end
+$var wire 1 r" shift1|muxS3[20]~4_combout $end
 $var wire 1 s" data_result~45_combout $end
-$var wire 1 t" shift1|muxS2[29]~27_combout $end
-$var wire 1 u" shift1|muxS2[21]~20_combout $end
+$var wire 1 t" shift1|muxS2[21]~20_combout $end
+$var wire 1 u" shift1|muxS2[29]~27_combout $end
 $var wire 1 v" shift1|muxS3[21]~5_combout $end
-$var wire 1 w" data_operandB[5]~input_o $end
+$var wire 1 w" shift1|muxS2[13]~21_combout $end
 $var wire 1 x" shift0|layer2[5]~6_combout $end
 $var wire 1 y" shift0|layer2[5]~7_combout $end
 $var wire 1 z" shift0|layer4[13]~7_combout $end
 $var wire 1 {" shift0|layer4[5]~8_combout $end
 $var wire 1 |" data_result~46_combout $end
-$var wire 1 }" shift1|muxS2[13]~21_combout $end
-$var wire 1 ~" data_result~47_combout $end
-$var wire 1 !# calculate0|first|Full5|or_1~0_combout $end
+$var wire 1 }" data_result~47_combout $end
+$var wire 1 ~" calculate0|first|Full5|or_1~0_combout $end
+$var wire 1 !# data_operandB[5]~input_o $end
 $var wire 1 "# calculate0|first|Full6|xor_2~0_combout $end
 $var wire 1 ## data_result~48_combout $end
 $var wire 1 $# data_result~49_combout $end
 $var wire 1 %# data_result~50_combout $end
-$var wire 1 &# shift1|muxS2[30]~22_combout $end
-$var wire 1 '# shift1|muxS2[22]~23_combout $end
+$var wire 1 &# shift1|muxS2[22]~23_combout $end
+$var wire 1 '# shift1|muxS2[30]~22_combout $end
 $var wire 1 (# shift1|muxS3[22]~6_combout $end
-$var wire 1 )# shift0|layer2[6]~8_combout $end
-$var wire 1 *# shift0|layer2[6]~9_combout $end
-$var wire 1 +# shift0|layer4[6]~9_combout $end
-$var wire 1 ,# data_result~51_combout $end
+$var wire 1 )# data_operandB[6]~input_o $end
+$var wire 1 *# calculate0|first|Full6|or_1~0_combout $end
+$var wire 1 +# data_result~53_combout $end
+$var wire 1 ,# data_result~54_combout $end
 $var wire 1 -# shift1|muxS2[14]~24_combout $end
-$var wire 1 .# data_result~52_combout $end
-$var wire 1 /# data_operandB[6]~input_o $end
-$var wire 1 0# calculate0|first|Full6|or_1~0_combout $end
-$var wire 1 1# data_result~53_combout $end
-$var wire 1 2# data_result~54_combout $end
+$var wire 1 .# shift0|layer2[6]~8_combout $end
+$var wire 1 /# shift0|layer2[6]~9_combout $end
+$var wire 1 0# shift0|layer4[6]~9_combout $end
+$var wire 1 1# data_result~51_combout $end
+$var wire 1 2# data_result~52_combout $end
 $var wire 1 3# data_result~55_combout $end
 $var wire 1 4# data_result~56_combout $end
 $var wire 1 5# shift1|muxS2[23]~25_combout $end
 $var wire 1 6# shift1|muxS3[23]~7_combout $end
-$var wire 1 7# data_operandB[7]~input_o $end
-$var wire 1 8# shift0|layer2[3]~10_combout $end
-$var wire 1 9# shift0|layer2[8]~11_combout $end
-$var wire 1 :# shift0|layer2[7]~12_combout $end
-$var wire 1 ;# shift0|layer4[7]~10_combout $end
-$var wire 1 <# data_result~57_combout $end
-$var wire 1 =# shift1|muxS2[15]~26_combout $end
-$var wire 1 ># data_result~58_combout $end
-$var wire 1 ?# calculate0|first|Full7|or_1~0_combout $end
-$var wire 1 @# calculate0|first|Full8|xor_2~0_combout $end
+$var wire 1 7# calculate0|first|Full7|or_1~0_combout $end
+$var wire 1 8# data_operandB[7]~input_o $end
+$var wire 1 9# calculate0|first|Full8|xor_2~0_combout $end
+$var wire 1 :# shift1|muxS2[15]~26_combout $end
+$var wire 1 ;# data_result~57_combout $end
+$var wire 1 <# shift0|layer2[8]~11_combout $end
+$var wire 1 =# shift0|layer2[7]~12_combout $end
+$var wire 1 ># shift0|layer2[3]~10_combout $end
+$var wire 1 ?# shift0|layer4[7]~10_combout $end
+$var wire 1 @# data_result~58_combout $end
 $var wire 1 A# data_result~59_combout $end
 $var wire 1 B# data_result~60_combout $end
 $var wire 1 C# data_result~61_combout $end
-$var wire 1 D# data_result~62_combout $end
+$var wire 1 D# data_operandB[8]~input_o $end
 $var wire 1 E# shift0|layer2[8]~13_combout $end
 $var wire 1 F# shift0|layer2[8]~14_combout $end
 $var wire 1 G# shift0|layer4[16]~11_combout $end
 $var wire 1 H# shift0|layer4[8]~12_combout $end
-$var wire 1 I# data_result~63_combout $end
-$var wire 1 J# data_result~64_combout $end
-$var wire 1 K# data_operandB[8]~input_o $end
+$var wire 1 I# data_result~62_combout $end
+$var wire 1 J# data_result~63_combout $end
+$var wire 1 K# data_result~64_combout $end
 $var wire 1 L# calculate0|first|Full8|or_1~0_combout $end
 $var wire 1 M# data_result~65_combout $end
 $var wire 1 N# data_result~66_combout $end
 $var wire 1 O# data_result~67_combout $end
 $var wire 1 P# data_operandB[9]~input_o $end
-$var wire 1 Q# shift0|layer2[10]~15_combout $end
-$var wire 1 R# shift0|layer2[9]~16_combout $end
-$var wire 1 S# shift0|layer3[9]~2_combout $end
-$var wire 1 T# shift0|layer4[9]~13_combout $end
-$var wire 1 U# data_result~68_combout $end
-$var wire 1 V# data_result~69_combout $end
-$var wire 1 W# calculate0|first|Full9|or_1~0_combout $end
-$var wire 1 X# calculate0|first|Full10|xor_2~0_combout $end
+$var wire 1 Q# calculate0|first|Full9|or_1~0_combout $end
+$var wire 1 R# calculate0|first|Full10|xor_2~0_combout $end
+$var wire 1 S# shift0|layer2[10]~15_combout $end
+$var wire 1 T# shift0|layer2[9]~16_combout $end
+$var wire 1 U# shift0|layer3[9]~2_combout $end
+$var wire 1 V# shift0|layer4[9]~13_combout $end
+$var wire 1 W# data_result~68_combout $end
+$var wire 1 X# data_result~69_combout $end
 $var wire 1 Y# data_result~70_combout $end
 $var wire 1 Z# data_result~71_combout $end
-$var wire 1 [# shift0|layer2[11]~17_combout $end
-$var wire 1 \# shift0|layer2[10]~18_combout $end
-$var wire 1 ]# shift0|layer3[10]~3_combout $end
-$var wire 1 ^# shift0|layer4[10]~14_combout $end
-$var wire 1 _# data_result~72_combout $end
-$var wire 1 `# data_result~73_combout $end
-$var wire 1 a# data_operandB[10]~input_o $end
-$var wire 1 b# calculate0|first|Full10|or_1~0_combout $end
-$var wire 1 c# data_result~74_combout $end
-$var wire 1 d# data_result~75_combout $end
+$var wire 1 [# calculate0|first|Full10|or_1~0_combout $end
+$var wire 1 \# data_result~74_combout $end
+$var wire 1 ]# data_operandB[10]~input_o $end
+$var wire 1 ^# data_result~75_combout $end
+$var wire 1 _# shift0|layer2[11]~17_combout $end
+$var wire 1 `# shift0|layer2[10]~18_combout $end
+$var wire 1 a# shift0|layer3[10]~3_combout $end
+$var wire 1 b# shift0|layer4[10]~14_combout $end
+$var wire 1 c# data_result~72_combout $end
+$var wire 1 d# data_result~73_combout $end
 $var wire 1 e# data_result~76_combout $end
-$var wire 1 f# data_operandB[11]~input_o $end
-$var wire 1 g# shift0|layer2[12]~19_combout $end
-$var wire 1 h# shift0|layer2[11]~20_combout $end
-$var wire 1 i# shift0|layer3[11]~4_combout $end
-$var wire 1 j# shift0|layer4[11]~15_combout $end
-$var wire 1 k# data_result~77_combout $end
-$var wire 1 l# data_result~78_combout $end
-$var wire 1 m# calculate0|first|Full11|or_1~0_combout $end
+$var wire 1 f# shift0|layer2[12]~19_combout $end
+$var wire 1 g# shift0|layer2[11]~20_combout $end
+$var wire 1 h# shift0|layer3[11]~4_combout $end
+$var wire 1 i# shift0|layer4[11]~15_combout $end
+$var wire 1 j# data_result~77_combout $end
+$var wire 1 k# data_result~78_combout $end
+$var wire 1 l# calculate0|first|Full11|or_1~0_combout $end
+$var wire 1 m# data_operandB[11]~input_o $end
 $var wire 1 n# calculate0|first|Full12|xor_2~0_combout $end
 $var wire 1 o# data_result~79_combout $end
 $var wire 1 p# data_result~80_combout $end
@@ -389,14 +389,14 @@ $var wire 1 y# calculate0|first|Full12|or_1~0_combout $end
 $var wire 1 z# data_result~83_combout $end
 $var wire 1 {# data_result~84_combout $end
 $var wire 1 |# data_result~85_combout $end
-$var wire 1 }# data_operandB[13]~input_o $end
-$var wire 1 ~# shift0|layer2[14]~23_combout $end
-$var wire 1 !$ shift0|layer2[13]~24_combout $end
-$var wire 1 "$ shift0|layer3[13]~7_combout $end
-$var wire 1 #$ shift0|layer4[13]~17_combout $end
-$var wire 1 $$ data_result~86_combout $end
-$var wire 1 %$ data_result~87_combout $end
-$var wire 1 &$ calculate0|first|Full13|or_1~0_combout $end
+$var wire 1 }# shift0|layer2[14]~23_combout $end
+$var wire 1 ~# shift0|layer2[13]~24_combout $end
+$var wire 1 !$ shift0|layer3[13]~7_combout $end
+$var wire 1 "$ shift0|layer4[13]~17_combout $end
+$var wire 1 #$ data_result~86_combout $end
+$var wire 1 $$ data_result~87_combout $end
+$var wire 1 %$ calculate0|first|Full13|or_1~0_combout $end
+$var wire 1 &$ data_operandB[13]~input_o $end
 $var wire 1 '$ calculate0|first|Full14|xor_2~0_combout $end
 $var wire 1 ($ data_result~88_combout $end
 $var wire 1 )$ data_result~89_combout $end
@@ -412,35 +412,35 @@ $var wire 1 2$ calculate0|first|Full14|or_1~0_combout $end
 $var wire 1 3$ data_result~92_combout $end
 $var wire 1 4$ data_result~93_combout $end
 $var wire 1 5$ data_result~94_combout $end
-$var wire 1 6$ data_operandB[15]~input_o $end
-$var wire 1 7$ shift0|layer4[15]~20_combout $end
-$var wire 1 8$ shift0|layer2[16]~27_combout $end
-$var wire 1 9$ shift0|layer2[15]~28_combout $end
-$var wire 1 :$ shift0|layer3[15]~9_combout $end
-$var wire 1 ;$ shift0|layer4[15]~21_combout $end
-$var wire 1 <$ data_result~95_combout $end
-$var wire 1 =$ data_result~96_combout $end
-$var wire 1 >$ calculate0|first|Full15|or_1~0_combout $end
-$var wire 1 ?$ calculate0|first|Full16|xor_2~0_combout $end
+$var wire 1 6$ calculate0|first|Full15|or_1~0_combout $end
+$var wire 1 7$ data_operandB[15]~input_o $end
+$var wire 1 8$ calculate0|first|Full16|xor_2~0_combout $end
+$var wire 1 9$ shift0|layer2[16]~27_combout $end
+$var wire 1 :$ shift0|layer2[15]~28_combout $end
+$var wire 1 ;$ shift0|layer3[15]~9_combout $end
+$var wire 1 <$ shift0|layer4[15]~20_combout $end
+$var wire 1 =$ shift0|layer4[15]~21_combout $end
+$var wire 1 >$ data_result~95_combout $end
+$var wire 1 ?$ data_result~96_combout $end
 $var wire 1 @$ data_result~97_combout $end
 $var wire 1 A$ data_result~98_combout $end
-$var wire 1 B$ shift0|layer2[17]~29_combout $end
-$var wire 1 C$ shift0|layer2[16]~30_combout $end
-$var wire 1 D$ shift0|layer3[16]~10_combout $end
-$var wire 1 E$ shift0|layer4[16]~22_combout $end
-$var wire 1 F$ data_result~99_combout $end
-$var wire 1 G$ data_result~100_combout $end
-$var wire 1 H$ data_operandB[16]~input_o $end
-$var wire 1 I$ calculate0|xor_bit16~combout $end
-$var wire 1 J$ calculate0|first|Full16|or_1~0_combout $end
-$var wire 1 K$ data_result~101_combout $end
+$var wire 1 B$ calculate0|first|Full16|or_1~0_combout $end
+$var wire 1 C$ data_operandB[16]~input_o $end
+$var wire 1 D$ calculate0|xor_bit16~combout $end
+$var wire 1 E$ data_result~101_combout $end
+$var wire 1 F$ shift0|layer2[17]~29_combout $end
+$var wire 1 G$ shift0|layer2[16]~30_combout $end
+$var wire 1 H$ shift0|layer3[16]~10_combout $end
+$var wire 1 I$ shift0|layer4[16]~22_combout $end
+$var wire 1 J$ data_result~99_combout $end
+$var wire 1 K$ data_result~100_combout $end
 $var wire 1 L$ data_result~102_combout $end
 $var wire 1 M$ data_result~103_combout $end
 $var wire 1 N$ data_result~104_combout $end
-$var wire 1 O$ data_result~105_combout $end
-$var wire 1 P$ shift0|layer2[18]~31_combout $end
-$var wire 1 Q$ shift0|layer2[17]~32_combout $end
-$var wire 1 R$ shift0|layer3[17]~11_combout $end
+$var wire 1 O$ shift0|layer2[18]~31_combout $end
+$var wire 1 P$ shift0|layer2[17]~32_combout $end
+$var wire 1 Q$ shift0|layer3[17]~11_combout $end
+$var wire 1 R$ data_result~105_combout $end
 $var wire 1 S$ data_result~106_combout $end
 $var wire 1 T$ data_result~107_combout $end
 $var wire 1 U$ data_result~108_combout $end
@@ -487,147 +487,147 @@ $var wire 1 }$ shift0|layer3[20]~14_combout $end
 $var wire 1 ~$ data_result~130_combout $end
 $var wire 1 !% data_result~131_combout $end
 $var wire 1 "% data_result~132_combout $end
-$var wire 1 #% data_operandB[20]~input_o $end
-$var wire 1 $% calculate0|second_cin0|Full4|or_1~0_combout $end
-$var wire 1 %% data_result~133_combout $end
+$var wire 1 #% calculate0|second_cin0|Full4|or_1~0_combout $end
+$var wire 1 $% data_result~133_combout $end
+$var wire 1 %% data_operandB[20]~input_o $end
 $var wire 1 &% data_result~134_combout $end
 $var wire 1 '% calculate0|second_cin1|Full4|or_1~0_combout $end
 $var wire 1 (% data_result~135_combout $end
 $var wire 1 )% data_result~136_combout $end
 $var wire 1 *% data_result~137_combout $end
-$var wire 1 +% shift0|layer2[22]~39_combout $end
-$var wire 1 ,% shift0|layer2[21]~40_combout $end
-$var wire 1 -% shift0|layer3[21]~15_combout $end
-$var wire 1 .% data_result~138_combout $end
-$var wire 1 /% data_result~139_combout $end
-$var wire 1 0% data_result~140_combout $end
-$var wire 1 1% data_operandB[21]~input_o $end
-$var wire 1 2% calculate0|second_cin0|Full5|or_1~0_combout $end
-$var wire 1 3% data_result~141_combout $end
-$var wire 1 4% data_result~142_combout $end
-$var wire 1 5% calculate0|second_cin1|Full5|or_1~0_combout $end
-$var wire 1 6% data_result~143_combout $end
-$var wire 1 7% data_result~144_combout $end
+$var wire 1 +% data_operandB[21]~input_o $end
+$var wire 1 ,% calculate0|second_cin0|Full5|or_1~0_combout $end
+$var wire 1 -% data_result~141_combout $end
+$var wire 1 .% data_result~142_combout $end
+$var wire 1 /% calculate0|second_cin1|Full5|or_1~0_combout $end
+$var wire 1 0% data_result~143_combout $end
+$var wire 1 1% data_result~144_combout $end
+$var wire 1 2% shift0|layer2[22]~39_combout $end
+$var wire 1 3% shift0|layer2[21]~40_combout $end
+$var wire 1 4% shift0|layer3[21]~15_combout $end
+$var wire 1 5% data_result~138_combout $end
+$var wire 1 6% data_result~139_combout $end
+$var wire 1 7% data_result~140_combout $end
 $var wire 1 8% data_result~145_combout $end
-$var wire 1 9% shift0|layer2[23]~41_combout $end
-$var wire 1 :% shift0|layer2[22]~42_combout $end
-$var wire 1 ;% shift0|layer3[22]~16_combout $end
-$var wire 1 <% data_result~146_combout $end
-$var wire 1 =% data_result~147_combout $end
-$var wire 1 >% data_result~148_combout $end
-$var wire 1 ?% data_operandB[22]~input_o $end
-$var wire 1 @% data_result~149_combout $end
-$var wire 1 A% calculate0|second_cin1|Full6|or_1~0_combout $end
-$var wire 1 B% calculate0|second_cin0|Full6|or_1~0_combout $end
-$var wire 1 C% data_result~150_combout $end
-$var wire 1 D% data_result~151_combout $end
+$var wire 1 9% calculate0|second_cin1|Full6|or_1~0_combout $end
+$var wire 1 :% calculate0|second_cin0|Full6|or_1~0_combout $end
+$var wire 1 ;% data_result~150_combout $end
+$var wire 1 <% data_operandB[22]~input_o $end
+$var wire 1 =% data_result~149_combout $end
+$var wire 1 >% data_result~151_combout $end
+$var wire 1 ?% shift0|layer2[23]~41_combout $end
+$var wire 1 @% shift0|layer2[22]~42_combout $end
+$var wire 1 A% shift0|layer3[22]~16_combout $end
+$var wire 1 B% data_result~146_combout $end
+$var wire 1 C% data_result~147_combout $end
+$var wire 1 D% data_result~148_combout $end
 $var wire 1 E% data_result~152_combout $end
-$var wire 1 F% shift0|layer2[24]~43_combout $end
-$var wire 1 G% shift0|layer2[23]~44_combout $end
-$var wire 1 H% shift0|layer3[23]~17_combout $end
-$var wire 1 I% data_result~153_combout $end
-$var wire 1 J% data_result~154_combout $end
-$var wire 1 K% data_result~155_combout $end
-$var wire 1 L% data_operandB[23]~input_o $end
-$var wire 1 M% calculate0|second_cin0|Full7|or_1~0_combout $end
-$var wire 1 N% data_result~156_combout $end
-$var wire 1 O% data_result~157_combout $end
-$var wire 1 P% calculate0|second_cin1|Full7|or_1~0_combout $end
-$var wire 1 Q% data_result~158_combout $end
-$var wire 1 R% data_result~159_combout $end
+$var wire 1 F% calculate0|second_cin1|Full7|or_1~0_combout $end
+$var wire 1 G% data_operandB[23]~input_o $end
+$var wire 1 H% calculate0|second_cin0|Full7|or_1~0_combout $end
+$var wire 1 I% data_result~156_combout $end
+$var wire 1 J% data_result~157_combout $end
+$var wire 1 K% data_result~158_combout $end
+$var wire 1 L% data_result~159_combout $end
+$var wire 1 M% shift0|layer2[24]~43_combout $end
+$var wire 1 N% shift0|layer2[23]~44_combout $end
+$var wire 1 O% shift0|layer3[23]~17_combout $end
+$var wire 1 P% data_result~153_combout $end
+$var wire 1 Q% data_result~154_combout $end
+$var wire 1 R% data_result~155_combout $end
 $var wire 1 S% data_result~160_combout $end
-$var wire 1 T% data_result~161_combout $end
-$var wire 1 U% data_result~162_combout $end
-$var wire 1 V% shift0|layer2[25]~45_combout $end
-$var wire 1 W% shift0|layer2[24]~46_combout $end
-$var wire 1 X% data_result~163_combout $end
-$var wire 1 Y% data_result~164_combout $end
-$var wire 1 Z% data_result~165_combout $end
-$var wire 1 [% data_operandB[24]~input_o $end
-$var wire 1 \% data_result~166_combout $end
-$var wire 1 ]% calculate0|second_cin1|Full8|or_1~0_combout $end
-$var wire 1 ^% calculate0|second_cin0|Full8|or_1~0_combout $end
-$var wire 1 _% data_result~167_combout $end
-$var wire 1 `% data_result~168_combout $end
-$var wire 1 a% data_result~169_combout $end
+$var wire 1 T% data_result~165_combout $end
+$var wire 1 U% calculate0|second_cin1|Full8|or_1~0_combout $end
+$var wire 1 V% calculate0|second_cin0|Full8|or_1~0_combout $end
+$var wire 1 W% data_result~167_combout $end
+$var wire 1 X% data_operandB[24]~input_o $end
+$var wire 1 Y% data_result~166_combout $end
+$var wire 1 Z% data_result~168_combout $end
+$var wire 1 [% data_result~169_combout $end
+$var wire 1 \% data_result~161_combout $end
+$var wire 1 ]% data_result~162_combout $end
+$var wire 1 ^% shift0|layer2[25]~45_combout $end
+$var wire 1 _% shift0|layer2[24]~46_combout $end
+$var wire 1 `% data_result~163_combout $end
+$var wire 1 a% data_result~164_combout $end
 $var wire 1 b% data_result~170_combout $end
-$var wire 1 c% shift0|layer2[25]~47_combout $end
-$var wire 1 d% shift0|layer2[25]~48_combout $end
-$var wire 1 e% data_result~171_combout $end
-$var wire 1 f% data_result~172_combout $end
-$var wire 1 g% data_operandB[25]~input_o $end
-$var wire 1 h% calculate0|second_cin0|Full9|or_1~0_combout $end
-$var wire 1 i% data_result~173_combout $end
-$var wire 1 j% data_result~174_combout $end
-$var wire 1 k% calculate0|second_cin1|Full9|or_1~0_combout $end
-$var wire 1 l% data_result~175_combout $end
-$var wire 1 m% data_result~176_combout $end
-$var wire 1 n% data_result~177_combout $end
+$var wire 1 c% calculate0|second_cin0|Full9|or_1~0_combout $end
+$var wire 1 d% data_result~173_combout $end
+$var wire 1 e% data_operandB[25]~input_o $end
+$var wire 1 f% data_result~174_combout $end
+$var wire 1 g% calculate0|second_cin1|Full9|or_1~0_combout $end
+$var wire 1 h% data_result~175_combout $end
+$var wire 1 i% data_result~176_combout $end
+$var wire 1 j% data_result~177_combout $end
+$var wire 1 k% shift0|layer2[25]~47_combout $end
+$var wire 1 l% shift0|layer2[25]~48_combout $end
+$var wire 1 m% data_result~171_combout $end
+$var wire 1 n% data_result~172_combout $end
 $var wire 1 o% data_result~178_combout $end
-$var wire 1 p% shift0|layer2[26]~49_combout $end
-$var wire 1 q% shift0|layer1[26]~1_combout $end
-$var wire 1 r% shift0|layer2[26]~50_combout $end
-$var wire 1 s% data_result~179_combout $end
-$var wire 1 t% data_result~180_combout $end
-$var wire 1 u% data_operandB[26]~input_o $end
-$var wire 1 v% data_result~181_combout $end
-$var wire 1 w% calculate0|second_cin1|Full10|or_1~0_combout $end
-$var wire 1 x% calculate0|second_cin0|Full10|or_1~0_combout $end
-$var wire 1 y% data_result~182_combout $end
-$var wire 1 z% data_result~183_combout $end
-$var wire 1 {% data_result~184_combout $end
+$var wire 1 p% data_operandB[26]~input_o $end
+$var wire 1 q% data_result~181_combout $end
+$var wire 1 r% calculate0|second_cin1|Full10|or_1~0_combout $end
+$var wire 1 s% calculate0|second_cin0|Full10|or_1~0_combout $end
+$var wire 1 t% data_result~182_combout $end
+$var wire 1 u% data_result~183_combout $end
+$var wire 1 v% data_result~184_combout $end
+$var wire 1 w% shift0|layer2[26]~49_combout $end
+$var wire 1 x% shift0|layer1[26]~1_combout $end
+$var wire 1 y% shift0|layer2[26]~50_combout $end
+$var wire 1 z% data_result~179_combout $end
+$var wire 1 {% data_result~180_combout $end
 $var wire 1 |% data_result~185_combout $end
-$var wire 1 }% shift0|layer2[27]~51_combout $end
-$var wire 1 ~% shift0|layer1[27]~2_combout $end
-$var wire 1 !& shift0|layer2[27]~52_combout $end
-$var wire 1 "& data_result~186_combout $end
-$var wire 1 #& data_result~187_combout $end
-$var wire 1 $& data_operandB[27]~input_o $end
-$var wire 1 %& calculate0|second_cin0|Full11|or_1~0_combout $end
-$var wire 1 && data_result~188_combout $end
-$var wire 1 '& data_result~189_combout $end
-$var wire 1 (& calculate0|second_cin1|Full11|or_1~0_combout $end
-$var wire 1 )& data_result~190_combout $end
-$var wire 1 *& data_result~191_combout $end
-$var wire 1 +& data_result~192_combout $end
+$var wire 1 }% data_operandB[27]~input_o $end
+$var wire 1 ~% calculate0|second_cin0|Full11|or_1~0_combout $end
+$var wire 1 !& data_result~188_combout $end
+$var wire 1 "& data_result~189_combout $end
+$var wire 1 #& calculate0|second_cin1|Full11|or_1~0_combout $end
+$var wire 1 $& data_result~190_combout $end
+$var wire 1 %& data_result~191_combout $end
+$var wire 1 && data_result~192_combout $end
+$var wire 1 '& shift0|layer2[27]~51_combout $end
+$var wire 1 (& shift0|layer1[27]~2_combout $end
+$var wire 1 )& shift0|layer2[27]~52_combout $end
+$var wire 1 *& data_result~186_combout $end
+$var wire 1 +& data_result~187_combout $end
 $var wire 1 ,& data_result~193_combout $end
-$var wire 1 -& shift0|layer1[28]~3_combout $end
-$var wire 1 .& data_result~194_combout $end
-$var wire 1 /& data_result~195_combout $end
-$var wire 1 0& data_result~196_combout $end
-$var wire 1 1& data_result~197_combout $end
-$var wire 1 2& data_operandB[28]~input_o $end
-$var wire 1 3& data_result~198_combout $end
-$var wire 1 4& calculate0|second_cin1|Full12|or_1~0_combout $end
-$var wire 1 5& calculate0|second_cin0|Full12|or_1~0_combout $end
-$var wire 1 6& data_result~199_combout $end
-$var wire 1 7& data_result~200_combout $end
+$var wire 1 -& calculate0|second_cin1|Full12|or_1~0_combout $end
+$var wire 1 .& calculate0|second_cin0|Full12|or_1~0_combout $end
+$var wire 1 /& data_result~199_combout $end
+$var wire 1 0& data_operandB[28]~input_o $end
+$var wire 1 1& data_result~198_combout $end
+$var wire 1 2& data_result~200_combout $end
+$var wire 1 3& shift0|layer1[28]~3_combout $end
+$var wire 1 4& data_result~194_combout $end
+$var wire 1 5& data_result~195_combout $end
+$var wire 1 6& data_result~196_combout $end
+$var wire 1 7& data_result~197_combout $end
 $var wire 1 8& data_result~201_combout $end
-$var wire 1 9& shift0|layer1[29]~4_combout $end
-$var wire 1 :& data_result~202_combout $end
-$var wire 1 ;& data_result~203_combout $end
-$var wire 1 <& data_result~204_combout $end
-$var wire 1 =& data_result~205_combout $end
-$var wire 1 >& data_operandB[29]~input_o $end
-$var wire 1 ?& calculate0|second_cin0|Full13|or_1~0_combout $end
-$var wire 1 @& data_result~206_combout $end
-$var wire 1 A& data_result~207_combout $end
-$var wire 1 B& calculate0|second_cin1|Full13|or_1~0_combout $end
-$var wire 1 C& data_result~208_combout $end
-$var wire 1 D& data_result~209_combout $end
+$var wire 1 9& calculate0|second_cin1|Full13|or_1~0_combout $end
+$var wire 1 :& data_operandB[29]~input_o $end
+$var wire 1 ;& calculate0|second_cin0|Full13|or_1~0_combout $end
+$var wire 1 <& data_result~206_combout $end
+$var wire 1 =& data_result~207_combout $end
+$var wire 1 >& data_result~208_combout $end
+$var wire 1 ?& data_result~209_combout $end
+$var wire 1 @& shift0|layer1[29]~4_combout $end
+$var wire 1 A& data_result~202_combout $end
+$var wire 1 B& data_result~203_combout $end
+$var wire 1 C& data_result~204_combout $end
+$var wire 1 D& data_result~205_combout $end
 $var wire 1 E& data_result~210_combout $end
-$var wire 1 F& shift0|layer4[30]~23_combout $end
-$var wire 1 G& shift0|layer4[30]~24_combout $end
-$var wire 1 H& shift0|layer4[30]~25_combout $end
-$var wire 1 I& shift0|layer4[30]~26_combout $end
-$var wire 1 J& data_result~211_combout $end
-$var wire 1 K& data_result~212_combout $end
-$var wire 1 L& data_operandB[30]~input_o $end
-$var wire 1 M& data_result~213_combout $end
-$var wire 1 N& calculate0|second_cin0|Full14|or_1~0_combout $end
-$var wire 1 O& calculate0|second_cin1|Full14|or_1~0_combout $end
-$var wire 1 P& data_result~214_combout $end
-$var wire 1 Q& data_result~215_combout $end
+$var wire 1 F& data_operandB[30]~input_o $end
+$var wire 1 G& calculate0|second_cin0|Full14|or_1~0_combout $end
+$var wire 1 H& calculate0|second_cin1|Full14|or_1~0_combout $end
+$var wire 1 I& data_result~214_combout $end
+$var wire 1 J& data_result~215_combout $end
+$var wire 1 K& data_result~213_combout $end
+$var wire 1 L& shift0|layer4[30]~24_combout $end
+$var wire 1 M& shift0|layer4[30]~25_combout $end
+$var wire 1 N& shift0|layer4[30]~23_combout $end
+$var wire 1 O& shift0|layer4[30]~26_combout $end
+$var wire 1 P& data_result~211_combout $end
+$var wire 1 Q& data_result~212_combout $end
 $var wire 1 R& data_result~216_combout $end
 $var wire 1 S& calculate0|second_cin0|Full15|or_1~0_combout $end
 $var wire 1 T& calculate0|second_cin1|Full15|or_1~0_combout $end
@@ -641,54 +641,54 @@ $var wire 1 [& data_result~222_combout $end
 $var wire 1 \& data_result~223_combout $end
 $var wire 1 ]& data_result~224_combout $end
 $var wire 1 ^& data_result~225_combout $end
-$var wire 1 _& isLessThan~0_combout $end
-$var wire 1 `& isLessThan~1_combout $end
-$var wire 1 a& isLessThan~2_combout $end
-$var wire 1 b& isLessThan~3_combout $end
+$var wire 1 _& isLessThan~3_combout $end
+$var wire 1 `& isLessThan~2_combout $end
+$var wire 1 a& isLessThan~1_combout $end
+$var wire 1 b& isLessThan~0_combout $end
 $var wire 1 c& ine0|out~0_combout $end
-$var wire 1 d& ine0|out~1_combout $end
-$var wire 1 e& ine0|out~2_combout $end
-$var wire 1 f& ine0|out~3_combout $end
-$var wire 1 g& ine0|out~4_combout $end
-$var wire 1 h& ine0|out~5_combout $end
-$var wire 1 i& ine0|out~6_combout $end
-$var wire 1 j& ine0|out~7_combout $end
-$var wire 1 k& ine0|out~8_combout $end
-$var wire 1 l& ine0|out~9_combout $end
+$var wire 1 d& ine0|out~12_combout $end
+$var wire 1 e& ine0|out~14_combout $end
+$var wire 1 f& ine0|out~13_combout $end
+$var wire 1 g& ine0|out~11_combout $end
+$var wire 1 h& ine0|out~15_combout $end
+$var wire 1 i& ine0|out~9_combout $end
+$var wire 1 j& ine0|out~8_combout $end
+$var wire 1 k& ine0|out~6_combout $end
+$var wire 1 l& ine0|out~7_combout $end
 $var wire 1 m& ine0|out~10_combout $end
-$var wire 1 n& ine0|out~11_combout $end
-$var wire 1 o& ine0|out~12_combout $end
-$var wire 1 p& ine0|out~13_combout $end
-$var wire 1 q& ine0|out~14_combout $end
-$var wire 1 r& ine0|out~15_combout $end
+$var wire 1 n& ine0|out~3_combout $end
+$var wire 1 o& ine0|out~1_combout $end
+$var wire 1 p& ine0|out~4_combout $end
+$var wire 1 q& ine0|out~2_combout $end
+$var wire 1 r& ine0|out~5_combout $end
 $var wire 1 s& ine0|out~16_combout $end
-$var wire 1 t& isLessThan~5_combout $end
-$var wire 1 u& isLessThan~6_combout $end
-$var wire 1 v& calculate1|first|Full14|or_1~0_combout $end
-$var wire 1 w& calculate1|first|Full7|or_1~0_combout $end
-$var wire 1 x& calculate1|first|Full7|or_1~1_combout $end
-$var wire 1 y& calculate1|first|Full7|or_1~2_combout $end
-$var wire 1 z& calculate1|first|Full7|or_1~3_combout $end
-$var wire 1 {& calculate1|first|Full7|or_1~4_combout $end
-$var wire 1 |& calculate1|first|Full7|or_1~5_combout $end
-$var wire 1 }& calculate1|first|Full14|or_1~1_combout $end
-$var wire 1 ~& ine0|xor_res[9]~0_combout $end
-$var wire 1 !' calculate1|first|Full14|or_1~2_combout $end
-$var wire 1 "' calculate1|first|Full14|or_1~3_combout $end
-$var wire 1 #' calculate1|first|Full14|or_1~4_combout $end
-$var wire 1 $' calculate1|first|Full14|or_1~5_combout $end
-$var wire 1 %' calculate1|first|Full14|or_1~6_combout $end
-$var wire 1 &' calculate1|first|Full16|or_1~0_combout $end
-$var wire 1 '' calculate1|first|Full16|or_1~1_combout $end
-$var wire 1 (' isLessThan~7_combout $end
-$var wire 1 )' isLessThan~8_combout $end
-$var wire 1 *' isLessThan~9_combout $end
-$var wire 1 +' isLessThan~10_combout $end
-$var wire 1 ,' isLessThan~11_combout $end
-$var wire 1 -' isLessThan~12_combout $end
-$var wire 1 .' isLessThan~13_combout $end
-$var wire 1 /' isLessThan~14_combout $end
-$var wire 1 0' ine0|xor_res[29]~1_combout $end
+$var wire 1 t& ine0|xor_res[29]~1_combout $end
+$var wire 1 u& isLessThan~13_combout $end
+$var wire 1 v& isLessThan~5_combout $end
+$var wire 1 w& isLessThan~6_combout $end
+$var wire 1 x& calculate1|first|Full14|or_1~0_combout $end
+$var wire 1 y& calculate1|first|Full7|or_1~0_combout $end
+$var wire 1 z& calculate1|first|Full7|or_1~1_combout $end
+$var wire 1 {& calculate1|first|Full7|or_1~2_combout $end
+$var wire 1 |& calculate1|first|Full7|or_1~3_combout $end
+$var wire 1 }& calculate1|first|Full7|or_1~4_combout $end
+$var wire 1 ~& calculate1|first|Full7|or_1~5_combout $end
+$var wire 1 !' calculate1|first|Full14|or_1~1_combout $end
+$var wire 1 "' ine0|xor_res[9]~0_combout $end
+$var wire 1 #' calculate1|first|Full14|or_1~2_combout $end
+$var wire 1 $' calculate1|first|Full14|or_1~3_combout $end
+$var wire 1 %' calculate1|first|Full14|or_1~4_combout $end
+$var wire 1 &' calculate1|first|Full14|or_1~5_combout $end
+$var wire 1 '' calculate1|first|Full14|or_1~6_combout $end
+$var wire 1 (' calculate1|first|Full16|or_1~0_combout $end
+$var wire 1 )' calculate1|first|Full16|or_1~1_combout $end
+$var wire 1 *' isLessThan~7_combout $end
+$var wire 1 +' isLessThan~8_combout $end
+$var wire 1 ,' isLessThan~9_combout $end
+$var wire 1 -' isLessThan~10_combout $end
+$var wire 1 .' isLessThan~11_combout $end
+$var wire 1 /' isLessThan~12_combout $end
+$var wire 1 0' isLessThan~14_combout $end
 $var wire 1 1' isLessThan~15_combout $end
 $var wire 1 2' isLessThan~4_combout $end
 $var wire 1 3' isLessThan~16_combout $end
@@ -733,15 +733,15 @@ $enddefinitions $end
 #0
 $dumpvars
 b10 !
-b11 "
-b10101010101010100000000000000 #
-b11111111111111101010101010101010 $
-0D
-0C
-0B
-0A
-0@
-0?
+b0 "
+b1111111111111111111111 #
+b1111111111000000000000000111111 $
+1D
+1C
+1B
+1A
+1@
+1?
 0>
 0=
 0<
@@ -754,23 +754,23 @@ b11111111111111101010101010101010 $
 05
 04
 03
-12
+02
 01
-10
-0/
-1.
+00
+1/
+0.
 0-
-1,
+0,
 0+
-1*
+0*
 0)
-1(
+0(
 0'
 0&
 0%
-0E
+1E
 1F
-0G
+1G
 0H
 1I
 xJ
@@ -779,12 +779,12 @@ xJ
 1M
 0N
 0O
-0P
-0Q
-0R
-0S
-0T
-0U
+1P
+1Q
+1R
+1S
+1T
+1U
 0V
 0W
 0X
@@ -797,53 +797,53 @@ xJ
 0_
 0`
 0a
-1b
+0b
 0c
-1d
-0e
-1f
+0d
+1e
+0f
 0g
-1h
+0h
 0i
-1j
+0j
 0k
-1l
+0l
 0m
 0n
 0o
 1p
-0q
-0r
-1s
-0t
-1u
-0v
-0w
-0x
-0y
-0z
+1q
+1r
+0s
+1t
+0u
+1v
+1w
+1x
+1y
+1z
 1{
 0|
 1}
-0~
+1~
 1!!
 1"!
-0#!
-0$!
-0%!
-0&!
+1#!
+1$!
+1%!
+1&!
 0'!
 0(!
 0)!
 0*!
 0+!
-0,!
-0-!
+1,!
+1-!
 0.!
 0/!
 00!
 01!
-12!
+02!
 03!
 04!
 05!
@@ -855,61 +855,61 @@ xJ
 0;!
 0<!
 0=!
-0>!
-0?!
-0@!
-0A!
-0B!
+1>!
+1?!
+1@!
+1A!
+1B!
 1C!
-0D!
+1D!
 0E!
-0F!
-0G!
+1F!
+1G!
 0H!
 1I!
 1J!
 1K!
-0L!
-0M!
-0N!
+1L!
+1M!
+1N!
 0O!
-0P!
-1Q!
+1P!
+0Q!
 1R!
 1S!
-0T!
-0U!
-0V!
+1T!
+1U!
+1V!
 0W!
 1X!
-1Y!
+0Y!
 1Z!
-0[!
-0\!
-0]!
-0^!
+1[!
+1\!
+1]!
+1^!
 1_!
 0`!
-0a!
-0b!
+1a!
+1b!
 0c!
-0d!
-0e!
-0f!
+1d!
+1e!
+1f!
 1g!
-1h!
-0i!
-0j!
-0k!
-0l!
-0m!
-0n!
+0h!
+1i!
+1j!
+1k!
+1l!
+1m!
+1n!
 0o!
 0p!
 0q!
 0r!
 0s!
-1t!
+0t!
 1u!
 1v!
 1w!
@@ -918,226 +918,226 @@ xJ
 1z!
 1{!
 1|!
-0}!
-0~!
-0!"
-0""
+1}!
+1~!
+1!"
+1""
 1#"
-0$"
-0%"
-0&"
-0'"
-0("
-0)"
+1$"
+1%"
+1&"
+1'"
+1("
+1)"
 1*"
 0+"
 0,"
 0-"
 0."
-0/"
-00"
+1/"
+10"
 01"
 02"
-03"
-04"
+13"
+14"
 05"
-06"
-07"
-08"
+16"
+17"
+18"
 19"
-0:"
+1:"
 0;"
-0<"
-0="
-0>"
+1<"
+1="
+1>"
 0?"
-0@"
-0A"
-0B"
-0C"
-0D"
-0E"
+1@"
+1A"
+1B"
+1C"
+1D"
+1E"
 1F"
-0G"
-0H"
-0I"
-0J"
+1G"
+1H"
+1I"
+1J"
 1K"
-0L"
+1L"
 0M"
-0N"
+1N"
 1O"
-1P"
-1Q"
-0R"
-0S"
-0T"
-0U"
-0V"
+0P"
+0Q"
+1R"
+1S"
+1T"
+1U"
+1V"
 1W"
 1X"
 1Y"
 1Z"
-0["
+1["
 1\"
 1]"
 1^"
-0_"
-0`"
-0a"
-0b"
-0c"
+1_"
+1`"
+1a"
+1b"
+1c"
 0d"
-0e"
-0f"
+1e"
+1f"
 0g"
-0h"
-1i"
-0j"
-0k"
-0l"
-0m"
-0n"
+1h"
+0i"
+1j"
+1k"
+1l"
+1m"
+1n"
 0o"
-0p"
+1p"
 0q"
-0r"
-0s"
-0t"
-1u"
+1r"
+1s"
+1t"
+0u"
 1v"
 1w"
-0x"
-0y"
-0z"
-0{"
+1x"
+1y"
+1z"
+1{"
 0|"
 1}"
-0~"
-0!#
+1~"
+1!#
 1"#
 0##
-0$#
-0%#
+1$#
+1%#
 0&#
 0'#
 0(#
 0)#
-0*#
-0+#
+1*#
+1+#
 0,#
-0-#
-0.#
-0/#
-00#
-01#
-02#
+1-#
+1.#
+1/#
+10#
+11#
+12#
 03#
 04#
-15#
-16#
+05#
+06#
 17#
 08#
 09#
-0:#
+1:#
 0;#
-0<#
+1<#
 1=#
-0>#
-0?#
+1>#
+1?#
 1@#
 0A#
 0B#
 0C#
 0D#
-0E#
-0F#
-0G#
-0H#
+1E#
+1F#
+1G#
+1H#
 0I#
-0J#
-0K#
-0L#
-0M#
+1J#
+1K#
+1L#
+1M#
 0N#
 0O#
-1P#
-0Q#
+0P#
+1Q#
 0R#
-0S#
-0T#
-0U#
-0V#
-0W#
+1S#
+1T#
+1U#
+1V#
+1W#
 1X#
 0Y#
 0Z#
-0[#
-0\#
+1[#
+1\#
 0]#
 0^#
-0_#
-0`#
-0a#
-0b#
-0c#
-0d#
+1_#
+1`#
+1a#
+1b#
+1c#
+1d#
 0e#
 1f#
-0g#
-0h#
-0i#
-0j#
-0k#
-0l#
+1g#
+1h#
+1i#
+1j#
+1k#
+1l#
 0m#
-1n#
+0n#
 0o#
 0p#
-0q#
-0r#
-0s#
-0t#
-0u#
-0v#
-0w#
+1q#
+1r#
+1s#
+1t#
+1u#
+1v#
+1w#
 0x#
-0y#
-0z#
+1y#
+1z#
 0{#
 0|#
 1}#
-0~#
-0!$
-0"$
-0#$
-0$$
-0%$
+1~#
+1!$
+1"$
+1#$
+1$$
+1%$
 0&$
-1'$
+0'$
 0($
 0)$
 0*$
-0+$
-0,$
-0-$
-0.$
-0/$
-00$
+1+$
+1,$
+1-$
+1.$
+1/$
+10$
 01$
-02$
+12$
 13$
 04$
 05$
 16$
 07$
 08$
-09$
-0:$
-0;$
+19$
+1:$
+1;$
 0<$
-0=$
-0>$
+1=$
+1>$
 1?$
 0@$
 0A$
@@ -1145,218 +1145,218 @@ xJ
 0C$
 0D$
 0E$
-0F$
-0G$
-0H$
-0I$
-0J$
-0K$
+1F$
+1G$
+1H$
+1I$
+1J$
+1K$
 0L$
 0M$
 0N$
-0O$
-0P$
+1O$
+1P$
 1Q$
-1R$
+0R$
 1S$
 1T$
 1U$
-1V$
-1W$
+0V$
+0W$
 0X$
 0Y$
 0Z$
-0[$
+1[$
 0\$
 0]$
 0^$
 1_$
-0`$
-0a$
-0b$
-0c$
-0d$
-1e$
+1`$
+1a$
+1b$
+1c$
+1d$
+0e$
 0f$
 1g$
-1h$
+0h$
 1i$
-1j$
-1k$
-1l$
-0m$
+0j$
+0k$
+0l$
+1m$
 1n$
 1o$
 1p$
 1q$
 1r$
-1s$
-1t$
-0u$
+0s$
+0t$
+1u$
 0v$
 1w$
 0x$
 0y$
 0z$
 1{$
-0|$
-0}$
-0~$
-0!%
-0"%
-1#%
+1|$
+1}$
+1~$
+1!%
+1"%
+0#%
 1$%
-1%%
-1&%
+0%%
+0&%
 1'%
-1(%
-1)%
-1*%
-0+%
-1,%
+0(%
+0)%
+0*%
+1+%
+0,%
 1-%
 1.%
 1/%
 10%
 11%
 12%
-03%
-04%
+13%
+14%
 15%
-06%
-07%
-08%
+16%
+17%
+18%
 19%
-0:%
+1:%
 0;%
-0<%
-0=%
+1<%
+1=%
 0>%
-1?%
-1@%
-1A%
-1B%
+0?%
+0@%
+0A%
+0B%
 0C%
-1D%
-1E%
-0F%
+0D%
+0E%
+1F%
 1G%
 1H%
-1I%
-1J%
-1K%
-1L%
-1M%
+0I%
+0J%
+0K%
+0L%
+0M%
 0N%
 0O%
-1P%
+0P%
 0Q%
 0R%
 0S%
 0T%
-0U%
+1U%
 1V%
 0W%
-0X%
-0Y%
+1X%
+1Y%
 0Z%
-1[%
-1\%
-1]%
-1^%
+0[%
+0\%
+0]%
+0^%
 0_%
-1`%
-1a%
-1b%
-0c%
-1d%
+0`%
+0a%
+0b%
+1c%
+0d%
 1e%
-1f%
+0f%
 1g%
-1h%
+0h%
 0i%
 0j%
-1k%
+0k%
 0l%
 0m%
 0n%
 0o%
-0p%
-0q%
-0r%
-0s%
+1p%
+1q%
+1r%
+1s%
 0t%
-1u%
-1v%
-1w%
-1x%
+0u%
+0v%
+0w%
+0x%
 0y%
-1z%
-1{%
-1|%
+0z%
+0{%
+0|%
 1}%
 1~%
-1!&
-1"&
+0!&
+0"&
 1#&
-1$&
-1%&
+0$&
+0%&
 0&&
 0'&
-1(&
+0(&
 0)&
 0*&
 0+&
 0,&
-0-&
-0.&
+1-&
+1.&
 0/&
-00&
-01&
-12&
-13&
-14&
-15&
+10&
+11&
+02&
+03&
+04&
+05&
 06&
-17&
-18&
+07&
+08&
 19&
-0:&
+1:&
 1;&
-1<&
-1=&
-1>&
-1?&
+0<&
+0=&
+0>&
+0?&
 0@&
 0A&
-1B&
+0B&
 0C&
 0D&
 0E&
-0F&
-0G&
-0H&
-0I&
+1F&
+1G&
+1H&
+1I&
 0J&
 0K&
-1L&
+0L&
 0M&
-1N&
-1O&
-1P&
+0N&
+0O&
+0P&
 0Q&
 0R&
 1S&
 1T&
 1U&
-1V&
+0V&
 0W&
 0X&
 0Y&
-1Z&
-1[&
-1\&
-1]&
+0Z&
+0[&
+0\&
+0]&
 0^&
 0_&
 0`&
@@ -1373,58 +1373,58 @@ xJ
 1k&
 1l&
 1m&
-1n&
+0n&
 1o&
-1p&
-1q&
+0p&
+0q&
 1r&
 1s&
-0t&
+1t&
 0u&
 0v&
 0w&
-0x&
-0y&
-0z&
-0{&
-0|&
-0}&
+1x&
+1y&
+1z&
+1{&
+1|&
+1}&
 1~&
-0!'
-0"'
+1!'
+1"'
 0#'
-0$'
-0%'
+1$'
+1%'
 1&'
-0''
+1''
 1('
-0)'
-0*'
-0+'
+1)'
+1*'
+1+'
 0,'
-0-'
-0.'
+1-'
+1.'
 0/'
-10'
+00'
 01'
 02'
 13'
-04'
+14'
 15'
-06'
+16'
 zV'
 1U'
 zT'
 zS'
-0R'
+1R'
 zQ'
-0P'
+1P'
 zO'
-0N'
+1N'
 zM'
-0L'
+1L'
 zK'
-0J'
+1J'
 zI'
 1H'
 zG'

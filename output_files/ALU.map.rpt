@@ -1,5 +1,5 @@
 Analysis & Synthesis report for ALU
-Thu Sep 23 19:40:56 2021
+Fri Sep 24 12:15:42 2021
 Quartus Prime Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
 
 
@@ -48,7 +48,7 @@ agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Sep 23 19:40:56 2021       ;
+; Analysis & Synthesis Status        ; Successful - Fri Sep 24 12:15:42 2021       ;
 ; Quartus Prime Version              ; 16.0.0 Build 211 04/27/2016 SJ Lite Edition ;
 ; Revision Name                      ; ALU                                         ;
 ; Top-level Entity Name              ; ALU                                         ;
@@ -168,21 +168,21 @@ agreement for further details.
 +----------------------------+-------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                      ;
-+----------------------------------+-----------------+------------------------+-----------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                        ; Library ;
-+----------------------------------+-----------------+------------------------+-----------------------------------------------------+---------+
-; ALU.v                            ; yes             ; User Verilog HDL File  ; C:/Users/lizhu/Desktop/ECE 550/Proj1/ALU.v          ;         ;
-; bit_And.v                        ; yes             ; User Verilog HDL File  ; C:/Users/lizhu/Desktop/ECE 550/Proj1/bit_And.v      ;         ;
-; bit_Or.v                         ; yes             ; User Verilog HDL File  ; C:/Users/lizhu/Desktop/ECE 550/Proj1/bit_Or.v       ;         ;
-; left_shift.v                     ; yes             ; User Verilog HDL File  ; C:/Users/lizhu/Desktop/ECE 550/Proj1/left_shift.v   ;         ;
-; right_shift.v                    ; yes             ; User Verilog HDL File  ; C:/Users/lizhu/Desktop/ECE 550/Proj1/right_shift.v  ;         ;
-; is_not_equal.v                   ; yes             ; User Verilog HDL File  ; C:/Users/lizhu/Desktop/ECE 550/Proj1/is_not_equal.v ;         ;
-; CheckAddSub.v                    ; yes             ; User Verilog HDL File  ; C:/Users/lizhu/Desktop/ECE 550/Proj1/CheckAddSub.v  ;         ;
-; RCA16Bit.v                       ; yes             ; User Verilog HDL File  ; C:/Users/lizhu/Desktop/ECE 550/Proj1/RCA16Bit.v     ;         ;
-; OneBitAdder.v                    ; yes             ; User Verilog HDL File  ; C:/Users/lizhu/Desktop/ECE 550/Proj1/OneBitAdder.v  ;         ;
-+----------------------------------+-----------------+------------------------+-----------------------------------------------------+---------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                             ;
++----------------------------------+-----------------+------------------------+--------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                                               ; Library ;
++----------------------------------+-----------------+------------------------+--------------------------------------------------------------------------------------------+---------+
+; ALU.v                            ; yes             ; User Verilog HDL File  ; C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project2/ECE-550/ALU.v          ;         ;
+; bit_And.v                        ; yes             ; User Verilog HDL File  ; C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project2/ECE-550/bit_And.v      ;         ;
+; bit_Or.v                         ; yes             ; User Verilog HDL File  ; C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project2/ECE-550/bit_Or.v       ;         ;
+; left_shift.v                     ; yes             ; User Verilog HDL File  ; C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project2/ECE-550/left_shift.v   ;         ;
+; right_shift.v                    ; yes             ; User Verilog HDL File  ; C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project2/ECE-550/right_shift.v  ;         ;
+; is_not_equal.v                   ; yes             ; User Verilog HDL File  ; C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project2/ECE-550/is_not_equal.v ;         ;
+; CheckAddSub.v                    ; yes             ; User Verilog HDL File  ; C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project2/ECE-550/CheckAddSub.v  ;         ;
+; RCA16Bit.v                       ; yes             ; User Verilog HDL File  ; C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project2/ECE-550/RCA16Bit.v     ;         ;
+; OneBitAdder.v                    ; yes             ; User Verilog HDL File  ; C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project2/ECE-550/OneBitAdder.v  ;         ;
++----------------------------------+-----------------+------------------------+--------------------------------------------------------------------------------------------+---------+
 
 
 +-----------------------------------------------------------------------+
@@ -386,54 +386,54 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
-    Info: Processing started: Thu Sep 23 19:40:47 2021
+    Info: Processing started: Fri Sep 24 12:15:32 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ALU -c ALU
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file alu.v
-    Info (12023): Found entity 1: ALU File: C:/Users/lizhu/Desktop/ECE 550/Proj1/ALU.v Line: 1
+    Info (12023): Found entity 1: ALU File: C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project2/ECE-550/ALU.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file alu_tb.v
-    Info (12023): Found entity 1: ALU_tb File: C:/Users/lizhu/Desktop/ECE 550/Proj1/ALU_tb.v Line: 3
+    Info (12023): Found entity 1: ALU_tb File: C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project2/ECE-550/ALU_tb.v Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file bit_and.v
-    Info (12023): Found entity 1: bit_And File: C:/Users/lizhu/Desktop/ECE 550/Proj1/bit_And.v Line: 1
+    Info (12023): Found entity 1: bit_And File: C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project2/ECE-550/bit_And.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file bit_or.v
-    Info (12023): Found entity 1: bit_Or File: C:/Users/lizhu/Desktop/ECE 550/Proj1/bit_Or.v Line: 1
+    Info (12023): Found entity 1: bit_Or File: C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project2/ECE-550/bit_Or.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file left_shift.v
-    Info (12023): Found entity 1: left_shift File: C:/Users/lizhu/Desktop/ECE 550/Proj1/left_shift.v Line: 1
+    Info (12023): Found entity 1: left_shift File: C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project2/ECE-550/left_shift.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file right_shift.v
-    Info (12023): Found entity 1: right_shift File: C:/Users/lizhu/Desktop/ECE 550/Proj1/right_shift.v Line: 1
+    Info (12023): Found entity 1: right_shift File: C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project2/ECE-550/right_shift.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file is_not_equal.v
-    Info (12023): Found entity 1: is_not_equal File: C:/Users/lizhu/Desktop/ECE 550/Proj1/is_not_equal.v Line: 1
-Warning (10463): Verilog HDL Declaration warning at CheckAddSub.v(7): "bit" is SystemVerilog-2005 keyword File: C:/Users/lizhu/Desktop/ECE 550/Proj1/CheckAddSub.v Line: 7
+    Info (12023): Found entity 1: is_not_equal File: C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project2/ECE-550/is_not_equal.v Line: 1
+Warning (10463): Verilog HDL Declaration warning at CheckAddSub.v(7): "bit" is SystemVerilog-2005 keyword File: C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project2/ECE-550/CheckAddSub.v Line: 7
 Info (12021): Found 1 design units, including 1 entities, in source file checkaddsub.v
-    Info (12023): Found entity 1: CheckAddSub File: C:/Users/lizhu/Desktop/ECE 550/Proj1/CheckAddSub.v Line: 1
+    Info (12023): Found entity 1: CheckAddSub File: C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project2/ECE-550/CheckAddSub.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file rca16bit.v
-    Info (12023): Found entity 1: RCA16Bit File: C:/Users/lizhu/Desktop/ECE 550/Proj1/RCA16Bit.v Line: 1
+    Info (12023): Found entity 1: RCA16Bit File: C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project2/ECE-550/RCA16Bit.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file onebitadder.v
-    Info (12023): Found entity 1: OneBitAdder File: C:/Users/lizhu/Desktop/ECE 550/Proj1/OneBitAdder.v Line: 1
+    Info (12023): Found entity 1: OneBitAdder File: C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project2/ECE-550/OneBitAdder.v Line: 1
 Info (12127): Elaborating entity "ALU" for the top level hierarchy
-Info (12128): Elaborating entity "CheckAddSub" for hierarchy "CheckAddSub:calculate0" File: C:/Users/lizhu/Desktop/ECE 550/Proj1/ALU.v Line: 14
-Info (12128): Elaborating entity "RCA16Bit" for hierarchy "CheckAddSub:calculate0|RCA16Bit:first" File: C:/Users/lizhu/Desktop/ECE 550/Proj1/CheckAddSub.v Line: 45
-Info (12128): Elaborating entity "OneBitAdder" for hierarchy "CheckAddSub:calculate0|RCA16Bit:first|OneBitAdder:Full1" File: C:/Users/lizhu/Desktop/ECE 550/Proj1/RCA16Bit.v Line: 9
-Info (12128): Elaborating entity "bit_And" for hierarchy "bit_And:and0" File: C:/Users/lizhu/Desktop/ECE 550/Proj1/ALU.v Line: 17
-Info (12128): Elaborating entity "bit_Or" for hierarchy "bit_Or:or0" File: C:/Users/lizhu/Desktop/ECE 550/Proj1/ALU.v Line: 20
-Info (12128): Elaborating entity "left_shift" for hierarchy "left_shift:shift0" File: C:/Users/lizhu/Desktop/ECE 550/Proj1/ALU.v Line: 23
-Info (12128): Elaborating entity "right_shift" for hierarchy "right_shift:shift1" File: C:/Users/lizhu/Desktop/ECE 550/Proj1/ALU.v Line: 24
-Info (12128): Elaborating entity "is_not_equal" for hierarchy "is_not_equal:ine0" File: C:/Users/lizhu/Desktop/ECE 550/Proj1/ALU.v Line: 27
+Info (12128): Elaborating entity "CheckAddSub" for hierarchy "CheckAddSub:calculate0" File: C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project2/ECE-550/ALU.v Line: 14
+Info (12128): Elaborating entity "RCA16Bit" for hierarchy "CheckAddSub:calculate0|RCA16Bit:first" File: C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project2/ECE-550/CheckAddSub.v Line: 45
+Info (12128): Elaborating entity "OneBitAdder" for hierarchy "CheckAddSub:calculate0|RCA16Bit:first|OneBitAdder:Full1" File: C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project2/ECE-550/RCA16Bit.v Line: 9
+Info (12128): Elaborating entity "bit_And" for hierarchy "bit_And:and0" File: C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project2/ECE-550/ALU.v Line: 17
+Info (12128): Elaborating entity "bit_Or" for hierarchy "bit_Or:or0" File: C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project2/ECE-550/ALU.v Line: 20
+Info (12128): Elaborating entity "left_shift" for hierarchy "left_shift:shift0" File: C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project2/ECE-550/ALU.v Line: 23
+Info (12128): Elaborating entity "right_shift" for hierarchy "right_shift:shift1" File: C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project2/ECE-550/ALU.v Line: 24
+Info (12128): Elaborating entity "is_not_equal" for hierarchy "is_not_equal:ine0" File: C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project2/ECE-550/ALU.v Line: 27
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
 Warning (21074): Design contains 2 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "ctrl_ALUopcode[3]" File: C:/Users/lizhu/Desktop/ECE 550/Proj1/ALU.v Line: 4
-    Warning (15610): No output dependent on input pin "ctrl_ALUopcode[4]" File: C:/Users/lizhu/Desktop/ECE 550/Proj1/ALU.v Line: 4
+    Warning (15610): No output dependent on input pin "ctrl_ALUopcode[3]" File: C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project2/ECE-550/ALU.v Line: 4
+    Warning (15610): No output dependent on input pin "ctrl_ALUopcode[4]" File: C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project2/ECE-550/ALU.v Line: 4
 Info (21057): Implemented 643 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 74 input pins
     Info (21059): Implemented 35 output pins
     Info (21061): Implemented 534 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 5 warnings
-    Info: Peak virtual memory: 4989 megabytes
-    Info: Processing ended: Thu Sep 23 19:40:56 2021
-    Info: Elapsed time: 00:00:09
-    Info: Total CPU time (on all processors): 00:00:18
+    Info: Peak virtual memory: 5012 megabytes
+    Info: Processing ended: Fri Sep 24 12:15:42 2021
+    Info: Elapsed time: 00:00:10
+    Info: Total CPU time (on all processors): 00:00:19
 
 

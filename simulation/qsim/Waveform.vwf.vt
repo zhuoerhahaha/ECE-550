@@ -19,7 +19,7 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "09/14/2021 17:20:18"
+// Generated on "09/24/2021 12:21:41"
                                                                                 
 // Verilog Test Bench (with test vectors) for design :                          ALU
 // 
@@ -74,22 +74,47 @@ end
 // ctrl_ALUopcode[ 1 ]
 initial
 begin
-	ctrl_ALUopcode[1] = 1'b0;
+	ctrl_ALUopcode[1] = 1'b1;
 end 
 // ctrl_ALUopcode[ 0 ]
 initial
 begin
-	ctrl_ALUopcode[0] = 1'b1;
+	ctrl_ALUopcode[0] = 1'b0;
+end 
+// ctrl_shiftamt[ 4 ]
+initial
+begin
+	ctrl_shiftamt[4] = 1'b0;
+end 
+// ctrl_shiftamt[ 3 ]
+initial
+begin
+	ctrl_shiftamt[3] = 1'b0;
+end 
+// ctrl_shiftamt[ 2 ]
+initial
+begin
+	ctrl_shiftamt[2] = 1'b0;
+end 
+// ctrl_shiftamt[ 1 ]
+initial
+begin
+	ctrl_shiftamt[1] = 1'b0;
+end 
+// ctrl_shiftamt[ 0 ]
+initial
+begin
+	ctrl_shiftamt[0] = 1'b0;
 end 
 // data_operandA[ 31 ]
 initial
 begin
-	data_operandA[31] = 1'b1;
+	data_operandA[31] = 1'b0;
 end 
 // data_operandA[ 30 ]
 initial
 begin
-	data_operandA[30] = 1'b1;
+	data_operandA[30] = 1'b0;
 end 
 // data_operandA[ 29 ]
 initial
@@ -134,97 +159,97 @@ end
 // data_operandA[ 21 ]
 initial
 begin
-	data_operandA[21] = 1'b0;
+	data_operandA[21] = 1'b1;
 end 
 // data_operandA[ 20 ]
 initial
 begin
-	data_operandA[20] = 1'b0;
+	data_operandA[20] = 1'b1;
 end 
 // data_operandA[ 19 ]
 initial
 begin
-	data_operandA[19] = 1'b0;
+	data_operandA[19] = 1'b1;
 end 
 // data_operandA[ 18 ]
 initial
 begin
-	data_operandA[18] = 1'b0;
+	data_operandA[18] = 1'b1;
 end 
 // data_operandA[ 17 ]
 initial
 begin
-	data_operandA[17] = 1'b0;
+	data_operandA[17] = 1'b1;
 end 
 // data_operandA[ 16 ]
 initial
 begin
-	data_operandA[16] = 1'b0;
+	data_operandA[16] = 1'b1;
 end 
 // data_operandA[ 15 ]
 initial
 begin
-	data_operandA[15] = 1'b0;
+	data_operandA[15] = 1'b1;
 end 
 // data_operandA[ 14 ]
 initial
 begin
-	data_operandA[14] = 1'b0;
+	data_operandA[14] = 1'b1;
 end 
 // data_operandA[ 13 ]
 initial
 begin
-	data_operandA[13] = 1'b0;
+	data_operandA[13] = 1'b1;
 end 
 // data_operandA[ 12 ]
 initial
 begin
-	data_operandA[12] = 1'b0;
+	data_operandA[12] = 1'b1;
 end 
 // data_operandA[ 11 ]
 initial
 begin
-	data_operandA[11] = 1'b0;
+	data_operandA[11] = 1'b1;
 end 
 // data_operandA[ 10 ]
 initial
 begin
-	data_operandA[10] = 1'b0;
+	data_operandA[10] = 1'b1;
 end 
 // data_operandA[ 9 ]
 initial
 begin
-	data_operandA[9] = 1'b0;
+	data_operandA[9] = 1'b1;
 end 
 // data_operandA[ 8 ]
 initial
 begin
-	data_operandA[8] = 1'b0;
+	data_operandA[8] = 1'b1;
 end 
 // data_operandA[ 7 ]
 initial
 begin
-	data_operandA[7] = 1'b0;
+	data_operandA[7] = 1'b1;
 end 
 // data_operandA[ 6 ]
 initial
 begin
-	data_operandA[6] = 1'b0;
+	data_operandA[6] = 1'b1;
 end 
 // data_operandA[ 5 ]
 initial
 begin
-	data_operandA[5] = 1'b0;
+	data_operandA[5] = 1'b1;
 end 
 // data_operandA[ 4 ]
 initial
 begin
-	data_operandA[4] = 1'b0;
+	data_operandA[4] = 1'b1;
 end 
 // data_operandA[ 3 ]
 initial
 begin
-	data_operandA[3] = 1'b0;
+	data_operandA[3] = 1'b1;
 end 
 // data_operandA[ 2 ]
 initial
@@ -234,12 +259,12 @@ end
 // data_operandA[ 1 ]
 initial
 begin
-	data_operandA[1] = 1'b0;
+	data_operandA[1] = 1'b1;
 end 
 // data_operandA[ 0 ]
 initial
 begin
-	data_operandA[0] = 1'b0;
+	data_operandA[0] = 1'b1;
 end 
 // data_operandB[ 31 ]
 initial
@@ -269,7 +294,7 @@ end
 // data_operandB[ 26 ]
 initial
 begin
-	data_operandB[26] = 1'b0;
+	data_operandB[26] = 1'b1;
 end 
 // data_operandB[ 25 ]
 initial
@@ -289,22 +314,22 @@ end
 // data_operandB[ 22 ]
 initial
 begin
-	data_operandB[22] = 1'b0;
+	data_operandB[22] = 1'b1;
 end 
 // data_operandB[ 21 ]
 initial
 begin
-	data_operandB[21] = 1'b0;
+	data_operandB[21] = 1'b1;
 end 
 // data_operandB[ 20 ]
 initial
 begin
-	data_operandB[20] = 1'b1;
+	data_operandB[20] = 1'b0;
 end 
 // data_operandB[ 19 ]
 initial
 begin
-	data_operandB[19] = 1'b1;
+	data_operandB[19] = 1'b0;
 end 
 // data_operandB[ 18 ]
 initial
@@ -314,7 +339,7 @@ end
 // data_operandB[ 17 ]
 initial
 begin
-	data_operandB[17] = 1'b1;
+	data_operandB[17] = 1'b0;
 end 
 // data_operandB[ 16 ]
 initial
@@ -324,12 +349,12 @@ end
 // data_operandB[ 15 ]
 initial
 begin
-	data_operandB[15] = 1'b1;
+	data_operandB[15] = 1'b0;
 end 
 // data_operandB[ 14 ]
 initial
 begin
-	data_operandB[14] = 1'b1;
+	data_operandB[14] = 1'b0;
 end 
 // data_operandB[ 13 ]
 initial
@@ -344,7 +369,7 @@ end
 // data_operandB[ 11 ]
 initial
 begin
-	data_operandB[11] = 1'b1;
+	data_operandB[11] = 1'b0;
 end 
 // data_operandB[ 10 ]
 initial
@@ -359,17 +384,17 @@ end
 // data_operandB[ 8 ]
 initial
 begin
-	data_operandB[8] = 1'b1;
+	data_operandB[8] = 1'b0;
 end 
 // data_operandB[ 7 ]
 initial
 begin
-	data_operandB[7] = 1'b1;
+	data_operandB[7] = 1'b0;
 end 
 // data_operandB[ 6 ]
 initial
 begin
-	data_operandB[6] = 1'b1;
+	data_operandB[6] = 1'b0;
 end 
 // data_operandB[ 5 ]
 initial
