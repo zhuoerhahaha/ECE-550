@@ -4,71 +4,25 @@ module is_not_equal(A, B, out);
 	
 	wire[31:0] xor_res;
 	wire temp[30:0];
-	xor(xor_res[0], A[0], B[0]);
-	xor(xor_res[1], A[1], B[1]);
-	xor(xor_res[2], A[2], B[2]);
-	xor(xor_res[3], A[3], B[3]);
-	xor(xor_res[4], A[4], B[4]);
-	xor(xor_res[5], A[5], B[5]);
-	xor(xor_res[6], A[6], B[6]);
-	xor(xor_res[7], A[7], B[7]);
-	xor(xor_res[8], A[8], B[8]);
-	xor(xor_res[9], A[9], B[9]);
-	xor(xor_res[10], A[10], B[10]);
-	xor(xor_res[11], A[11], B[11]);
-	xor(xor_res[12], A[12], B[12]);
-	xor(xor_res[13], A[13], B[13]);
-	xor(xor_res[14], A[14], B[14]);
-	xor(xor_res[15], A[15], B[15]);
-	xor(xor_res[16], A[16], B[16]);
-	xor(xor_res[17], A[17], B[17]);
-	xor(xor_res[18], A[18], B[18]);
-	xor(xor_res[19], A[19], B[19]);
-	xor(xor_res[20], A[20], B[20]);
-	xor(xor_res[21], A[21], B[21]);
-	xor(xor_res[22], A[22], B[22]);
-	xor(xor_res[23], A[23], B[23]);
-	xor(xor_res[24], A[24], B[24]);
-	xor(xor_res[25], A[25], B[25]);
-	xor(xor_res[26], A[26], B[26]);
-	xor(xor_res[27], A[27], B[27]);
-	xor(xor_res[28], A[28], B[28]);
-	xor(xor_res[29], A[29], B[29]);
-	xor(xor_res[30], A[30], B[30]);
-	xor(xor_res[31], A[31], B[31]);
 	
-
-	or(temp[0], xor_res[0], xor_res[1]);	
-	or(temp[1], temp[0], xor_res[2]);	
-	or(temp[2], temp[1], xor_res[3]);	
-	or(temp[3], temp[2], xor_res[4]);	
-	or(temp[4], temp[3], xor_res[5]);	
-	or(temp[5], temp[4], xor_res[6]);	
-	or(temp[6], temp[5], xor_res[7]);	
-	or(temp[7], temp[6], xor_res[8]);	
-	or(temp[8], temp[7], xor_res[9]);	
-	or(temp[9], temp[8], xor_res[10]);	
-	or(temp[10], temp[9], xor_res[11]);	
-	or(temp[11], temp[10], xor_res[12]);	
-	or(temp[12], temp[11], xor_res[13]);	
-	or(temp[13], temp[12], xor_res[14]);	
-	or(temp[14], temp[13], xor_res[15]);	
-	or(temp[15], temp[14], xor_res[16]);	
-	or(temp[16], temp[15], xor_res[17]);	
-	or(temp[17], temp[16], xor_res[18]);	
-	or(temp[18], temp[17], xor_res[19]);	
-	or(temp[19], temp[18], xor_res[20]);	
-	or(temp[20], temp[19], xor_res[21]);	
-	or(temp[21], temp[20], xor_res[22]);	
-	or(temp[22], temp[21], xor_res[23]);	
-	or(temp[23], temp[22], xor_res[24]);	
-	or(temp[24], temp[23], xor_res[25]);	
-	or(temp[25], temp[24], xor_res[26]);	
-	or(temp[26], temp[25], xor_res[27]);	
-	or(temp[27], temp[26], xor_res[28]);	
-	or(temp[28], temp[27], xor_res[29]);	
-	or(temp[29], temp[28], xor_res[30]);	
-	or(temp[30], temp[29], xor_res[31]);	
+	//XOR Operation
+	generate	
+		genvar i;	
+		for(i = 0; i < 32; i = i + 1) begin: xor_operation
+			xor(xor_res[i], A[i], B[i]);
+		end  
+	endgenerate
+	
+	//OR Operation
+	or(temp[0], xor_res[0], xor_res[1]);
+	generate	
+		genvar j;	
+		for(j = 0; j < 30; j = j + 1) begin: or_operation
+			or(temp[j+1], temp[j], xor_res[j+2]);
+		end  
+	endgenerate
+	
+	//Final Assign
 		
 	assign out = temp[30];
 

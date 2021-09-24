@@ -9,70 +9,70 @@ z2
 cModel Technology
 Z0 dC:/Users/lizhu/Desktop/ECE 550/Proj1/simulation/qsim
 vALU
-Z1 !s110 1632440069
+Z1 !s110 1632500503
 !i10b 1
-!s100 d9_Em^J]LCmSN<c_DCfeL1
-IjBmATbLf;6W<7P[F84H=D3
+!s100 [GVnDRjK;`ma08nBj14ZB1
+IRkR9Cn;We3jb0BM8POChD3
 Z2 VDg1SIo80bB@j0V0VzS_@n1
-R0
-w1632440068
-Z3 8ALU.vo
-Z4 FALU.vo
-Z5 L0 32
-Z6 OV;L;10.4d;61
+Z3 dC:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project2/ECE-550/simulation/qsim
+w1632500502
+Z4 8ALU.vo
+Z5 FALU.vo
+Z6 L0 32
+Z7 OV;L;10.4d;61
 r1
 !s85 0
 31
-Z7 !s108 1632440069.000000
-Z8 !s107 ALU.vo|
-Z9 !s90 -work|work|ALU.vo|
+Z8 !s108 1632500503.000000
+Z9 !s107 ALU.vo|
+Z10 !s90 -work|work|ALU.vo|
 !i113 1
-Z10 o-work work
+Z11 o-work work
 n@a@l@u
 vALU_vlg_vec_tst
 R1
 !i10b 1
-!s100 >A:L^b5PV8S03e3alnORC2
-IDl67fXbziRMZek8e:U^b`3
+!s100 K7S=nVhYJP>52a0iZ_ll<0
+IS7?CEmE`h?T`@mboXnk:23
 R2
-R0
-w1632440067
-8Waveform12.vwf.vt
-FWaveform12.vwf.vt
-Z11 L0 30
-R6
+R3
+w1632500501
+8Waveform.vwf.vt
+FWaveform.vwf.vt
+Z12 L0 30
+R7
 r1
 !s85 0
 31
-R7
-!s107 Waveform12.vwf.vt|
-!s90 -work|work|Waveform12.vwf.vt|
+R8
+!s107 Waveform.vwf.vt|
+!s90 -work|work|Waveform.vwf.vt|
 !i113 1
-R10
+R11
 n@a@l@u_vlg_vec_tst
 vCSA
-Z12 !s110 1632436989
+Z13 !s110 1632436989
 !i10b 1
 !s100 EEhKD8D>RHonLo]DB<B;I3
 I9eaazEioN:Xa3zf@ZXG6h1
 R2
 R0
 w1632436988
-R3
 R4
 R5
 R6
+R7
 r1
 !s85 0
 31
-Z13 !s108 1632436989.000000
-R8
+Z14 !s108 1632436989.000000
 R9
-!i113 1
 R10
+!i113 1
+R11
 n@c@s@a
 vCSA_vlg_vec_tst
-R12
+R13
 !i10b 1
 !s100 YKkJ@L5:faF_14QFPo@2D1
 IebC0X4AmMKL2cCo<;mk6H2
@@ -81,16 +81,16 @@ R0
 w1632436987
 8Waveform10.vwf.vt
 FWaveform10.vwf.vt
-R11
-R6
+R12
+R7
 r1
 !s85 0
 31
-R13
+R14
 !s107 Waveform10.vwf.vt|
 !s90 -work|work|Waveform10.vwf.vt|
 !i113 1
-R10
+R11
 n@c@s@a_vlg_vec_tst
 vis_not_equal
 !s110 1632435814
@@ -98,32 +98,32 @@ vis_not_equal
 !s100 mPhbKJ>]1?ln]lmn>zEmL2
 IAY?AGCH=D9AF14kd9fNOE3
 R2
-Z14 dC:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project2/ECE-550/simulation/qsim
-w1632435813
 R3
+w1632435813
 R4
 R5
 R6
+R7
 r1
 !s85 0
 31
 Z15 !s108 1632435814.000000
-R8
 R9
-!i113 1
 R10
+!i113 1
+R11
 vis_not_equal_vlg_vec_tst
 !s110 1632435815
 !i10b 1
 !s100 m`]DO=d9dGbzZ;:_?fGhg2
 I3Zh_0g;A6g>61B>?^N3cF0
 R2
-R14
+R3
 w1632435812
 8Waveform7.vwf.vt
 FWaveform7.vwf.vt
-R11
-R6
+R12
+R7
 r1
 !s85 0
 31
@@ -131,7 +131,7 @@ R15
 !s107 Waveform7.vwf.vt|
 !s90 -work|work|Waveform7.vwf.vt|
 !i113 1
-R10
+R11
 vleft_shift
 Z16 !s110 1632185313
 !i10b 1
@@ -140,18 +140,18 @@ I7Mn_2bVlEzZ9KG@gJABa80
 R2
 R0
 w1632185313
-R3
 R4
 R5
 R6
+R7
 r1
 !s85 0
 31
 Z17 !s108 1632185313.000000
-R8
 R9
-!i113 1
 R10
+!i113 1
+R11
 vleft_shift_vlg_vec_tst
 R16
 !i10b 1
@@ -162,8 +162,8 @@ R0
 w1632185312
 Z18 8Waveform2.vwf.vt
 Z19 FWaveform2.vwf.vt
-R11
-R6
+R12
+R7
 r1
 !s85 0
 31
@@ -171,7 +171,7 @@ R17
 Z20 !s107 Waveform2.vwf.vt|
 Z21 !s90 -work|work|Waveform2.vwf.vt|
 !i113 1
-R10
+R11
 vnegateb
 Z22 !s110 1631397487
 !i10b 1
@@ -180,18 +180,18 @@ IBiYg;QI75lh34H:Ig38Va3
 R2
 R0
 w1631397486
-R3
 R4
 R5
 R6
+R7
 r1
 !s85 0
 31
 Z23 !s108 1631397487.000000
-R8
 R9
-!i113 1
 R10
+!i113 1
+R11
 vnegateb_vlg_vec_tst
 R22
 !i10b 1
@@ -202,8 +202,8 @@ R0
 w1631397485
 8Waveform1.vwf.vt
 FWaveform1.vwf.vt
-R11
-R6
+R12
+R7
 r1
 !s85 0
 31
@@ -211,7 +211,7 @@ R23
 !s107 Waveform1.vwf.vt|
 !s90 -work|work|Waveform1.vwf.vt|
 !i113 1
-R10
+R11
 vRCA
 Z24 !s110 1631405126
 !i10b 1
@@ -220,18 +220,18 @@ Ii[BO]YEX68UTL_UPa@4;W3
 R2
 R0
 Z25 w1631405125
-R3
 R4
 R5
 R6
+R7
 r1
 !s85 0
 31
 Z26 !s108 1631405126.000000
-R8
 R9
-!i113 1
 R10
+!i113 1
+R11
 n@r@c@a
 vRCA_special
 Z27 !s110 1632273490
@@ -241,18 +241,18 @@ IdMTOQk3z93AG[^Xh@Zo]30
 R2
 R0
 w1632273489
-R3
 R4
 R5
 R6
+R7
 r1
 !s85 0
 31
 Z28 !s108 1632273490.000000
-R8
 R9
-!i113 1
 R10
+!i113 1
+R11
 n@r@c@a_special
 vRCA_special_vlg_vec_tst
 R27
@@ -264,8 +264,8 @@ R0
 w1632273488
 Z29 8Waveform5.vwf.vt
 Z30 FWaveform5.vwf.vt
-R11
-R6
+R12
+R7
 r1
 !s85 0
 31
@@ -273,7 +273,7 @@ R28
 Z31 !s107 Waveform5.vwf.vt|
 Z32 !s90 -work|work|Waveform5.vwf.vt|
 !i113 1
-R10
+R11
 n@r@c@a_special_vlg_vec_tst
 vRCA_vlg_vec_tst
 R24
@@ -285,8 +285,8 @@ R0
 R25
 R29
 R30
-R11
-R6
+R12
+R7
 r1
 !s85 0
 31
@@ -294,7 +294,7 @@ R26
 R31
 R32
 !i113 1
-R10
+R11
 n@r@c@a_vlg_vec_tst
 vright_shift
 Z33 !s110 1632263657
@@ -304,18 +304,18 @@ I8N4:Rek@gSaURMX6m1EhL2
 R2
 R0
 w1632263656
-R3
 R4
 R5
 R6
+R7
 r1
 !s85 0
 31
 Z34 !s108 1632263657.000000
-R8
 R9
-!i113 1
 R10
+!i113 1
+R11
 vright_shift_vlg_vec_tst
 R33
 !i10b 1
@@ -326,8 +326,8 @@ R0
 w1632263655
 R18
 R19
-R11
-R6
+R12
+R7
 r1
 !s85 0
 31
@@ -335,4 +335,4 @@ R34
 R20
 R21
 !i113 1
-R10
+R11

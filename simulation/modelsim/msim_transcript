@@ -1,4 +1,4 @@
-# Reading D:/altera_lite16.0/modelsim_ase/tcl/vsim/pref.tcl
+# Reading C:/altera_lite/16.0/modelsim_ase/tcl/vsim/pref.tcl
 # do ALU_run_msim_rtl_verilog.do
 # if {[file exists rtl_work]} {
 # 	vdel -lib rtl_work -all
@@ -7,114 +7,208 @@
 # vmap work rtl_work
 # Model Technology ModelSim ALTERA vmap 10.4d Lib Mapping Utility 2015.12 Dec 30 2015
 # vmap work rtl_work 
-# Copying D:/altera_lite16.0/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Copying C:/altera_lite/16.0/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
 # 
-# vlog -vlog01compat -work work +incdir+C:/Users/lizhu/Desktop/ECE\ 550/Proj1 {C:/Users/lizhu/Desktop/ECE 550/Proj1/ALU.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/jerry/OneDrive\ -\ Duke\ University/Duke/550/Project/Project2/ECE-550 {C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project2/ECE-550/ALU.v}
 # Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+<<<<<<< HEAD
 # Start time: 12:22:31 on Sep 24,2021
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/lizhu/Desktop/ECE 550/Proj1" C:/Users/lizhu/Desktop/ECE 550/Proj1/ALU.v 
+=======
+# Start time: 12:20:19 on Sep 24,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project2/ECE-550" C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project2/ECE-550/ALU.v 
+>>>>>>> 997a63a68fd8f9ad60013bc8de28ef2498e626b2
 # -- Compiling module ALU
 # 
 # Top level modules:
 # 	ALU
+<<<<<<< HEAD
 # End time: 12:22:31 on Sep 24,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/lizhu/Desktop/ECE\ 550/Proj1 {C:/Users/lizhu/Desktop/ECE 550/Proj1/bit_And.v}
 # Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
 # Start time: 12:22:31 on Sep 24,2021
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/lizhu/Desktop/ECE 550/Proj1" C:/Users/lizhu/Desktop/ECE 550/Proj1/bit_And.v 
+=======
+# End time: 12:20:19 on Sep 24,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/jerry/OneDrive\ -\ Duke\ University/Duke/550/Project/Project2/ECE-550 {C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project2/ECE-550/bit_And.v}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 12:20:19 on Sep 24,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project2/ECE-550" C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project2/ECE-550/bit_And.v 
+>>>>>>> 997a63a68fd8f9ad60013bc8de28ef2498e626b2
 # -- Compiling module bit_And
 # 
 # Top level modules:
 # 	bit_And
+<<<<<<< HEAD
 # End time: 12:22:31 on Sep 24,2021, Elapsed time: 0:00:00
+=======
+# End time: 12:20:19 on Sep 24,2021, Elapsed time: 0:00:00
+>>>>>>> 997a63a68fd8f9ad60013bc8de28ef2498e626b2
 # Errors: 0, Warnings: 0
-# vlog -vlog01compat -work work +incdir+C:/Users/lizhu/Desktop/ECE\ 550/Proj1 {C:/Users/lizhu/Desktop/ECE 550/Proj1/bit_Or.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/jerry/OneDrive\ -\ Duke\ University/Duke/550/Project/Project2/ECE-550 {C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project2/ECE-550/bit_Or.v}
 # Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+<<<<<<< HEAD
 # Start time: 12:22:31 on Sep 24,2021
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/lizhu/Desktop/ECE 550/Proj1" C:/Users/lizhu/Desktop/ECE 550/Proj1/bit_Or.v 
+=======
+# Start time: 12:20:19 on Sep 24,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project2/ECE-550" C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project2/ECE-550/bit_Or.v 
+>>>>>>> 997a63a68fd8f9ad60013bc8de28ef2498e626b2
 # -- Compiling module bit_Or
 # 
 # Top level modules:
 # 	bit_Or
+<<<<<<< HEAD
 # End time: 12:22:31 on Sep 24,2021, Elapsed time: 0:00:00
+=======
+# End time: 12:20:19 on Sep 24,2021, Elapsed time: 0:00:00
+>>>>>>> 997a63a68fd8f9ad60013bc8de28ef2498e626b2
 # Errors: 0, Warnings: 0
-# vlog -vlog01compat -work work +incdir+C:/Users/lizhu/Desktop/ECE\ 550/Proj1 {C:/Users/lizhu/Desktop/ECE 550/Proj1/left_shift.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/jerry/OneDrive\ -\ Duke\ University/Duke/550/Project/Project2/ECE-550 {C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project2/ECE-550/left_shift.v}
 # Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+<<<<<<< HEAD
 # Start time: 12:22:32 on Sep 24,2021
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/lizhu/Desktop/ECE 550/Proj1" C:/Users/lizhu/Desktop/ECE 550/Proj1/left_shift.v 
+=======
+# Start time: 12:20:19 on Sep 24,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project2/ECE-550" C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project2/ECE-550/left_shift.v 
+>>>>>>> 997a63a68fd8f9ad60013bc8de28ef2498e626b2
 # -- Compiling module left_shift
 # 
 # Top level modules:
 # 	left_shift
+<<<<<<< HEAD
 # End time: 12:22:32 on Sep 24,2021, Elapsed time: 0:00:00
+=======
+# End time: 12:20:19 on Sep 24,2021, Elapsed time: 0:00:00
+>>>>>>> 997a63a68fd8f9ad60013bc8de28ef2498e626b2
 # Errors: 0, Warnings: 0
-# vlog -vlog01compat -work work +incdir+C:/Users/lizhu/Desktop/ECE\ 550/Proj1 {C:/Users/lizhu/Desktop/ECE 550/Proj1/right_shift.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/jerry/OneDrive\ -\ Duke\ University/Duke/550/Project/Project2/ECE-550 {C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project2/ECE-550/right_shift.v}
 # Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+<<<<<<< HEAD
 # Start time: 12:22:32 on Sep 24,2021
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/lizhu/Desktop/ECE 550/Proj1" C:/Users/lizhu/Desktop/ECE 550/Proj1/right_shift.v 
+=======
+# Start time: 12:20:19 on Sep 24,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project2/ECE-550" C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project2/ECE-550/right_shift.v 
+>>>>>>> 997a63a68fd8f9ad60013bc8de28ef2498e626b2
 # -- Compiling module right_shift
 # 
 # Top level modules:
 # 	right_shift
+<<<<<<< HEAD
 # End time: 12:22:32 on Sep 24,2021, Elapsed time: 0:00:00
+=======
+# End time: 12:20:19 on Sep 24,2021, Elapsed time: 0:00:00
+>>>>>>> 997a63a68fd8f9ad60013bc8de28ef2498e626b2
 # Errors: 0, Warnings: 0
-# vlog -vlog01compat -work work +incdir+C:/Users/lizhu/Desktop/ECE\ 550/Proj1 {C:/Users/lizhu/Desktop/ECE 550/Proj1/is_not_equal.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/jerry/OneDrive\ -\ Duke\ University/Duke/550/Project/Project2/ECE-550 {C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project2/ECE-550/is_not_equal.v}
 # Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+<<<<<<< HEAD
 # Start time: 12:22:32 on Sep 24,2021
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/lizhu/Desktop/ECE 550/Proj1" C:/Users/lizhu/Desktop/ECE 550/Proj1/is_not_equal.v 
+=======
+# Start time: 12:20:19 on Sep 24,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project2/ECE-550" C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project2/ECE-550/is_not_equal.v 
+>>>>>>> 997a63a68fd8f9ad60013bc8de28ef2498e626b2
 # -- Compiling module is_not_equal
 # 
 # Top level modules:
 # 	is_not_equal
+<<<<<<< HEAD
 # End time: 12:22:32 on Sep 24,2021, Elapsed time: 0:00:00
+=======
+# End time: 12:20:19 on Sep 24,2021, Elapsed time: 0:00:00
+>>>>>>> 997a63a68fd8f9ad60013bc8de28ef2498e626b2
 # Errors: 0, Warnings: 0
-# vlog -vlog01compat -work work +incdir+C:/Users/lizhu/Desktop/ECE\ 550/Proj1 {C:/Users/lizhu/Desktop/ECE 550/Proj1/CheckAddSub.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/jerry/OneDrive\ -\ Duke\ University/Duke/550/Project/Project2/ECE-550 {C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project2/ECE-550/CheckAddSub.v}
 # Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+<<<<<<< HEAD
 # Start time: 12:22:32 on Sep 24,2021
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/lizhu/Desktop/ECE 550/Proj1" C:/Users/lizhu/Desktop/ECE 550/Proj1/CheckAddSub.v 
+=======
+# Start time: 12:20:19 on Sep 24,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project2/ECE-550" C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project2/ECE-550/CheckAddSub.v 
+>>>>>>> 997a63a68fd8f9ad60013bc8de28ef2498e626b2
 # -- Compiling module CheckAddSub
 # 
 # Top level modules:
 # 	CheckAddSub
+<<<<<<< HEAD
 # End time: 12:22:32 on Sep 24,2021, Elapsed time: 0:00:00
+=======
+# End time: 12:20:19 on Sep 24,2021, Elapsed time: 0:00:00
+>>>>>>> 997a63a68fd8f9ad60013bc8de28ef2498e626b2
 # Errors: 0, Warnings: 0
-# vlog -vlog01compat -work work +incdir+C:/Users/lizhu/Desktop/ECE\ 550/Proj1 {C:/Users/lizhu/Desktop/ECE 550/Proj1/RCA16Bit.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/jerry/OneDrive\ -\ Duke\ University/Duke/550/Project/Project2/ECE-550 {C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project2/ECE-550/RCA16Bit.v}
 # Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+<<<<<<< HEAD
 # Start time: 12:22:32 on Sep 24,2021
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/lizhu/Desktop/ECE 550/Proj1" C:/Users/lizhu/Desktop/ECE 550/Proj1/RCA16Bit.v 
+=======
+# Start time: 12:20:19 on Sep 24,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project2/ECE-550" C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project2/ECE-550/RCA16Bit.v 
+>>>>>>> 997a63a68fd8f9ad60013bc8de28ef2498e626b2
 # -- Compiling module RCA16Bit
 # 
 # Top level modules:
 # 	RCA16Bit
+<<<<<<< HEAD
 # End time: 12:22:32 on Sep 24,2021, Elapsed time: 0:00:00
+=======
+# End time: 12:20:19 on Sep 24,2021, Elapsed time: 0:00:00
+>>>>>>> 997a63a68fd8f9ad60013bc8de28ef2498e626b2
 # Errors: 0, Warnings: 0
-# vlog -vlog01compat -work work +incdir+C:/Users/lizhu/Desktop/ECE\ 550/Proj1 {C:/Users/lizhu/Desktop/ECE 550/Proj1/OneBitAdder.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/jerry/OneDrive\ -\ Duke\ University/Duke/550/Project/Project2/ECE-550 {C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project2/ECE-550/OneBitAdder.v}
 # Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+<<<<<<< HEAD
 # Start time: 12:22:32 on Sep 24,2021
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/lizhu/Desktop/ECE 550/Proj1" C:/Users/lizhu/Desktop/ECE 550/Proj1/OneBitAdder.v 
+=======
+# Start time: 12:20:19 on Sep 24,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project2/ECE-550" C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project2/ECE-550/OneBitAdder.v 
+>>>>>>> 997a63a68fd8f9ad60013bc8de28ef2498e626b2
 # -- Compiling module OneBitAdder
 # 
 # Top level modules:
 # 	OneBitAdder
+<<<<<<< HEAD
 # End time: 12:22:32 on Sep 24,2021, Elapsed time: 0:00:00
+=======
+# End time: 12:20:20 on Sep 24,2021, Elapsed time: 0:00:01
+>>>>>>> 997a63a68fd8f9ad60013bc8de28ef2498e626b2
 # Errors: 0, Warnings: 0
 # 
-# vlog -vlog01compat -work work +incdir+C:/Users/lizhu/Desktop/ECE\ 550/Proj1 {C:/Users/lizhu/Desktop/ECE 550/Proj1/ALU_tb.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/jerry/OneDrive\ -\ Duke\ University/Duke/550/Project/Project2/ECE-550 {C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project2/ECE-550/ALU_tb.v}
 # Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+<<<<<<< HEAD
 # Start time: 12:22:32 on Sep 24,2021
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/lizhu/Desktop/ECE 550/Proj1" C:/Users/lizhu/Desktop/ECE 550/Proj1/ALU_tb.v 
+=======
+# Start time: 12:20:20 on Sep 24,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project2/ECE-550" C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project2/ECE-550/ALU_tb.v 
+>>>>>>> 997a63a68fd8f9ad60013bc8de28ef2498e626b2
 # -- Compiling module ALU_tb
 # 
 # Top level modules:
 # 	ALU_tb
+<<<<<<< HEAD
 # End time: 12:22:32 on Sep 24,2021, Elapsed time: 0:00:00
+=======
+# End time: 12:20:20 on Sep 24,2021, Elapsed time: 0:00:00
+>>>>>>> 997a63a68fd8f9ad60013bc8de28ef2498e626b2
 # Errors: 0, Warnings: 0
 # 
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  ALU_tb
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=""+acc"" ALU_tb 
+<<<<<<< HEAD
 # Start time: 12:22:32 on Sep 24,2021
+=======
+# Start time: 12:20:20 on Sep 24,2021
+>>>>>>> 997a63a68fd8f9ad60013bc8de28ef2498e626b2
 # Loading work.ALU_tb
 # Loading work.ALU
 # Loading work.CheckAddSub
@@ -134,8 +228,13 @@
 # run -all
 #                    0 << Starting the Simulation >>
 # The simulation completed without errors
-# ** Note: $stop    : C:/Users/lizhu/Desktop/ECE 550/Proj1/ALU_tb.v(51)
+# ** Note: $stop    : C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project2/ECE-550/ALU_tb.v(51)
 #    Time: 2480 ns  Iteration: 1  Instance: /ALU_tb
+<<<<<<< HEAD
 # Break in Module ALU_tb at C:/Users/lizhu/Desktop/ECE 550/Proj1/ALU_tb.v line 51
 # End time: 12:23:16 on Sep 24,2021, Elapsed time: 0:00:44
+=======
+# Break in Module ALU_tb at C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project2/ECE-550/ALU_tb.v line 51
+# End time: 12:20:35 on Sep 24,2021, Elapsed time: 0:00:15
+>>>>>>> 997a63a68fd8f9ad60013bc8de28ef2498e626b2
 # Errors: 0, Warnings: 0

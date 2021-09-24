@@ -7,8 +7,9 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-Z0 dC:/Users/lizhu/Desktop/ECE 550/Proj1/simulation/modelsim
+Z0 dC:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project2/ECE-550/simulation/modelsim
 vALU
+<<<<<<< HEAD
 Z1 !s110 1632500551
 !i10b 1
 !s100 QmnTGI@cLKGcI_2Q0z4B=3
@@ -18,130 +19,165 @@ R0
 w1632440312
 8C:/Users/lizhu/Desktop/ECE 550/Proj1/ALU.v
 FC:/Users/lizhu/Desktop/ECE 550/Proj1/ALU.v
+=======
+Z1 !s110 1632500419
+!i10b 1
+!s100 QmnTGI@cLKGcI_2Q0z4B=3
+IeQTj5RRG;4DW3]3FOS`Jk2
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1632498683
+8C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project2/ECE-550/ALU.v
+FC:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project2/ECE-550/ALU.v
+>>>>>>> 997a63a68fd8f9ad60013bc8de28ef2498e626b2
 L0 1
-Z3 OV;L;10.4d;61
+Z4 OV;L;10.4d;61
 r1
 !s85 0
 31
+<<<<<<< HEAD
 Z4 !s108 1632500551.000000
 !s107 C:/Users/lizhu/Desktop/ECE 550/Proj1/ALU.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/lizhu/Desktop/ECE 550/Proj1|C:/Users/lizhu/Desktop/ECE 550/Proj1/ALU.v|
+=======
+Z5 !s108 1632500419.000000
+!s107 C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project2/ECE-550/ALU.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project2/ECE-550|C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project2/ECE-550/ALU.v|
+>>>>>>> 997a63a68fd8f9ad60013bc8de28ef2498e626b2
 !i113 1
-Z5 o-vlog01compat -work work
-Z6 !s92 -vlog01compat -work work {+incdir+C:/Users/lizhu/Desktop/ECE 550/Proj1}
+Z6 o-vlog01compat -work work
+Z7 !s92 -vlog01compat -work work {+incdir+C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project2/ECE-550}
 n@a@l@u
 vALU_tb
+<<<<<<< HEAD
 Z7 !s110 1632500552
+=======
+Z8 !s110 1632500420
+>>>>>>> 997a63a68fd8f9ad60013bc8de28ef2498e626b2
 !i10b 1
 !s100 Z7YH1DXCz[GJ;zhiKQ`gS0
-I:3=gMX`07izOUFDoKglYB0
+I7S]MDkiA;_;SX5014[z>80
 R2
 R0
-w1632437733
-8C:/Users/lizhu/Desktop/ECE 550/Proj1/ALU_tb.v
-FC:/Users/lizhu/Desktop/ECE 550/Proj1/ALU_tb.v
-L0 3
 R3
+8C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project2/ECE-550/ALU_tb.v
+FC:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project2/ECE-550/ALU_tb.v
+L0 3
+R4
 r1
 !s85 0
 31
+<<<<<<< HEAD
 Z8 !s108 1632500552.000000
 !s107 C:/Users/lizhu/Desktop/ECE 550/Proj1/ALU_tb.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/lizhu/Desktop/ECE 550/Proj1|C:/Users/lizhu/Desktop/ECE 550/Proj1/ALU_tb.v|
+=======
+!s108 1632500420.000000
+!s107 C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project2/ECE-550/ALU_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project2/ECE-550|C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project2/ECE-550/ALU_tb.v|
+>>>>>>> 997a63a68fd8f9ad60013bc8de28ef2498e626b2
 !i113 1
-R5
 R6
+R7
 n@a@l@u_tb
 vbit_And
 R1
 !i10b 1
-!s100 2cT<?hQma^KzPHM=@gaM31
-I=dhg`>V1`JooW]JzHPNn<2
+!s100 mI:5P]LeaK4aGh[ZbPSF`0
+Ia;WM:C>RUCRVJ9`XLMf;82
 R2
 R0
-w1632178036
-8C:/Users/lizhu/Desktop/ECE 550/Proj1/bit_And.v
-FC:/Users/lizhu/Desktop/ECE 550/Proj1/bit_And.v
+w1632499902
+8C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project2/ECE-550/bit_And.v
+FC:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project2/ECE-550/bit_And.v
 L0 1
-R3
+R4
 r1
 !s85 0
 31
-R4
-!s107 C:/Users/lizhu/Desktop/ECE 550/Proj1/bit_And.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/lizhu/Desktop/ECE 550/Proj1|C:/Users/lizhu/Desktop/ECE 550/Proj1/bit_And.v|
-!i113 1
 R5
+!s107 C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project2/ECE-550/bit_And.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project2/ECE-550|C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project2/ECE-550/bit_And.v|
+!i113 1
 R6
+R7
 nbit_@and
 vbit_Or
 R1
 !i10b 1
-!s100 00?3KkoSk?EceeQKNIVA]0
-IC_4Tf4:n9Ie6_[3`UgTd23
+!s100 jkQnZVQnP:jXKFZnU;VYb3
+I`R?EkT7]R?fCBK>SAN]c^0
 R2
 R0
-w1632178067
-8C:/Users/lizhu/Desktop/ECE 550/Proj1/bit_Or.v
-FC:/Users/lizhu/Desktop/ECE 550/Proj1/bit_Or.v
+w1632499646
+8C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project2/ECE-550/bit_Or.v
+FC:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project2/ECE-550/bit_Or.v
 L0 1
-R3
+R4
 r1
 !s85 0
 31
-R4
-!s107 C:/Users/lizhu/Desktop/ECE 550/Proj1/bit_Or.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/lizhu/Desktop/ECE 550/Proj1|C:/Users/lizhu/Desktop/ECE 550/Proj1/bit_Or.v|
-!i113 1
 R5
+!s107 C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project2/ECE-550/bit_Or.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project2/ECE-550|C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project2/ECE-550/bit_Or.v|
+!i113 1
 R6
+R7
 nbit_@or
 vCheckAddSub
-R7
+R1
 !i10b 1
 !s100 c7DYLFCZ_oj`eJ88>bcQc2
-I5:QIJTCQVYBLIFdIT@]HH3
+ILg^W2`m>3@;G1[<k;2T@90
 R2
 R0
+<<<<<<< HEAD
 w1632438397
 8C:/Users/lizhu/Desktop/ECE 550/Proj1/CheckAddSub.v
 FC:/Users/lizhu/Desktop/ECE 550/Proj1/CheckAddSub.v
 L0 1
+=======
+>>>>>>> 997a63a68fd8f9ad60013bc8de28ef2498e626b2
 R3
+8C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project2/ECE-550/CheckAddSub.v
+FC:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project2/ECE-550/CheckAddSub.v
+L0 1
+R4
 r1
 !s85 0
 31
-R8
-!s107 C:/Users/lizhu/Desktop/ECE 550/Proj1/CheckAddSub.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/lizhu/Desktop/ECE 550/Proj1|C:/Users/lizhu/Desktop/ECE 550/Proj1/CheckAddSub.v|
-!i113 1
 R5
+!s107 C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project2/ECE-550/CheckAddSub.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project2/ECE-550|C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project2/ECE-550/CheckAddSub.v|
+!i113 1
 R6
+R7
 n@check@add@sub
 vis_not_equal
-R7
+R1
 !i10b 1
-!s100 2zXW;h^:2X7HI>3eJ<XUa3
-If=8]:VJhTFo5J8f=7oZF]2
+!s100 0[o`?^O`0R?]UgkXRAng?2
+Ifk6aKdEBngYShJm?Fz7N:0
 R2
 R0
-w1632436056
-8C:/Users/lizhu/Desktop/ECE 550/Proj1/is_not_equal.v
-FC:/Users/lizhu/Desktop/ECE 550/Proj1/is_not_equal.v
+w1632500129
+8C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project2/ECE-550/is_not_equal.v
+FC:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project2/ECE-550/is_not_equal.v
 L0 1
-R3
+R4
 r1
 !s85 0
 31
-R8
-!s107 C:/Users/lizhu/Desktop/ECE 550/Proj1/is_not_equal.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/lizhu/Desktop/ECE 550/Proj1|C:/Users/lizhu/Desktop/ECE 550/Proj1/is_not_equal.v|
-!i113 1
 R5
+!s107 C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project2/ECE-550/is_not_equal.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project2/ECE-550|C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project2/ECE-550/is_not_equal.v|
+!i113 1
 R6
-vleft_shift
 R7
+vleft_shift
+R1
 !i10b 1
+<<<<<<< HEAD
 !s100 Jn9YQn>^>OR2z]0XQb61k2
 I1FSb9l[2o_zJLQXLoJmkV0
 R2
@@ -161,67 +197,88 @@ R8
 R5
 R6
 vOneBitAdder
+=======
+!s100 I0O07UeX?3oPVCd:L6lY^0
+IoMC@:=Q8A=ejn^VmcjSR90
+R2
+R0
+R3
+8C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project2/ECE-550/left_shift.v
+FC:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project2/ECE-550/left_shift.v
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project2/ECE-550/left_shift.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project2/ECE-550|C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project2/ECE-550/left_shift.v|
+!i113 1
+R6
+>>>>>>> 997a63a68fd8f9ad60013bc8de28ef2498e626b2
 R7
+vOneBitAdder
+R8
 !i10b 1
 !s100 n]FQIgO^f_`QCBSO6NidK3
-IPIE<H?oM6LT7;if9a@8Oi1
+IQ<g4SWgLi<1A>=:S]^Wcn3
 R2
 R0
-w1632437337
-8C:/Users/lizhu/Desktop/ECE 550/Proj1/OneBitAdder.v
-FC:/Users/lizhu/Desktop/ECE 550/Proj1/OneBitAdder.v
-L0 1
 R3
+8C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project2/ECE-550/OneBitAdder.v
+FC:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project2/ECE-550/OneBitAdder.v
+L0 1
+R4
 r1
 !s85 0
 31
-R8
-!s107 C:/Users/lizhu/Desktop/ECE 550/Proj1/OneBitAdder.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/lizhu/Desktop/ECE 550/Proj1|C:/Users/lizhu/Desktop/ECE 550/Proj1/OneBitAdder.v|
-!i113 1
 R5
+!s107 C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project2/ECE-550/OneBitAdder.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project2/ECE-550|C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project2/ECE-550/OneBitAdder.v|
+!i113 1
 R6
+R7
 n@one@bit@adder
 vRCA16Bit
-R7
+R1
 !i10b 1
 !s100 03S_J8jhnB2D[D<TYCVnN2
-IRLYN]o0:ZoAL=VLhikKE92
+II8:RGI`;_zmfdBY@C9?CL2
 R2
 R0
-w1632437311
-8C:/Users/lizhu/Desktop/ECE 550/Proj1/RCA16Bit.v
-FC:/Users/lizhu/Desktop/ECE 550/Proj1/RCA16Bit.v
-L0 1
 R3
+8C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project2/ECE-550/RCA16Bit.v
+FC:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project2/ECE-550/RCA16Bit.v
+L0 1
+R4
 r1
 !s85 0
 31
-R8
-!s107 C:/Users/lizhu/Desktop/ECE 550/Proj1/RCA16Bit.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/lizhu/Desktop/ECE 550/Proj1|C:/Users/lizhu/Desktop/ECE 550/Proj1/RCA16Bit.v|
-!i113 1
 R5
+!s107 C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project2/ECE-550/RCA16Bit.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project2/ECE-550|C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project2/ECE-550/RCA16Bit.v|
+!i113 1
 R6
+R7
 n@r@c@a16@bit
 vright_shift
-R7
+R1
 !i10b 1
 !s100 f`7DLiJ2@HRY1fX8B;:FJ2
-IhRLV`dlVVnSGY^J3zDZ?;0
+I]`dk<YWbf;Zk;k;MeoV1n3
 R2
 R0
-w1632436103
-8C:/Users/lizhu/Desktop/ECE 550/Proj1/right_shift.v
-FC:/Users/lizhu/Desktop/ECE 550/Proj1/right_shift.v
-L0 1
 R3
+8C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project2/ECE-550/right_shift.v
+FC:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project2/ECE-550/right_shift.v
+L0 1
+R4
 r1
 !s85 0
 31
-R8
-!s107 C:/Users/lizhu/Desktop/ECE 550/Proj1/right_shift.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/lizhu/Desktop/ECE 550/Proj1|C:/Users/lizhu/Desktop/ECE 550/Proj1/right_shift.v|
-!i113 1
 R5
+!s107 C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project2/ECE-550/right_shift.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project2/ECE-550|C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project2/ECE-550/right_shift.v|
+!i113 1
 R6
+R7

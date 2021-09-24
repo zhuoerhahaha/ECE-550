@@ -1,5 +1,5 @@
 EDA Netlist Writer report for ALU
-Thu Sep 23 19:34:28 2021
+Fri Sep 24 12:21:42 2021
 Quartus Prime Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
 
 
@@ -37,7 +37,7 @@ agreement for further details.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Thu Sep 23 19:34:28 2021 ;
+; EDA Netlist Writer Status ; Successful - Fri Sep 24 12:21:42 2021 ;
 ; Revision Name             ; ALU                                   ;
 ; Top-level Entity Name     ; ALU                                   ;
 ; Family                    ; Cyclone IV E                          ;
@@ -66,13 +66,13 @@ agreement for further details.
 +---------------------------------------------------------------------------------------------------+---------------------------+
 
 
-+--------------------------------------------------------------+
-; Simulation Generated Files                                   ;
-+--------------------------------------------------------------+
-; Generated Files                                              ;
-+--------------------------------------------------------------+
-; C:/Users/lizhu/Desktop/ECE 550/Proj1/simulation/qsim//ALU.vo ;
-+--------------------------------------------------------------+
++-----------------------------------------------------------------------------------------------------+
+; Simulation Generated Files                                                                          ;
++-----------------------------------------------------------------------------------------------------+
+; Generated Files                                                                                     ;
++-----------------------------------------------------------------------------------------------------+
+; C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project2/ECE-550/simulation/qsim//ALU.vo ;
++-----------------------------------------------------------------------------------------------------+
 
 
 +-----------------------------+
@@ -95,14 +95,13 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: devices manufactured by Altera and sold by Altera or its 
     Info: authorized distributors.  Please refer to the applicable 
     Info: agreement for further details.
-    Info: Processing started: Thu Sep 23 19:34:27 2021
-Info: Command: quartus_eda --write_settings_files=off --functional=on --flatten_buses=off --simulation=on --tool=modelsim_oem --format=verilog --output_directory="C:/Users/lizhu/Desktop/ECE 550/Proj1/simulation/qsim/" ALU -c ALU
-Info (119006): Selected device EP4CE115F29C7 for design "ALU"
+    Info: Processing started: Fri Sep 24 12:21:41 2021
+Info: Command: quartus_eda --write_settings_files=off --functional=on --flatten_buses=off --simulation=on --tool=modelsim_oem --format=verilog --output_directory="C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project2/ECE-550/simulation/qsim/" ALU -c ALU
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (204019): Generated file ALU.vo in folder "C:/Users/lizhu/Desktop/ECE 550/Proj1/simulation/qsim//" for EDA simulation tool
+Info (204019): Generated file ALU.vo in folder "C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project2/ECE-550/simulation/qsim//" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4858 megabytes
-    Info: Processing ended: Thu Sep 23 19:34:28 2021
+    Info: Peak virtual memory: 4877 megabytes
+    Info: Processing ended: Fri Sep 24 12:21:42 2021
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 
