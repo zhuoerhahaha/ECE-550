@@ -7,33 +7,33 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-Z0 dC:/Users/lizhu/Desktop/ECE 550/Proj2_test/simulation/modelsim
+Z0 dC:/Users/lizhu/Desktop/ECE 550/Proj2/simulation/modelsim
 vdec2to4
-Z1 !s110 1633489147
+Z1 !s110 1633643990
 !i10b 1
 !s100 9O1]9U2@7c]fEO:8`>O<A1
-I:1:LE`;1TJTjEN>O2kzYF1
+IR0hfHUdR64S?TX@WKm>kk1
 Z2 VDg1SIo80bB@j0V0VzS_@n1
 R0
 Z3 w1633488735
-Z4 8C:/Users/lizhu/Desktop/ECE 550/Proj2_test/dec5to32.v
-Z5 FC:/Users/lizhu/Desktop/ECE 550/Proj2_test/dec5to32.v
+Z4 8C:/Users/lizhu/Desktop/ECE 550/Proj2/dec5to32.v
+Z5 FC:/Users/lizhu/Desktop/ECE 550/Proj2/dec5to32.v
 L0 1
 Z6 OV;L;10.4d;61
 r1
 !s85 0
 31
-Z7 !s108 1633489147.000000
-Z8 !s107 C:/Users/lizhu/Desktop/ECE 550/Proj2_test/dec5to32.v|
-Z9 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/lizhu/Desktop/ECE 550/Proj2_test|C:/Users/lizhu/Desktop/ECE 550/Proj2_test/dec5to32.v|
+Z7 !s108 1633643990.000000
+Z8 !s107 C:/Users/lizhu/Desktop/ECE 550/Proj2/dec5to32.v|
+Z9 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/lizhu/Desktop/ECE 550/Proj2|C:/Users/lizhu/Desktop/ECE 550/Proj2/dec5to32.v|
 !i113 1
 Z10 o-vlog01compat -work work
-Z11 !s92 -vlog01compat -work work {+incdir+C:/Users/lizhu/Desktop/ECE 550/Proj2_test}
+Z11 !s92 -vlog01compat -work work {+incdir+C:/Users/lizhu/Desktop/ECE 550/Proj2}
 vdec3to8
 R1
 !i10b 1
 !s100 0NAc7G@kK=1V7h2Oc:a_G1
-IfB]UTnX:eWba>_NeSXYlb2
+IRDFRObozKj<F44_^z>G`B1
 R2
 R0
 R3
@@ -54,7 +54,7 @@ vdec5to32
 R1
 !i10b 1
 !s100 `dHSm0ClJMK=egRJOfjMB0
-IkK_>Lh6c`lP72^D56SY=I2
+I7aTNFPBXYRSbIT=MR1H?R0
 R2
 R0
 R3
@@ -75,20 +75,20 @@ vdffe_ref
 R1
 !i10b 1
 !s100 JI=N5e_f4PLn0>RF:JZ<E1
-IFmTKZ[Gmzd<4Ki=1bWo]g1
+I01Z3hm:KzX=;^fV^ooNIa0
 R2
 R0
 w1633488712
-8C:/Users/lizhu/Desktop/ECE 550/Proj2_test/dffe_ref.v
-FC:/Users/lizhu/Desktop/ECE 550/Proj2_test/dffe_ref.v
+8C:/Users/lizhu/Desktop/ECE 550/Proj2/dffe_ref.v
+FC:/Users/lizhu/Desktop/ECE 550/Proj2/dffe_ref.v
 L0 1
 R6
 r1
 !s85 0
 31
 R7
-!s107 C:/Users/lizhu/Desktop/ECE 550/Proj2_test/dffe_ref.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/lizhu/Desktop/ECE 550/Proj2_test|C:/Users/lizhu/Desktop/ECE 550/Proj2_test/dffe_ref.v|
+!s107 C:/Users/lizhu/Desktop/ECE 550/Proj2/dffe_ref.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/lizhu/Desktop/ECE 550/Proj2|C:/Users/lizhu/Desktop/ECE 550/Proj2/dffe_ref.v|
 !i113 1
 R10
 R11
@@ -96,20 +96,20 @@ vmultipleAND
 R1
 !i10b 1
 !s100 QbO^A<BZj:RcV0gKD[k<>0
-I8:YjefDQKznk8`A6h@g8?1
+IPYNn2Mm_ZfbR]DNQaK@CT3
 R2
 R0
 w1633488695
-8C:/Users/lizhu/Desktop/ECE 550/Proj2_test/multipleAND.v
-FC:/Users/lizhu/Desktop/ECE 550/Proj2_test/multipleAND.v
+8C:/Users/lizhu/Desktop/ECE 550/Proj2/multipleAND.v
+FC:/Users/lizhu/Desktop/ECE 550/Proj2/multipleAND.v
 L0 1
 R6
 r1
 !s85 0
 31
 R7
-!s107 C:/Users/lizhu/Desktop/ECE 550/Proj2_test/multipleAND.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/lizhu/Desktop/ECE 550/Proj2_test|C:/Users/lizhu/Desktop/ECE 550/Proj2_test/multipleAND.v|
+!s107 C:/Users/lizhu/Desktop/ECE 550/Proj2/multipleAND.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/lizhu/Desktop/ECE 550/Proj2|C:/Users/lizhu/Desktop/ECE 550/Proj2/multipleAND.v|
 !i113 1
 R10
 R11
@@ -118,41 +118,41 @@ vregfile
 R1
 !i10b 1
 !s100 2MnkmiQ`mHAUY<HoMgo3B1
-I`m_PVCmJbB@DbQbNdi2nB1
+I^ci>[YmOj27Z5PhC3R;Ln2
 R2
 R0
 w1633488654
-8C:/Users/lizhu/Desktop/ECE 550/Proj2_test/regfile.v
-FC:/Users/lizhu/Desktop/ECE 550/Proj2_test/regfile.v
+8C:/Users/lizhu/Desktop/ECE 550/Proj2/regfile.v
+FC:/Users/lizhu/Desktop/ECE 550/Proj2/regfile.v
 L0 1
 R6
 r1
 !s85 0
 31
 R7
-!s107 C:/Users/lizhu/Desktop/ECE 550/Proj2_test/regfile.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/lizhu/Desktop/ECE 550/Proj2_test|C:/Users/lizhu/Desktop/ECE 550/Proj2_test/regfile.v|
+!s107 C:/Users/lizhu/Desktop/ECE 550/Proj2/regfile.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/lizhu/Desktop/ECE 550/Proj2|C:/Users/lizhu/Desktop/ECE 550/Proj2/regfile.v|
 !i113 1
 R10
 R11
 vregfile_tb
 R1
 !i10b 1
-!s100 ?3=3]JfUYPWN0R]WJzE151
-ISzi4OT4Nm:E58Uz>DZ0RH3
+!s100 IZF`mVj]l0U^l6U2<ddA23
+Ig5jN>jHo76Th<<e;I8_?02
 R2
 R0
-w1633489137
-8C:/Users/lizhu/Desktop/ECE 550/Proj2_test/regfile_tb.v
-FC:/Users/lizhu/Desktop/ECE 550/Proj2_test/regfile_tb.v
+w1633643982
+8C:/Users/lizhu/Desktop/ECE 550/Proj2/regfile_tb.v
+FC:/Users/lizhu/Desktop/ECE 550/Proj2/regfile_tb.v
 L0 3
 R6
 r1
 !s85 0
 31
 R7
-!s107 C:/Users/lizhu/Desktop/ECE 550/Proj2_test/regfile_tb.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/lizhu/Desktop/ECE 550/Proj2_test|C:/Users/lizhu/Desktop/ECE 550/Proj2_test/regfile_tb.v|
+!s107 C:/Users/lizhu/Desktop/ECE 550/Proj2/regfile_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/lizhu/Desktop/ECE 550/Proj2|C:/Users/lizhu/Desktop/ECE 550/Proj2/regfile_tb.v|
 !i113 1
 R10
 R11

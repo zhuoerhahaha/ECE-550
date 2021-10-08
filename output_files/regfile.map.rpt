@@ -1,5 +1,5 @@
 Analysis & Synthesis report for regfile
-Tue Oct 05 22:54:55 2021
+Thu Oct 07 17:34:38 2021
 Quartus Prime Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
 
 
@@ -44,7 +44,7 @@ agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Tue Oct 05 22:54:55 2021       ;
+; Analysis & Synthesis Status        ; Successful - Thu Oct 07 17:34:38 2021       ;
 ; Quartus Prime Version              ; 16.0.0 Build 211 04/27/2016 SJ Lite Edition ;
 ; Revision Name                      ; regfile                                     ;
 ; Top-level Entity Name              ; regfile                                     ;
@@ -169,16 +169,16 @@ agreement for further details.
 +----------------------------+-------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                          ;
-+----------------------------------+-----------------+------------------------+---------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                            ; Library ;
-+----------------------------------+-----------------+------------------------+---------------------------------------------------------+---------+
-; regfile.v                        ; yes             ; User Verilog HDL File  ; C:/Users/lizhu/Desktop/ECE 550/Proj2_test/regfile.v     ;         ;
-; multipleAND.v                    ; yes             ; User Verilog HDL File  ; C:/Users/lizhu/Desktop/ECE 550/Proj2_test/multipleAND.v ;         ;
-; dffe_ref.v                       ; yes             ; User Verilog HDL File  ; C:/Users/lizhu/Desktop/ECE 550/Proj2_test/dffe_ref.v    ;         ;
-; dec5to32.v                       ; yes             ; User Verilog HDL File  ; C:/Users/lizhu/Desktop/ECE 550/Proj2_test/dec5to32.v    ;         ;
-+----------------------------------+-----------------+------------------------+---------------------------------------------------------+---------+
++--------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                     ;
++----------------------------------+-----------------+------------------------+----------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                       ; Library ;
++----------------------------------+-----------------+------------------------+----------------------------------------------------+---------+
+; regfile.v                        ; yes             ; User Verilog HDL File  ; C:/Users/lizhu/Desktop/ECE 550/Proj2/regfile.v     ;         ;
+; multipleAND.v                    ; yes             ; User Verilog HDL File  ; C:/Users/lizhu/Desktop/ECE 550/Proj2/multipleAND.v ;         ;
+; dffe_ref.v                       ; yes             ; User Verilog HDL File  ; C:/Users/lizhu/Desktop/ECE 550/Proj2/dffe_ref.v    ;         ;
+; dec5to32.v                       ; yes             ; User Verilog HDL File  ; C:/Users/lizhu/Desktop/ECE 550/Proj2/dec5to32.v    ;         ;
++----------------------------------+-----------------+------------------------+----------------------------------------------------+---------+
 
 
 +-----------------------------------------------------------+
@@ -314,28 +314,28 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
-    Info: Processing started: Tue Oct 05 22:54:44 2021
+    Info: Processing started: Thu Oct 07 17:34:29 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off regfile -c regfile
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file regfile.v
-    Info (12023): Found entity 1: regfile File: C:/Users/lizhu/Desktop/ECE 550/Proj2_test/regfile.v Line: 1
+    Info (12023): Found entity 1: regfile File: C:/Users/lizhu/Desktop/ECE 550/Proj2/regfile.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file regfile_tb.v
-    Info (12023): Found entity 1: regfile_tb File: C:/Users/lizhu/Desktop/ECE 550/Proj2_test/regfile_tb.v Line: 3
+    Info (12023): Found entity 1: regfile_tb File: C:/Users/lizhu/Desktop/ECE 550/Proj2/regfile_tb.v Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file multipleand.v
-    Info (12023): Found entity 1: multipleAND File: C:/Users/lizhu/Desktop/ECE 550/Proj2_test/multipleAND.v Line: 1
+    Info (12023): Found entity 1: multipleAND File: C:/Users/lizhu/Desktop/ECE 550/Proj2/multipleAND.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file dffe_ref.v
-    Info (12023): Found entity 1: dffe_ref File: C:/Users/lizhu/Desktop/ECE 550/Proj2_test/dffe_ref.v Line: 1
+    Info (12023): Found entity 1: dffe_ref File: C:/Users/lizhu/Desktop/ECE 550/Proj2/dffe_ref.v Line: 1
 Info (12021): Found 3 design units, including 3 entities, in source file dec5to32.v
-    Info (12023): Found entity 1: dec2to4 File: C:/Users/lizhu/Desktop/ECE 550/Proj2_test/dec5to32.v Line: 1
-    Info (12023): Found entity 2: dec3to8 File: C:/Users/lizhu/Desktop/ECE 550/Proj2_test/dec5to32.v Line: 17
-    Info (12023): Found entity 3: dec5to32 File: C:/Users/lizhu/Desktop/ECE 550/Proj2_test/dec5to32.v Line: 63
+    Info (12023): Found entity 1: dec2to4 File: C:/Users/lizhu/Desktop/ECE 550/Proj2/dec5to32.v Line: 1
+    Info (12023): Found entity 2: dec3to8 File: C:/Users/lizhu/Desktop/ECE 550/Proj2/dec5to32.v Line: 17
+    Info (12023): Found entity 3: dec5to32 File: C:/Users/lizhu/Desktop/ECE 550/Proj2/dec5to32.v Line: 63
 Info (12127): Elaborating entity "regfile" for the top level hierarchy
-Info (12128): Elaborating entity "dec5to32" for hierarchy "dec5to32:dec0" File: C:/Users/lizhu/Desktop/ECE 550/Proj2_test/regfile.v Line: 17
-Info (12128): Elaborating entity "dec2to4" for hierarchy "dec5to32:dec0|dec2to4:d0" File: C:/Users/lizhu/Desktop/ECE 550/Proj2_test/dec5to32.v Line: 69
-Info (12128): Elaborating entity "dec3to8" for hierarchy "dec5to32:dec0|dec3to8:d1" File: C:/Users/lizhu/Desktop/ECE 550/Proj2_test/dec5to32.v Line: 70
-Info (12128): Elaborating entity "multipleAND" for hierarchy "multipleAND:AND0" File: C:/Users/lizhu/Desktop/ECE 550/Proj2_test/regfile.v Line: 19
-Info (12128): Elaborating entity "dffe_ref" for hierarchy "dffe_ref:writetoFlipFlop[0].flipflop" File: C:/Users/lizhu/Desktop/ECE 550/Proj2_test/regfile.v Line: 24
+Info (12128): Elaborating entity "dec5to32" for hierarchy "dec5to32:dec0" File: C:/Users/lizhu/Desktop/ECE 550/Proj2/regfile.v Line: 17
+Info (12128): Elaborating entity "dec2to4" for hierarchy "dec5to32:dec0|dec2to4:d0" File: C:/Users/lizhu/Desktop/ECE 550/Proj2/dec5to32.v Line: 69
+Info (12128): Elaborating entity "dec3to8" for hierarchy "dec5to32:dec0|dec3to8:d1" File: C:/Users/lizhu/Desktop/ECE 550/Proj2/dec5to32.v Line: 70
+Info (12128): Elaborating entity "multipleAND" for hierarchy "multipleAND:AND0" File: C:/Users/lizhu/Desktop/ECE 550/Proj2/regfile.v Line: 19
+Info (12128): Elaborating entity "dffe_ref" for hierarchy "dffe_ref:writetoFlipFlop[0].flipflop" File: C:/Users/lizhu/Desktop/ECE 550/Proj2/regfile.v Line: 24
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
@@ -344,9 +344,9 @@ Info (21057): Implemented 2522 device resources after synthesis - the final reso
     Info (21059): Implemented 64 output pins
     Info (21061): Implemented 2408 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4997 megabytes
-    Info: Processing ended: Tue Oct 05 22:54:55 2021
-    Info: Elapsed time: 00:00:11
-    Info: Total CPU time (on all processors): 00:00:23
+    Info: Peak virtual memory: 4993 megabytes
+    Info: Processing ended: Thu Oct 07 17:34:38 2021
+    Info: Elapsed time: 00:00:09
+    Info: Total CPU time (on all processors): 00:00:18
 
 

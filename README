@@ -1,0 +1,10 @@
+For the write block, we first design a 5 to 32 decoder, which is built using one 2 to 4 decoder as controll bits and four 3 to 8 decoder. The detailed implementation is inside the file dec5to32.v
+Then, we AND the wirteEnable bit with the 32 bits from the decoder to form 32 controll/enable bits for the flipflop. Lastly, we used a for loop to control the 32 flip flops, feeding in the writingData, clock
+    and the writeEnable bits.
+For the read block, we use the 5 to 32 decoder again, and get the 32 DFF outputs. 
+Additionally, we use the ternary operator to let read port to choose the right 32 bits from the specific DFF output.
+
+
+
+
+Our module has a maximum of 10GHz of clock frequency. We tested it by changing the time between each flip of the clock. We ended up getting error when we toggle the clock every 0.04 ns. We concluded that the frequency edge of our clock would be 10GHz(1/(2*0.05ns)).

@@ -1,5 +1,5 @@
 // ---------- SAMPLE TEST BENCH ----------
-`timescale 1 ns / 100 ps
+`timescale 0.1 ns / 100 ps
 module regfile_tb();
     // inputs to the DUT are reg type
     reg            clock, ctrl_writeEn, ctrl_reset;
@@ -14,7 +14,7 @@ module regfile_tb();
     integer index;    // for testing...
 
     // instantiate the DUT
-    Regfile regfile_ut (clock, ctrl_writeEn, ctrl_reset, ctrl_writeReg,
+    regfile regfile_ut (clock, ctrl_writeEn, ctrl_reset, ctrl_writeReg,
         ctrl_readRegA, ctrl_readRegB, data_writeReg, data_readRegA, data_readRegB);
 
     // setting the initial values of all the reg

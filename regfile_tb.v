@@ -51,8 +51,8 @@ module regfile_tb();
 
     // Clock generator
     always
-         #10     clock = ~clock;    // toggle
-
+         #0.045     clock = ~clock;    // toggle
+				
     // Task for writing
     task writeRegister;
 
