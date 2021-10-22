@@ -9,7 +9,7 @@ module control(opcode, DMwe, Rwe, Rwd, Rdst, ALUinB, is_Rtype, is_addi, is_lw, i
 	
 	assign DMwe = is_sw;          
 	assign Rwe = is_Rtype || is_addi || is_sw;
-	assign Rwd = is_lw;          //rwd == 0 when need to write to reg file from dmem
+	assign Rwd = is_lw;         //rwd == 0 for lw, 1 for r_type & i_type
 	assign Rdst = is_Rtype;     //rdst == 1 when R type is performed
 	assign ALUinB = is_Rtype;   //aluinb == 1 when r type is performed(select data from regfile instead of constant)
 	

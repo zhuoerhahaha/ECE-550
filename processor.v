@@ -79,7 +79,7 @@ module processor(
     input [31:0] q_imem;            //the actual instruction
 
     // Dmem
-    output [11:0] address`_dmem;
+    output [11:0] address_dmem;
     output [31:0] data;
     output wren;
     input [31:0] q_dmem;
@@ -92,41 +92,47 @@ module processor(
 
     /* YOUR CODE STARTS HERE */
 	 
-	 wire DMwe, Rwe, Rwd, Rdst, ALUinB, is_Rtype, is_addi, is_sw, is_lw, is_equal, is_lessthan, ove;
-	 wire[31:0] sx;                                         //sign extended immediate 
-	 wire[31:0] aluout;                                     //output of alu
-	 wire[4:0] opcode;
-	 wire[31:0] pc_in, pc_out;
-	 //some pc
-	 
-	 
-	 assign opcode = q_imem[31:27];
-	 control control_signal(opcode, DMwe, Rwe, Rwd, Rdst, ALUinB, is_Rtype, is_addi, is_sw, is_lw); 
-	 
-	 sign_extend extending(q_imem[15:0], sx);
-	 
-	 wire[4:0] ALUop = is_Rtype ? opcode : q_imem[6:2];
-	 wire[4:0] shamt = is_Rtype ? 5'b0 : q_imem[11:7];
-	 
-	 assign data_readB = ALUinB ? 
-	 
-	 
-	 //alu module alu(data_operandA, data_operandB, ctrl_ALUopcode,
-			//ctrl_shiftamt, data_result, isNotEqual, isLessThan, overflow);
-	 alu myalu(data_readRegA, data_readRegB, ALUop, shamt, aluout, is_equal, is_lessthan, ove);
-	 
-	 
-	 
-	 
-	 
-	 
-	 
-	 
-	 
-	 
-	 
-	 
-	 
-	 
+    wire DMwe, Rwe, Rwd, Rdst, ALUinB, is_Rtype, is_addi, is_sw, is_lw, is_equal, is_lessthan, ove;
+    wire[31:0] sx;                                         //sign extended immediate 
+    wire[31:0] aluout;                                     //output of alu
+    wire[31:0] data_writeBack;
+    wire[4:0] opcode;
+    wire[31:0] pc_in, pc_out;
+    //some pc
+    
+    
+    assign opcode = q_imem[31:27];
+    control control_signal(opcode, DMwe, Rwe, Rwd, Rdst, ALUinB, is_Rtype, is_addi, is_sw, is_lw); 
+    
+    sign_extend extending(q_imem[15:0], sx);
+    
+    wire[4:0] ALUop = is_Rtype ? opcode : q_imem[6:2];
+    wire[4:0] shamt = is_Rtype ? 5'b0 : q_imem[11:7];
+    
+    assign data_readB = ALUinB ? sx : data_readRegB;         //select data to feed into ALU_B
+    
+    
+    //alu module alu(data_operandA, data_operandB, ctrl_ALUopcode,
+        //ctrl_shiftamt, data_result, isNotEqual, isLessThan, overflow);
+    alu myalu(data_readRegA, data_readB, ALUop, shamt, aluout, is_equal, is_lessthan, ove);
+    
+    //dmem
+    assign data = data_readRegB;                       //only needed in sw, feed regB into data
+    assign wren = DMwe;
+    assign address_dmem =  aluout[11:0]                //?
 
+    //writeback
+    assign data_writeBack = Rwd ? q_dmem : aluout;        //select from dmem when write_back is 0; slect from alu when it's r_type or addi
+    assign ctrl_writeEnable = Rwe;
+    assign address_writeback = q_imem[26:22];     //rd
+    assign ctrl_writeReg = ove ? 32'd30 : address_writeback;
+    assign ctrl_readRegA = q_imem[21:17];                            //rs
+    assign ctrl_readRegB = q_imem[16:12];                            // 
+
+    //handle the $r30 & $r0
+    thing1[31:0] = ALUop[0] ? 32'd2 : 32'd1;
+    thing2[31:0] = is_Rtype ? thing1 : 32'd3;
+    thing3[31:0] = ove ? thing2 : data_writeBack;
+    wire r0 = ctrl_writeReg[4] ? 1 : ctrl_writeReg[3] ? 1 : ctrl_writeReg[2]? 1 : ctrl_writeReg[1]? 1 : ctrl_writeReg[0]? 1 : 0;
+    data_writeReg = r0 ? thing3 : 32'd0;
 endmodule
