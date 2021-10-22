@@ -99,7 +99,7 @@ module processor(
     wire[4:0] opcode;
     wire[31:0] pc_in, pc_out;
     //some pc
-    
+    pc mypc1(.clock(clock), .reset(reset), .pc_in(32'd0), .pc_out(pc_out)); 
     
     assign opcode = q_imem[31:27];
     control control_signal(opcode, DMwe, Rwe, Rwd, Rdst, ALUinB, is_Rtype, is_addi, is_sw, is_lw); 
