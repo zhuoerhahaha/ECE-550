@@ -91,4 +91,3 @@ module skeleton(clock, reset, imem_clock, dmem_clock, processor_clock, regfile_c
     );
 
 endmodule
- `
