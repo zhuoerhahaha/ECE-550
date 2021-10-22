@@ -98,28 +98,27 @@ module processor(
     wire[31:0] data_writeBack;
     wire[4:0] opcode;
     wire[31:0] pc_in, pc_out;
+
     //some pc
     pc mypc1(.clock(clock), .reset(reset), .pc_in(32'd0), .pc_out(pc_out)); 
     
-    assign opcode = q_imem[31:27];
-    control control_signal(opcode, DMwe, Rwe, Rwd, Rdst, ALUinB, is_Rtype, is_addi, is_sw, is_lw); 
+    assign opcode = q_imem[31:27];                           //op code
+    control control_signal(opcode, DMwe, Rwe, Rwd, Rdst, ALUinB, is_Rtype, is_addi, is_sw, is_lw);                         //control signal
+    sign_extend extending(q_imem[15:0], sx);                 //sign extending
     
-    sign_extend extending(q_imem[15:0], sx);
-    
-    wire[4:0] ALUop = is_Rtype ? opcode : q_imem[6:2];
-    wire[4:0] shamt = is_Rtype ? 5'b0 : q_imem[11:7];
-    
+    wire[4:0] ALUop = is_Rtype ? opcode : q_imem[6:2];       //function code
+    wire[4:0] shamt = is_Rtype ? 5'b0 : q_imem[11:7];        //shift amount
     assign data_readB = ALUinB ? sx : data_readRegB;         //select data to feed into ALU_B
     
     
-    //alu module alu(data_operandA, data_operandB, ctrl_ALUopcode,
-        //ctrl_shiftamt, data_result, isNotEqual, isLessThan, overflow);
+    //alu module
     alu myalu(data_readRegA, data_readB, ALUop, shamt, aluout, is_equal, is_lessthan, ove);
     
     //dmem
     assign data = data_readRegB;                       //only needed in sw, feed regB into data
     assign wren = DMwe;
     assign address_dmem =  aluout[11:0]                //?
+
 
     //writeback
     assign data_writeBack = Rwd ? q_dmem : aluout;        //select from dmem when write_back is 0; slect from alu when it's r_type or addi
@@ -130,9 +129,9 @@ module processor(
     assign ctrl_readRegB = q_imem[16:12];                            // 
 
     //handle the $r30 & $r0
-    thing1[31:0] = ALUop[0] ? 32'd2 : 32'd1;
-    thing2[31:0] = is_Rtype ? thing1 : 32'd3;
-    thing3[31:0] = ove ? thing2 : data_writeBack;
+    wire data_writeBack2[31:0] = ALUop[0] ? 32'd2 : 32'd1;
+    wire data_writeBack3[31:0] = is_Rtype ? data_writeBack2 : 32'd3;
+    wire data_writeBack4[31:0] = ove ? data_writeBack3 : data_writeBack;
     wire r0 = ctrl_writeReg[4] ? 1 : ctrl_writeReg[3] ? 1 : ctrl_writeReg[2]? 1 : ctrl_writeReg[1]? 1 : ctrl_writeReg[0]? 1 : 0;
-    data_writeReg = r0 ? thing3 : 32'd0;
+    data_writeReg = r0 ? data_writeBack4 : 32'd0;
 endmodule
