@@ -1,5 +1,5 @@
 Analysis & Synthesis report for skeleton
-Sun Oct 24 22:06:13 2021
+Sun Oct 24 22:24:31 2021
 Quartus Prime Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
 
 
@@ -44,7 +44,7 @@ agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sun Oct 24 22:06:13 2021       ;
+; Analysis & Synthesis Status        ; Successful - Sun Oct 24 22:24:31 2021       ;
 ; Quartus Prime Version              ; 16.0.0 Build 211 04/27/2016 SJ Lite Edition ;
 ; Revision Name                      ; skeleton                                    ;
 ; Top-level Entity Name              ; control                                     ;
@@ -198,7 +198,7 @@ agreement for further details.
 ;                                             ;                 ;
 ; Embedded Multiplier 9-bit elements          ; 0               ;
 ;                                             ;                 ;
-; Maximum fan-out node                        ; opcode[3]~input ;
+; Maximum fan-out node                        ; opcode[1]~input ;
 ; Maximum fan-out                             ; 4               ;
 ; Total fan-out                               ; 42              ;
 ; Average fan-out                             ; 1.20            ;
@@ -263,7 +263,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
-    Info: Processing started: Sun Oct 24 22:06:05 2021
+    Info: Processing started: Sun Oct 24 22:24:23 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off skeleton -c skeleton
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
@@ -299,10 +299,10 @@ Info (21057): Implemented 21 device resources after synthesis - the final resour
     Info (21059): Implemented 9 output pins
     Info (21061): Implemented 7 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4982 megabytes
-    Info: Processing ended: Sun Oct 24 22:06:13 2021
+    Info: Peak virtual memory: 4983 megabytes
+    Info: Processing ended: Sun Oct 24 22:24:31 2021
     Info: Elapsed time: 00:00:08
-    Info: Total CPU time (on all processors): 00:00:17
+    Info: Total CPU time (on all processors): 00:00:18
 
 
 +------------------------------------------+

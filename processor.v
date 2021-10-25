@@ -110,7 +110,7 @@ module processor(
     
     wire[4:0] ALUop = is_Rtype ? q_imem[6:2] : opcode;       //function code
     wire[4:0] shamt = q_imem[11:7];                          //shift amount
-    assign data_readB = ALUinB ? data_readRegB : sx;         //select data to feed into ALU_B
+    assign data_readB = ALUinB ? sx : data_readRegB;         //select data to feed into ALU_B
     
     
     //alu module

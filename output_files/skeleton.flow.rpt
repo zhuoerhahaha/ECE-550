@@ -1,5 +1,5 @@
 Flow report for skeleton
-Sun Oct 24 22:06:13 2021
+Sun Oct 24 22:25:24 2021
 Quartus Prime Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
 
 
@@ -41,7 +41,7 @@ agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Sun Oct 24 22:06:13 2021       ;
+; Flow Status                        ; Successful - Sun Oct 24 22:25:24 2021       ;
 ; Quartus Prime Version              ; 16.0.0 Build 211 04/27/2016 SJ Lite Edition ;
 ; Revision Name                      ; skeleton                                    ;
 ; Top-level Entity Name              ; control                                     ;
@@ -65,7 +65,7 @@ agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 10/24/2021 22:06:05 ;
+; Start date & time ; 10/24/2021 22:24:23 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; skeleton            ;
 +-------------------+---------------------+
@@ -76,7 +76,7 @@ agreement for further details.
 +-------------------------------------+---------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                     ; Value                                 ; Default Value ; Entity Name ; Section Id     ;
 +-------------------------------------+---------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 71384935467247.163512756519252        ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID               ; 71384935467247.163512866310796        ; --            ; --          ; --             ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl                           ; --            ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (Verilog)             ; <None>        ; --          ; --             ;
 ; EDA_TIME_SCALE                      ; 1 ps                                  ; --            ; --          ; eda_simulation ;
@@ -99,8 +99,12 @@ agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:08     ; 1.0                     ; 4982 MB             ; 00:00:17                           ;
-; Total                ; 00:00:08     ; --                      ; --                  ; 00:00:17                           ;
+; Analysis & Synthesis ; 00:00:08     ; 1.0                     ; 4983 MB             ; 00:00:17                           ;
+; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 4853 MB             ; 00:00:00                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4858 MB             ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4854 MB             ; 00:00:00                           ;
+; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 4858 MB             ; 00:00:00                           ;
+; Total                ; 00:00:10     ; --                      ; --                  ; 00:00:18                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -110,6 +114,10 @@ agreement for further details.
 ; Module Name          ; Machine Hostname ; OS Name   ; OS Version ; Processor type ;
 +----------------------+------------------+-----------+------------+----------------+
 ; Analysis & Synthesis ; Colin            ; Windows 8 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer   ; Colin            ; Windows 8 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer   ; Colin            ; Windows 8 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer   ; Colin            ; Windows 8 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer   ; Colin            ; Windows 8 ; 6.2        ; x86_64         ;
 +----------------------+------------------+-----------+------------+----------------+
 
 
@@ -117,6 +125,10 @@ agreement for further details.
 ; Flow Log ;
 ------------
 quartus_map --read_settings_files=on --write_settings_files=off skeleton -c skeleton
+quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off skeleton -c skeleton --vector_source=C:/Users/lizhu/Desktop/ECE550/Proj3/Waveform2.vwf --testbench_file=C:/Users/lizhu/Desktop/ECE550/Proj3/simulation/qsim/Waveform2.vwf.vt
+quartus_eda --write_settings_files=off --functional=on --flatten_buses=off --simulation=on --tool=modelsim_oem --format=verilog --output_directory=C:/Users/lizhu/Desktop/ECE550/Proj3/simulation/qsim/ skeleton -c skeleton
+quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off skeleton -c skeleton --vector_source=C:/Users/lizhu/Desktop/ECE550/Proj3/Waveform2.vwf --testbench_file=C:/Users/lizhu/Desktop/ECE550/Proj3/simulation/qsim/Waveform2.vwf.vt
+quartus_eda --write_settings_files=off --functional=on --flatten_buses=off --simulation=on --tool=modelsim_oem --format=verilog --output_directory=C:/Users/lizhu/Desktop/ECE550/Proj3/simulation/qsim/ skeleton -c skeleton
 
 
 

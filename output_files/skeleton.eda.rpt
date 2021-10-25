@@ -1,5 +1,5 @@
 EDA Netlist Writer report for skeleton
-Thu Oct 21 21:43:56 2021
+Sun Oct 24 22:25:24 2021
 Quartus Prime Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
 
 
@@ -37,9 +37,9 @@ agreement for further details.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Thu Oct 21 21:43:56 2021 ;
+; EDA Netlist Writer Status ; Successful - Sun Oct 24 22:25:24 2021 ;
 ; Revision Name             ; skeleton                              ;
-; Top-level Entity Name     ; sign_extend                           ;
+; Top-level Entity Name     ; control                               ;
 ; Family                    ; Cyclone IV E                          ;
 ; Simulation Files Creation ; Successful                            ;
 +---------------------------+---------------------------------------+
@@ -95,14 +95,14 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: devices manufactured by Altera and sold by Altera or its 
     Info: authorized distributors.  Please refer to the applicable 
     Info: agreement for further details.
-    Info: Processing started: Thu Oct 21 21:43:56 2021
+    Info: Processing started: Sun Oct 24 22:25:24 2021
 Info: Command: quartus_eda --write_settings_files=off --functional=on --flatten_buses=off --simulation=on --tool=modelsim_oem --format=verilog --output_directory=C:/Users/lizhu/Desktop/ECE550/Proj3/simulation/qsim/ skeleton -c skeleton
 Info (119006): Selected device EP4CE115F29C7 for design "skeleton"
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (204019): Generated file skeleton.vo in folder "C:/Users/lizhu/Desktop/ECE550/Proj3/simulation/qsim//" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
     Info: Peak virtual memory: 4858 megabytes
-    Info: Processing ended: Thu Oct 21 21:43:56 2021
+    Info: Processing ended: Sun Oct 24 22:25:24 2021
     Info: Elapsed time: 00:00:00
     Info: Total CPU time (on all processors): 00:00:01
 

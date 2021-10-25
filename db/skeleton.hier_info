@@ -1,15 +1,15 @@
 |control
 opcode[0] => is_addi.IN1
 opcode[0] => is_sw.IN1
-opcode[0] => is_Rtype.IN1
 opcode[0] => is_lw.IN1
+opcode[0] => is_Rtype.IN1
 opcode[1] => is_sw.IN1
+opcode[1] => is_lw.IN1
 opcode[1] => is_addi.IN1
 opcode[1] => is_Rtype.IN1
-opcode[1] => is_lw.IN1
 opcode[2] => is_sw.IN1
-opcode[2] => is_Rtype.IN1
 opcode[2] => is_lw.IN1
+opcode[2] => is_Rtype.IN1
 opcode[3] => is_lw.IN0
 opcode[3] => is_sw.IN0
 opcode[4] => is_sw.IN1

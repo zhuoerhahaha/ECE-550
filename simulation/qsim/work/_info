@@ -8,28 +8,68 @@ z2
 !i10f 100
 cModel Technology
 Z0 dC:/Users/lizhu/Desktop/ECE550/Proj3/simulation/qsim
-vsign_extend
-Z1 !s110 1634867037
+vcontrol
+Z1 !s110 1635128725
 !i10b 1
-!s100 4h`M_[lDeAE4];VOK53bm3
-I;9Q7:d[e7>KI7Ze<h88O30
+!s100 RafkI]o:bVzNfBQALULI?0
+I8gCK43U=Qb;_jW6ziV92H2
 Z2 VDg1SIo80bB@j0V0VzS_@n1
 R0
-w1634867036
-8skeleton.vo
-Fskeleton.vo
-L0 32
-Z3 OV;L;10.4d;61
+Z3 w1635128724
+Z4 8skeleton.vo
+Z5 Fskeleton.vo
+Z6 L0 32
+Z7 OV;L;10.4d;61
 r1
 !s85 0
 31
-Z4 !s108 1634867037.000000
-!s107 skeleton.vo|
-!s90 -work|work|skeleton.vo|
+Z8 !s108 1635128725.000000
+Z9 !s107 skeleton.vo|
+Z10 !s90 -work|work|skeleton.vo|
 !i113 1
-Z5 o-work work
-vsign_extend_vlg_vec_tst
+Z11 o-work work
+vcontrol_vlg_vec_tst
 R1
+!i10b 1
+!s100 l]Lk`=@:2WRI<Id>6>Of83
+IPT9enmED=F>>AYLI2jeWh1
+R2
+R0
+R3
+8Waveform2.vwf.vt
+FWaveform2.vwf.vt
+Z12 L0 30
+R7
+r1
+!s85 0
+31
+R8
+!s107 Waveform2.vwf.vt|
+!s90 -work|work|Waveform2.vwf.vt|
+!i113 1
+R11
+vsign_extend
+Z13 !s110 1634867037
+!i10b 1
+!s100 4h`M_[lDeAE4];VOK53bm3
+I;9Q7:d[e7>KI7Ze<h88O30
+R2
+R0
+w1634867036
+R4
+R5
+R6
+R7
+r1
+!s85 0
+31
+Z14 !s108 1634867037.000000
+R9
+R10
+!i113 1
+R11
+vsign_extend_vlg_vec_tst
+R13
 !i10b 1
 !s100 jU>X:AFUY4A[W?>YY>7?53
 II>N>FJB1_OCX41heZc:Za2
@@ -38,13 +78,13 @@ R0
 w1634867035
 8Waveform1.vwf.vt
 FWaveform1.vwf.vt
-L0 30
-R3
+R12
+R7
 r1
 !s85 0
 31
-R4
+R14
 !s107 Waveform1.vwf.vt|
 !s90 -work|work|Waveform1.vwf.vt|
 !i113 1
-R5
+R11
