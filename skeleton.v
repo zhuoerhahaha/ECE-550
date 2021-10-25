@@ -19,11 +19,24 @@ module skeleton(clock, reset, imem_clock, dmem_clock, processor_clock, regfile_c
         based on proper functioning with this clock.
     */
     output imem_clock, dmem_clock, processor_clock, regfile_clock;
+	 
+	 //Temporary for testing
+	 wire temp_clock;
+	 clk_div_4 clk_PC( .clk(clock), .reset(reset), .clk_out(processor_clock));
+	 
+	 clk_div_2 clk_2( .clk(clock), .rst(reset), .clk_out(temp_clock));
+	 
+	 clock_inverter clk_RegFile(.clock_in(temp_clock),.clock_out(regfile_clock));
+	 clock_inverter clk_IMEM(.clock_in(clock),.clock_out(imem_clock));
+	 assign dmem_clock = imem_clock;
+	 
 
     /** IMEM **/
     // Figure out how to generate a Quartus syncram component and commit the generated verilog file.
     // Make sure you configure it correctly!
-    wire [11:0] address_imem;
+	 
+    output [11:0] address_imem;    // original wire [11:0] address_imem;
+	 
     wire [31:0] q_imem;
     imem my_imem(
         .address    (address_imem),            // address of data
