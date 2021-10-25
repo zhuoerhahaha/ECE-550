@@ -48,8 +48,48 @@ R8
 !s90 -work|work|Waveform2.vwf.vt|
 !i113 1
 R11
+vprocessor
+Z13 !s110 1635132951
+!i10b 1
+!s100 PV4hRi8mT5?6CKU2=9=YI0
+I]H;K[YE2RbdARmDchme:j3
+R2
+Z14 dC:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project3_1/ECE-550/simulation/qsim
+w1635132950
+R4
+R5
+R6
+R7
+r1
+!s85 0
+31
+!s108 1635132950.000000
+R9
+R10
+!i113 1
+R11
+vprocessor_vlg_vec_tst
+R13
+!i10b 1
+!s100 TCJ2CK<WcfjXehd5S^j933
+IMQB7jzJoQ?H1=H`m1Y[L00
+R2
+R14
+w1635132948
+8Waveform.vwf.vt
+FWaveform.vwf.vt
+R12
+R7
+r1
+!s85 0
+31
+!s108 1635132951.000000
+!s107 Waveform.vwf.vt|
+!s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R11
 vsign_extend
-Z13 !s110 1634867037
+Z15 !s110 1634867037
 !i10b 1
 !s100 4h`M_[lDeAE4];VOK53bm3
 I;9Q7:d[e7>KI7Ze<h88O30
@@ -63,13 +103,13 @@ R7
 r1
 !s85 0
 31
-Z14 !s108 1634867037.000000
+Z16 !s108 1634867037.000000
 R9
 R10
 !i113 1
 R11
 vsign_extend_vlg_vec_tst
-R13
+R15
 !i10b 1
 !s100 jU>X:AFUY4A[W?>YY>7?53
 II>N>FJB1_OCX41heZc:Za2
@@ -83,7 +123,7 @@ R7
 r1
 !s85 0
 31
-R14
+R16
 !s107 Waveform1.vwf.vt|
 !s90 -work|work|Waveform1.vwf.vt|
 !i113 1
