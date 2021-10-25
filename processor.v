@@ -89,17 +89,17 @@ module processor(
     output [4:0] ctrl_writeReg, ctrl_readRegA, ctrl_readRegB;
     output [31:0] data_writeReg;
     input [31:0] data_readRegA, data_readRegB;
-
+	
     /* YOUR CODE STARTS HERE */
 	
     wire DMwe, Rwe, Rwd, Rdst, ALUinB, is_Rtype, is_addi, is_sw, is_lw, is_equal, is_lessthan, ove;
     wire[31:0] sx;                                         //sign extended immediate 
 	 wire[31:0] data_readB;
     wire[31:0] aluout;                                     //output of alu
-    wire[31:0] data_writeBack;
+    wire[31:0] data_writeBack, data_writeBack2, data_writeBack3, data_writeBack4;
     wire[4:0] opcode;
     wire[31:0] pc_in, pc_out;
-	 wire[4:0] address_writeback, data_writeBack2, data_writeBack3, data_writeBack4;
+	 wire[4:0] address_writeback;
 	 wire[11:0] next_PC;
 
     //some pc
@@ -110,8 +110,8 @@ module processor(
 		else begin
 			address_imem <= next_PC;
 		end
-	end
-	assign next_pc = address_imem + 12'd1;
+	 end
+	 assign next_PC = address_imem + 12'd1;
     // 
     assign opcode = q_imem[31:27];                           //op code
     control control_signal(opcode, DMwe, Rwe, Rwd, Rdst, ALUinB, is_Rtype, is_addi, is_sw, is_lw);                         //control signal
@@ -135,7 +135,7 @@ module processor(
     assign data_writeBack = Rwd ? q_dmem : aluout;        //select from dmem when write_back is 0; slect from alu when it's r_type or addi
     assign ctrl_writeEnable = Rwe;
     assign address_writeback = q_imem[26:22];           //rd
-    assign ctrl_writeReg = ove ? 32'd30 : address_writeback;
+    assign ctrl_writeReg = ove ? 5'd30 : address_writeback;
     assign ctrl_readRegA = q_imem[21:17];                            //rs
     assign ctrl_readRegB = q_imem[16:12];                            // 
 
@@ -143,6 +143,6 @@ module processor(
     assign data_writeBack2 = ALUop[0] ? 32'd2 : 32'd1;
     assign data_writeBack3 = is_Rtype ? data_writeBack2 : 32'd3;
     assign data_writeBack4 = ove ? data_writeBack3 : data_writeBack;
-    wire r0 = ctrl_writeReg[4] ? 1 : ctrl_writeReg[3] ? 1 : ctrl_writeReg[2]? 1 : ctrl_writeReg[1]? 1 : ctrl_writeReg[0]? 1 : 0;
+    wire r0 = ctrl_writeReg[4] ? 1'b1 : ctrl_writeReg[3] ? 1'b1 : ctrl_writeReg[2]? 1'b1 : ctrl_writeReg[1]? 1'b1 : ctrl_writeReg[0]? 1'b1 : 1'b0;
     assign data_writeReg = r0 ? data_writeBack4 : 32'd0;
 endmodule

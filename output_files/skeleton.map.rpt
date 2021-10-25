@@ -1,9 +1,5 @@
 Analysis & Synthesis report for skeleton
-<<<<<<< HEAD
-Sun Oct 24 22:24:31 2021
-=======
-Sun Oct 24 22:23:56 2021
->>>>>>> 3c8f8417c09dec0272d18f58e54e5ac3585ca808
+Sun Oct 24 22:36:06 2021
 Quartus Prime Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
 
 
@@ -17,16 +13,15 @@ Quartus Prime Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
-  8. Registers Removed During Synthesis
-  9. General Register Statistics
- 10. Multiplexer Restructuring Statistics (Restructuring Performed)
- 11. Port Connectivity Checks: "alu:myalu"
- 12. Port Connectivity Checks: "sign_extend:extending"
- 13. Port Connectivity Checks: "control:control_signal"
- 14. Post-Synthesis Netlist Statistics for Top Partition
- 15. Elapsed Time Per Partition
- 16. Analysis & Synthesis Messages
- 17. Analysis & Synthesis Suppressed Messages
+  8. General Register Statistics
+  9. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 10. Port Connectivity Checks: "alu:myalu"
+ 11. Port Connectivity Checks: "sign_extend:extending"
+ 12. Port Connectivity Checks: "control:control_signal"
+ 13. Post-Synthesis Netlist Statistics for Top Partition
+ 14. Elapsed Time Per Partition
+ 15. Analysis & Synthesis Messages
+ 16. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -53,19 +48,15 @@ agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-<<<<<<< HEAD
-; Analysis & Synthesis Status        ; Successful - Sun Oct 24 22:24:31 2021       ;
-=======
-; Analysis & Synthesis Status        ; Successful - Sun Oct 24 22:23:56 2021       ;
->>>>>>> 3c8f8417c09dec0272d18f58e54e5ac3585ca808
+; Analysis & Synthesis Status        ; Successful - Sun Oct 24 22:36:06 2021       ;
 ; Quartus Prime Version              ; 16.0.0 Build 211 04/27/2016 SJ Lite Edition ;
 ; Revision Name                      ; skeleton                                    ;
 ; Top-level Entity Name              ; processor                                   ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 365                                         ;
-;     Total combinational functions  ; 365                                         ;
-;     Dedicated logic registers      ; 0                                           ;
-; Total registers                    ; 0                                           ;
+; Total logic elements               ; 581                                         ;
+;     Total combinational functions  ; 581                                         ;
+;     Dedicated logic registers      ; 12                                          ;
+; Total registers                    ; 12                                          ;
 ; Total pins                         ; 235                                         ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
@@ -170,23 +161,24 @@ agreement for further details.
 ; Maximum allowed            ; 6           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 1           ;
+; Maximum used               ; 6           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
+;     Processors 2-6         ;   0.0%      ;
 +----------------------------+-------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                              ;
-+----------------------------------+-----------------+------------------------+---------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                                                ; Library ;
-+----------------------------------+-----------------+------------------------+---------------------------------------------------------------------------------------------+---------+
-; processor.v                      ; yes             ; User Verilog HDL File  ; C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project3_1/ECE-550/processor.v   ;         ;
-; alu.v                            ; yes             ; User Verilog HDL File  ; C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project3_1/ECE-550/alu.v         ;         ;
-; control.v                        ; yes             ; User Verilog HDL File  ; C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project3_1/ECE-550/control.v     ;         ;
-; sign_extend.v                    ; yes             ; User Verilog HDL File  ; C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project3_1/ECE-550/sign_extend.v ;         ;
-+----------------------------------+-----------------+------------------------+---------------------------------------------------------------------------------------------+---------+
++-------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                    ;
++----------------------------------+-----------------+------------------------+---------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                      ; Library ;
++----------------------------------+-----------------+------------------------+---------------------------------------------------+---------+
+; processor.v                      ; yes             ; User Verilog HDL File  ; C:/Users/lizhu/Desktop/ECE550/Proj3/processor.v   ;         ;
+; alu.v                            ; yes             ; User Verilog HDL File  ; C:/Users/lizhu/Desktop/ECE550/Proj3/alu.v         ;         ;
+; control.v                        ; yes             ; User Verilog HDL File  ; C:/Users/lizhu/Desktop/ECE550/Proj3/control.v     ;         ;
+; sign_extend.v                    ; yes             ; User Verilog HDL File  ; C:/Users/lizhu/Desktop/ECE550/Proj3/sign_extend.v ;         ;
++----------------------------------+-----------------+------------------------+---------------------------------------------------+---------+
 
 
 +---------------------------------------------------------------+
@@ -194,37 +186,30 @@ agreement for further details.
 +---------------------------------------------+-----------------+
 ; Resource                                    ; Usage           ;
 +---------------------------------------------+-----------------+
-; Estimated Total logic elements              ; 365             ;
+; Estimated Total logic elements              ; 581             ;
 ;                                             ;                 ;
-; Total combinational functions               ; 365             ;
+; Total combinational functions               ; 581             ;
 ; Logic element usage by number of LUT inputs ;                 ;
-;     -- 4 input functions                    ; 188             ;
-;     -- 3 input functions                    ; 163             ;
-;     -- <=2 input functions                  ; 14              ;
+;     -- 4 input functions                    ; 298             ;
+;     -- 3 input functions                    ; 247             ;
+;     -- <=2 input functions                  ; 36              ;
 ;                                             ;                 ;
 ; Logic elements by mode                      ;                 ;
-;     -- normal mode                          ; 301             ;
-;     -- arithmetic mode                      ; 64              ;
+;     -- normal mode                          ; 507             ;
+;     -- arithmetic mode                      ; 74              ;
 ;                                             ;                 ;
-; Total registers                             ; 0               ;
-;     -- Dedicated logic registers            ; 0               ;
+; Total registers                             ; 12              ;
+;     -- Dedicated logic registers            ; 12              ;
 ;     -- I/O registers                        ; 0               ;
 ;                                             ;                 ;
 ; I/O pins                                    ; 235             ;
 ;                                             ;                 ;
 ; Embedded Multiplier 9-bit elements          ; 0               ;
 ;                                             ;                 ;
-<<<<<<< HEAD
-; Maximum fan-out node                        ; opcode[1]~input ;
-; Maximum fan-out                             ; 4               ;
-; Total fan-out                               ; 42              ;
-; Average fan-out                             ; 1.20            ;
-=======
 ; Maximum fan-out node                        ; q_imem[8]~input ;
-; Maximum fan-out                             ; 57              ;
-; Total fan-out                               ; 1570            ;
-; Average fan-out                             ; 1.88            ;
->>>>>>> 3c8f8417c09dec0272d18f58e54e5ac3585ca808
+; Maximum fan-out                             ; 76              ;
+; Total fan-out                               ; 2379            ;
+; Average fan-out                             ; 2.24            ;
 +---------------------------------------------+-----------------+
 
 
@@ -233,32 +218,11 @@ agreement for further details.
 +-----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------+-------------+--------------+
 ; Compilation Hierarchy Node  ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name               ; Entity Name ; Library Name ;
 +-----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------+-------------+--------------+
-; |processor                  ; 365 (52)          ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 235  ; 0            ; |processor                        ; processor   ; work         ;
-;    |alu:myalu|              ; 307 (307)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processor|alu:myalu              ; alu         ; work         ;
-;    |control:control_signal| ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processor|control:control_signal ; control     ; work         ;
+; |processor                  ; 581 (209)         ; 12 (12)      ; 0           ; 0            ; 0       ; 0         ; 235  ; 0            ; |processor                        ; processor   ; work         ;
+;    |alu:myalu|              ; 364 (364)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processor|alu:myalu              ; alu         ; work         ;
+;    |control:control_signal| ; 8 (8)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processor|control:control_signal ; control     ; work         ;
 +-----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
-
-
-+---------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                              ;
-+----------------------------------------+----------------------------------------+
-; Register name                          ; Reason for Removal                     ;
-+----------------------------------------+----------------------------------------+
-; address_imem[11]~reg0                  ; Stuck at GND due to stuck port data_in ;
-; address_imem[10]~reg0                  ; Stuck at GND due to stuck port data_in ;
-; address_imem[9]~reg0                   ; Stuck at GND due to stuck port data_in ;
-; address_imem[8]~reg0                   ; Stuck at GND due to stuck port data_in ;
-; address_imem[7]~reg0                   ; Stuck at GND due to stuck port data_in ;
-; address_imem[6]~reg0                   ; Stuck at GND due to stuck port data_in ;
-; address_imem[5]~reg0                   ; Stuck at GND due to stuck port data_in ;
-; address_imem[4]~reg0                   ; Stuck at GND due to stuck port data_in ;
-; address_imem[3]~reg0                   ; Stuck at GND due to stuck port data_in ;
-; address_imem[2]~reg0                   ; Stuck at GND due to stuck port data_in ;
-; address_imem[1]~reg0                   ; Stuck at GND due to stuck port data_in ;
-; address_imem[0]~reg0                   ; Stuck at GND due to stuck port data_in ;
-; Total Number of Removed Registers = 12 ;                                        ;
-+----------------------------------------+----------------------------------------+
 
 
 +------------------------------------------------------+
@@ -266,10 +230,10 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 0     ;
+; Total registers                              ; 12    ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Clear ; 12    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
 ; Number of registers using Clock Enable       ; 0     ;
 ; Number of registers using Preset             ; 0     ;
@@ -281,24 +245,27 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output      ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------+
-; 4:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |processor|data_writeReg        ;
+; 4:1                ; 11 bits   ; 22 LEs        ; 22 LEs               ; 0 LEs                  ; No         ; |processor|data_writeReg        ;
 ; 5:1                ; 2 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |processor|data_writeReg        ;
-; 39:1               ; 2 bits    ; 52 LEs        ; 14 LEs               ; 38 LEs                 ; No         ; |processor|alu:myalu|Selector29 ;
-; 39:1               ; 2 bits    ; 52 LEs        ; 16 LEs               ; 36 LEs                 ; No         ; |processor|alu:myalu|Selector22 ;
-; 40:1               ; 2 bits    ; 52 LEs        ; 16 LEs               ; 36 LEs                 ; No         ; |processor|alu:myalu|Selector31 ;
-; 42:1               ; 3 bits    ; 84 LEs        ; 27 LEs               ; 57 LEs                 ; No         ; |processor|alu:myalu|Selector25 ;
+; 35:1               ; 4 bits    ; 92 LEs        ; 20 LEs               ; 72 LEs                 ; No         ; |processor|alu:myalu|Selector21 ;
+; 36:1               ; 4 bits    ; 96 LEs        ; 24 LEs               ; 72 LEs                 ; No         ; |processor|alu:myalu|Selector24 ;
+; 37:1               ; 2 bits    ; 48 LEs        ; 12 LEs               ; 36 LEs                 ; No         ; |processor|alu:myalu|Selector29 ;
+; 38:1               ; 4 bits    ; 100 LEs       ; 24 LEs               ; 76 LEs                 ; No         ; |processor|data_writeReg        ;
+; 38:1               ; 2 bits    ; 50 LEs        ; 14 LEs               ; 36 LEs                 ; No         ; |processor|alu:myalu|Selector30 ;
+; 38:1               ; 8 bits    ; 200 LEs       ; 56 LEs               ; 144 LEs                ; No         ; |processor|data_writeReg        ;
+; 39:1               ; 4 bits    ; 104 LEs       ; 32 LEs               ; 72 LEs                 ; No         ; |processor|data_writeReg        ;
+; 40:1               ; 2 bits    ; 52 LEs        ; 16 LEs               ; 36 LEs                 ; No         ; |processor|data_writeReg        ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "alu:myalu"                                                                                         ;
-+---------------------+--------+----------+-------------------------------------------------------------------------------------+
-; Port                ; Type   ; Severity ; Details                                                                             ;
-+---------------------+--------+----------+-------------------------------------------------------------------------------------+
-; data_result[31..12] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; isNotEqual          ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; isLessThan          ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+---------------------+--------+----------+-------------------------------------------------------------------------------------+
++----------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "alu:myalu"                                                                                ;
++------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port       ; Type   ; Severity ; Details                                                                             ;
++------------+--------+----------+-------------------------------------------------------------------------------------+
+; isNotEqual ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; isLessThan ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------------+--------+----------+-------------------------------------------------------------------------------------+
 
 
 +--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -328,18 +295,20 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
 ; boundary_port         ; 235                         ;
-; cycloneiii_lcell_comb ; 370                         ;
-;     arith             ; 64                          ;
-;         3 data inputs ; 64                          ;
-;     normal            ; 306                         ;
-;         0 data inputs ; 1                           ;
-;         1 data inputs ; 4                           ;
-;         2 data inputs ; 14                          ;
-;         3 data inputs ; 99                          ;
-;         4 data inputs ; 188                         ;
+; cycloneiii_ff         ; 12                          ;
+;     CLR               ; 12                          ;
+; cycloneiii_lcell_comb ; 585                         ;
+;     arith             ; 74                          ;
+;         2 data inputs ; 9                           ;
+;         3 data inputs ; 65                          ;
+;     normal            ; 511                         ;
+;         1 data inputs ; 6                           ;
+;         2 data inputs ; 25                          ;
+;         3 data inputs ; 182                         ;
+;         4 data inputs ; 298                         ;
 ;                       ;                             ;
-; Max LUT depth         ; 13.10                       ;
-; Average LUT depth     ; 9.65                        ;
+; Max LUT depth         ; 12.10                       ;
+; Average LUT depth     ; 8.98                        ;
 +-----------------------+-----------------------------+
 
 
@@ -358,152 +327,56 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
-<<<<<<< HEAD
-    Info: Processing started: Sun Oct 24 22:24:23 2021
-=======
-    Info: Processing started: Sun Oct 24 22:23:45 2021
->>>>>>> 3c8f8417c09dec0272d18f58e54e5ac3585ca808
+    Info: Processing started: Sun Oct 24 22:35:55 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off skeleton -c skeleton
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file full_adder.v
-    Info (12023): Found entity 1: full_adder File: C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project3_1/ECE-550/full_adder.v Line: 1
+    Info (12023): Found entity 1: full_adder File: C:/Users/lizhu/Desktop/ECE550/Proj3/full_adder.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file pc.v
-    Info (12023): Found entity 1: pc File: C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project3_1/ECE-550/pc.v Line: 1
+    Info (12023): Found entity 1: pc File: C:/Users/lizhu/Desktop/ECE550/Proj3/pc.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file processor.v
-    Info (12023): Found entity 1: processor File: C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project3_1/ECE-550/processor.v Line: 50
+    Info (12023): Found entity 1: processor File: C:/Users/lizhu/Desktop/ECE550/Proj3/processor.v Line: 50
 Info (12021): Found 1 design units, including 1 entities, in source file skeleton.v
-    Info (12023): Found entity 1: skeleton File: C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project3_1/ECE-550/skeleton.v Line: 12
+    Info (12023): Found entity 1: skeleton File: C:/Users/lizhu/Desktop/ECE550/Proj3/skeleton.v Line: 12
 Info (12021): Found 1 design units, including 1 entities, in source file imem.v
-    Info (12023): Found entity 1: imem File: C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project3_1/ECE-550/imem.v Line: 40
+    Info (12023): Found entity 1: imem File: C:/Users/lizhu/Desktop/ECE550/Proj3/imem.v Line: 40
 Info (12021): Found 1 design units, including 1 entities, in source file regfile.v
-    Info (12023): Found entity 1: regfile File: C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project3_1/ECE-550/regfile.v Line: 1
+    Info (12023): Found entity 1: regfile File: C:/Users/lizhu/Desktop/ECE550/Proj3/regfile.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file alu.v
-    Info (12023): Found entity 1: alu File: C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project3_1/ECE-550/alu.v Line: 1
+    Info (12023): Found entity 1: alu File: C:/Users/lizhu/Desktop/ECE550/Proj3/alu.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file dffe_ref.v
-    Info (12023): Found entity 1: dffe_ref File: C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project3_1/ECE-550/dffe_ref.v Line: 1
+    Info (12023): Found entity 1: dffe_ref File: C:/Users/lizhu/Desktop/ECE550/Proj3/dffe_ref.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file control.v
-    Info (12023): Found entity 1: control File: C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project3_1/ECE-550/control.v Line: 1
+    Info (12023): Found entity 1: control File: C:/Users/lizhu/Desktop/ECE550/Proj3/control.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file sign_extend.v
-    Info (12023): Found entity 1: sign_extend File: C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project3_1/ECE-550/sign_extend.v Line: 1
+    Info (12023): Found entity 1: sign_extend File: C:/Users/lizhu/Desktop/ECE550/Proj3/sign_extend.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file dmem.v
-    Info (12023): Found entity 1: dmem File: C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project3_1/ECE-550/dmem.v Line: 40
-Warning (10236): Verilog HDL Implicit Net warning at processor.v(114): created implicit net for "next_pc" File: C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project3_1/ECE-550/processor.v Line: 114
+    Info (12023): Found entity 1: dmem File: C:/Users/lizhu/Desktop/ECE550/Proj3/dmem.v Line: 40
 Info (12127): Elaborating entity "processor" for the top level hierarchy
-Warning (10036): Verilog HDL or VHDL warning at processor.v(114): object "next_pc" assigned a value but never read File: C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project3_1/ECE-550/processor.v Line: 114
-Warning (10858): Verilog HDL warning at processor.v(103): object next_PC used but never assigned File: C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project3_1/ECE-550/processor.v Line: 103
-Warning (10230): Verilog HDL assignment warning at processor.v(114): truncated value with size 12 to match size of target (1) File: C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project3_1/ECE-550/processor.v Line: 114
-Warning (10230): Verilog HDL assignment warning at processor.v(138): truncated value with size 32 to match size of target (5) File: C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project3_1/ECE-550/processor.v Line: 138
-Warning (10230): Verilog HDL assignment warning at processor.v(143): truncated value with size 32 to match size of target (5) File: C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project3_1/ECE-550/processor.v Line: 143
-Warning (10230): Verilog HDL assignment warning at processor.v(144): truncated value with size 32 to match size of target (5) File: C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project3_1/ECE-550/processor.v Line: 144
-Warning (10230): Verilog HDL assignment warning at processor.v(145): truncated value with size 32 to match size of target (5) File: C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project3_1/ECE-550/processor.v Line: 145
-Warning (10230): Verilog HDL assignment warning at processor.v(146): truncated value with size 32 to match size of target (1) File: C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project3_1/ECE-550/processor.v Line: 146
-Warning (10030): Net "next_PC" at processor.v(103) has no driver or initial value, using a default initial value '0' File: C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project3_1/ECE-550/processor.v Line: 103
-Info (12128): Elaborating entity "control" for hierarchy "control:control_signal" File: C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project3_1/ECE-550/processor.v Line: 117
-Info (12128): Elaborating entity "sign_extend" for hierarchy "sign_extend:extending" File: C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project3_1/ECE-550/processor.v Line: 118
-Info (12128): Elaborating entity "alu" for hierarchy "alu:myalu" File: C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project3_1/ECE-550/processor.v Line: 126
-Warning (10270): Verilog HDL Case Statement warning at alu.v(25): incomplete case statement has no default case item File: C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project3_1/ECE-550/alu.v Line: 25
+Info (12128): Elaborating entity "control" for hierarchy "control:control_signal" File: C:/Users/lizhu/Desktop/ECE550/Proj3/processor.v Line: 117
+Info (12128): Elaborating entity "sign_extend" for hierarchy "sign_extend:extending" File: C:/Users/lizhu/Desktop/ECE550/Proj3/processor.v Line: 118
+Info (12128): Elaborating entity "alu" for hierarchy "alu:myalu" File: C:/Users/lizhu/Desktop/ECE550/Proj3/processor.v Line: 126
+Warning (10270): Verilog HDL Case Statement warning at alu.v(25): incomplete case statement has no default case item File: C:/Users/lizhu/Desktop/ECE550/Proj3/alu.v Line: 25
 Warning (12241): 1 hierarchies have connectivity warnings - see the Connectivity Checks report folder
-Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "address_imem[0]" is stuck at GND File: C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project3_1/ECE-550/processor.v Line: 111
-    Warning (13410): Pin "address_imem[1]" is stuck at GND File: C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project3_1/ECE-550/processor.v Line: 111
-    Warning (13410): Pin "address_imem[2]" is stuck at GND File: C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project3_1/ECE-550/processor.v Line: 111
-    Warning (13410): Pin "address_imem[3]" is stuck at GND File: C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project3_1/ECE-550/processor.v Line: 111
-    Warning (13410): Pin "address_imem[4]" is stuck at GND File: C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project3_1/ECE-550/processor.v Line: 111
-    Warning (13410): Pin "address_imem[5]" is stuck at GND File: C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project3_1/ECE-550/processor.v Line: 111
-    Warning (13410): Pin "address_imem[6]" is stuck at GND File: C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project3_1/ECE-550/processor.v Line: 111
-    Warning (13410): Pin "address_imem[7]" is stuck at GND File: C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project3_1/ECE-550/processor.v Line: 111
-    Warning (13410): Pin "address_imem[8]" is stuck at GND File: C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project3_1/ECE-550/processor.v Line: 111
-    Warning (13410): Pin "address_imem[9]" is stuck at GND File: C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project3_1/ECE-550/processor.v Line: 111
-    Warning (13410): Pin "address_imem[10]" is stuck at GND File: C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project3_1/ECE-550/processor.v Line: 111
-    Warning (13410): Pin "address_imem[11]" is stuck at GND File: C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project3_1/ECE-550/processor.v Line: 111
-    Warning (13410): Pin "data_writeReg[5]" is stuck at GND File: C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project3_1/ECE-550/processor.v Line: 90
-    Warning (13410): Pin "data_writeReg[6]" is stuck at GND File: C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project3_1/ECE-550/processor.v Line: 90
-    Warning (13410): Pin "data_writeReg[7]" is stuck at GND File: C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project3_1/ECE-550/processor.v Line: 90
-    Warning (13410): Pin "data_writeReg[8]" is stuck at GND File: C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project3_1/ECE-550/processor.v Line: 90
-    Warning (13410): Pin "data_writeReg[9]" is stuck at GND File: C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project3_1/ECE-550/processor.v Line: 90
-    Warning (13410): Pin "data_writeReg[10]" is stuck at GND File: C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project3_1/ECE-550/processor.v Line: 90
-    Warning (13410): Pin "data_writeReg[11]" is stuck at GND File: C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project3_1/ECE-550/processor.v Line: 90
-    Warning (13410): Pin "data_writeReg[12]" is stuck at GND File: C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project3_1/ECE-550/processor.v Line: 90
-    Warning (13410): Pin "data_writeReg[13]" is stuck at GND File: C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project3_1/ECE-550/processor.v Line: 90
-    Warning (13410): Pin "data_writeReg[14]" is stuck at GND File: C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project3_1/ECE-550/processor.v Line: 90
-    Warning (13410): Pin "data_writeReg[15]" is stuck at GND File: C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project3_1/ECE-550/processor.v Line: 90
-    Warning (13410): Pin "data_writeReg[16]" is stuck at GND File: C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project3_1/ECE-550/processor.v Line: 90
-    Warning (13410): Pin "data_writeReg[17]" is stuck at GND File: C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project3_1/ECE-550/processor.v Line: 90
-    Warning (13410): Pin "data_writeReg[18]" is stuck at GND File: C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project3_1/ECE-550/processor.v Line: 90
-    Warning (13410): Pin "data_writeReg[19]" is stuck at GND File: C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project3_1/ECE-550/processor.v Line: 90
-    Warning (13410): Pin "data_writeReg[20]" is stuck at GND File: C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project3_1/ECE-550/processor.v Line: 90
-    Warning (13410): Pin "data_writeReg[21]" is stuck at GND File: C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project3_1/ECE-550/processor.v Line: 90
-    Warning (13410): Pin "data_writeReg[22]" is stuck at GND File: C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project3_1/ECE-550/processor.v Line: 90
-    Warning (13410): Pin "data_writeReg[23]" is stuck at GND File: C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project3_1/ECE-550/processor.v Line: 90
-    Warning (13410): Pin "data_writeReg[24]" is stuck at GND File: C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project3_1/ECE-550/processor.v Line: 90
-    Warning (13410): Pin "data_writeReg[25]" is stuck at GND File: C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project3_1/ECE-550/processor.v Line: 90
-    Warning (13410): Pin "data_writeReg[26]" is stuck at GND File: C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project3_1/ECE-550/processor.v Line: 90
-    Warning (13410): Pin "data_writeReg[27]" is stuck at GND File: C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project3_1/ECE-550/processor.v Line: 90
-    Warning (13410): Pin "data_writeReg[28]" is stuck at GND File: C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project3_1/ECE-550/processor.v Line: 90
-    Warning (13410): Pin "data_writeReg[29]" is stuck at GND File: C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project3_1/ECE-550/processor.v Line: 90
-    Warning (13410): Pin "data_writeReg[30]" is stuck at GND File: C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project3_1/ECE-550/processor.v Line: 90
-    Warning (13410): Pin "data_writeReg[31]" is stuck at GND File: C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project3_1/ECE-550/processor.v Line: 90
 Info (286030): Timing-Driven Synthesis is running
-Info (144001): Generated suppressed messages file C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project3_1/ECE-550/output_files/skeleton.map.smsg
+Info (144001): Generated suppressed messages file C:/Users/lizhu/Desktop/ECE550/Proj3/output_files/skeleton.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-<<<<<<< HEAD
-Info (21057): Implemented 21 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 5 input pins
-    Info (21059): Implemented 9 output pins
-    Info (21061): Implemented 7 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4983 megabytes
-    Info: Processing ended: Sun Oct 24 22:24:31 2021
-    Info: Elapsed time: 00:00:08
-    Info: Total CPU time (on all processors): 00:00:18
-=======
-Warning (21074): Design contains 29 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "clock" File: C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project3_1/ECE-550/processor.v Line: 75
-    Warning (15610): No output dependent on input pin "reset" File: C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project3_1/ECE-550/processor.v Line: 75
-    Warning (15610): No output dependent on input pin "q_dmem[5]" File: C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project3_1/ECE-550/processor.v Line: 85
-    Warning (15610): No output dependent on input pin "q_dmem[6]" File: C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project3_1/ECE-550/processor.v Line: 85
-    Warning (15610): No output dependent on input pin "q_dmem[7]" File: C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project3_1/ECE-550/processor.v Line: 85
-    Warning (15610): No output dependent on input pin "q_dmem[8]" File: C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project3_1/ECE-550/processor.v Line: 85
-    Warning (15610): No output dependent on input pin "q_dmem[9]" File: C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project3_1/ECE-550/processor.v Line: 85
-    Warning (15610): No output dependent on input pin "q_dmem[10]" File: C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project3_1/ECE-550/processor.v Line: 85
-    Warning (15610): No output dependent on input pin "q_dmem[11]" File: C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project3_1/ECE-550/processor.v Line: 85
-    Warning (15610): No output dependent on input pin "q_dmem[12]" File: C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project3_1/ECE-550/processor.v Line: 85
-    Warning (15610): No output dependent on input pin "q_dmem[13]" File: C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project3_1/ECE-550/processor.v Line: 85
-    Warning (15610): No output dependent on input pin "q_dmem[14]" File: C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project3_1/ECE-550/processor.v Line: 85
-    Warning (15610): No output dependent on input pin "q_dmem[15]" File: C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project3_1/ECE-550/processor.v Line: 85
-    Warning (15610): No output dependent on input pin "q_dmem[16]" File: C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project3_1/ECE-550/processor.v Line: 85
-    Warning (15610): No output dependent on input pin "q_dmem[17]" File: C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project3_1/ECE-550/processor.v Line: 85
-    Warning (15610): No output dependent on input pin "q_dmem[18]" File: C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project3_1/ECE-550/processor.v Line: 85
-    Warning (15610): No output dependent on input pin "q_dmem[19]" File: C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project3_1/ECE-550/processor.v Line: 85
-    Warning (15610): No output dependent on input pin "q_dmem[20]" File: C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project3_1/ECE-550/processor.v Line: 85
-    Warning (15610): No output dependent on input pin "q_dmem[21]" File: C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project3_1/ECE-550/processor.v Line: 85
-    Warning (15610): No output dependent on input pin "q_dmem[22]" File: C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project3_1/ECE-550/processor.v Line: 85
-    Warning (15610): No output dependent on input pin "q_dmem[23]" File: C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project3_1/ECE-550/processor.v Line: 85
-    Warning (15610): No output dependent on input pin "q_dmem[24]" File: C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project3_1/ECE-550/processor.v Line: 85
-    Warning (15610): No output dependent on input pin "q_dmem[25]" File: C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project3_1/ECE-550/processor.v Line: 85
-    Warning (15610): No output dependent on input pin "q_dmem[26]" File: C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project3_1/ECE-550/processor.v Line: 85
-    Warning (15610): No output dependent on input pin "q_dmem[27]" File: C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project3_1/ECE-550/processor.v Line: 85
-    Warning (15610): No output dependent on input pin "q_dmem[28]" File: C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project3_1/ECE-550/processor.v Line: 85
-    Warning (15610): No output dependent on input pin "q_dmem[29]" File: C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project3_1/ECE-550/processor.v Line: 85
-    Warning (15610): No output dependent on input pin "q_dmem[30]" File: C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project3_1/ECE-550/processor.v Line: 85
-    Warning (15610): No output dependent on input pin "q_dmem[31]" File: C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project3_1/ECE-550/processor.v Line: 85
-Info (21057): Implemented 600 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 816 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 130 input pins
     Info (21059): Implemented 105 output pins
-    Info (21061): Implemented 365 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 83 warnings
+    Info (21061): Implemented 581 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 3 warnings
     Info: Peak virtual memory: 5008 megabytes
-    Info: Processing ended: Sun Oct 24 22:23:56 2021
+    Info: Processing ended: Sun Oct 24 22:36:06 2021
     Info: Elapsed time: 00:00:11
-    Info: Total CPU time (on all processors): 00:00:19
->>>>>>> 3c8f8417c09dec0272d18f58e54e5ac3585ca808
+    Info: Total CPU time (on all processors): 00:00:23
 
 
 +------------------------------------------+
 ; Analysis & Synthesis Suppressed Messages ;
 +------------------------------------------+
-The suppressed messages can be found in C:/Users/jerry/OneDrive - Duke University/Duke/550/Project/Project3_1/ECE-550/output_files/skeleton.map.smsg.
+The suppressed messages can be found in C:/Users/lizhu/Desktop/ECE550/Proj3/output_files/skeleton.map.smsg.
 
 
