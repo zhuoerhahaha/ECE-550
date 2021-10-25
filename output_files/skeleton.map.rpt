@@ -1,5 +1,5 @@
 Analysis & Synthesis report for skeleton
-Thu Oct 21 21:43:22 2021
+Sun Oct 24 22:06:13 2021
 Quartus Prime Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
 
 
@@ -44,16 +44,16 @@ agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Oct 21 21:43:22 2021       ;
+; Analysis & Synthesis Status        ; Successful - Sun Oct 24 22:06:13 2021       ;
 ; Quartus Prime Version              ; 16.0.0 Build 211 04/27/2016 SJ Lite Edition ;
 ; Revision Name                      ; skeleton                                    ;
-; Top-level Entity Name              ; sign_extend                                 ;
+; Top-level Entity Name              ; control                                     ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 0                                           ;
-;     Total combinational functions  ; 0                                           ;
+; Total logic elements               ; 7                                           ;
+;     Total combinational functions  ; 7                                           ;
 ;     Dedicated logic registers      ; 0                                           ;
 ; Total registers                    ; 0                                           ;
-; Total pins                         ; 48                                          ;
+; Total pins                         ; 14                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
@@ -67,7 +67,7 @@ agreement for further details.
 ; Option                                                                     ; Setting            ; Default Value      ;
 +----------------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                                     ; EP4CE115F29C7      ;                    ;
-; Top-level entity name                                                      ; sign_extend        ; skeleton           ;
+; Top-level entity name                                                      ; control            ; skeleton           ;
 ; Family name                                                                ; Cyclone IV E       ; Cyclone V          ;
 ; Use smart compilation                                                      ; Off                ; Off                ;
 ; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
@@ -164,44 +164,45 @@ agreement for further details.
 +----------------------------+-------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                    ;
-+----------------------------------+-----------------+------------------------+---------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                      ; Library ;
-+----------------------------------+-----------------+------------------------+---------------------------------------------------+---------+
-; sign_extend.v                    ; yes             ; User Verilog HDL File  ; C:/Users/lizhu/Desktop/ECE550/Proj3/sign_extend.v ;         ;
-+----------------------------------+-----------------+------------------------+---------------------------------------------------+---------+
++---------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                ;
++----------------------------------+-----------------+------------------------+-----------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                  ; Library ;
++----------------------------------+-----------------+------------------------+-----------------------------------------------+---------+
+; control.v                        ; yes             ; User Verilog HDL File  ; C:/Users/lizhu/Desktop/ECE550/Proj3/control.v ;         ;
++----------------------------------+-----------------+------------------------+-----------------------------------------------+---------+
 
 
-+------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                ;
-+---------------------------------------------+--------------+
-; Resource                                    ; Usage        ;
-+---------------------------------------------+--------------+
-;                                             ;              ;
-; Total combinational functions               ; 0            ;
-; Logic element usage by number of LUT inputs ;              ;
-;     -- 4 input functions                    ; 0            ;
-;     -- 3 input functions                    ; 0            ;
-;     -- <=2 input functions                  ; 0            ;
-;                                             ;              ;
-; Logic elements by mode                      ;              ;
-;     -- normal mode                          ; 0            ;
-;     -- arithmetic mode                      ; 0            ;
-;                                             ;              ;
-; Total registers                             ; 0            ;
-;     -- Dedicated logic registers            ; 0            ;
-;     -- I/O registers                        ; 0            ;
-;                                             ;              ;
-; I/O pins                                    ; 48           ;
-;                                             ;              ;
-; Embedded Multiplier 9-bit elements          ; 0            ;
-;                                             ;              ;
-; Maximum fan-out node                        ; in[15]~input ;
-; Maximum fan-out                             ; 17           ;
-; Total fan-out                               ; 80           ;
-; Average fan-out                             ; 0.83         ;
-+---------------------------------------------+--------------+
++---------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                   ;
++---------------------------------------------+-----------------+
+; Resource                                    ; Usage           ;
++---------------------------------------------+-----------------+
+; Estimated Total logic elements              ; 7               ;
+;                                             ;                 ;
+; Total combinational functions               ; 7               ;
+; Logic element usage by number of LUT inputs ;                 ;
+;     -- 4 input functions                    ; 2               ;
+;     -- 3 input functions                    ; 1               ;
+;     -- <=2 input functions                  ; 4               ;
+;                                             ;                 ;
+; Logic elements by mode                      ;                 ;
+;     -- normal mode                          ; 7               ;
+;     -- arithmetic mode                      ; 0               ;
+;                                             ;                 ;
+; Total registers                             ; 0               ;
+;     -- Dedicated logic registers            ; 0               ;
+;     -- I/O registers                        ; 0               ;
+;                                             ;                 ;
+; I/O pins                                    ; 14              ;
+;                                             ;                 ;
+; Embedded Multiplier 9-bit elements          ; 0               ;
+;                                             ;                 ;
+; Maximum fan-out node                        ; opcode[3]~input ;
+; Maximum fan-out                             ; 4               ;
+; Total fan-out                               ; 42              ;
+; Average fan-out                             ; 1.20            ;
++---------------------------------------------+-----------------+
 
 
 +-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -209,7 +210,7 @@ agreement for further details.
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
 ; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name ; Library Name ;
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
-; |sign_extend               ; 0 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 48   ; 0            ; |sign_extend        ; sign_extend ; work         ;
+; |control                   ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 14   ; 0            ; |control            ; control     ; work         ;
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -231,14 +232,20 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 
 +-----------------------------------------------------+
 ; Post-Synthesis Netlist Statistics for Top Partition ;
-+-------------------+---------------------------------+
-; Type              ; Count                           ;
-+-------------------+---------------------------------+
-; boundary_port     ; 48                              ;
-;                   ;                                 ;
-; Max LUT depth     ; 0.00                            ;
-; Average LUT depth ; 0.00                            ;
-+-------------------+---------------------------------+
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; boundary_port         ; 14                          ;
+; cycloneiii_lcell_comb ; 8                           ;
+;     normal            ; 8                           ;
+;         1 data inputs ; 1                           ;
+;         2 data inputs ; 4                           ;
+;         3 data inputs ; 1                           ;
+;         4 data inputs ; 2                           ;
+;                       ;                             ;
+; Max LUT depth         ; 3.00                        ;
+; Average LUT depth     ; 2.54                        ;
++-----------------------+-----------------------------+
 
 
 +-------------------------------+
@@ -256,16 +263,20 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
-    Info: Processing started: Thu Oct 21 21:43:14 2021
+    Info: Processing started: Sun Oct 24 22:06:05 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off skeleton -c skeleton
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file full_adder.v
+    Info (12023): Found entity 1: full_adder File: C:/Users/lizhu/Desktop/ECE550/Proj3/full_adder.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file pc.v
+    Info (12023): Found entity 1: pc File: C:/Users/lizhu/Desktop/ECE550/Proj3/pc.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file processor.v
     Info (12023): Found entity 1: processor File: C:/Users/lizhu/Desktop/ECE550/Proj3/processor.v Line: 50
 Info (12021): Found 1 design units, including 1 entities, in source file skeleton.v
     Info (12023): Found entity 1: skeleton File: C:/Users/lizhu/Desktop/ECE550/Proj3/skeleton.v Line: 12
 Info (12021): Found 1 design units, including 1 entities, in source file imem.v
-    Info (12023): Found entity 1: imem File: C:/Users/lizhu/Desktop/ECE550/Proj3/imem.v Line: 1
+    Info (12023): Found entity 1: imem File: C:/Users/lizhu/Desktop/ECE550/Proj3/imem.v Line: 40
 Info (12021): Found 1 design units, including 1 entities, in source file regfile.v
     Info (12023): Found entity 1: regfile File: C:/Users/lizhu/Desktop/ECE550/Proj3/regfile.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file alu.v
@@ -276,16 +287,20 @@ Info (12021): Found 1 design units, including 1 entities, in source file control
     Info (12023): Found entity 1: control File: C:/Users/lizhu/Desktop/ECE550/Proj3/control.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file sign_extend.v
     Info (12023): Found entity 1: sign_extend File: C:/Users/lizhu/Desktop/ECE550/Proj3/sign_extend.v Line: 1
-Info (12127): Elaborating entity "sign_extend" for the top level hierarchy
+Info (12021): Found 1 design units, including 1 entities, in source file dmem.v
+    Info (12023): Found entity 1: dmem File: C:/Users/lizhu/Desktop/ECE550/Proj3/dmem.v Line: 40
+Info (12127): Elaborating entity "control" for the top level hierarchy
+Info (286030): Timing-Driven Synthesis is running
 Info (144001): Generated suppressed messages file C:/Users/lizhu/Desktop/ECE550/Proj3/output_files/skeleton.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 48 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 16 input pins
-    Info (21059): Implemented 32 output pins
+Info (21057): Implemented 21 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 5 input pins
+    Info (21059): Implemented 9 output pins
+    Info (21061): Implemented 7 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4952 megabytes
-    Info: Processing ended: Thu Oct 21 21:43:22 2021
+    Info: Peak virtual memory: 4982 megabytes
+    Info: Processing ended: Sun Oct 24 22:06:13 2021
     Info: Elapsed time: 00:00:08
     Info: Total CPU time (on all processors): 00:00:17
 
