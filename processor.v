@@ -75,7 +75,7 @@ module processor(
     input clock, reset;
 
     // Imem
-    output [11:0] address_imem;
+    output reg[11:0] address_imem;
     input [31:0] q_imem;            //the actual instruction
 
     // Dmem
@@ -100,10 +100,19 @@ module processor(
     wire[4:0] opcode;
     wire[31:0] pc_in, pc_out;
 	 wire[4:0] address_writeback, data_writeBack2, data_writeBack3, data_writeBack4;
+	 wire[11:0] next_PC;
 
     //some pc
-    pc mypc1(.clock(clock), .reset(reset), .pc_in(32'd0), .pc_out(pc_out)); 
-    
+    always @(posedge clock or posedge reset) begin
+		if(reset) begin
+			address_imem <= 12'b0;
+		end
+		else begin
+			address_imem <= next_PC;
+		end
+	end
+	assign next_pc = address_imem + 12'd1;
+    // 
     assign opcode = q_imem[31:27];                           //op code
     control control_signal(opcode, DMwe, Rwe, Rwd, Rdst, ALUinB, is_Rtype, is_addi, is_sw, is_lw);                         //control signal
     sign_extend extending(q_imem[17:0], sx);                 //sign extending
