@@ -1,5 +1,5 @@
 Flow report for skeleton
-Sun Oct 24 22:58:44 2021
+Tue Oct 26 18:00:44 2021
 Quartus Prime Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
 
 
@@ -41,22 +41,22 @@ agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Flow Failed - Sun Oct 24 22:58:43 2021      ;
+; Flow Status                        ; Successful - Tue Oct 26 18:00:44 2021       ;
 ; Quartus Prime Version              ; 16.0.0 Build 211 04/27/2016 SJ Lite Edition ;
 ; Revision Name                      ; skeleton                                    ;
-; Top-level Entity Name              ; processor                                   ;
+; Top-level Entity Name              ; skeleton                                    ;
 ; Family                             ; Cyclone IV E                                ;
 ; Device                             ; EP4CE115F29C7                               ;
 ; Timing Models                      ; Final                                       ;
-; Total logic elements               ; N/A until Partition Merge                   ;
-;     Total combinational functions  ; N/A until Partition Merge                   ;
-;     Dedicated logic registers      ; N/A until Partition Merge                   ;
-; Total registers                    ; N/A until Partition Merge                   ;
-; Total pins                         ; N/A until Partition Merge                   ;
-; Total virtual pins                 ; N/A until Partition Merge                   ;
-; Total memory bits                  ; N/A until Partition Merge                   ;
-; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                   ;
-; Total PLLs                         ; N/A until Partition Merge                   ;
+; Total logic elements               ; 2,989                                       ;
+;     Total combinational functions  ; 2,029                                       ;
+;     Dedicated logic registers      ; 1,006                                       ;
+; Total registers                    ; 1006                                        ;
+; Total pins                         ; 239                                         ;
+; Total virtual pins                 ; 0                                           ;
+; Total memory bits                  ; 262,144                                     ;
+; Embedded Multiplier 9-bit elements ; 0                                           ;
+; Total PLLs                         ; 0                                           ;
 +------------------------------------+---------------------------------------------+
 
 
@@ -65,7 +65,7 @@ agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 10/24/2021 22:58:35 ;
+; Start date & time ; 10/26/2021 18:00:22 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; skeleton            ;
 +-------------------+---------------------+
@@ -76,21 +76,21 @@ agreement for further details.
 +-------------------------------------+---------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                     ; Value                                 ; Default Value ; Entity Name ; Section Id     ;
 +-------------------------------------+---------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 71384936623817.163513071515464        ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID               ; 71384935467247.163528562213732        ; --            ; --          ; --             ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl                           ; --            ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (Verilog)             ; <None>        ; --          ; --             ;
 ; EDA_TIME_SCALE                      ; 1 ps                                  ; --            ; --          ; eda_simulation ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                    ; --            ; --          ; --             ;
 ; MIN_CORE_JUNCTION_TEMP              ; 0                                     ; --            ; --          ; --             ;
+; MISC_FILE                           ; imem_bb.v                             ; --            ; --          ; --             ;
 ; MISC_FILE                           ; dmem_bb.v                             ; --            ; --          ; --             ;
 ; NOMINAL_CORE_SUPPLY_VOLTAGE         ; 1.2V                                  ; --            ; --          ; --             ;
-; PARTITION_COLOR                     ; 16764057                              ; --            ; processor   ; Top            ;
-; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING                 ; --            ; processor   ; Top            ;
-; PARTITION_NETLIST_TYPE              ; SOURCE                                ; --            ; processor   ; Top            ;
+; PARTITION_COLOR                     ; 16764057                              ; --            ; --          ; Top            ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING                 ; --            ; --          ; Top            ;
+; PARTITION_NETLIST_TYPE              ; SOURCE                                ; --            ; --          ; Top            ;
 ; POWER_BOARD_THERMAL_MODEL           ; None (CONSERVATIVE)                   ; --            ; --          ; --             ;
 ; POWER_PRESET_COOLING_SOLUTION       ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW ; --            ; --          ; --             ;
 ; PROJECT_OUTPUT_DIRECTORY            ; output_files                          ; --            ; --          ; --             ;
-; TOP_LEVEL_ENTITY                    ; processor                             ; skeleton      ; --          ; --             ;
 +-------------------------------------+---------------------------------------+---------------+-------------+----------------+
 
 
@@ -99,8 +99,10 @@ agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:09     ; 1.0                     ; 4944 MB             ; 00:00:20                           ;
-; Total                ; 00:00:09     ; --                      ; --                  ; 00:00:20                           ;
+; Analysis & Synthesis ; 00:00:16     ; 1.0                     ; 5030 MB             ; 00:00:29                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4856 MB             ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4864 MB             ; 00:00:01                           ;
+; Total                ; 00:00:18     ; --                      ; --                  ; 00:00:31                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -109,7 +111,9 @@ agreement for further details.
 +----------------------+------------------+-----------+------------+----------------+
 ; Module Name          ; Machine Hostname ; OS Name   ; OS Version ; Processor type ;
 +----------------------+------------------+-----------+------------+----------------+
-; Analysis & Synthesis ; DESKTOP-K3NKS0L  ; Windows 8 ; 6.2        ; x86_64         ;
+; Analysis & Synthesis ; Colin            ; Windows 8 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer   ; Colin            ; Windows 8 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer   ; Colin            ; Windows 8 ; 6.2        ; x86_64         ;
 +----------------------+------------------+-----------+------------+----------------+
 
 
@@ -117,6 +121,8 @@ agreement for further details.
 ; Flow Log ;
 ------------
 quartus_map --read_settings_files=on --write_settings_files=off skeleton -c skeleton
+quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off skeleton -c skeleton --vector_source=C:/Users/lizhu/Desktop/ECE550/Proj3/Waveform.vwf --testbench_file=C:/Users/lizhu/Desktop/ECE550/Proj3/simulation/qsim/Waveform.vwf.vt
+quartus_eda --write_settings_files=off --functional=on --flatten_buses=off --simulation=on --tool=modelsim_oem --format=verilog --output_directory=C:/Users/lizhu/Desktop/ECE550/Proj3/simulation/qsim/ skeleton -c skeleton
 
 
 

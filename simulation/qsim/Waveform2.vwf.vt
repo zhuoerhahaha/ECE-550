@@ -19,71 +19,79 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "10/24/2021 22:25:24"
+// Generated on "10/25/2021 16:27:27"
                                                                                 
-// Verilog Test Bench (with test vectors) for design :                          control
+// Verilog Test Bench (with test vectors) for design :                          skeleton
 // 
 // Simulation tool : 3rd Party
 // 
 
 `timescale 1 ps/ 1 ps
-module control_vlg_vec_tst();
+module skeleton_vlg_vec_tst();
 // constants                                           
 // general purpose registers
-reg [4:0] opcode;
+reg clock;
+reg reset;
 // wires                                               
-wire ALUinB;
-wire DMwe;
-wire Rdst;
-wire Rwd;
-wire Rwe;
-wire is_Rtype;
-wire is_addi;
-wire is_lw;
-wire is_sw;
+wire [11:0] address_dmem;
+wire [11:0] address_imem;
+wire [4:0] ctrl_readRegA;
+wire [4:0] ctrl_readRegB;
+wire ctrl_writeEnable;
+wire [4:0] ctrl_writeReg;
+wire [31:0] data;
+wire [31:0] data_readRegA;
+wire [31:0] data_readRegB;
+wire [31:0] data_writeReg;
+wire dmem_clock;
+wire imem_clock;
+wire processor_clock;
+wire [31:0] q_dmem;
+wire [31:0] q_imem;
+wire regfile_clock;
+wire wren;
 
 // assign statements (if any)                          
-control i1 (
+skeleton i1 (
 // port map - connection between master ports and signals/registers   
-	.ALUinB(ALUinB),
-	.DMwe(DMwe),
-	.Rdst(Rdst),
-	.Rwd(Rwd),
-	.Rwe(Rwe),
-	.is_Rtype(is_Rtype),
-	.is_addi(is_addi),
-	.is_lw(is_lw),
-	.is_sw(is_sw),
-	.opcode(opcode)
+	.address_dmem(address_dmem),
+	.address_imem(address_imem),
+	.clock(clock),
+	.ctrl_readRegA(ctrl_readRegA),
+	.ctrl_readRegB(ctrl_readRegB),
+	.ctrl_writeEnable(ctrl_writeEnable),
+	.ctrl_writeReg(ctrl_writeReg),
+	.data(data),
+	.data_readRegA(data_readRegA),
+	.data_readRegB(data_readRegB),
+	.data_writeReg(data_writeReg),
+	.dmem_clock(dmem_clock),
+	.imem_clock(imem_clock),
+	.processor_clock(processor_clock),
+	.q_dmem(q_dmem),
+	.q_imem(q_imem),
+	.regfile_clock(regfile_clock),
+	.reset(reset),
+	.wren(wren)
 );
 initial 
 begin 
 #1000000 $finish;
 end 
-// opcode[ 4 ]
-initial
+
+// clock
+always
 begin
-	opcode[4] = 1'b0;
+	clock = 1'b0;
+	clock = #10000 1'b1;
+	#10000;
 end 
-// opcode[ 3 ]
+
+// reset
 initial
 begin
-	opcode[3] = 1'b1;
-end 
-// opcode[ 2 ]
-initial
-begin
-	opcode[2] = 1'b0;
-end 
-// opcode[ 1 ]
-initial
-begin
-	opcode[1] = 1'b0;
-end 
-// opcode[ 0 ]
-initial
-begin
-	opcode[0] = 1'b0;
+	reset = 1'b1;
+	reset = #30000 1'b0;
 end 
 endmodule
 

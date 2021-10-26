@@ -4,6 +4,22 @@
 			"name" : "Top",
 			"pins" : [
 				{
+					"name" : "imem_clock",
+					"strict" : false
+				},
+				{
+					"name" : "dmem_clock",
+					"strict" : false
+				},
+				{
+					"name" : "processor_clock",
+					"strict" : false
+				},
+				{
+					"name" : "regfile_clock",
+					"strict" : false
+				},
+				{
 					"name" : "address_imem[0]",
 					"strict" : false
 				},
@@ -232,6 +248,262 @@
 					"strict" : false
 				},
 				{
+					"name" : "q_dmem[0]",
+					"strict" : false
+				},
+				{
+					"name" : "q_dmem[1]",
+					"strict" : false
+				},
+				{
+					"name" : "q_dmem[2]",
+					"strict" : false
+				},
+				{
+					"name" : "q_dmem[3]",
+					"strict" : false
+				},
+				{
+					"name" : "q_dmem[4]",
+					"strict" : false
+				},
+				{
+					"name" : "q_dmem[5]",
+					"strict" : false
+				},
+				{
+					"name" : "q_dmem[6]",
+					"strict" : false
+				},
+				{
+					"name" : "q_dmem[7]",
+					"strict" : false
+				},
+				{
+					"name" : "q_dmem[8]",
+					"strict" : false
+				},
+				{
+					"name" : "q_dmem[9]",
+					"strict" : false
+				},
+				{
+					"name" : "q_dmem[10]",
+					"strict" : false
+				},
+				{
+					"name" : "q_dmem[11]",
+					"strict" : false
+				},
+				{
+					"name" : "q_dmem[12]",
+					"strict" : false
+				},
+				{
+					"name" : "q_dmem[13]",
+					"strict" : false
+				},
+				{
+					"name" : "q_dmem[14]",
+					"strict" : false
+				},
+				{
+					"name" : "q_dmem[15]",
+					"strict" : false
+				},
+				{
+					"name" : "q_dmem[16]",
+					"strict" : false
+				},
+				{
+					"name" : "q_dmem[17]",
+					"strict" : false
+				},
+				{
+					"name" : "q_dmem[18]",
+					"strict" : false
+				},
+				{
+					"name" : "q_dmem[19]",
+					"strict" : false
+				},
+				{
+					"name" : "q_dmem[20]",
+					"strict" : false
+				},
+				{
+					"name" : "q_dmem[21]",
+					"strict" : false
+				},
+				{
+					"name" : "q_dmem[22]",
+					"strict" : false
+				},
+				{
+					"name" : "q_dmem[23]",
+					"strict" : false
+				},
+				{
+					"name" : "q_dmem[24]",
+					"strict" : false
+				},
+				{
+					"name" : "q_dmem[25]",
+					"strict" : false
+				},
+				{
+					"name" : "q_dmem[26]",
+					"strict" : false
+				},
+				{
+					"name" : "q_dmem[27]",
+					"strict" : false
+				},
+				{
+					"name" : "q_dmem[28]",
+					"strict" : false
+				},
+				{
+					"name" : "q_dmem[29]",
+					"strict" : false
+				},
+				{
+					"name" : "q_dmem[30]",
+					"strict" : false
+				},
+				{
+					"name" : "q_dmem[31]",
+					"strict" : false
+				},
+				{
+					"name" : "q_imem[0]",
+					"strict" : false
+				},
+				{
+					"name" : "q_imem[1]",
+					"strict" : false
+				},
+				{
+					"name" : "q_imem[2]",
+					"strict" : false
+				},
+				{
+					"name" : "q_imem[3]",
+					"strict" : false
+				},
+				{
+					"name" : "q_imem[4]",
+					"strict" : false
+				},
+				{
+					"name" : "q_imem[5]",
+					"strict" : false
+				},
+				{
+					"name" : "q_imem[6]",
+					"strict" : false
+				},
+				{
+					"name" : "q_imem[7]",
+					"strict" : false
+				},
+				{
+					"name" : "q_imem[8]",
+					"strict" : false
+				},
+				{
+					"name" : "q_imem[9]",
+					"strict" : false
+				},
+				{
+					"name" : "q_imem[10]",
+					"strict" : false
+				},
+				{
+					"name" : "q_imem[11]",
+					"strict" : false
+				},
+				{
+					"name" : "q_imem[12]",
+					"strict" : false
+				},
+				{
+					"name" : "q_imem[13]",
+					"strict" : false
+				},
+				{
+					"name" : "q_imem[14]",
+					"strict" : false
+				},
+				{
+					"name" : "q_imem[15]",
+					"strict" : false
+				},
+				{
+					"name" : "q_imem[16]",
+					"strict" : false
+				},
+				{
+					"name" : "q_imem[17]",
+					"strict" : false
+				},
+				{
+					"name" : "q_imem[18]",
+					"strict" : false
+				},
+				{
+					"name" : "q_imem[19]",
+					"strict" : false
+				},
+				{
+					"name" : "q_imem[20]",
+					"strict" : false
+				},
+				{
+					"name" : "q_imem[21]",
+					"strict" : false
+				},
+				{
+					"name" : "q_imem[22]",
+					"strict" : false
+				},
+				{
+					"name" : "q_imem[23]",
+					"strict" : false
+				},
+				{
+					"name" : "q_imem[24]",
+					"strict" : false
+				},
+				{
+					"name" : "q_imem[25]",
+					"strict" : false
+				},
+				{
+					"name" : "q_imem[26]",
+					"strict" : false
+				},
+				{
+					"name" : "q_imem[27]",
+					"strict" : false
+				},
+				{
+					"name" : "q_imem[28]",
+					"strict" : false
+				},
+				{
+					"name" : "q_imem[29]",
+					"strict" : false
+				},
+				{
+					"name" : "q_imem[30]",
+					"strict" : false
+				},
+				{
+					"name" : "q_imem[31]",
+					"strict" : false
+				},
+				{
 					"name" : "ctrl_writeEnable",
 					"strict" : false
 				},
@@ -424,34 +696,6 @@
 					"strict" : false
 				},
 				{
-					"name" : "q_imem[0]",
-					"strict" : false
-				},
-				{
-					"name" : "data_readRegB[0]",
-					"strict" : false
-				},
-				{
-					"name" : "q_imem[27]",
-					"strict" : false
-				},
-				{
-					"name" : "q_imem[28]",
-					"strict" : false
-				},
-				{
-					"name" : "q_imem[29]",
-					"strict" : false
-				},
-				{
-					"name" : "q_imem[31]",
-					"strict" : false
-				},
-				{
-					"name" : "q_imem[30]",
-					"strict" : false
-				},
-				{
 					"name" : "data_readRegA[0]",
 					"strict" : false
 				},
@@ -460,15 +704,7 @@
 					"strict" : false
 				},
 				{
-					"name" : "q_imem[9]",
-					"strict" : false
-				},
-				{
-					"name" : "q_imem[7]",
-					"strict" : false
-				},
-				{
-					"name" : "q_imem[8]",
+					"name" : "data_readRegA[2]",
 					"strict" : false
 				},
 				{
@@ -476,15 +712,7 @@
 					"strict" : false
 				},
 				{
-					"name" : "data_readRegA[2]",
-					"strict" : false
-				},
-				{
-					"name" : "data_readRegA[7]",
-					"strict" : false
-				},
-				{
-					"name" : "data_readRegA[6]",
+					"name" : "data_readRegA[4]",
 					"strict" : false
 				},
 				{
@@ -492,27 +720,15 @@
 					"strict" : false
 				},
 				{
-					"name" : "data_readRegA[4]",
+					"name" : "data_readRegA[6]",
 					"strict" : false
 				},
 				{
-					"name" : "data_readRegA[15]",
+					"name" : "data_readRegA[7]",
 					"strict" : false
 				},
 				{
-					"name" : "data_readRegA[13]",
-					"strict" : false
-				},
-				{
-					"name" : "data_readRegA[14]",
-					"strict" : false
-				},
-				{
-					"name" : "data_readRegA[12]",
-					"strict" : false
-				},
-				{
-					"name" : "data_readRegA[11]",
+					"name" : "data_readRegA[8]",
 					"strict" : false
 				},
 				{
@@ -524,71 +740,27 @@
 					"strict" : false
 				},
 				{
-					"name" : "data_readRegA[8]",
+					"name" : "data_readRegA[11]",
 					"strict" : false
 				},
 				{
-					"name" : "q_imem[11]",
+					"name" : "data_readRegA[12]",
 					"strict" : false
 				},
 				{
-					"name" : "q_imem[2]",
+					"name" : "data_readRegA[13]",
 					"strict" : false
 				},
 				{
-					"name" : "q_imem[10]",
+					"name" : "data_readRegA[14]",
 					"strict" : false
 				},
 				{
-					"name" : "data_readRegA[27]",
+					"name" : "data_readRegA[15]",
 					"strict" : false
 				},
 				{
-					"name" : "data_readRegA[25]",
-					"strict" : false
-				},
-				{
-					"name" : "data_readRegA[26]",
-					"strict" : false
-				},
-				{
-					"name" : "data_readRegA[24]",
-					"strict" : false
-				},
-				{
-					"name" : "data_readRegA[31]",
-					"strict" : false
-				},
-				{
-					"name" : "data_readRegA[29]",
-					"strict" : false
-				},
-				{
-					"name" : "data_readRegA[30]",
-					"strict" : false
-				},
-				{
-					"name" : "data_readRegA[28]",
-					"strict" : false
-				},
-				{
-					"name" : "data_readRegA[23]",
-					"strict" : false
-				},
-				{
-					"name" : "data_readRegA[21]",
-					"strict" : false
-				},
-				{
-					"name" : "data_readRegA[22]",
-					"strict" : false
-				},
-				{
-					"name" : "data_readRegA[20]",
-					"strict" : false
-				},
-				{
-					"name" : "data_readRegA[19]",
+					"name" : "data_readRegA[16]",
 					"strict" : false
 				},
 				{
@@ -600,27 +772,59 @@
 					"strict" : false
 				},
 				{
-					"name" : "data_readRegA[16]",
+					"name" : "data_readRegA[19]",
 					"strict" : false
 				},
 				{
-					"name" : "q_imem[3]",
+					"name" : "data_readRegA[20]",
 					"strict" : false
 				},
 				{
-					"name" : "q_imem[4]",
+					"name" : "data_readRegA[21]",
 					"strict" : false
 				},
 				{
-					"name" : "q_imem[6]",
+					"name" : "data_readRegA[22]",
 					"strict" : false
 				},
 				{
-					"name" : "q_imem[5]",
+					"name" : "data_readRegA[23]",
 					"strict" : false
 				},
 				{
-					"name" : "q_imem[1]",
+					"name" : "data_readRegA[24]",
+					"strict" : false
+				},
+				{
+					"name" : "data_readRegA[25]",
+					"strict" : false
+				},
+				{
+					"name" : "data_readRegA[26]",
+					"strict" : false
+				},
+				{
+					"name" : "data_readRegA[27]",
+					"strict" : false
+				},
+				{
+					"name" : "data_readRegA[28]",
+					"strict" : false
+				},
+				{
+					"name" : "data_readRegA[29]",
+					"strict" : false
+				},
+				{
+					"name" : "data_readRegA[30]",
+					"strict" : false
+				},
+				{
+					"name" : "data_readRegA[31]",
+					"strict" : false
+				},
+				{
+					"name" : "data_readRegB[0]",
 					"strict" : false
 				},
 				{
@@ -745,194 +949,6 @@
 				},
 				{
 					"name" : "data_readRegB[31]",
-					"strict" : false
-				},
-				{
-					"name" : "q_imem[22]",
-					"strict" : false
-				},
-				{
-					"name" : "q_imem[15]",
-					"strict" : false
-				},
-				{
-					"name" : "q_imem[14]",
-					"strict" : false
-				},
-				{
-					"name" : "q_imem[13]",
-					"strict" : false
-				},
-				{
-					"name" : "q_imem[12]",
-					"strict" : false
-				},
-				{
-					"name" : "q_imem[23]",
-					"strict" : false
-				},
-				{
-					"name" : "q_imem[24]",
-					"strict" : false
-				},
-				{
-					"name" : "q_imem[25]",
-					"strict" : false
-				},
-				{
-					"name" : "q_imem[26]",
-					"strict" : false
-				},
-				{
-					"name" : "q_imem[17]",
-					"strict" : false
-				},
-				{
-					"name" : "q_imem[18]",
-					"strict" : false
-				},
-				{
-					"name" : "q_imem[19]",
-					"strict" : false
-				},
-				{
-					"name" : "q_imem[20]",
-					"strict" : false
-				},
-				{
-					"name" : "q_imem[21]",
-					"strict" : false
-				},
-				{
-					"name" : "q_imem[16]",
-					"strict" : false
-				},
-				{
-					"name" : "q_dmem[0]",
-					"strict" : false
-				},
-				{
-					"name" : "q_dmem[1]",
-					"strict" : false
-				},
-				{
-					"name" : "q_dmem[2]",
-					"strict" : false
-				},
-				{
-					"name" : "q_dmem[3]",
-					"strict" : false
-				},
-				{
-					"name" : "q_dmem[4]",
-					"strict" : false
-				},
-				{
-					"name" : "q_dmem[5]",
-					"strict" : false
-				},
-				{
-					"name" : "q_dmem[6]",
-					"strict" : false
-				},
-				{
-					"name" : "q_dmem[7]",
-					"strict" : false
-				},
-				{
-					"name" : "q_dmem[8]",
-					"strict" : false
-				},
-				{
-					"name" : "q_dmem[9]",
-					"strict" : false
-				},
-				{
-					"name" : "q_dmem[10]",
-					"strict" : false
-				},
-				{
-					"name" : "q_dmem[11]",
-					"strict" : false
-				},
-				{
-					"name" : "q_dmem[12]",
-					"strict" : false
-				},
-				{
-					"name" : "q_dmem[13]",
-					"strict" : false
-				},
-				{
-					"name" : "q_dmem[14]",
-					"strict" : false
-				},
-				{
-					"name" : "q_dmem[15]",
-					"strict" : false
-				},
-				{
-					"name" : "q_dmem[16]",
-					"strict" : false
-				},
-				{
-					"name" : "q_dmem[17]",
-					"strict" : false
-				},
-				{
-					"name" : "q_dmem[18]",
-					"strict" : false
-				},
-				{
-					"name" : "q_dmem[19]",
-					"strict" : false
-				},
-				{
-					"name" : "q_dmem[20]",
-					"strict" : false
-				},
-				{
-					"name" : "q_dmem[21]",
-					"strict" : false
-				},
-				{
-					"name" : "q_dmem[22]",
-					"strict" : false
-				},
-				{
-					"name" : "q_dmem[23]",
-					"strict" : false
-				},
-				{
-					"name" : "q_dmem[24]",
-					"strict" : false
-				},
-				{
-					"name" : "q_dmem[25]",
-					"strict" : false
-				},
-				{
-					"name" : "q_dmem[26]",
-					"strict" : false
-				},
-				{
-					"name" : "q_dmem[27]",
-					"strict" : false
-				},
-				{
-					"name" : "q_dmem[28]",
-					"strict" : false
-				},
-				{
-					"name" : "q_dmem[29]",
-					"strict" : false
-				},
-				{
-					"name" : "q_dmem[30]",
-					"strict" : false
-				},
-				{
-					"name" : "q_dmem[31]",
 					"strict" : false
 				},
 				{
