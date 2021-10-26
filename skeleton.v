@@ -44,7 +44,7 @@ module skeleton(clock, reset, imem_clock, dmem_clock, processor_clock, regfile_c
 	 clk_div2 myclk2(.clk(clock), .reset(reset), .clk_out(clkdiv2)); //dmem_clock
 	 clk_div2 myclk3(.clk(clkdiv4), .reset(reset), .clk_out(clkdiv8));
 	 
-	 assign imem_clock = clock;
+	 assign imem_clock = ~clock;
 	 assign dmem_clock = clock;
 	 assign regfile_clock = ~clkdiv4;
 	 assign processor_clock = clkdiv4;
