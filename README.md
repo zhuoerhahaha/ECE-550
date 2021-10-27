@@ -1,5 +1,6 @@
-Zhuoer Li   zl328
-Ching-Hang Hsu ch450
+Mips like Processor
+
+Enabling R-type, addi, lw, and sw instruction.
 
 For the PC part, we follow the instruction provided on the sakkai, and give the 12 bit for our PC.
 Additionally, whenever the clock meets the positive edge, it would add 12'd1 to the address of instruction memory.
